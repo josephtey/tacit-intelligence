@@ -1,14 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=lsv_eval
-#SBATCH --partition=hsu_gpu_priority
-#SBATCH --account=hsulab
+#SBATCH --partition=cpu
 #SBATCH --time=02:00:00
 #SBATCH --array=0-3
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=16G
-#SBATCH --gres=gpu:1
 #SBATCH --output=runs/slurm_logs/eval_%A_%a.out
 #SBATCH --error=runs/slurm_logs/eval_%A_%a.err
 
@@ -20,6 +18,10 @@
 # Each task runs both generators (gpt-5.5 + gemini-2.5-pro) and the Claude judge
 # on its assigned shard. Predictions and scores cache by slice_id, so reruns
 # are idempotent. The aggregate report is a separate dependent job.
+#
+# CPU-only: the workload is API-bound (OpenAI/Gemini/Anthropic) and ffmpeg
+# frame extraction. No GPU needed. Running on the cpu partition avoids the
+# hsu_gpu_priority queue.
 
 set -euo pipefail
 

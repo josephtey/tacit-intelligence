@@ -1,13 +1,11 @@
 #!/bin/bash
 #SBATCH --job-name=lsv_eval_report
-#SBATCH --partition=hsu_gpu_priority
-#SBATCH --account=hsulab
+#SBATCH --partition=cpu
 #SBATCH --time=00:15:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=4G
-#SBATCH --gres=gpu:1
 #SBATCH --output=runs/slurm_logs/eval_report_%j.out
 #SBATCH --error=runs/slurm_logs/eval_report_%j.err
 
