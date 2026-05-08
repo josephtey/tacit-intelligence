@@ -16,6 +16,45 @@ Frontier VLMs cannot yet watch a lab video and faithfully reconstruct what happe
 
 Every base model (GPT-5.5, Gemini 2.5 Pro, etc.) in this project receives the **identical prompt** and **identical 32-frame budget**, then writes a stepwise protocol in their own voice. The judge compares predicted vs. gold text and produces structured scores.
 
+### A concrete example (slice `DJI-013`, ~3 min CRISPR/Cas9 delivery)
+
+The model is shown 32 uniformly-sampled frames like these (6 of 32 shown):
+
+![DJI-013 contact sheet](docs/example/DJI-013_contact_sheet.jpg)
+
+**Gold protocol** (what an expert wrote for this experiment):
+
+```
+1. Add 1 mL Opti-MEM into a sterile 1.5 mL EP tube.
+2. Add Cas9 plasmid.
+3. Add guide RNA plasmid.
+4. Add PEI (4:1 ratio to DNA).
+5. Incubate at room temperature for 20 min.
+6. Add the mixture dropwise into a 10 cm dish of 293T cells (~70-80% confluency).
+7. Gently rock the dish forward and backward to mix.
+8. Place the dish back into the cell incubator (37°C, 5% CO₂).
+```
+
+**What GPT-5.5 produced (first 4 of 13 steps; composite 2.0/5):**
+
+```
+1. Arrange labeled microcentrifuge tubes in a green tube rack on the lab bench and open the caps of the tubes to be used.
+2. Attach a disposable pipette tip to a Transferpette S adjustable micropipette from the tip box.
+3. Pipette liquid reagent into an open labeled microcentrifuge tube held in the gloved hand.
+4. Place the filled microcentrifuge tube back into the green rack with the cap open.
+```
+
+**What Gemini 2.5 Pro produced (first 4 of 9 steps; composite 2.2/5):**
+
+```
+1. Place several microcentrifuge tubes into a green tube rack and open their caps.
+2. Using a Transferpette S micropipette, transfer a liquid into the open microcentrifuge tubes.
+3. Using a second, smaller-volume micropipette, transfer another liquid into the microcentrifuge tubes.
+4. Close the caps of the microcentrifuge tubes.
+```
+
+Both predictions describe physical actions correctly but neither identifies that the liquids are **Opti-MEM**, **Cas9 plasmid**, **gRNA plasmid**, or **PEI**, nor that the dish contains **293T cells at 70–80% confluency** — they cannot read bottle labels, infer reagent identity from color/state, or recover any numerical parameter (1 mL, 4:1 ratio, 20 min, 37°C). This pattern repeats across all 50 videos and is the central finding of Phase 1 (`parameter_accuracy ≈ 1/5`).
+
 ---
 
 ## How we measure goodness: the rubric
