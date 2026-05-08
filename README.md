@@ -79,9 +79,15 @@ Each dimension has explicit 0/1/2/3/4/5 anchors (e.g. *step_coverage = 4 means "
 
 **The bet:** a compound system, not a fine-tuned monolith. Specifically:
 
-- **A small perception model trained on FineBio** ([arXiv:2402.00293](https://arxiv.org/abs/2402.00293)) — 14.5 h of hierarchically-annotated wet-bio video with bounding boxes, hand-object states, atomic operations, and step labels. FineBio's published baselines for object detection (~56 AP) and step segmentation (~97% F1@10) are far stronger than what frontier VLMs can do natively.
-- **An LLM reasoner** (frontier — GPT-5.5, Gemini, etc.) that uses the small perception model's outputs as auxiliary signal to construct the protocol. The reasoner doesn't have to *see* labels on bottles; the perception model does, and feeds the identification as text.
-- **Post-training the reasoner to use the perception tools well.** A frontier LLM given a tool-use harness around object detections + step segments isn't guaranteed to use them effectively zero-shot. SFT or RL on synthetic (perception trace → correct protocol) pairs may be needed to teach the reasoner *when* and *how* to invoke perception, weight conflicting signals, and avoid over-reliance on tool calls that come back uncertain.
+- **Small perception models trained on FineBio** ([arXiv:2402.00293](https://arxiv.org/abs/2402.00293)) — 14.5 h of hierarchically-annotated wet-bio video with bounding boxes, hand-object states, atomic operations, and step labels. FineBio publishes four pre-trained baselines, three of which look directly useful for our bottleneck:
+  - **Object detection (DINO, 56.1 AP / 78.5 AP50)** — detects 35 lab objects per frame (pipettes, tubes, racks, centrifuge, vortex mixer, magnetic rack, etc.). Tells the reasoner "right hand holds a blue pipette over a micro tube" without the reasoner having to see it.
+  - **Atomic operation detection (ActionFormer, 34.1 mAP avg)** — predicts structured `(verb, manipulated_object, affected_object)` tuples like `(insert, blue_pipette, micro_tube)`. Most directly useful for protocol generation: gives the reasoner pre-parsed action atoms instead of raw frames.
+  - **Step segmentation (MS-TCN++, 97% F1@10)** — temporal grounding: which of 32 step categories is happening at each frame. Used for chunking long videos into protocol-sized units.
+  - *(Skipping for now: manipulated/affected object detection — FineBio's hardest task at only 6–22% AP, currently the weakest perception primitive.)*
+- **An LLM reasoner** (frontier — GPT-5.5, Gemini, etc.) consumes those structured outputs and constructs the protocol prose. The reasoner doesn't have to *see* labels on bottles; the perception model has already labeled what's there.
+- **Post-training the reasoner to use the perception tools well.** A frontier LLM given detections + atomic-operation tuples + step segments isn't guaranteed to use them effectively zero-shot. SFT or RL on synthetic (perception trace → correct protocol) pairs may be needed to teach the reasoner *when* and *how* to invoke each perception primitive, weight conflicting signals, and avoid over-reliance on tool calls that come back uncertain.
+
+A FineBio gap worth naming: their object vocabulary is generic equipment ("micro tube", "blue pipette") — not branded reagents like Opti-MEM or PEI. Closing the parameter_accuracy gap fully may need a separate reagent/label-reading head (OCR + lab-vocabulary prior), trained on whatever labelled-equipment data we can scrape from LSV + JoVE.
 
 The thesis: **the bottleneck is perception, not reasoning** (Phase 1 results below support this). Frontier reasoners are already strong at constructing protocol prose given the right facts; what they cannot do is *see* "this bottle is labeled Opti-MEM." Outsourcing perception to a small specialized model and post-training the reasoner to consume it should close the gap more cheaply than a 235B-parameter monolithic VLM.
 
@@ -117,27 +123,16 @@ A reproducible zero-shot harness over GPT-5.5 and Gemini 2.5 Pro on a curated 50
 
 **Success criterion (Phase 1):** ≥ 3 named failure modes tied to a rubric dimension and supported by ≥ 5 example slices. ✅ Met — see `readings/results.md` §3–§4 (parameter blindness, GPT over-decomposition, mutual hallucination).
 
-### Planned — Phase 2: compound system vs. baseline
+### Next — testing the compound-system bet
 
-Build the FineBio-perception + LLM-reasoner system in two phases:
+With perception, specifically of named entities and parameters, isolated as the bottleneck, the natural next step is to build a small perception layer using FineBio's annotations and feed it into a frontier reasoner. The interesting questions, in roughly the order I expect to encounter them:
 
-**2a — Tool-use harness (no training).** Wrap FineBio-trained object detection (DINO ~78 AP50) + step segmentation (MS-TCN++ ~97 F1@10) as tool calls. Frontier LLM zero-shot consumes detections and writes the protocol. Compare to Phase 1 baseline.
+- **Does the perception signal help at all?** Wrap FineBio-trained object detection and step segmentation as tool calls; let a frontier LLM consume them zero-shot and rewrite the protocol. If parameter_accuracy moves from ~1/5 to 2-3/5 with no other changes, that's strong evidence the bottleneck framing is correct.
+- **Does the reasoner actually know how to use these tools?** Frontier LLMs given a tool-use harness aren't guaranteed to invoke it well — they may over-call, under-call, or trust uncertain detections. If naive zero-shot under-performs, post-training the reasoner (SFT or RL on synthetic perception-trace → gold-protocol pairs) becomes the lever.
+- **Which signals are worth the cost?** Ablations on whichever system works: detections on/off, step segmentation on/off, frame budget, audio narration via Whisper. The point is not just to win on composite but to know *which* signal is doing the work.
+- **Does the rubric miss something humans care about?** Show the best system's outputs to 2-3 wet-lab scientists on procedures from their own work and listen for what the rubric isn't capturing.
 
-- *Success:* composite ≥ +0.3 over the strongest Phase 1 baseline, *with the gain explained by parameter_accuracy and step_coverage* (i.e. closing the specific dimensions Phase 1 identified).
-
-**2b — Post-trained reasoner.** If 2a underperforms because the LLM doesn't use the tools well, SFT or RL the reasoner on (perception trace, gold protocol) pairs derived from FineBio + LSV training splits. Possibly a small reasoning model rather than frontier API.
-
-- *Success:* ≥ +0.2 composite over 2a, *and* ablations show the gain is from learned tool-use behavior rather than memorization of LSV protocols.
-
-**2c — Ablations.** Frame budget (8 / 16 / 32 / 64), object detection on/off, step segmentation on/off, audio narration via Whisper on/off. Quantified Δ-composite per axis.
-
-- *Success:* clear worth-the-cost / not-worth-the-cost verdict for each signal.
-
-### Planned — Phase 3: utility validation
-
-Show the best system's outputs to 2–3 wet-lab scientists on procedures from their own work; structured qualitative interview.
-
-- *Success:* documented list of failure/utility modes the rubric misses, plus ≥ 1 concrete benchmark-improvement proposal grounded in the interviews.
+**Overall success criterion:** the best compound system beats the strongest Phase 1 baseline by ≥ 0.3 on composite, with the gain explained by the dimensions Phase 1 identified as the gap (parameter_accuracy and step_coverage). Failing that, the project still has value if the failure is informative — e.g. "tool-use alone wasn't enough, here's the post-training recipe needed" or "frontier reasoners can't be coerced to use external perception, the LabOS approach of training one big model is the right shape."
 
 ---
 
