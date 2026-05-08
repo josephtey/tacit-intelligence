@@ -1,0 +1,12 @@
+# Core
+pandas>=2.0
+python-dotenv>=1.0
+pillow>=10.0
+
+# Frontier-VLM SDKs
+openai>=1.50
+google-genai>=0.3
+anthropic>=0.40
+
+# Dataset host
+huggingface_hub>=0.25
