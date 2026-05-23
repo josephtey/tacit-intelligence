@@ -5,13 +5,17 @@ Adding a new generator requires only:
   2. One line here.
 """
 
+from eval.generators.agent import AgentGenerator
 from eval.generators.base import ProtocolGenerator
 from eval.generators.gemini import GeminiGenerator
 from eval.generators.openai import OpenAIGenerator
+from eval.generators.openai_protolevel import OpenAIProtoLevelGenerator
 
 _REGISTRY: dict[str, type[ProtocolGenerator]] = {
-    "gpt-5.5":        OpenAIGenerator,
-    "gemini-2.5-pro": GeminiGenerator,
+    "gpt-5.5":           OpenAIGenerator,
+    "gemini-2.5-pro":    GeminiGenerator,
+    "gpt-5.5-agent":     AgentGenerator,
+    "gpt-5.5-protolevel": OpenAIProtoLevelGenerator,
 }
 
 

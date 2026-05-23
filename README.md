@@ -69,7 +69,9 @@ We score every prediction on a **5-dimension rubric**, each dimension 0–5, wit
 | `parameter_accuracy`   | Volumes, durations, temperatures, equipment, reagent names — match the gold?                  | Specific values right                                     |
 | `granularity_match`    | Is the level of decomposition similar to gold? Not too coarse, not too fine.                  | Same step density as gold                                 |
 
-Each dimension has explicit 0/1/2/3/4/5 anchors (e.g. *step_coverage = 4 means "one gold step missing or merged"*). The judge (Claude Opus 4.7, text-only — does not see the video) returns structured JSON; reasoning per-dimension is logged for auditing. The rubric is a single defensible operationalization of "is the predicted protocol a faithful reconstruction of what happened" — not the only one possible, but ours is published and the prompt template is part of the cache key, so any change auto-invalidates old scores.
+Each dimension has explicit 0/1/2/3/4/5 anchors (e.g. *step_coverage = 4 means "one gold step missing or merged"*). The rubric is a single defensible operationalization of "is the predicted protocol a faithful reconstruction of what happened" — not the only one possible, but ours is published and the prompt template is part of the cache key, so any change auto-invalidates old scores.
+
+**How a score is actually computed.** One Claude Opus 4.7 call per (prediction, gold) pair receives both full protocol texts plus the anchored rubric, and returns all five 0–5 sub-scores at once as JSON, with a one-sentence justification per dimension (logged for auditing). The judge is **text-only** — it never sees the video, only the predicted and gold protocol text. This means the step↔step matching behind `step_coverage`, `step_hallucination`, and `ordering` is done *by the LLM implicitly in-context*, not by a separate alignment algorithm; the composite is the only value we compute ourselves (mean of the five). Text-only is deliberate: it keeps the judge from re-doing perception (and from "agreeing" with same-family hallucinations). A planned upgrade is to have the judge emit an **explicit step alignment** (`predicted_step → gold_step` matches + unmatched lists) so the countable dimensions become deterministic and auditable, leaving only the semantic dimensions (`parameter_accuracy`, `granularity_match`) to LLM judgment.
 
 ---
 
@@ -122,6 +124,41 @@ A reproducible zero-shot harness over GPT-5.5 and Gemini 2.5 Pro on a curated 50
 **Key finding: parameter_accuracy ≈ 1 / 5 across both models.** Both frontier VLMs cannot read bottle labels, identify reagents from frames, or recover specific volumes/durations — but they get ordering ~3.7+/5, meaning the procedural reasoning is intact when they *can* identify what is happening. The bottleneck is perception, specifically of named entities and numerical parameters. This directly motivates the FineBio-perception bet. Full analysis at `readings/results.md`.
 
 **Success criterion (Phase 1):** ≥ 3 named failure modes tied to a rubric dimension and supported by ≥ 5 example slices. ✅ Met — see `readings/results.md` §3–§4 (parameter blindness, GPT over-decomposition, mutual hallucination).
+
+### Done — isolating prompt vs. perception: three setups
+
+To separate "better output formatting" from "better perception," we compare three setups. All three are built on **GPT-5.5**, take the **same 32-frame input** (uniformly sampled, 1024px), and are scored by the **same Claude Opus 4.7 judge** on the same rubric. The only things that change are the prompt and whether perception tools are available.
+
+**Setup A — baseline.** Plain GPT-5.5, single shot, generic prompt ("watch the frames, describe what was performed"). This is the Phase-1 baseline.
+
+**Setup B — protocol-level prompt.** Identical model, identical single-shot, **no tools** — *only the prompt changes*. It adds two instructions the baseline lacked: (1) write at protocol level, don't narrate every micro-action; (2) don't invent reagent names you can't visually justify. This is pure output-reshaping — it injects **no new information**, it just changes how the model reports what it already perceived.
+
+**Setup C — tool-calling agent.** GPT-5.5 given two perception tools — `detect_objects` (GroundingDINO open-vocabulary detection) and `zoom_in` (upscaled crop) — running an agentic loop: detect equipment/vessels, zoom for detail, then write the protocol. Uses Setup B's prompt **plus** the tools, so any gain over B is attributable to the perception tools. (`eval/generators/agent.py`, `eval/agent/perception.py`; traces in `runs/agent_traces/`.) GroundingDINO stands in for FineBio's exact DINO weights — same architecture lineage, and it transfers to LSV cleanly (verified firing on hands, pipettes, tubes, racks, petri dishes); swapping FineBio's weights in is a documented follow-up.
+
+**Headline results** (judge `claude-opus-4-7`):
+
+| Setup | n | step_cov | hallucination | ordering | param_acc | granularity | **composite** |
+| ----- | -- | -------- | ------------- | -------- | --------- | ----------- | ------------- |
+| A — baseline | 50 | 2.64 | 1.90 | 3.70 | 0.92 | 2.14 | **2.26** |
+| B — protocol-level prompt | 50 | 2.48 | 2.38 | 3.86 | 1.14 | 2.70 | **2.51** |
+
+**Prompt alone lifts the baseline +0.25 (2.26 → 2.51)** — and it does so entirely on the *reporting* dimensions: granularity (+0.56) and hallucination (+0.48). It barely touches `parameter_accuracy` (+0.22, still ~1.1/5), because no prompt can make the model read a label it never perceived. This is the ceiling of what reshaping output can buy.
+
+**Adding perception tools (Setup C), preliminary** — matched three-way on the slices the agent has completed so far (the full-50 agent run is pending an OpenAI credit top-up):
+
+| Setup (matched slices) | step_cov | hallucination | ordering | param_acc | granularity | **composite** |
+| ---------------------- | -------- | ------------- | -------- | --------- | ----------- | ------------- |
+| A — baseline | 2.43 | 1.90 | 3.57 | 0.86 | 2.05 | 2.16 |
+| B — protocol-level prompt | 2.43 | 2.38 | 3.90 | 1.14 | 2.86 | 2.54 |
+| C — agent + DINO | 2.29 | 2.71 | 3.71 | 1.14 | 3.24 | 2.62 |
+
+Findings worth being precise about:
+
+- **Most of the gain is the prompt, not the tools.** B → C adds only ~+0.08 composite on top of the prompt. The tools help hallucination and granularity but slightly hurt coverage/ordering (the agentic loop fixates on inspected frames and loses the global thread).
+- **The tools add *nothing* to the bottleneck dimension.** `parameter_accuracy` is identical for B and C (1.14) — DINO names *equipment*, not *reagents* ("reagent bottle", never "Opti-MEM"). The dimension that's actually capping the score is untouched.
+- **This points to the right next tool.** Closing `parameter_accuracy` needs reading what's *inside* the vessels — source-resolution label reading (use DINO's box to crop the 4K source frame, then OCR/VLM-read), or a reagent-vocabulary model — not more equipment detection.
+
+**Success criterion (working pipeline):** agent runs end-to-end and its performance is measurable on the eval harness. ✅ Met.
 
 ### Next — testing the compound-system bet
 
