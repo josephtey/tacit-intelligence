@@ -2,6 +2,8 @@
 
 Frontier VLMs cannot yet watch a lab video and faithfully reconstruct what happened. On **Protocol Alignment** in LabSuperVision (Cong et al. 2025, [arXiv:2510.14861](https://arxiv.org/abs/2510.14861)) — a benchmark of ~200 egocentric lab videos — GPT-4o, Gemini 2.5 Pro, and Qwen2.5-VL-7B all score 2.0–2.86 / 5; only LabOS's in-house 235B VLM closes the gap. This project builds a system that meaningfully beats the strongest frontier baseline on that metric.
 
+> **📍 Milestone 2 assessors:** the deliverable is the [🔬 Milestone 2 — Compound system](#-milestone-2--compound-system-perception-tools--reasoner) section below (tool-calling agent + perception, results, and a worked example). Milestone 1 (frontier baselines) is the section just above it.
+
 ---
 
 ## The task: Protocol Alignment on LabSuperVision
@@ -103,7 +105,7 @@ Three sub-questions structure the work along the way:
 
 ## Experiments and success criteria (Q2)
 
-### Done — Phase 1: zero-shot baselines on LSV bench-50
+### Milestone 1 — zero-shot frontier baselines on LSV bench-50
 
 A reproducible zero-shot harness over GPT-5.5 and Gemini 2.5 Pro on a curated 50-video slice of LSV.
 
@@ -123,13 +125,17 @@ A reproducible zero-shot harness over GPT-5.5 and Gemini 2.5 Pro on a curated 50
 
 **Key finding: parameter_accuracy ≈ 1 / 5 across both models.** Both frontier VLMs cannot read bottle labels, identify reagents from frames, or recover specific volumes/durations — but they get ordering ~3.7+/5, meaning the procedural reasoning is intact when they *can* identify what is happening. The bottleneck is perception, specifically of named entities and numerical parameters. This directly motivates the FineBio-perception bet. Full analysis at `readings/results.md`.
 
-**Success criterion (Phase 1):** ≥ 3 named failure modes tied to a rubric dimension and supported by ≥ 5 example slices. ✅ Met — see `readings/results.md` §3–§4 (parameter blindness, GPT over-decomposition, mutual hallucination).
+**Success criterion (Milestone 1):** ≥ 3 named failure modes tied to a rubric dimension and supported by ≥ 5 example slices. ✅ Met — see `readings/results.md` §3–§4 (parameter blindness, GPT over-decomposition, mutual hallucination).
 
-### Done — isolating prompt vs. perception: three setups
+---
+
+# 🔬 Milestone 2 — Compound system: perception tools + reasoner
+
+> **Assessors: this is the Milestone 2 deliverable.** A working tool-calling agent that gives a GPT-5.5 reasoner object-detection perception (GroundingDINO, a DINO-family stand-in for FineBio's detector), measured against two ablation baselines on the same LSV rubric. Below: the three setups, headline numbers, a worked before/after example with the detector's output, and the honest findings.
 
 To separate "better output formatting" from "better perception," we compare three setups. All three are built on **GPT-5.5**, take the **same 32-frame input** (uniformly sampled, 1024px), and are scored by the **same Claude Opus 4.7 judge** on the same rubric. The only things that change are the prompt and whether perception tools are available.
 
-**Setup A — baseline.** Plain GPT-5.5, single shot, generic prompt ("watch the frames, describe what was performed"). This is the Phase-1 baseline.
+**Setup A — baseline.** Plain GPT-5.5, single shot, generic prompt ("watch the frames, describe what was performed"). This is the Milestone 1 baseline.
 
 **Setup B — protocol-level prompt.** Identical model, identical single-shot, **no tools** — *only the prompt changes*. It adds two instructions the baseline lacked: (1) write at protocol level, don't narrate every micro-action; (2) don't invent reagent names you can't visually justify. This is pure output-reshaping — it injects **no new information**, it just changes how the model reports what it already perceived.
 
@@ -158,9 +164,31 @@ Findings worth being precise about:
 - **The tools add *nothing* to the bottleneck dimension.** `parameter_accuracy` is identical for B and C (1.14) — DINO names *equipment*, not *reagents* ("reagent bottle", never "Opti-MEM"). The dimension that's actually capping the score is untouched.
 - **This points to the right next tool.** Closing `parameter_accuracy` needs reading what's *inside* the vessels — source-resolution label reading (use DINO's box to crop the 4K source frame, then OCR/VLM-read), or a reagent-vocabulary model — not more equipment detection.
 
-**Success criterion (working pipeline):** agent runs end-to-end and its performance is measurable on the eval harness. ✅ Met.
+#### Worked example — where the tool helps (slice `DJI-130`, colony PCR): 1.2 → 2.2 (+1.0)
 
-### Next — testing the compound-system bet
+The agent calls `detect_objects` on a frame; GroundingDINO returns the lab equipment present:
+
+![GroundingDINO detections on DJI-130](docs/example/DJI-130_dino_detections.jpg)
+
+> Detected: cell culture plate, petri dish, reagent bottle, gloved hand, gel cassette, tube rack, microcentrifuge tube, marker pen.
+
+Those detections turn vague description into grounded, specific equipment:
+
+| | Setup B (no tools) | Setup C (agent + DINO) |
+| --- | --- | --- |
+| Step 1 | "...microcentrifuge tubes in a **purple rack**, a Petri dish... Uncap the **small bench container containing clear liquid**" | "...microcentrifuge tubes in a purple tube rack, a pre-labeled **agar Petri dish**, a **blue-capped clear liquid reagent tube in a green stand**, single-channel pipettes, an **8-channel pipette**, ... a **yellow PCR-strip/tube rack**" |
+| param_acc | 0 | 1 |
+| step_coverage | 1 | 2 |
+| granularity | 2 | 3 |
+| **composite** | **1.2** | **2.2** |
+
+The payoff is concrete: the gold protocol is colony PCR using an **8-strip PCR tube**. Setup B never mentions a multichannel pipette or strip tubes; grounded by the detections, Setup C names the **8-channel pipette and PCR-strip rack** — pushing it toward the actual colony-PCR workflow and lifting coverage. Note, though, that `param_acc` only moves 0 → 1: even in the best case the tool names the *vessel* ("clear liquid reagent tube"), never *what's inside it* ("primer mix", "2× Master Mix"). That's the residual gap the source-resolution label-reading tool would target.
+
+**Success criterion (Milestone 2 — working pipeline):** agent runs end-to-end and its performance is measurable on the eval harness. ✅ Met. (Full-50 agent run pending an OpenAI top-up; numbers above are the matched comparison on completed slices.)
+
+---
+
+## Next — extending the compound system
 
 With perception, specifically of named entities and parameters, isolated as the bottleneck, the natural next step is to build a small perception layer using FineBio's annotations and feed it into a frontier reasoner. The interesting questions, in roughly the order I expect to encounter them:
 
