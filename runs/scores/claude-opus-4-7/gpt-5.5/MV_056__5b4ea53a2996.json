@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_056",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "5b4ea53a2996",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "The three transfers (DNA, water, ladder) can be loosely mapped to pipetting steps in the prediction, though identities are unclear."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "The prediction contains many fabricated setup, inspection, and extra-reagent steps not present in the gold protocol."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The general pipetting sequence is preserved but cluttered with extra steps making exact ordering hard to verify."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Specific volumes (2.5 \u00b5L DNA, 14.5 \u00b5L water, 3 \u00b5L ladder) and reagent identities are missing or replaced with vague descriptions."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is highly over-decomposed with 18 micro-steps versus the gold's 3 concise transfer steps."
+    }
+  },
+  "composite": 2.0,
+  "summary": "The prediction captures the general idea of pipetting reagents into a tube but is heavily over-decomposed and lacks the specific volumes and reagent identities given in the gold. Much of the content is fabricated procedural detail rather than faithful reproduction of the three transfer steps.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"The three transfers (DNA, water, ladder) can be loosely mapped to pipetting steps in the prediction, though identities are unclear.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"The prediction contains many fabricated setup, inspection, and extra-reagent steps not present in the gold protocol.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The general pipetting sequence is preserved but cluttered with extra steps making exact ordering hard to verify.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Specific volumes (2.5 \u00b5L DNA, 14.5 \u00b5L water, 3 \u00b5L ladder) and reagent identities are missing or replaced with vague descriptions.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is highly over-decomposed with 18 micro-steps versus the gold's 3 concise transfer steps.\"},\n  \"summary\": \"The prediction captures the general idea of pipetting reagents into a tube but is heavily over-decomposed and lacks the specific volumes and reagent identities given in the gold. Much of the content is fabricated procedural detail rather than faithful reproduction of the three transfer steps.\"\n}"
+}

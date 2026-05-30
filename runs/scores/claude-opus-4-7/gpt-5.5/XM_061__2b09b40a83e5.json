@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_061",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "2b09b40a83e5",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures sample preparation, cassette placement, well loading, and run start, but misses thawing on ice, specific buffer mixing, and the DNA ladder loading step."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many predicted steps are vague repeated pipetting actions and bench setup details not in the gold, with roughly half being spurious filler."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the correct relative sequence of preparation, loading, and running."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits nearly all gold parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 loading buffer, 10\u201320 \u00b5L load volume, 5 \u00b5L ladder)."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is substantially over-decomposed with 16 steps for a 6-step gold protocol, fragmenting simple pipetting into many micro-steps."
+    }
+  },
+  "composite": 2.6,
+  "summary": "The prediction roughly follows the correct procedural arc but is over-decomposed with vague repeated pipetting steps and omits nearly all key reagents, volumes, and the ladder loading step.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures sample preparation, cassette placement, well loading, and run start, but misses thawing on ice, specific buffer mixing, and the DNA ladder loading step.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many predicted steps are vague repeated pipetting actions and bench setup details not in the gold, with roughly half being spurious filler.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the correct relative sequence of preparation, loading, and running.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits nearly all gold parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 loading buffer, 10\u201320 \u00b5L load volume, 5 \u00b5L ladder).\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is substantially over-decomposed with 16 steps for a 6-step gold protocol, fragmenting simple pipetting into many micro-steps.\"},\n  \"summary\": \"The prediction roughly follows the correct procedural arc but is over-decomposed with vague repeated pipetting steps and omits nearly all key reagents, volumes, and the ladder loading step.\"\n}"
+}

@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-108",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "16517ee08fb1",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Captures pipetting, spin, placing in thermocycler, and starting program, but misses thawing, individual reagent additions with details, flicking to mix, and the specific cycling program."
+    },
+    "step_hallucination": {
+      "score": 4,
+      "reasoning": "Most predicted steps map to gold steps, though 'close caps' is an extra minor step and the reaction volume mentioned (20 \u00b5L) contradicts gold."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps appear in the correct relative order."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Volumes, primer/template concentrations, cycling parameters, and tube size are mostly omitted, and the stated 20 \u00b5L volume contradicts the gold's 25 \u00b5L."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is substantially under-decomposed, collapsing multiple reagent additions into a single transfer step and omitting cycling details."
+    }
+  },
+  "composite": 2.8,
+  "summary": "The prediction captures the high-level workflow (pipetting, spin, thermocycler load and start) in correct order but lacks the granular reagent additions, volumes, concentrations, and cycling parameters that define the gold protocol. It also introduces a contradictory reaction volume, lowering parameter fidelity.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Captures pipetting, spin, placing in thermocycler, and starting program, but misses thawing, individual reagent additions with details, flicking to mix, and the specific cycling program.\"},\n  \"step_hallucination\": {\"score\": 4, \"reasoning\": \"Most predicted steps map to gold steps, though 'close caps' is an extra minor step and the reaction volume mentioned (20 \u00b5L) contradicts gold.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps appear in the correct relative order.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Volumes, primer/template concentrations, cycling parameters, and tube size are mostly omitted, and the stated 20 \u00b5L volume contradicts the gold's 25 \u00b5L.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is substantially under-decomposed, collapsing multiple reagent additions into a single transfer step and omitting cycling details.\"},\n  \"summary\": \"The prediction captures the high-level workflow (pipetting, spin, thermocycler load and start) in correct order but lacks the granular reagent additions, volumes, concentrations, and cycling parameters that define the gold protocol. It also introduces a contradictory reaction volume, lowering parameter fidelity.\"\n}"
+}

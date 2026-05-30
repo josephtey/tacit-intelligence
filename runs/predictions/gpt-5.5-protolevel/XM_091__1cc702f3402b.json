@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_091",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Open the Bio-Rad T100 Thermal Cycler and expose the 96-well thermal block for PCR tube loading.\n\n2. Arrange clear 8-tube PCR strips in a blue tube rack/cold block on the bench, with orange tube racks, disposable tips, single-channel pipettes, and microcentrifuge tubes positioned nearby.\n\n3. Dispense a clear liquid reagent into the PCR strip tubes using a single-channel adjustable micropipette and disposable tips.\n\n4. Add additional clear liquid reagent from small tubes to the PCR strip tubes using fresh disposable tips and single-channel pipettes.\n\n5. Fit an 8-channel pipette with disposable tips from a BIOTIX tip box.\n\n6. Use the 8-channel pipette to transfer liquid from an 8-tube PCR strip in the orange rack into corresponding tubes of a PCR strip in the blue rack.\n\n7. Repeat the 8-channel transfer into a second PCR strip row in the blue rack.\n\n8. Open the tube labeled \u201cH\u2082O,\u201d aspirate H\u2082O with a single-channel micropipette, and dispense it into the prepared PCR strip tubes.\n\n9. Cap the filled PCR strip tubes by pressing the attached caps firmly onto each tube.\n\n10. Label the capped PCR strip tubes with a marker while they remain seated in the blue rack.\n\n11. Place the capped PCR strip tubes into the rotor of a benchtop mini-centrifuge and close the lid to spin down the contents.\n\n12. Transfer the spun PCR strip tubes to the Bio-Rad T100 Thermal Cycler block and close the thermal cycler lid.\n\n13. Use the T100 touchscreen to select and start the thermal cycling run; no readable cycling temperatures, times, or cycle numbers are visible."
+}

@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_097",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "035fd7970cd3",
+  "scores": {
+    "step_coverage": {
+      "score": 4,
+      "reasoning": "The prediction covers loading and starting the centrifuge, though it merges these into multiple sub-steps."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Several steps (closing lid, opening lid, removing sample) are not in the gold protocol, though they are reasonable procedural details."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The sequence of loading then running the centrifuge follows the gold ordering."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits the speed (\u226510,000 rpm) and duration (1 min) parameters specified in the gold."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is over-decomposed into 5 micro-steps versus the gold's single consolidated step."
+    }
+  },
+  "composite": 3.0,
+  "summary": "The prediction captures the basic centrifugation procedure in correct order but is over-decomposed into trivial sub-steps and omits the critical speed and duration parameters from the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 4, \"reasoning\": \"The prediction covers loading and starting the centrifuge, though it merges these into multiple sub-steps.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Several steps (closing lid, opening lid, removing sample) are not in the gold protocol, though they are reasonable procedural details.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The sequence of loading then running the centrifuge follows the gold ordering.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits the speed (\u226510,000 rpm) and duration (1 min) parameters specified in the gold.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is over-decomposed into 5 micro-steps versus the gold's single consolidated step.\"},\n  \"summary\": \"The prediction captures the basic centrifugation procedure in correct order but is over-decomposed into trivial sub-steps and omits the critical speed and duration parameters from the gold.\"\n}"
+}

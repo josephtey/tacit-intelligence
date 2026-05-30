@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-111",
+  "generator": "gpt-5.5-agent",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "8aac68e6a738",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Prediction covers loading samples, placing cassette, and running, but misses thawing on ice, the explicit mix with loading buffer, and the DNA ladder loading step."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Includes added steps like selecting gel type on touchscreen and setting run time that aren't in the gold, plus a tip-change step."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "Loading samples occurs before placing cassette into the power base, which reverses the gold order."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "Omits key gold parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 buffer, 10-20 \u00b5L load volume, 5 \u00b5L ladder) and adds unspecified ones (1% gel, 10 min)."
+    },
+    "granularity_match": {
+      "score": 4,
+      "reasoning": "Similar number of steps (7 vs 6) at comparable decomposition level."
+    }
+  },
+  "composite": 3.0,
+  "summary": "The prediction captures the general E-gel loading workflow but misses critical reagent mixing details and the DNA ladder step, while adding some fabricated instrument-specific steps. Parameter fidelity is weak due to missing volumes and concentrations from the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Prediction covers loading samples, placing cassette, and running, but misses thawing on ice, the explicit mix with loading buffer, and the DNA ladder loading step.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Includes added steps like selecting gel type on touchscreen and setting run time that aren't in the gold, plus a tip-change step.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"Loading samples occurs before placing cassette into the power base, which reverses the gold order.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"Omits key gold parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 buffer, 10-20 \u00b5L load volume, 5 \u00b5L ladder) and adds unspecified ones (1% gel, 10 min).\"},\n  \"granularity_match\": {\"score\": 4, \"reasoning\": \"Similar number of steps (7 vs 6) at comparable decomposition level.\"},\n  \"summary\": \"The prediction captures the general E-gel loading workflow but misses critical reagent mixing details and the DNA ladder step, while adding some fabricated instrument-specific steps. Parameter fidelity is weak due to missing volumes and concentrations from the gold.\"\n}"
+}

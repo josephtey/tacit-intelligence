@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-095",
+  "generator": "gpt-5.5-agent",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "95961217764e",
+  "scores": {
+    "step_coverage": {
+      "score": 1,
+      "reasoning": "Only the plating step is loosely captured; heat shock, ice incubations, mixing, and plate inversion are all missing."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most steps are fabricated, including bench setup and PCR thermocycler use, which are not in the gold transformation protocol."
+    },
+    "ordering": {
+      "score": 2,
+      "reasoning": "The rough order of handling tubes then plating is preserved, but key ordered steps (heat shock sequence) are absent."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "None of the gold parameters (5 \u03bcL DNA, 42\u00b0C, 5 seconds, 50 \u03bcL, LB agar with antibiotic) are present in the prediction."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Step count is similar (7 vs 7) but the decomposition focuses on irrelevant bench setup actions rather than transformation steps."
+    }
+  },
+  "composite": 1.4,
+  "summary": "The prediction appears to describe a generic PCR/pipetting workflow rather than the bacterial heat-shock transformation in the gold protocol. It misses nearly all critical steps and parameters while introducing substantial hallucinated content.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 1, \"reasoning\": \"Only the plating step is loosely captured; heat shock, ice incubations, mixing, and plate inversion are all missing.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most steps are fabricated, including bench setup and PCR thermocycler use, which are not in the gold transformation protocol.\"},\n  \"ordering\": {\"score\": 2, \"reasoning\": \"The rough order of handling tubes then plating is preserved, but key ordered steps (heat shock sequence) are absent.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"None of the gold parameters (5 \u03bcL DNA, 42\u00b0C, 5 seconds, 50 \u03bcL, LB agar with antibiotic) are present in the prediction.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Step count is similar (7 vs 7) but the decomposition focuses on irrelevant bench setup actions rather than transformation steps.\"},\n  \"summary\": \"The prediction appears to describe a generic PCR/pipetting workflow rather than the bacterial heat-shock transformation in the gold protocol. It misses nearly all critical steps and parameters while introducing substantial hallucinated content.\"\n}"
+}

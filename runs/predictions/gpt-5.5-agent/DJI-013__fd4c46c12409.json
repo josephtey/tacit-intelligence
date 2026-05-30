@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-013",
+  "model": "gpt-5.5-agent",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "fd4c46c12409",
+  "protocol": "1. Place the labeled microcentrifuge tubes in a green tube rack and keep the required tubes open for reagent addition.\n\n2. Using a single-channel adjustable micropipette with sterile tips, dispense the required liquid aliquots into the labeled microcentrifuge tubes.\n\n3. Close the prepared microcentrifuge tube and mix the contents by flicking/tapping the tube.\n\n4. Retrieve the labeled Petri dish containing pink cell-culture medium and bring it to the bench.\n\n5. Open the Petri dish and use a micropipette with a sterile tip to transfer the prepared liquid mixture from the microcentrifuge tube into the culture medium.\n\n6. Close the Petri dish and gently swirl the dish by hand to distribute the added mixture evenly across the culture surface."
+}

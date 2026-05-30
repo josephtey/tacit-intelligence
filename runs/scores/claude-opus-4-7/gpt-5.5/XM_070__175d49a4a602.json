@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_070",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "175d49a4a602",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Captures generic pipetting, brief spin, and thermocycler loading/programming, but misses specific reagent additions, volumes, and the actual cycling parameters."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Several steps about tip changes, bench setup, and touchscreen menu navigation are not in the gold protocol."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The general sequence (pipetting \u2192 centrifuge \u2192 thermocycler) follows the gold order."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No specific volumes, concentrations, temperatures, or cycling times from the gold are present in the prediction."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is over-decomposed into generic pipetting motions while lacking the reagent-level detail of the gold."
+    }
+  },
+  "composite": 2.2,
+  "summary": "The prediction captures the rough workflow of PCR setup but describes only generic pipetting actions without identifying reagents, volumes, or cycling parameters. It substitutes concrete protocol detail with hallucinated handling steps, resulting in low fidelity to the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Captures generic pipetting, brief spin, and thermocycler loading/programming, but misses specific reagent additions, volumes, and the actual cycling parameters.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Several steps about tip changes, bench setup, and touchscreen menu navigation are not in the gold protocol.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The general sequence (pipetting \u2192 centrifuge \u2192 thermocycler) follows the gold order.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No specific volumes, concentrations, temperatures, or cycling times from the gold are present in the prediction.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is over-decomposed into generic pipetting motions while lacking the reagent-level detail of the gold.\"},\n  \"summary\": \"The prediction captures the rough workflow of PCR setup but describes only generic pipetting actions without identifying reagents, volumes, or cycling parameters. It substitutes concrete protocol detail with hallucinated handling steps, resulting in low fidelity to the gold.\"\n}"
+}

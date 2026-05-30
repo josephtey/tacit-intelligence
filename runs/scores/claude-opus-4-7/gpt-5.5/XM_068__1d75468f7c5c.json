@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_068",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "1d75468f7c5c",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures thawing/ice, pipetting reagents, spin, loading thermocycler, and starting program, but misses individual reagent identities and the specific cycling program parameters."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Several spurious/over-described steps like organizing the bench, opening/closing the centrifuge, and carrying tubes that don't correspond to gold steps."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the correct sequence of pipetting, spinning, loading, and starting the program."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits nearly all gold parameters (volumes, concentrations, temperatures, cycle times) and only names generic equipment."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Prediction has 17 steps vs. gold's 10, over-decomposing equipment handling while under-specifying reagent additions."
+    }
+  },
+  "composite": 3.0,
+  "summary": "The prediction captures the general workflow and ordering of a PCR setup but lacks all reagent-specific details, volumes, and thermocycling parameters. It compensates with over-decomposed mechanical actions, resulting in a vague yet bloated protocol relative to the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures thawing/ice, pipetting reagents, spin, loading thermocycler, and starting program, but misses individual reagent identities and the specific cycling program parameters.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Several spurious/over-described steps like organizing the bench, opening/closing the centrifuge, and carrying tubes that don't correspond to gold steps.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the correct sequence of pipetting, spinning, loading, and starting the program.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits nearly all gold parameters (volumes, concentrations, temperatures, cycle times) and only names generic equipment.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Prediction has 17 steps vs. gold's 10, over-decomposing equipment handling while under-specifying reagent additions.\"},\n  \"summary\": \"The prediction captures the general workflow and ordering of a PCR setup but lacks all reagent-specific details, volumes, and thermocycling parameters. It compensates with over-decomposed mechanical actions, resulting in a vague yet bloated protocol relative to the gold.\"\n}"
+}

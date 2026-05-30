@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-111",
+  "model": "gpt-5.5-agent",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "fd4c46c12409",
+  "protocol": "1. Place the Invitrogen E-Gel EX 1% agarose gel cassette on the bench with the sample wells exposed, and keep the microcentrifuge/PCR tubes on ice.\n\n2. Using a single-channel adjustable pipette with a fresh tip, pipette prepared liquid from the open microcentrifuge/PCR tubes and mix by aspiration/dispensing in the tube.\n\n3. Load the first prepared sample into a well of the E-Gel EX 1% cassette with the single-channel pipette.\n\n4. Change the pipette tip, prepare the next sample tube, and load the next prepared sample into a separate well of the E-Gel EX 1% cassette.\n\n5. Place the loaded E-Gel EX 1% cassette into the Invitrogen E-Gel Power Snap instrument.\n\n6. Select the E-Gel EX 1% gel type on the E-Gel Power Snap touchscreen.\n\n7. Set the E-Gel Power Snap run time to 10 min and start electrophoresis."
+}

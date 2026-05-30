@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-111",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Prepare the gel-loading area with an Invitrogen E-Gel EX agarose 1% cassette with the comb removed, labeled microcentrifuge tubes kept in an ice bucket, a white tube rack, a single-channel adjustable micropipette, and disposable pipette tips.\n\n2. Pipette-mix an ice-chilled labeled microcentrifuge tube and aspirate an aliquot with a fresh pipette tip; no pipette volume setting is visible.\n\n3. Dispense the aspirated aliquot into a well of the E-Gel EX cassette.\n\n4. Repeat the pipette-mixing, aspiration, and loading process for an additional ice-chilled microcentrifuge tube, using a fresh tip and a separate E-Gel EX well.\n\n5. Aspirate liquid from the microcentrifuge tube labeled \u201cNEB\u201d and load it into a designated E-Gel EX well/marker lane.\n\n6. Place loaded or opened microcentrifuge tubes into the white tube rack after use.\n\n7. Insert the loaded E-Gel EX cassette into the open Invitrogen E-Gel Power Snap instrument, aligning the cassette in the orange gel bay.\n\n8. Use the E-Gel Power Snap touchscreen to select the E-Gel EX 1% gel type and set the run duration to 10 min.\n\n9. Start the E-Gel Power Snap run; the electrophoresis timer begins counting down from 10 min, with 09:59 and 09:57 visible during the run."
+}

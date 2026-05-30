@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_059",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. An agarose gel is removed from a purple plastic container.\n2. The agarose gel is placed into a gel electrophoresis chamber that is filled with buffer.\n3. A sample mixed with purple loading dye is drawn from a microcentrifuge tube into a micropipette.\n4. The sample is loaded from the micropipette into a well of the agarose gel.\n5. The used pipette tip is discarded into a red waste container.\n6. A second sample is drawn from a different microcentrifuge tube and loaded into another well of the agarose gel.\n7. The red and black electrical leads from the power supply are connected to the corresponding electrodes on the lid of the gel electrophoresis chamber."
+}

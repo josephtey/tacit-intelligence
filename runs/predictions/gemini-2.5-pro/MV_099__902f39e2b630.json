@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_099",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A reagent is transferred from a blue-capped bottle into a small tube.\n2. The tube is placed on a vortex mixer to mix the contents.\n3. The tube is removed from the vortex mixer.\n4. A box of pipette tips is placed on the upper shelf.\n5. The tube is placed into a tube rack on the lab bench."
+}

@@ -2,9 +2,13 @@
 
 Resolves Protocol filename -> protocol text (read from the matching *Protocol*/ folder).
 Marks each entry's media type (mp4 / jpg / other) so the UI can render appropriately.
+For entries that appear in the eval manifest (runs/predictions/*), also attaches
+per-model predictions and Claude judge scores so the viewer can show how each
+baseline VLM did on that video.
 """
 
 import csv
+import glob
 import json
 import os
 from pathlib import Path
@@ -12,6 +16,46 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 LSV = REPO_ROOT / "data" / "lsv"
 OUT = REPO_ROOT / "web" / "public" / "metadata.json"
+RUNS = REPO_ROOT / "runs"
+
+# Baseline models to surface per-video. (Agent / protolevel intentionally excluded.)
+BASELINE_MODELS = ["gpt-5.5", "gemini-2.5-pro"]
+JUDGE = "claude-opus-4-7"
+
+# Set LSV_VIDEOS_BASE_URL to a path Vite can serve (e.g. "/lsv") to enable
+# in-browser <video> playback. Typical local workflow: symlink
+#   web/public/lsv -> /path/to/your/local/LSV/folder
+# then run `LSV_VIDEOS_BASE_URL=/lsv npm run build-metadata`.
+VIDEOS_BASE_URL = os.environ.get("LSV_VIDEOS_BASE_URL", "").rstrip("/")
+
+
+def _latest(paths: list[str]) -> str | None:
+    return sorted(paths)[-1] if paths else None
+
+
+def load_predictions_for(slice_id: str) -> dict:
+    """Return {model: {protocol, composite?, scores?, summary?}} for one slice."""
+    out: dict = {}
+    for model in BASELINE_MODELS:
+        pred_path = _latest(glob.glob(str(RUNS / "predictions" / model / f"{slice_id}__*.json")))
+        if not pred_path:
+            continue
+        try:
+            pred = json.loads(Path(pred_path).read_text())
+        except Exception:
+            continue
+        entry = {"protocol": pred.get("protocol", "")}
+        score_path = _latest(glob.glob(str(RUNS / "scores" / JUDGE / model / f"{slice_id}__*.json")))
+        if score_path:
+            try:
+                sc = json.loads(Path(score_path).read_text())
+                entry["composite"] = sc.get("composite")
+                entry["scores"] = sc.get("scores")
+                entry["summary"] = sc.get("summary")
+            except Exception:
+                pass
+        out[model] = entry
+    return out
 
 CONFIGS = [
     {
@@ -19,18 +63,21 @@ CONFIGS = [
         "csv": LSV / "XMglass" / "xm.csv",
         "video_dir": LSV / "XMglass" / "XMvideo",
         "protocol_dir": LSV / "XMglass" / "XMprotocol",
+        "video_url_subdir": "XMglass/XMvideo",
     },
     {
         "key": "DJI",
         "csv": LSV / "DJI" / "dji.csv",
         "video_dir": LSV / "DJI" / "DJI-Video",
         "protocol_dir": LSV / "DJI" / "DJI-Protocol",
+        "video_url_subdir": "DJI/DJI-Video",
     },
     {
         "key": "Multiview",
         "csv": LSV / "Multiview" / "multi.csv",
         "video_dir": LSV / "Multiview" / "Videos",
         "protocol_dir": LSV / "Multiview" / "Protocols",
+        "video_url_subdir": "Multiview/Videos",
     },
 ]
 
@@ -83,12 +130,17 @@ for cfg in CONFIGS:
             protocol_text = load_protocol(cfg["protocol_dir"], protocol_name)
             if protocol_text and protocol_name:
                 protocol_texts[cfg["key"]][protocol_name] = protocol_text
+            video_url = (
+                f"{VIDEOS_BASE_URL}/{cfg['video_url_subdir']}/{video_name}"
+                if VIDEOS_BASE_URL else ""
+            )
             entries.append(
                 {
                     "config": cfg["key"],
                     "slice_id": slice_id,
                     "video_name": video_name,
                     "video_path": str(video_path),
+                    "video_url": video_url,
                     "media_kind": kind,
                     "video_exists": video_path.is_file(),
                     "scene": row.get("Scene") or "",
@@ -101,6 +153,7 @@ for cfg in CONFIGS:
                     "tools": row.get("Tools") or "",
                     "gpt4o_output": row.get("GPT4o_output") or "",
                     "date": row.get("Date") or "",
+                    "predictions": load_predictions_for(slice_id),
                 }
             )
 
@@ -112,7 +165,10 @@ OUT.write_text(
 
 by_cfg = {}
 for e in entries:
-    by_cfg.setdefault(e["config"], {"total": 0, "playable": 0, "with_protocol": 0, "with_gpt4o": 0})
+    by_cfg.setdefault(
+        e["config"],
+        {"total": 0, "playable": 0, "with_protocol": 0, "with_gpt4o": 0, "with_predictions": 0},
+    )
     s = by_cfg[e["config"]]
     s["total"] += 1
     if e["media_kind"] == "video" and e["video_exists"]:
@@ -121,7 +177,10 @@ for e in entries:
         s["with_protocol"] += 1
     if e["gpt4o_output"]:
         s["with_gpt4o"] += 1
+    if e["predictions"]:
+        s["with_predictions"] += 1
 
 print(f"wrote {OUT} ({len(entries)} entries)")
+print(f"videos base URL: {VIDEOS_BASE_URL or '(unset — set LSV_VIDEOS_BASE_URL to enable in-browser playback)'}")
 for k, v in by_cfg.items():
     print(f"  {k}: {v}")

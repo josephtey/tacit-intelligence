@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_064",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "d4a0fc1e1def",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures sample preparation, cassette placement, well loading, and starting the run, but misses the thawing step, the specific loading buffer mixing, and the DNA ladder loading."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several steps are redundant or fabricated (repeated sample preparation steps 3, 5, 7, and the setup step), inflating the protocol beyond the gold."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The overall sequence of prep \u2192 load \u2192 place cassette \u2192 run is preserved, though cassette placement comes after loading rather than before."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Omits nearly all gold parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 loading buffer, 10\u201320 \u00b5L load volume, 5 \u00b5L ladder) and only adds equipment names."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "The prediction has 9 steps vs. gold's 6, with redundant decomposition of pipetting/loading actions."
+    }
+  },
+  "composite": 2.6,
+  "summary": "The prediction captures the general workflow of loading samples onto an E-Gel and starting a run but omits key reagents, volumes, and the DNA ladder step while introducing repetitive, fabricated pipetting steps.",
+  "raw": "```json\n{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures sample preparation, cassette placement, well loading, and starting the run, but misses the thawing step, the specific loading buffer mixing, and the DNA ladder loading.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several steps are redundant or fabricated (repeated sample preparation steps 3, 5, 7, and the setup step), inflating the protocol beyond the gold.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The overall sequence of prep \u2192 load \u2192 place cassette \u2192 run is preserved, though cassette placement comes after loading rather than before.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Omits nearly all gold parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 loading buffer, 10\u201320 \u00b5L load volume, 5 \u00b5L ladder) and only adds equipment names.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"The prediction has 9 steps vs. gold's 6, with redundant decomposition of pipetting/loading actions.\"},\n  \"summary\": \"The prediction captures the general workflow of loading samples onto an E-Gel and starting a run but omits key reagents, volumes, and the DNA ladder step while introducing repetitive, fabricated pipetting steps.\"\n}\n```"
+}

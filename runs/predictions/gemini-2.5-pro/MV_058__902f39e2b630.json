@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_058",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A liquid sample is aspirated from a microcentrifuge tube using a micropipette fitted with a yellow tip.\n2. The micropipette tip is carefully inserted below the surface of the buffer and into a well of an agarose gel inside an electrophoresis chamber.\n3. The sample is slowly dispensed from the pipette tip into the well.\n4. The used pipette tip is ejected from the micropipette.\n5. Steps 1-4 are repeated to load subsequent samples from different microcentrifuge tubes into adjacent wells of the gel, using a new pipette tip for each sample.\n6. The lid is placed onto the gel electrophoresis chamber.\n7. The red and black electrical leads from the power supply are connected to the corresponding terminals on the electrophoresis chamber lid.\n8. The power supply is turned on, the voltage is set to 110 V, and the electrophoresis run is started."
+}

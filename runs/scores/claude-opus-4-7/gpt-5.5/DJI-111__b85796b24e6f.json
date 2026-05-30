@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-111",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "b85796b24e6f",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures sample prep, gel cassette placement, loading, and run start, but misses the DNA ladder loading step and explicit loading buffer mixing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many predicted steps are micro-actions (attaching tips, opening caps, gel type/run time selection) not in the gold, with several fabricated specifics."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the gold sequence correctly."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "Omits key parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 loading buffer, 10\u201320 \u00b5L load, 5 \u00b5L ladder) and adds unverified ones like 1% EX gel and 10 min run time."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "Substantially over-decomposed with 17 micro-steps versus the gold's 6 higher-level steps."
+    }
+  },
+  "composite": 2.8,
+  "summary": "The prediction follows the general E-gel loading workflow in correct order but is heavily over-decomposed into micro-actions, omits the DNA ladder step, and lacks the gold's specific reagent volumes.",
+  "raw": "```json\n{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures sample prep, gel cassette placement, loading, and run start, but misses the DNA ladder loading step and explicit loading buffer mixing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many predicted steps are micro-actions (attaching tips, opening caps, gel type/run time selection) not in the gold, with several fabricated specifics.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the gold sequence correctly.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"Omits key parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 loading buffer, 10\u201320 \u00b5L load, 5 \u00b5L ladder) and adds unverified ones like 1% EX gel and 10 min run time.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"Substantially over-decomposed with 17 micro-steps versus the gold's 6 higher-level steps.\"},\n  \"summary\": \"The prediction follows the general E-gel loading workflow in correct order but is heavily over-decomposed into micro-actions, omits the DNA ladder step, and lacks the gold's specific reagent volumes.\"\n}\n```"
+}

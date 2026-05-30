@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_056",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "80d5c81a69be",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Loading sample and starting run are covered, but the DNA ladder loading step is missing and E-gel cassette placement is replaced with a generic gel-in-tank setup."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many fabricated steps appear (tip fitting, tip ejection, buffer tank, electrode leads) that don't match the E-gel system in the gold."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The captured steps (setup, loading, run) follow the correct relative order."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Volumes (10 \u00b5L), DNA ladder, and Invitrogen E-gel power base are missing, and the system is mischaracterized as a buffer-filled horizontal tank."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is substantially over-decomposed (13 micro-steps) compared to the gold's 4 concise steps."
+    }
+  },
+  "composite": 2.4,
+  "summary": "The prediction captures the general idea of loading samples and starting electrophoresis but mischaracterizes the E-gel system as a traditional buffer tank, omits the DNA ladder and volume parameters, and over-decomposes the procedure with several fabricated steps.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Loading sample and starting run are covered, but the DNA ladder loading step is missing and E-gel cassette placement is replaced with a generic gel-in-tank setup.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many fabricated steps appear (tip fitting, tip ejection, buffer tank, electrode leads) that don't match the E-gel system in the gold.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The captured steps (setup, loading, run) follow the correct relative order.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Volumes (10 \u00b5L), DNA ladder, and Invitrogen E-gel power base are missing, and the system is mischaracterized as a buffer-filled horizontal tank.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is substantially over-decomposed (13 micro-steps) compared to the gold's 4 concise steps.\"},\n  \"summary\": \"The prediction captures the general idea of loading samples and starting electrophoresis but mischaracterizes the E-gel system as a traditional buffer tank, omits the DNA ladder and volume parameters, and over-decomposes the procedure with several fabricated steps.\"\n}"
+}

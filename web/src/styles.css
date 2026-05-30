@@ -503,3 +503,92 @@ body {
 .about a {
   color: var(--accent);
 }
+
+/* --- video player (only when video_url is set) --- */
+.video-player {
+  width: 100%;
+  max-height: 480px;
+  background: #000;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+/* --- predictions: composite badge + scorebar + summary --- */
+.pane__header--row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.composite-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  letter-spacing: 0.2px;
+}
+
+.scorebar {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 8px 12px;
+  background: var(--bg-elev-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.scorebar__cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.scorebar__label {
+  text-transform: lowercase;
+}
+
+.scorebar__val {
+  display: inline-block;
+  min-width: 18px;
+  text-align: center;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 700;
+  color: #fff;
+  background: #444;
+}
+
+.scorebar__val--s0 { background: #c2392f; }
+.scorebar__val--s1 { background: #d9583d; }
+.scorebar__val--s2 { background: #d68436; }
+.scorebar__val--s3 { background: #b8a23a; }
+.scorebar__val--s4 { background: #649b3c; }
+.scorebar__val--s5 { background: #2ea043; }
+
+.pane__summary {
+  padding: 8px 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+  background: var(--bg-elev-2);
+  border-bottom: 1px solid var(--border);
+  font-style: normal;
+  line-height: 1.4;
+}
+
+.pane__summary em {
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.tag--pred {
+  background: #1f6feb33;
+  color: #4493f8;
+}

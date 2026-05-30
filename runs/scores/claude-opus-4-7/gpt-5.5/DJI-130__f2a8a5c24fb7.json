@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-130",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "f2a8a5c24fb7",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "The prediction vaguely captures pipetting into tubes, transferring to a plate, and picking from a Petri dish, but misses thermocycling and specific PCR/primer mix preparation steps."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most steps are generic pipetting descriptions with fabricated actions like spreading/streaking on agar that aren't in the gold protocol."
+    },
+    "ordering": {
+      "score": 2,
+      "reasoning": "The rough order of mixing then transferring is preserved but colony picking and PCR setup steps are jumbled and the thermocycler step is absent."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No volumes, concentrations, reagent names, or equipment names (thermocycler, PCR master mix, primers) from the gold are mentioned."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction has 20 overly generic micro-steps versus the gold's 8 specific steps, making it substantially over-decomposed."
+    }
+  },
+  "composite": 1.4,
+  "summary": "The prediction reads as a generic visual description of pipetting actions rather than a colony PCR protocol, missing all specific reagents, parameters, and the key thermocycling step. It captures only the broad shape of liquid handling while hallucinating agar streaking and omitting the actual PCR procedure.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"The prediction vaguely captures pipetting into tubes, transferring to a plate, and picking from a Petri dish, but misses thermocycling and specific PCR/primer mix preparation steps.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most steps are generic pipetting descriptions with fabricated actions like spreading/streaking on agar that aren't in the gold protocol.\"},\n  \"ordering\": {\"score\": 2, \"reasoning\": \"The rough order of mixing then transferring is preserved but colony picking and PCR setup steps are jumbled and the thermocycler step is absent.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No volumes, concentrations, reagent names, or equipment names (thermocycler, PCR master mix, primers) from the gold are mentioned.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction has 20 overly generic micro-steps versus the gold's 8 specific steps, making it substantially over-decomposed.\"},\n  \"summary\": \"The prediction reads as a generic visual description of pipetting actions rather than a colony PCR protocol, missing all specific reagents, parameters, and the key thermocycling step. It captures only the broad shape of liquid handling while hallucinating agar streaking and omitting the actual PCR procedure.\"\n}"
+}

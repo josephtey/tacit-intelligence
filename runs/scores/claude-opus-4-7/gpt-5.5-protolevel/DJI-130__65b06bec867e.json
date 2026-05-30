@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-130",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "65b06bec867e",
+  "scores": {
+    "step_coverage": {
+      "score": 1,
+      "reasoning": "Only generic pipetting into tubes is loosely captured; primer mix prep, PCR master mix prep, colony picking, LB inoculation, and thermocycler steps are all missing."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most steps are spurious\u2014spotting/spreading droplets on agar sectors and loading multichannel tips do not correspond to any colony PCR step."
+    },
+    "ordering": {
+      "score": 2,
+      "reasoning": "The few loosely matching pipetting steps appear early, but the overall sequence diverges significantly from the gold protocol."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No volumes, concentrations, reagent names, or equipment specifics from the gold are present in the prediction."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction has 13 vague micro-steps versus the gold's 8 concrete steps, over-decomposing trivial actions while omitting substantive ones."
+    }
+  },
+  "composite": 1.2,
+  "summary": "The prediction describes generic pipetting and agar-spotting actions rather than the actual colony PCR protocol, missing nearly all key steps and parameters. It reads as a visual description of bench activity rather than a faithful reproduction of the gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 1, \"reasoning\": \"Only generic pipetting into tubes is loosely captured; primer mix prep, PCR master mix prep, colony picking, LB inoculation, and thermocycler steps are all missing.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most steps are spurious\u2014spotting/spreading droplets on agar sectors and loading multichannel tips do not correspond to any colony PCR step.\"},\n  \"ordering\": {\"score\": 2, \"reasoning\": \"The few loosely matching pipetting steps appear early, but the overall sequence diverges significantly from the gold protocol.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No volumes, concentrations, reagent names, or equipment specifics from the gold are present in the prediction.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction has 13 vague micro-steps versus the gold's 8 concrete steps, over-decomposing trivial actions while omitting substantive ones.\"},\n  \"summary\": \"The prediction describes generic pipetting and agar-spotting actions rather than the actual colony PCR protocol, missing nearly all key steps and parameters. It reads as a visual description of bench activity rather than a faithful reproduction of the gold protocol.\"\n}"
+}

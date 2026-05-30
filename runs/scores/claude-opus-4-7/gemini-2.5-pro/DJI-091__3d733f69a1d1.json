@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-091",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "3d733f69a1d1",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures DNA addition, flicking mix, and spreading on agar, but misses heat shock at 42\u00b0C, ice incubations, and plate inversion."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Includes spurious steps like setting pipette volume, carrying plate down hallway, and placing in incubator which are not in gold."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The captured steps (add DNA, mix, spread) follow the gold sequence correctly."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Omits nearly all gold parameters (5 \u03bcL, 42\u00b0C, 5 seconds, 50 \u03bcL, antibiotic) while adding unrelated equipment names."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Has a similar number of steps but decomposes differently, breaking pipetting into micro-steps while omitting key procedural steps."
+    }
+  },
+  "composite": 2.8,
+  "summary": "The prediction captures the broad outline of plasmid transformation (add DNA, mix, plate) but omits the critical heat-shock and ice-incubation steps and lacks essentially all numerical parameters. It also adds fabricated steps about equipment transport and incubation, reducing precision.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures DNA addition, flicking mix, and spreading on agar, but misses heat shock at 42\u00b0C, ice incubations, and plate inversion.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Includes spurious steps like setting pipette volume, carrying plate down hallway, and placing in incubator which are not in gold.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The captured steps (add DNA, mix, spread) follow the gold sequence correctly.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Omits nearly all gold parameters (5 \u03bcL, 42\u00b0C, 5 seconds, 50 \u03bcL, antibiotic) while adding unrelated equipment names.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Has a similar number of steps but decomposes differently, breaking pipetting into micro-steps while omitting key procedural steps.\"},\n  \"summary\": \"The prediction captures the broad outline of plasmid transformation (add DNA, mix, plate) but omits the critical heat-shock and ice-incubation steps and lacks essentially all numerical parameters. It also adds fabricated steps about equipment transport and incubation, reducing precision.\"\n}"
+}

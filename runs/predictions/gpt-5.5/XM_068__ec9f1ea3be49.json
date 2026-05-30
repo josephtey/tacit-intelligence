@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_068",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Organize the bench with labeled tubes on ice, tube racks, disposable pipette tips, an adjustable micropipette, and a blue sample rack.\n\n2. Keep the labeled microcentrifuge/PCR tubes chilled in a green ice bucket filled with crushed ice.\n\n3. Pick up one labeled tube from the ice bucket and hold it open by hand.\n\n4. Aspirate liquid from the blue sample rack using an adjustable micropipette fitted with a disposable tip.\n\n5. Dispense the aspirated liquid into the open labeled tube.\n\n6. Place the filled tube into a bench tube rack.\n\n7. Repeat the liquid transfer for additional labeled tubes, alternating between aspirating from the blue rack and dispensing into individual tubes.\n\n8. Cap the prepared tubes by hand and hold them together for processing.\n\n9. Open the benchtop mini centrifuge and place the capped tubes into the rotor.\n\n10. Close the mini centrifuge lid and spin the tubes to collect liquid at the bottom.\n\n11. Remove the spun tubes from the mini centrifuge.\n\n12. Carry the prepared tubes to the Bio-Rad T100 Thermal Cycler.\n\n13. Open the Bio-Rad T100 Thermal Cycler lid.\n\n14. Load the prepared PCR tubes or tube rack into the thermal cycler block.\n\n15. Close the Bio-Rad T100 Thermal Cycler lid.\n\n16. Select the desired thermal cycling program on the Bio-Rad T100 touchscreen interface.\n\n17. Start the thermal cycling run on the Bio-Rad T100 Thermal Cycler."
+}

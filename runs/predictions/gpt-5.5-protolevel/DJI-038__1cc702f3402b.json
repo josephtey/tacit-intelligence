@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-038",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Arrange labeled microcentrifuge tubes with caps open in a white tube rack on the bench; use a variable-volume micropipette with disposable tips from a rack labeled \u201c20 \u00b5L TIP.\u201d\n\n2. Fit the micropipette with a 20 \u00b5L disposable tip from the pink tip rack.\n\n3. Dispense clear liquid into the first open labeled microcentrifuge tube.\n\n4. Dispense clear liquid into the next open labeled microcentrifuge tube in the rack.\n\n5. Continue dispensing clear liquid into additional open labeled microcentrifuge tubes in the rack using the 20 \u00b5L pipette tip.\n\n6. Place the pipette tip into the translucent beaker after the tube additions.\n\n7. Fit the micropipette with a fresh 20 \u00b5L disposable tip and dispense clear liquid into another open labeled microcentrifuge tube in the rack.\n\n8. Place the pipette tip into the translucent beaker after the additional tube addition.\n\n9. Open and position a Petri dish containing purple liquid next to the microcentrifuge tube rack."
+}

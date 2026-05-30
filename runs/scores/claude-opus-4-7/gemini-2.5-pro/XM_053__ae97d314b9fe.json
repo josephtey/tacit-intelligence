@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_053",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "ae97d314b9fe",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Only labeling and a generic transfer step roughly correspond to the gold; the serial dilution structure (water addition, four sequential transfers) is largely missing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several predicted steps (tip changes, ejecting tips, closing lids) are procedural minutiae not in the gold, and the strip-tube transfer doesn't match the gold's tube-to-tube serial dilution."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "Labeling comes first and transfer follows, preserving rough order, but the serial dilution sequence is not represented."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No volumes (100 \u00b5L), tube counts/labels (1-4), or reagent identities (water, sample) are specified in the prediction."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction over-decomposes minor pipetting actions while under-representing the four dilution transfers, giving a substantially different decomposition."
+    }
+  },
+  "composite": 1.8,
+  "summary": "The prediction describes generic pipetting actions observed visually rather than the serial dilution procedure in the gold, missing key parameters and most dilution steps while adding spurious micro-actions.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Only labeling and a generic transfer step roughly correspond to the gold; the serial dilution structure (water addition, four sequential transfers) is largely missing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several predicted steps (tip changes, ejecting tips, closing lids) are procedural minutiae not in the gold, and the strip-tube transfer doesn't match the gold's tube-to-tube serial dilution.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"Labeling comes first and transfer follows, preserving rough order, but the serial dilution sequence is not represented.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No volumes (100 \u00b5L), tube counts/labels (1-4), or reagent identities (water, sample) are specified in the prediction.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction over-decomposes minor pipetting actions while under-representing the four dilution transfers, giving a substantially different decomposition.\"},\n  \"summary\": \"The prediction describes generic pipetting actions observed visually rather than the serial dilution procedure in the gold, missing key parameters and most dilution steps while adding spurious micro-actions.\"\n}"
+}

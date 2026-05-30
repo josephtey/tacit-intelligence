@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-015",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Open the blue pipette-tip box on the laboratory bench and prepare a handheld Transferpette S micropipette with a sterile disposable tip.\n\n2. Pick up a labeled microcentrifuge tube from the white tube rack and open the tube cap while holding the tube upright.\n\n3. Pipette pink liquid with the Transferpette S micropipette into the open microcentrifuge tube, using the sterile tip positioned inside the tube opening.\n\n4. Mix the contents of the microcentrifuge tube by pipetting the liquid up and down with the Transferpette S micropipette.\n\n5. Close the microcentrifuge tube and return it to the white tube rack.\n\n6. Repeat the tube-handling and pipetting step with another labeled microcentrifuge tube from the white rack, using the Transferpette S micropipette and sterile disposable tip.\n\n7. Remove the pipette tip from the Transferpette S micropipette and set the micropipette down on the bench.\n\n8. Carry a Petri dish containing pink medium through the laboratory hallway and back to the bench workspace.\n\n9. Place the Petri dish on the bench in front of the tube rack and position a yellow-banded Transferpette S micropipette beside it.\n\n10. Pick up a labeled microcentrifuge tube from the white rack and open the tube cap.\n\n11. Pipette liquid from the open microcentrifuge tube using the yellow-banded Transferpette S micropipette fitted with a sterile disposable tip.\n\n12. Dispense the liquid onto the Petri dish containing pink medium.\n\n13. Set down the micropipette and hold the Petri dish with both gloved hands.\n\n14. Spread the applied liquid across the surface of the Petri dish by gently tilting and rotating the dish on the bench."
+}

@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-038",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "b96190162277",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "The prediction captures reagent transfer steps loosely corresponding to adding reagents to a tube, but misses mixing, incubation, dropwise addition to cells, and rocking."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several steps describe trivial pipetting actions (closing caps, ejecting tips, attaching new tips) that don't correspond to gold protocol steps."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The general flow of aspirating/dispensing reagents is preserved, but the addition to the cell dish is misrepresented as aspiration from a petri dish."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No specific parameters (volumes, 20 min incubation, room temperature, 10 cm dish, 293T cells, 70-80% confluency) are mentioned in the prediction."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "The prediction is somewhat over-decomposed with micro-actions like tip changes while missing higher-level procedural steps."
+    }
+  },
+  "composite": 2.0,
+  "summary": "The prediction reads as a visual description of pipetting actions rather than a transfection protocol, missing key steps like incubation and addition to cells. It lacks all critical parameters and includes spurious micro-actions not represented in the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"The prediction captures reagent transfer steps loosely corresponding to adding reagents to a tube, but misses mixing, incubation, dropwise addition to cells, and rocking.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several steps describe trivial pipetting actions (closing caps, ejecting tips, attaching new tips) that don't correspond to gold protocol steps.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The general flow of aspirating/dispensing reagents is preserved, but the addition to the cell dish is misrepresented as aspiration from a petri dish.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No specific parameters (volumes, 20 min incubation, room temperature, 10 cm dish, 293T cells, 70-80% confluency) are mentioned in the prediction.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"The prediction is somewhat over-decomposed with micro-actions like tip changes while missing higher-level procedural steps.\"},\n  \"summary\": \"The prediction reads as a visual description of pipetting actions rather than a transfection protocol, missing key steps like incubation and addition to cells. It lacks all critical parameters and includes spurious micro-actions not represented in the gold.\"\n}"
+}

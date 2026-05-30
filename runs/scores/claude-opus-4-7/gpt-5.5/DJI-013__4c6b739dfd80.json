@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-013",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "4c6b739dfd80",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "The prediction vaguely captures pipetting reagents into tubes, mixing, and adding to the dish with swirling, but misses explicit Opti-MEM, Cas9 plasmid, gRNA, PEI, incubation time, and incubator return steps."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many predicted steps are generic pipetting/handling actions (tip changes, dial adjustments, retrieving dish) that don't correspond to specific gold steps."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The general sequence of preparing tubes, mixing, then adding to the dish and swirling matches the gold order."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No specific parameters (1 mL Opti-MEM, 20 min incubation, 4:1 PEI ratio, 10 cm dish, 70-80% confluency, 37\u00b0C/5% CO\u2082, 293T cells) are mentioned."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is over-decomposed into micro-actions like tip changes and dial adjustments rather than matching the gold's reagent-level steps."
+    }
+  },
+  "composite": 2.0,
+  "summary": "The prediction describes generic pipetting and mixing actions that loosely follow the procedural arc but omit all reagent identities, quantities, and conditions critical to the transfection protocol. It is overly granular on mechanics while missing the substantive biological parameters.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"The prediction vaguely captures pipetting reagents into tubes, mixing, and adding to the dish with swirling, but misses explicit Opti-MEM, Cas9 plasmid, gRNA, PEI, incubation time, and incubator return steps.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many predicted steps are generic pipetting/handling actions (tip changes, dial adjustments, retrieving dish) that don't correspond to specific gold steps.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The general sequence of preparing tubes, mixing, then adding to the dish and swirling matches the gold order.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No specific parameters (1 mL Opti-MEM, 20 min incubation, 4:1 PEI ratio, 10 cm dish, 70-80% confluency, 37\u00b0C/5% CO\u2082, 293T cells) are mentioned.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is over-decomposed into micro-actions like tip changes and dial adjustments rather than matching the gold's reagent-level steps.\"},\n  \"summary\": \"The prediction describes generic pipetting and mixing actions that loosely follow the procedural arc but omit all reagent identities, quantities, and conditions critical to the transfection protocol. It is overly granular on mechanics while missing the substantive biological parameters.\"\n}"
+}

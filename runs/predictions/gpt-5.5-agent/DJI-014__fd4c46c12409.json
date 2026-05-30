@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-014",
+  "model": "gpt-5.5-agent",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "fd4c46c12409",
+  "protocol": "1. Place five labeled 1.5 mL microcentrifuge tubes in a green tube rack and keep the tube caps open for pipetting.\n\n2. Fit an adjustable single-channel micropipette with a sterile disposable tip from the blue tip box.\n\n3. Aliquot clear liquid from the beaker into each labeled microcentrifuge tube, changing to a fresh sterile tip between tubes.\n\n4. Open a petri dish containing pink culture medium and place the lid beside the dish.\n\n5. Aspirate liquid from one prepared microcentrifuge tube using the single-channel micropipette.\n\n6. Dispense the aspirated liquid into the petri dish containing pink culture medium and distribute it by pipetting within the dish.\n\n7. Close the microcentrifuge tube and replace the lid on the petri dish."
+}

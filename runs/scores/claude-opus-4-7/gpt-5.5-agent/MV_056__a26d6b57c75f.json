@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_056",
+  "generator": "gpt-5.5-agent",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "a26d6b57c75f",
+  "scores": {
+    "step_coverage": {
+      "score": 1,
+      "reasoning": "The gold's three specific transfer steps (DNA, water, ladder) are not clearly captured; at best one generic 'add reagent aliquots' step vaguely alludes to them."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most predicted steps (primer stocks, restriction enzymes, ligation reactions, overnight incubation) are fabricated and unrelated to the gold's simple sample loading protocol."
+    },
+    "ordering": {
+      "score": 2,
+      "reasoning": "Since the gold steps are barely represented, ordering cannot be meaningfully assessed, though the loose loading step appears in a plausible position."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The gold's specific volumes (2.5 \u00b5L DNA, 14.5 \u00b5L water, 3 \u00b5L ladder) are missing; only 2.5 \u00b5L is mentioned generically, and water/ladder volumes are absent."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction has 8 elaborate steps versus the gold's 3 simple transfer steps, making it substantially over-decomposed and off-scope."
+    }
+  },
+  "composite": 1.4,
+  "summary": "The prediction describes an entirely different, more complex ligation/restriction workflow rather than the gold's simple three-step loading of DNA, water, and ladder into a tube. It largely fabricates content and misses the specific volumes and reagents in the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 1, \"reasoning\": \"The gold's three specific transfer steps (DNA, water, ladder) are not clearly captured; at best one generic 'add reagent aliquots' step vaguely alludes to them.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most predicted steps (primer stocks, restriction enzymes, ligation reactions, overnight incubation) are fabricated and unrelated to the gold's simple sample loading protocol.\"},\n  \"ordering\": {\"score\": 2, \"reasoning\": \"Since the gold steps are barely represented, ordering cannot be meaningfully assessed, though the loose loading step appears in a plausible position.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The gold's specific volumes (2.5 \u00b5L DNA, 14.5 \u00b5L water, 3 \u00b5L ladder) are missing; only 2.5 \u00b5L is mentioned generically, and water/ladder volumes are absent.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction has 8 elaborate steps versus the gold's 3 simple transfer steps, making it substantially over-decomposed and off-scope.\"},\n  \"summary\": \"The prediction describes an entirely different, more complex ligation/restriction workflow rather than the gold's simple three-step loading of DNA, water, and ladder into a tube. It largely fabricates content and misses the specific volumes and reagents in the gold.\"\n}"
+}

@@ -45,5 +45,9 @@ Thumbs.db
 .env
 .env.local
 
-# Eval run outputs
-runs/
+# Eval run outputs — keep small result artifacts in git, ignore heavy/derived ones.
+# (runs/predictions, runs/scores, runs/manifests, runs/agent_traces, runs/report.md ARE tracked.)
+# Extracted JPEG frames (~170 MB, regenerable from videos):
+runs/frames/
+runs/slurm_logs/
+runs/lsv_download.log

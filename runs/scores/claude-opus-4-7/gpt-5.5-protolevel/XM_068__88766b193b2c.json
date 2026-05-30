@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_068",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "88766b193b2c",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures setup, pipetting, spin, loading thermocycler, and starting program, but misses distinct reagent additions (Master Mix, primers, template, water) as separate steps and lacks explicit program parameters."
+    },
+    "step_hallucination": {
+      "score": 4,
+      "reasoning": "Most steps map to gold actions, though step 7 (transport) is an extra granular step not in gold."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the gold sequence correctly."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Nearly all specific parameters (volumes, concentrations, temperatures, times, cycle counts) are omitted or noted as unreadable."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Step count is similar but decomposition differs\u2014generic pipetting steps replace specific reagent additions, and extra observational steps are added."
+    }
+  },
+  "composite": 3.2,
+  "summary": "The prediction captures the overall workflow and correct ordering of PCR setup and thermocycling, but omits virtually all critical parameters (reagent identities, volumes, concentrations, cycling conditions), making it a vague observational description rather than a usable protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures setup, pipetting, spin, loading thermocycler, and starting program, but misses distinct reagent additions (Master Mix, primers, template, water) as separate steps and lacks explicit program parameters.\"},\n  \"step_hallucination\": {\"score\": 4, \"reasoning\": \"Most steps map to gold actions, though step 7 (transport) is an extra granular step not in gold.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the gold sequence correctly.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Nearly all specific parameters (volumes, concentrations, temperatures, times, cycle counts) are omitted or noted as unreadable.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Step count is similar but decomposition differs\u2014generic pipetting steps replace specific reagent additions, and extra observational steps are added.\"},\n  \"summary\": \"The prediction captures the overall workflow and correct ordering of PCR setup and thermocycling, but omits virtually all critical parameters (reagent identities, volumes, concentrations, cycling conditions), making it a vague observational description rather than a usable protocol.\"\n}"
+}

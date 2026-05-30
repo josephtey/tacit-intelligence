@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_070",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1.  Pipette a clear liquid into the wells of a blue 96-well plate using a micropipette.\n2.  Transfer a reagent from a microcentrifuge tube, stored on ice in a green container, into the wells of a pink 96-well plate.\n3.  Pipette a reagent into the wells of a white 96-well plate.\n4.  Open the lid of a BIO-RAD T100 Thermal Cycler.\n5.  Place the prepared PCR tubes into the sample block of the thermal cycler.\n6.  Close the lid of the thermal cycler.\n7.  Operate the touchscreen of the BIO-RAD T100 Thermal Cycler to run a program."
+}

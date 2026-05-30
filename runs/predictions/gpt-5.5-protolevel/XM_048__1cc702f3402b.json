@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_048",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Arrange four labeled 1.5 mL snap-cap microcentrifuge tubes marked M, F, R, and T in a green tube rack, with a single-channel adjustable micropipette, sterile filter-tip box, and waste container available on the bench.\n\n2. Fit a sterile tip to the micropipette and pipette-mix the clear liquid in the tube labeled M; close the tube and place it in the rack.\n\n3. Change to a new sterile tip and pipette-mix the clear liquid in the tube labeled F; close the tube and place it in the rack.\n\n4. Change to a new sterile tip and pipette-mix the clear liquid in the tube labeled R; close the tube and place it in the rack.\n\n5. Change to a new sterile tip and pipette-mix the clear liquid in the tube labeled T; close the tube and place it in the rack.\n\n6. Using a 10 \u00b5L single-channel micropipette with fresh sterile tips, repeat pipetting of the labeled tubes M, F, R, and T, keeping each tube capped after handling and changing tips between tubes.\n\n7. Collect the capped labeled microcentrifuge tubes and move them from the bench rack to the centrifuge area.\n\n8. Briefly centrifuge the capped microcentrifuge tubes in a benchtop microcentrifuge; no speed, time, or temperature setting is visible.\n\n9. Open the real-time PCR/thermal cycler instrument lid and expose the reaction block for loading the prepared tubes or reactions; no cycling parameters are visible."
+}

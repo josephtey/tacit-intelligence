@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_052",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1.  Label the caps of microcentrifuge tubes in a light blue tube rack with a black marker.\n2.  Attach a pipette tip from a purple tip box to a micropipette.\n3.  Dispense a yellowish liquid from the micropipette into a labeled microcentrifuge tube.\n4.  Close the cap of the microcentrifuge tube and place it into the light blue tube rack.\n5.  Dispense the yellowish liquid from the micropipette into each of the four connected tubes in a strip.\n6.  Place the strip of four tubes into a green tube rack."
+}

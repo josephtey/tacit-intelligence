@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-105",
+  "generator": "gpt-5.5-agent",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "e93279048a45",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Missing separate forward/reverse primer steps and nuclease-free water addition; mixing step is also absent."
+    },
+    "step_hallucination": {
+      "score": 4,
+      "reasoning": "Most steps map to gold, though the cap step and explicit tube-labeling/setup step are minor additions not in gold."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the gold sequence correctly."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "Reaction volume (20 vs 25 \u00b5L), annealing temp (67 vs 55\u00b0C), final extension (1 vs 5 min) differ, and most volumes/concentrations are omitted."
+    },
+    "granularity_match": {
+      "score": 4,
+      "reasoning": "Similar overall decomposition with 8 steps vs 10, slightly coarser by combining primers and omitting water."
+    }
+  },
+  "composite": 3.6,
+  "summary": "The prediction captures the general PCR setup workflow in correct order but omits key reagent steps (primers, water, mixing) and has notable parameter discrepancies in volume, annealing temperature, and extension time.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Missing separate forward/reverse primer steps and nuclease-free water addition; mixing step is also absent.\"},\n  \"step_hallucination\": {\"score\": 4, \"reasoning\": \"Most steps map to gold, though the cap step and explicit tube-labeling/setup step are minor additions not in gold.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the gold sequence correctly.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"Reaction volume (20 vs 25 \u00b5L), annealing temp (67 vs 55\u00b0C), final extension (1 vs 5 min) differ, and most volumes/concentrations are omitted.\"},\n  \"granularity_match\": {\"score\": 4, \"reasoning\": \"Similar overall decomposition with 8 steps vs 10, slightly coarser by combining primers and omitting water.\"},\n  \"summary\": \"The prediction captures the general PCR setup workflow in correct order but omits key reagent steps (primers, water, mixing) and has notable parameter discrepancies in volume, annealing temperature, and extension time.\"\n}"
+}

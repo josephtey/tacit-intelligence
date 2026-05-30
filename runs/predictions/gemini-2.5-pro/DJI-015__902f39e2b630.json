@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-015",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A pink liquid is aspirated from a microcentrifuge tube using a Transferpette S micropipette.\n2. The liquid is dispensed from the micropipette into a different microcentrifuge tube held in a white tube rack.\n3. The cap on the tube is closed and the contents are mixed by flicking the tube with a finger.\n4. The used pipette tip is ejected into a waste beaker.\n5. The microcentrifuge tube is placed into a mini-centrifuge, the lid is closed, and the sample is briefly centrifuged.\n6. The tube is removed from the centrifuge and placed back into the white tube rack.\n7. A person walks to a different lab area and retrieves a petri dish containing pink media, then returns to the original workbench.\n8. Using a second micropipette with a yellow tip, a liquid sample is aspirated from one of the microcentrifuge tubes in the rack.\n9. The liquid is dispensed from the micropipette onto the surface of the media in the petri dish.\n10. The petri dish is closed and gently swirled by hand to spread the liquid evenly across the media surface."
+}

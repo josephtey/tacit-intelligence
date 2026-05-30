@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_063",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "cc7b5445c512",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures retrieval, loading sample, cassette placement, and run start, but misses loading buffer mixing and DNA ladder loading steps."
+    },
+    "step_hallucination": {
+      "score": 4,
+      "reasoning": "The transfer to a strip of tubes (step 2) is spurious and not in the gold protocol."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "Captured steps are mostly in correct order, though cassette insertion is described after sample loading rather than before."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits nearly all gold parameters (volumes of DNA, loading buffer, ladder, mixing ratios) though equipment names are accurate."
+    },
+    "granularity_match": {
+      "score": 4,
+      "reasoning": "Similar number of steps (5 vs 6) at a comparable decomposition level, just with different emphasis."
+    }
+  },
+  "composite": 3.2,
+  "summary": "The prediction captures the general workflow of loading and running an E-gel with appropriate granularity, but omits critical quantitative details (volumes, buffer mixing, ladder loading) and includes one spurious transfer step.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures retrieval, loading sample, cassette placement, and run start, but misses loading buffer mixing and DNA ladder loading steps.\"},\n  \"step_hallucination\": {\"score\": 4, \"reasoning\": \"The transfer to a strip of tubes (step 2) is spurious and not in the gold protocol.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"Captured steps are mostly in correct order, though cassette insertion is described after sample loading rather than before.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits nearly all gold parameters (volumes of DNA, loading buffer, ladder, mixing ratios) though equipment names are accurate.\"},\n  \"granularity_match\": {\"score\": 4, \"reasoning\": \"Similar number of steps (5 vs 6) at a comparable decomposition level, just with different emphasis.\"},\n  \"summary\": \"The prediction captures the general workflow of loading and running an E-gel with appropriate granularity, but omits critical quantitative details (volumes, buffer mixing, ladder loading) and includes one spurious transfer step.\"\n}"
+}

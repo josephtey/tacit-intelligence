@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-093",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Dispense an unspecified liquid into an open microcentrifuge/PCR tube using an adjustable micropipette; keep tubes and reagents adjacent to a green ice bucket.\n\n2. Add an aliquot of liquid to a labeled microcentrifuge tube held on ice using a micropipette; no volume is visible.\n\n3. Place the labeled tube into a yellow tube rack beside the ice bucket.\n\n4. Add a second aliquot of liquid to the same labeled tube using a micropipette; no volume or reagent identity is visible.\n\n5. Return the tube to the yellow rack and close the tube cap.\n\n6. Place the capped tube into the Bio-Rad thermal cycler and close the heated lid; no cycling parameters are readable.\n\n7. Retrieve another chilled tube from the ice bucket and place it into the yellow rack.\n\n8. Add liquid to the chilled tube using an adjustable micropipette; no volume is visible.\n\n9. Return the prepared tube to the rack.\n\n10. Hold an agar plate and dispense liquid sample onto the agar surface using a micropipette; no volume or medium composition is visible.\n\n11. Spread the dispensed liquid across the agar surface with the pipette tip.\n\n12. Set the inoculated agar plate on the bench with its lid nearby."
+}

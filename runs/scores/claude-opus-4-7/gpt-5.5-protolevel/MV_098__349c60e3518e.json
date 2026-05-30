@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_098",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "349c60e3518e",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "The centrifugation and tube retrieval steps are loosely captured, but discarding flowthrough is missing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Workspace preparation, pipetting transfer, and notebook recording are spurious steps not in the gold."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The captured steps (load, centrifuge, retrieve) are in correct relative order."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits all key parameters (spin speed \u226510,000 rpm, 1 min duration, spin column, flowthrough disposal)."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Similar step count but with different decomposition, adding setup/recording steps while omitting specific actions."
+    }
+  },
+  "composite": 2.6,
+  "summary": "The prediction vaguely captures the centrifugation workflow but lacks all critical parameters and includes several fabricated generic lab steps. It reads as a generic bench observation rather than the specific spin-column protocol described in the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"The centrifugation and tube retrieval steps are loosely captured, but discarding flowthrough is missing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Workspace preparation, pipetting transfer, and notebook recording are spurious steps not in the gold.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The captured steps (load, centrifuge, retrieve) are in correct relative order.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits all key parameters (spin speed \u226510,000 rpm, 1 min duration, spin column, flowthrough disposal).\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Similar step count but with different decomposition, adding setup/recording steps while omitting specific actions.\"},\n  \"summary\": \"The prediction vaguely captures the centrifugation workflow but lacks all critical parameters and includes several fabricated generic lab steps. It reads as a generic bench observation rather than the specific spin-column protocol described in the gold.\"\n}"
+}

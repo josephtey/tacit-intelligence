@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_058",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Arrange the gel electrophoresis setup with an agarose gel submerged in running buffer inside the clear electrophoresis chamber, a labeled 96-well sample rack, a VWR Universal Pipet Tips box, an adjustable micropipette, and a waste beaker on the bench.\n\n2. Attach a disposable pipette tip from the VWR Universal Pipet Tips box to the adjustable micropipette.\n\n3. Pick up a labeled sample tube from the 96-well rack and hold it open near the micropipette tip.\n\n4. Aspirate the sample mixture from the labeled tube into the pipette tip using the adjustable micropipette.\n\n5. Position the pipette tip into a well of the agarose gel and dispense the sample mixture into the well.\n\n6. Remove the pipette tip from the gel well and discard the used tip into the waste beaker.\n\n7. Attach a fresh disposable pipette tip to the adjustable micropipette from the tip box.\n\n8. Pick up the next labeled sample tube from the 96-well rack and aspirate the sample mixture into the fresh pipette tip.\n\n9. Load the next sample mixture into an adjacent agarose gel well in the electrophoresis chamber.\n\n10. Repeat the tip change, sample aspiration, and gel-well loading process for the remaining labeled sample tubes, filling multiple adjacent wells with blue sample mixture.\n\n11. Close the electrophoresis chamber by placing the clear lid over the gel tank and aligning it with the electrode connections.\n\n12. Connect the electrophoresis chamber leads to the power supply using the red and black cables.\n\n13. Set the power supply to 110 V and start the electrophoresis run."
+}

@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-015",
+  "model": "gpt-5.5-agent",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "fd4c46c12409",
+  "protocol": "1. Set up a sterile work area with a tube rack containing microcentrifuge tubes labeled 1, 2, and 3, sterile pipette tips, and single-channel micropipettes.\n\n2. Using a micropipette fitted with a sterile small-volume tip from the 20 \u00b5L tip box, transfer the visible pink liquid sample/reagent into microcentrifuge tube 1 and close the tube.\n\n3. Using a fresh sterile tip, transfer the visible pink liquid sample/reagent into microcentrifuge tube 2 and close the tube.\n\n4. Using a fresh sterile tip, transfer the visible pink liquid sample/reagent into microcentrifuge tube 3 and close the tube.\n\n5. Place the prepared microcentrifuge tubes labeled 1, 2, and 3 upright in the tube rack.\n\n6. Retrieve a labeled Petri dish containing pink agar/medium and bring it back to the bench.\n\n7. Place the labeled Petri dish on the bench beside the rack of prepared microcentrifuge tubes.\n\n8. Using a yellow-banded single-channel micropipette with a sterile tip, pipette liquid from an open prepared microcentrifuge tube.\n\n9. Dispense the pipetted liquid onto the labeled agar plate.\n\n10. Close the Petri dish and gently rotate/swirl the closed plate on the bench to distribute the applied liquid across the agar surface."
+}

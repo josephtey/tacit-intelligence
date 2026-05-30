@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-093",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "3e36ff2eb686",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Only adding DNA to cells, ice incubation, and plating/spreading are loosely captured; heat shock, return to ice, mixing by flicking, and inverting plates are missing."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most predicted steps (thermal cycler handling, repeated tube transfers, rack manipulations) are spurious and don't correspond to the transformation protocol."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The rough sequence of pipetting, ice incubation, then plating is preserved, but many intervening steps are out of place or irrelevant."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No volumes, temperatures, durations, or reagent identities (DNA, E. coli, 42\u00b0C, 5 seconds, 50 \u03bcL, LB agar, antibiotic) are mentioned."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction has 15 micro-steps focused on object handling versus the gold's 7 procedural steps, making it substantially over-decomposed."
+    }
+  },
+  "composite": 1.6,
+  "summary": "The prediction describes generic lab manipulations observed visually rather than the heat-shock transformation protocol, missing key steps (heat shock, antibiotic selection) and lacking all critical parameters. It is largely a hallucinated, over-decomposed account that only loosely overlaps with the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Only adding DNA to cells, ice incubation, and plating/spreading are loosely captured; heat shock, return to ice, mixing by flicking, and inverting plates are missing.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most predicted steps (thermal cycler handling, repeated tube transfers, rack manipulations) are spurious and don't correspond to the transformation protocol.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The rough sequence of pipetting, ice incubation, then plating is preserved, but many intervening steps are out of place or irrelevant.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No volumes, temperatures, durations, or reagent identities (DNA, E. coli, 42\u00b0C, 5 seconds, 50 \u03bcL, LB agar, antibiotic) are mentioned.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction has 15 micro-steps focused on object handling versus the gold's 7 procedural steps, making it substantially over-decomposed.\"},\n  \"summary\": \"The prediction describes generic lab manipulations observed visually rather than the heat-shock transformation protocol, missing key steps (heat shock, antibiotic selection) and lacking all critical parameters. It is largely a hallucinated, over-decomposed account that only loosely overlaps with the gold.\"\n}"
+}

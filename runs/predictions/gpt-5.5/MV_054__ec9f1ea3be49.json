@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_054",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Put on blue nitrile gloves and opened a white container holding small PCR tubes at the laboratory bench.\n\n2. Placed a white 96-well tube rack on the bench for organizing small tubes.\n\n3. Labeled the caps of small PCR tubes with a black permanent laboratory marker.\n\n4. Kept labeled reagent tubes in a blue ice bucket filled with crushed ice.\n\n5. Moved to the gel electrophoresis station containing an agarose gel cassette, an electrophoresis chamber, and an MJ Research thermal controller nearby.\n\n6. Added running buffer to the electrophoresis chamber containing the agarose gel.\n\n7. Used a disposable transfer pipette to flush buffer into the gel wells and remove trapped air bubbles.\n\n8. Removed liquid from around the gel wells with the transfer pipette and kept the gel submerged in buffer.\n\n9. Opened a sterile Parafilm packet and removed a piece of Parafilm for sample preparation.\n\n10. Placed the Parafilm on the bench next to a small dish and the tube rack.\n\n11. Selected additional labeled small tubes from the ice bucket and placed them near the tube rack.\n\n12. Attached a disposable pipette tip to a white adjustable micropipette.\n\n13. Opened a labeled small tube held on ice.\n\n14. Inserted the micropipette tip into the opened tube and aspirated liquid reagent.\n\n15. Dispensed the liquid reagent into another small labeled tube.\n\n16. Repeated pipetting between small labeled tubes using the same adjustable micropipette and disposable tip.\n\n17. Closed the small tube after adding reagent.\n\n18. Placed the prepared small tube into the white tube rack near the centrifuge.\n\n19. Positioned the prepared tube near a benchtop microcentrifuge for brief spin-down.\n\n20. Returned the prepared and labeled tubes to the organized bench area with the ice bucket, tube rack, pipette tips, and electrophoresis setup."
+}

@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-093",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Aspirate liquid reagent from a small tube in the blue tube rack using an adjustable micropipette fitted with a disposable clear tip.\n\n2. Hold an open clear microtube/PCR tube near the green ice bucket and dispense the pipetted liquid into the tube.\n\n3. Place the filled microtube/PCR tube into the ice in the green ice bucket to keep it cold.\n\n4. Transfer a labeled clear microtube/PCR tube from the cold area into the yellow tube rack beside the ice bucket.\n\n5. Repeat the tube handling by picking up another clear microtube/PCR tube and positioning it in the yellow tube rack.\n\n6. Inspect the small tube by hand and close the cap before returning it to the rack area.\n\n7. Open the lid of the Bio-Rad thermal cycler on the bench.\n\n8. Close the thermal cycler lid after checking the instrument.\n\n9. Retrieve another chilled clear microtube/PCR tube from the green ice bucket.\n\n10. Dispense liquid into the retrieved microtube/PCR tube with the adjustable micropipette and disposable tip.\n\n11. Place the prepared microtube/PCR tube into the yellow tube rack.\n\n12. Pick up a Petri dish containing solid agar medium marked into sectors.\n\n13. Dispense liquid sample onto the agar surface in one marked sector using the micropipette.\n\n14. Spread the dispensed liquid across the agar sector with the pipette tip.\n\n15. Set the agar plate down on the bench after applying the sample."
+}

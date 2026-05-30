@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-130",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A liquid is added to a microcentrifuge tube in the purple rack using a micropipette.\n2. A liquid is added to a second microcentrifuge tube in the purple rack using a different, smaller-volume micropipette.\n3. A bacterial colony is collected from an agar plate by touching it with a fresh pipette tip.\n4. The pipette tip carrying the colony is inserted into a microcentrifuge tube and swirled in the liquid to create a cell suspension.\n5. The used pipette tip is ejected into the yellow tip box.\n6. A second bacterial colony is collected from the agar plate using a new pipette tip and is resuspended in a different microcentrifuge tube.\n7. The used pipette tip is ejected."
+}

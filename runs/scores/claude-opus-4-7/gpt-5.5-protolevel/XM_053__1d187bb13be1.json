@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_053",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "1d187bb13be1",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "The prediction vaguely captures labeling and some liquid transfers but misses the explicit water addition and serial dilution steps as distinct actions."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several steps describe tip-fitting, PCR strip handling, and rack placements that don't correspond to gold steps."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "Labeling comes first and transfers follow, but the sequence is muddled by hallucinated steps and unclear transfer order."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction explicitly notes no volume settings visible and omits all gold parameters (100 \u00b5L, four tubes numbered 1-4, water, sample)."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Eight steps vs six is similar in count, but the decomposition focuses on visual handling rather than the dilution logic."
+    }
+  },
+  "composite": 2.2,
+  "summary": "The prediction describes generic pipetting and tube-handling actions without identifying the serial dilution procedure, its volumes, or the labeled tube scheme. It captures the rough activity but lacks the key parameters and includes several extraneous handling steps.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"The prediction vaguely captures labeling and some liquid transfers but misses the explicit water addition and serial dilution steps as distinct actions.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several steps describe tip-fitting, PCR strip handling, and rack placements that don't correspond to gold steps.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"Labeling comes first and transfers follow, but the sequence is muddled by hallucinated steps and unclear transfer order.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction explicitly notes no volume settings visible and omits all gold parameters (100 \u00b5L, four tubes numbered 1-4, water, sample).\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Eight steps vs six is similar in count, but the decomposition focuses on visual handling rather than the dilution logic.\"},\n  \"summary\": \"The prediction describes generic pipetting and tube-handling actions without identifying the serial dilution procedure, its volumes, or the labeled tube scheme. It captures the rough activity but lacks the key parameters and includes several extraneous handling steps.\"\n}"
+}

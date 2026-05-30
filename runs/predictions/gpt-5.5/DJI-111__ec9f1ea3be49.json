@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-111",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Prepared the bench with an Invitrogen E-Gel EX agarose 1% cassette, an Invitrogen E-Gel Power Snap device, a micropipette, sterile pipette tips, labeled microcentrifuge tubes, a white tube rack, and an ice bucket containing chilled tubes.\n\n2. Attached a sterile pipette tip from the blue tip box to the adjustable micropipette.\n\n3. Retrieved a chilled labeled microcentrifuge tube from the ice bucket and opened the tube cap by hand.\n\n4. Inserted the pipette tip into the open microcentrifuge tube and transferred liquid sample into or out of the tube.\n\n5. Mixed the liquid in the microcentrifuge tube by pipetting up and down with the micropipette.\n\n6. Dispensed liquid from the pipette tip into the waste container or reservoir on the bench.\n\n7. Returned the labeled microcentrifuge tube to the ice bucket to keep the sample chilled.\n\n8. Attached a fresh sterile pipette tip to the micropipette and opened another labeled microcentrifuge tube from the white tube rack.\n\n9. Pipetted liquid from the labeled microcentrifuge tube and mixed the contents by repeated aspiration and dispensing.\n\n10. Loaded the prepared liquid sample into a well of the Invitrogen E-Gel EX agarose 1% cassette using the micropipette.\n\n11. Removed the used pipette tip and placed the micropipette aside on the bench.\n\n12. Picked up the loaded E-Gel EX cassette and opened the amber lid of the Invitrogen E-Gel Power Snap device.\n\n13. Inserted the loaded E-Gel EX cassette into the E-Gel Power Snap device with the wells aligned at the top.\n\n14. Closed the E-Gel Power Snap lid over the inserted gel cassette.\n\n15. Selected the E-Gel EX gel type on the E-Gel Power Snap touchscreen for the agarose 1% cassette.\n\n16. Set the electrophoresis run time to 10 min on the E-Gel Power Snap touchscreen.\n\n17. Started the E-Gel Power Snap run and allowed the countdown timer to begin, displaying approximately 09:59 remaining."
+}

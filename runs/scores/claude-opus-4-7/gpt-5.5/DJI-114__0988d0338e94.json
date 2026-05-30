@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-114",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "0988d0338e94",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Thawing on ice, loading samples, placing cassette in device, and starting the run are covered, but mixing with 6\u00d7 loading buffer and loading the DNA ladder are missing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many predicted steps are micro-decomposed pipetting/handling actions and bench setup details not in the gold, with several effectively spurious."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "Captured steps generally follow gold order, though placing the cassette in the power base appears after loading rather than before."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Volumes (10 \u00b5L DNA, 2 \u00b5L buffer, 10-20 \u00b5L load, 5 \u00b5L ladder) and the 6\u00d7 loading buffer are all omitted; only equipment names are provided."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "Prediction is substantially over-decomposed with 19 micro-steps versus the gold's 6 concise steps."
+    }
+  },
+  "composite": 2.4,
+  "summary": "The prediction captures the broad workflow of loading and running an E-gel but misses key reagent steps (loading buffer mix, ladder) and omits all numerical parameters. It is heavily over-decomposed into pipetting micro-actions, reducing fidelity to the concise gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Thawing on ice, loading samples, placing cassette in device, and starting the run are covered, but mixing with 6\u00d7 loading buffer and loading the DNA ladder are missing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many predicted steps are micro-decomposed pipetting/handling actions and bench setup details not in the gold, with several effectively spurious.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"Captured steps generally follow gold order, though placing the cassette in the power base appears after loading rather than before.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Volumes (10 \u00b5L DNA, 2 \u00b5L buffer, 10-20 \u00b5L load, 5 \u00b5L ladder) and the 6\u00d7 loading buffer are all omitted; only equipment names are provided.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"Prediction is substantially over-decomposed with 19 micro-steps versus the gold's 6 concise steps.\"},\n  \"summary\": \"The prediction captures the broad workflow of loading and running an E-gel but misses key reagent steps (loading buffer mix, ladder) and omits all numerical parameters. It is heavily over-decomposed into pipetting micro-actions, reducing fidelity to the concise gold protocol.\"\n}"
+}

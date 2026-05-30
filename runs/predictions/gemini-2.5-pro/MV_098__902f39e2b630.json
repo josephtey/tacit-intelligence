@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_098",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A microcentrifuge tube is vortexed to mix the contents.\n2. The tube is placed into a microcentrifuge.\n3. The lid of the microcentrifuge is closed and a brief spin is performed to collect the liquid at the bottom of the tube.\n4. The microcentrifuge lid is opened and the tube is removed."
+}

@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_091",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "f086d85f71da",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "The prediction captures loading tubes into an instrument (step 11) corresponding to centrifuge use, but omits retrieving tubes after centrifugation."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most of the predicted steps (labeling, pipetting, notebook recording, reorganizing) are fabricated relative to the gold's two centrifuge-focused steps."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The one matching step (loading into instrument) appears at the end, which is roughly consistent with the gold's first step."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "The prediction explicitly omits run time, speed, and temperature, missing the gold's 10,000 rpm and 10 min parameters."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction has 11 over-decomposed steps versus the gold's 2 concise steps."
+    }
+  },
+  "composite": 1.6,
+  "summary": "The prediction is largely fabricated bench setup and pipetting activity that does not match the gold's simple centrifugation protocol. Only the final step loosely corresponds to the centrifuge operation, and key parameters are missing.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"The prediction captures loading tubes into an instrument (step 11) corresponding to centrifuge use, but omits retrieving tubes after centrifugation.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most of the predicted steps (labeling, pipetting, notebook recording, reorganizing) are fabricated relative to the gold's two centrifuge-focused steps.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The one matching step (loading into instrument) appears at the end, which is roughly consistent with the gold's first step.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"The prediction explicitly omits run time, speed, and temperature, missing the gold's 10,000 rpm and 10 min parameters.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction has 11 over-decomposed steps versus the gold's 2 concise steps.\"},\n  \"summary\": \"The prediction is largely fabricated bench setup and pipetting activity that does not match the gold's simple centrifugation protocol. Only the final step loosely corresponds to the centrifuge operation, and key parameters are missing.\"\n}"
+}

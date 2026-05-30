@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-014",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "6626649e9223",
+  "scores": {
+    "step_coverage": {
+      "score": 0,
+      "reasoning": "The prediction is empty and captures none of the gold steps."
+    },
+    "step_hallucination": {
+      "score": 0,
+      "reasoning": "There is no prediction content to evaluate, rendering it incoherent."
+    },
+    "ordering": {
+      "score": 0,
+      "reasoning": "No steps are present, so ordering cannot be established."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No parameters are provided in the prediction."
+    },
+    "granularity_match": {
+      "score": 0,
+      "reasoning": "The empty prediction has no decomposition to compare."
+    }
+  },
+  "composite": 0.0,
+  "summary": "The model-generated protocol is empty and therefore fails on every dimension relative to the gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 0, \"reasoning\": \"The prediction is empty and captures none of the gold steps.\"},\n  \"step_hallucination\": {\"score\": 0, \"reasoning\": \"There is no prediction content to evaluate, rendering it incoherent.\"},\n  \"ordering\": {\"score\": 0, \"reasoning\": \"No steps are present, so ordering cannot be established.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No parameters are provided in the prediction.\"},\n  \"granularity_match\": {\"score\": 0, \"reasoning\": \"The empty prediction has no decomposition to compare.\"},\n  \"summary\": \"The model-generated protocol is empty and therefore fails on every dimension relative to the gold protocol.\"\n}"
+}

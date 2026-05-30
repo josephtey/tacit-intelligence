@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_059",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "1a99e8e5d6be",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Sample loading is captured but the E-gel cassette/power base setup, DNA ladder loading, and pressing Run are missing or unclear."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Many steps are fabricated (glove donning, bench wiping, buffer tanks, waste disposal, reconnecting leads) and the protocol describes a standard agarose gel rather than an E-gel."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The general order of setup then loading is preserved, but the run step is missing and extra steps disrupt the sequence."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Volumes (10 \u00b5L), the Invitrogen E-gel cassette, power base, DNA ladder, and Run button are all omitted or replaced with generic agarose gel terminology."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction has 13 micro-steps versus the gold's 4, making it substantially over-decomposed."
+    }
+  },
+  "composite": 1.8,
+  "summary": "The prediction describes a generic agarose gel electrophoresis workflow rather than the specific E-gel cassette protocol, missing key parameters and adding many fabricated steps. Only the sample loading action loosely corresponds to the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Sample loading is captured but the E-gel cassette/power base setup, DNA ladder loading, and pressing Run are missing or unclear.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Many steps are fabricated (glove donning, bench wiping, buffer tanks, waste disposal, reconnecting leads) and the protocol describes a standard agarose gel rather than an E-gel.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The general order of setup then loading is preserved, but the run step is missing and extra steps disrupt the sequence.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Volumes (10 \u00b5L), the Invitrogen E-gel cassette, power base, DNA ladder, and Run button are all omitted or replaced with generic agarose gel terminology.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction has 13 micro-steps versus the gold's 4, making it substantially over-decomposed.\"},\n  \"summary\": \"The prediction describes a generic agarose gel electrophoresis workflow rather than the specific E-gel cassette protocol, missing key parameters and adding many fabricated steps. Only the sample loading action loosely corresponds to the gold.\"\n}"
+}

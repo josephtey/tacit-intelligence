@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-115",
+  "model": "gpt-5.5-agent",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "fd4c46c12409",
+  "protocol": "1. Keep the microcentrifuge tubes labeled DNA and ladder on ice next to an Invitrogen E-Gel EX 1% agarose gel cassette, and prepare a single-channel pipette with fresh filtered tips.\n\n2. Using a fresh pipette tip, transfer an aliquot from the ladder tube into one well of the E-Gel EX 1% agarose gel cassette.\n\n3. Using fresh pipette tips, transfer aliquots from the DNA sample tube(s) kept on ice into separate wells of the E-Gel EX 1% agarose gel cassette.\n\n4. Insert the loaded E-Gel EX 1% agarose gel cassette into the open Invitrogen E-Gel Power Snap electrophoresis unit and seat it fully in the cassette bay.\n\n5. Close the E-Gel Power Snap lid and select the E-Gel EX 1\u20132% gel run program.\n\n6. Start the electrophoresis run on the E-Gel Power Snap for 10:00 min."
+}

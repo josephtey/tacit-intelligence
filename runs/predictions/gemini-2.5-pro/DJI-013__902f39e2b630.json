@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-013",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1.  Place several microcentrifuge tubes into a green tube rack and open their caps.\n2.  Using a Transferpette S micropipette, transfer a liquid into the open microcentrifuge tubes.\n3.  Using a second, smaller-volume micropipette, transfer another liquid into the microcentrifuge tubes.\n4.  Close the caps of the microcentrifuge tubes.\n5.  Walk to another area of the laboratory and retrieve a petri dish containing a pink liquid medium.\n6.  Return to the original lab bench with the petri dish.\n7.  Using a Transferpette S micropipette, aspirate the liquid contents from one of the prepared microcentrifuge tubes.\n8.  Dispense the liquid from the micropipette onto the surface of the medium in the petri dish.\n9.  Close the lid of the petri dish and gently swirl it to distribute the liquid evenly across the surface."
+}

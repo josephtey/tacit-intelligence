@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_057",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A liquid is dispensed from a micropipette into a microcentrifuge tube containing a sample within a teal tube rack.\n\n2. A purple-colored sample is drawn from a microcentrifuge tube using a LabServ 0.5-10 \u00b5L micropipette.\n\n3. The tip of the micropipette is inserted into a well of an agarose gel, and the purple sample is carefully dispensed into the well.\n\n4. A second, reddish-brown colored sample is drawn from a different microcentrifuge tube using the same micropipette with a new tip.\n\n5. The second sample is loaded into an adjacent well of the agarose gel.\n\n6. The used pipette tip is ejected into a red biohazard waste container.\n\n7. The lid is placed onto the gel electrophoresis tank, ensuring proper orientation.\n\n8. The black (negative) and red (positive) electrical leads are connected from the power supply to the corresponding terminals on the lid of the gel electrophoresis tank.\n\n9. The power supply is turned on, and the voltage is set to 114 V to start the electrophoresis run."
+}

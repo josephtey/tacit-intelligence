@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_057",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "b860bb1e1772",
+  "scores": {
+    "step_coverage": {
+      "score": 4,
+      "reasoning": "Loading sample, loading ladder, and starting electrophoresis are covered, but placing the E-gel cassette into the power base is not clearly captured."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several spurious steps appear (dispensing into tube, ejecting tip, placing lid, connecting leads) that don't match the gold E-gel workflow."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps (load sample, load ladder, run) appear in the correct relative sequence."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "Volumes (10 \u00b5L) are omitted, the E-gel power base is described as a generic gel tank with leads and 114 V, contradicting the gold's E-gel system."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Prediction has 9 micro-steps versus gold's 4, making it noticeably more decomposed but still interpretable."
+    }
+  },
+  "composite": 3.2,
+  "summary": "The prediction captures the core loading and run steps in correct order but misidentifies the apparatus as a traditional gel tank rather than an E-gel system, omits volumes, and adds several fabricated steps.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 4, \"reasoning\": \"Loading sample, loading ladder, and starting electrophoresis are covered, but placing the E-gel cassette into the power base is not clearly captured.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several spurious steps appear (dispensing into tube, ejecting tip, placing lid, connecting leads) that don't match the gold E-gel workflow.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps (load sample, load ladder, run) appear in the correct relative sequence.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"Volumes (10 \u00b5L) are omitted, the E-gel power base is described as a generic gel tank with leads and 114 V, contradicting the gold's E-gel system.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Prediction has 9 micro-steps versus gold's 4, making it noticeably more decomposed but still interpretable.\"},\n  \"summary\": \"The prediction captures the core loading and run steps in correct order but misidentifies the apparatus as a traditional gel tank rather than an E-gel system, omits volumes, and adds several fabricated steps.\"\n}"
+}

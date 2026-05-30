@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-109",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "5c313440eefe",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures setup, reagent addition (generically), centrifugation, placing in thermocycler, and running program, but misses thawing, individual reagent additions, and mixing by flicking."
+    },
+    "step_hallucination": {
+      "score": 4,
+      "reasoning": "Most steps map to gold steps, though some specific details (PHANTA program, 12\u00b0C hold, 20 \u00b5L) are extraneous additions not in the gold."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the same sequence as the gold protocol."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Almost all gold parameters (volumes, concentrations, temperatures, cycle counts, times) are missing or contradicted (e.g., 57\u00b0C vs 55\u00b0C, 20 \u00b5L vs 25 \u00b5L, no 3 min denaturation)."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Prediction collapses individual reagent additions into one generic step, making it coarser than the gold but still interpretable."
+    }
+  },
+  "composite": 3.2,
+  "summary": "The prediction captures the overall PCR setup workflow in correct order but omits reagent-level detail and contains substantially different or missing numerical parameters. It reads as a vague observational description rather than a faithful reproduction of the gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures setup, reagent addition (generically), centrifugation, placing in thermocycler, and running program, but misses thawing, individual reagent additions, and mixing by flicking.\"},\n  \"step_hallucination\": {\"score\": 4, \"reasoning\": \"Most steps map to gold steps, though some specific details (PHANTA program, 12\u00b0C hold, 20 \u00b5L) are extraneous additions not in the gold.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the same sequence as the gold protocol.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Almost all gold parameters (volumes, concentrations, temperatures, cycle counts, times) are missing or contradicted (e.g., 57\u00b0C vs 55\u00b0C, 20 \u00b5L vs 25 \u00b5L, no 3 min denaturation).\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Prediction collapses individual reagent additions into one generic step, making it coarser than the gold but still interpretable.\"},\n  \"summary\": \"The prediction captures the overall PCR setup workflow in correct order but omits reagent-level detail and contains substantially different or missing numerical parameters. It reads as a vague observational description rather than a faithful reproduction of the gold protocol.\"\n}"
+}

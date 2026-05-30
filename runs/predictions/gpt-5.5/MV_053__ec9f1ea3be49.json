@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_053",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Put on blue nitrile gloves and an orange insulated glove before handling laboratory materials at the bench.\n\n2. Open the cold-storage unit and remove a black sample rack or container using the orange insulated glove.\n\n3. Transfer frozen sample containers from cold storage to an ice bucket filled with crushed ice.\n\n4. Select labeled microcentrifuge tubes from a tube rack and handle them with gloved hands while keeping the remaining tubes organized in the rack.\n\n5. Place the ice bucket, open lab notebook, and selected tubes on the bench for sample preparation.\n\n6. Set up a clear gel electrophoresis chamber on a green bench mat with paper towels underneath.\n\n7. Fill or maintain the electrophoresis chamber with liquid running buffer surrounding the agarose gel.\n\n8. Position the agarose gel in the electrophoresis chamber with the wells accessible for loading.\n\n9. Hold a labeled microcentrifuge tube and use a pipette with a disposable tip to draw up sample liquid.\n\n10. Insert the pipette tip into an agarose gel well and dispense the sample into the well.\n\n11. Repeat gel loading with the pipette while keeping the electrophoresis chamber on the bench and the buffer covering the gel.\n\n12. Keep sample tubes on ice in the ice bucket between handling steps.\n\n13. Record experiment information in the lab notebook beside the electrophoresis setup.\n\n14. Retrieve a labeled storage box from a refrigerator or freezer for additional reagents or samples."
+}

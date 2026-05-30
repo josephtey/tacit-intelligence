@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-092",
+  "model": "gpt-5.5-agent",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "fd4c46c12409",
+  "protocol": "1. Keep the microcentrifuge/PCR tubes, tube racks, pipettes, and reagents organized on the bench with the active tubes maintained on ice in the green ice bucket.\n\n2. Add a clear liquid reagent to a labeled PCR tube using a single-channel pipette fitted with a disposable tip.\n\n3. Pipette-mix the contents of the PCR tube, close the tube cap, and return the tube to the tube rack or ice.\n\n4. Open the Bio-Rad T100 Thermal Cycler and load the capped PCR tube into the block; close the heated lid to run or hold the sample on the displayed program.\n\n5. Using a single-channel pipette, transfer liquid from a tube in the pink tube rack into a labeled tube in the orange rack, then keep the tube on ice.\n\n6. Retrieve an agar Petri dish and hold the lid partially open while keeping the agar surface exposed only during pipetting.\n\n7. Pipette a liquid sample onto the surface of the agar plate using a single-channel pipette.\n\n8. Close the Petri dish after sample application and place it back on the bench."
+}

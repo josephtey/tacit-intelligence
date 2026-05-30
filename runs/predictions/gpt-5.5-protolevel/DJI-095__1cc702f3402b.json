@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-095",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Arrange a green ice bucket filled with crushed ice, orange and yellow tube racks, clear PCR tubes, adjustable micropipettes, and a Bio-Rad CFX96 Touch real-time PCR instrument on the bench.\n\n2. Pipette clear liquid into a small clear PCR tube while holding the tube near the ice bucket.\n\n3. Place the filled PCR tube into the yellow tube rack beside the ice bucket.\n\n4. Pipette clear liquid into an additional small clear PCR tube and place the filled tube into the yellow tube rack.\n\n5. Open the Bio-Rad CFX96 Touch real-time PCR instrument lid and load the prepared PCR tube into the instrument block.\n\n6. Close the Bio-Rad CFX96 Touch instrument lid to begin or prepare the programmed run; no cycling parameters are visible.\n\n7. Retrieve a chilled small clear tube from the ice bucket and open it at the bench.\n\n8. Using a yellow-button adjustable micropipette, pipette clear liquid into the opened chilled tube.\n\n9. Pick up a clear Petri dish containing pale translucent medium and use the pipette tip to contact or dispense liquid onto the medium surface.\n\n10. Return the Petri dish to the bench and set the micropipette down next to the ice bucket."
+}

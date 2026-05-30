@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_070",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "93cfe52d0f75",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Roughly half the gold steps are captured (pipetting reagents, placing in thermocycler, starting program), but thawing, mixing/spinning, and explicit program details are missing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Multiple steps reference 96-well plates which are not part of the PCR tube setup, and lid open/close steps are extraneous fabrications."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The captured steps follow roughly the correct sequence: reagent addition, then thermocycler loading, then program start."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No volumes, concentrations, temperatures, times, or reagent identities are provided, omitting nearly all gold parameters."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Step count is similar but decomposition differs\u2014it over-decomposes thermocycler operation while collapsing reagent additions into vague pipetting steps."
+    }
+  },
+  "composite": 2.2,
+  "summary": "The prediction loosely mirrors the PCR setup workflow but is generic, omits all critical parameters, and introduces fabricated 96-well plate steps. It captures the general arc but lacks the specificity and accuracy of the gold protocol.",
+  "raw": "```json\n{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Roughly half the gold steps are captured (pipetting reagents, placing in thermocycler, starting program), but thawing, mixing/spinning, and explicit program details are missing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Multiple steps reference 96-well plates which are not part of the PCR tube setup, and lid open/close steps are extraneous fabrications.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The captured steps follow roughly the correct sequence: reagent addition, then thermocycler loading, then program start.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No volumes, concentrations, temperatures, times, or reagent identities are provided, omitting nearly all gold parameters.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Step count is similar but decomposition differs\u2014it over-decomposes thermocycler operation while collapsing reagent additions into vague pipetting steps.\"},\n  \"summary\": \"The prediction loosely mirrors the PCR setup workflow but is generic, omits all critical parameters, and introduces fabricated 96-well plate steps. It captures the general arc but lacks the specificity and accuracy of the gold protocol.\"\n}\n```"
+}

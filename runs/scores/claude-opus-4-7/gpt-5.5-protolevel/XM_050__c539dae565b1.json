@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_050",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "c539dae565b1",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "The prediction captures tube setup, addition of reagents (collapsed into one step), centrifugation, and thermocycler loading, but misses the flicking-to-mix step and doesn't distinguish individual reagent additions."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Several added details (arranging racks, closing caps, closing heated lid) are spurious or off-topic relative to the gold steps."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the same overall sequence as the gold protocol."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "Tube labels are partially wrong (K instead of M/F; missing F), and reagent identities (Master Mix, primers, template) are omitted, though tube size and thermocycler are correct."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Similar number of steps but decomposition differs\u2014reagent additions are collapsed into one generic transfer while extraneous setup/lid steps are added."
+    }
+  },
+  "composite": 3.2,
+  "summary": "The prediction roughly follows the gold PCR setup workflow in correct order but collapses the four distinct reagent additions into a single generic transfer and mislabels tubes, while introducing several incidental steps not in the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"The prediction captures tube setup, addition of reagents (collapsed into one step), centrifugation, and thermocycler loading, but misses the flicking-to-mix step and doesn't distinguish individual reagent additions.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Several added details (arranging racks, closing caps, closing heated lid) are spurious or off-topic relative to the gold steps.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the same overall sequence as the gold protocol.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"Tube labels are partially wrong (K instead of M/F; missing F), and reagent identities (Master Mix, primers, template) are omitted, though tube size and thermocycler are correct.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Similar number of steps but decomposition differs\u2014reagent additions are collapsed into one generic transfer while extraneous setup/lid steps are added.\"},\n  \"summary\": \"The prediction roughly follows the gold PCR setup workflow in correct order but collapses the four distinct reagent additions into a single generic transfer and mislabels tubes, while introducing several incidental steps not in the gold.\"\n}"
+}

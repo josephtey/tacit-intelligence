@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-039",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "6b437cd45190",
+  "scores": {
+    "step_coverage": {
+      "score": 1,
+      "reasoning": "Only the reagent-addition steps are loosely captured; mixing, incubation, addition to 293T dish, and rocking are all missing."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most steps (PCR tube arrangement, cap closing, Petri dish positioning) are fabricated and do not correspond to the gold transfection protocol."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The reagent additions appear in sequence, but the surrounding fabricated steps disrupt the overall ordering."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "Gold parameters (1.5 mL EP tube, 20 min RT incubation, 10 cm dish, 70-80% confluency, 293T cells) are entirely absent and replaced with unrelated details."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is over-decomposed into 14 micro-steps versus the gold's 7, with excessive focus on physical pipetting motions."
+    }
+  },
+  "composite": 1.4,
+  "summary": "The prediction describes generic pipetting actions into PCR tubes rather than the transfection mixture preparation and addition to 293T cells. It misses key steps and parameters while introducing many fabricated actions.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 1, \"reasoning\": \"Only the reagent-addition steps are loosely captured; mixing, incubation, addition to 293T dish, and rocking are all missing.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most steps (PCR tube arrangement, cap closing, Petri dish positioning) are fabricated and do not correspond to the gold transfection protocol.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The reagent additions appear in sequence, but the surrounding fabricated steps disrupt the overall ordering.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"Gold parameters (1.5 mL EP tube, 20 min RT incubation, 10 cm dish, 70-80% confluency, 293T cells) are entirely absent and replaced with unrelated details.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is over-decomposed into 14 micro-steps versus the gold's 7, with excessive focus on physical pipetting motions.\"},\n  \"summary\": \"The prediction describes generic pipetting actions into PCR tubes rather than the transfection mixture preparation and addition to 293T cells. It misses key steps and parameters while introducing many fabricated actions.\"\n}"
+}

@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-091",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Set up the bench with a green ice bucket filled with ice, an orange tube rack, a labeled clear microtube, adjustable micropipettes, sterile pipette tips, and a Bio-Rad T100 thermal cycler.\n\n2. Attach a sterile pipette tip to an adjustable micropipette and hold an open clear microtube over the orange tube rack.\n\n3. Dispense liquid from the micropipette into the open clear microtube, then place the tube upright in the orange tube rack.\n\n4. Pick up the labeled clear microtube from the orange rack and close the cap by pressing it shut with gloved fingers.\n\n5. Mix the contents of the closed microtube by manually flicking or tapping the tube while holding it above the ice bucket.\n\n6. Check the Bio-Rad T100 thermal cycler screen and confirm the instrument is running with a displayed temperature of 40\u00b0C.\n\n7. Retrieve a sterile Petri dish containing solid agar medium from the bench and hold it in one gloved hand.\n\n8. Attach a sterile pipette tip to the micropipette and bring the tip into contact with the agar surface inside the Petri dish.\n\n9. Dispense liquid sample onto the agar surface using the micropipette.\n\n10. Spread the dispensed liquid across the agar surface by moving the pipette tip over the plate in multiple strokes.\n\n11. Close the Petri dish lid after spreading the liquid sample on the agar.\n\n12. Carry the closed agar plate away from the bench through the laboratory hallway.\n\n13. Open a Thermo Scientific incubator door while holding the closed agar plate.\n\n14. Place the closed agar plate onto the shelf inside the incubator.\n\n15. Close and latch the incubator door to begin incubation."
+}

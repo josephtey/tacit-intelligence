@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-039",
+  "model": "gpt-5.5-agent",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "fd4c46c12409",
+  "protocol": "1. Place the labeled snap-cap microcentrifuge tubes upright in the tube rack and open the tube caps.\n\n2. Fit a single-channel micropipette with a 20 \u00b5L pipette tip from the pink tip rack.\n\n3. Using the micropipette, transfer an aliquot of the pink liquid from the petri dish into each labeled open microcentrifuge tube, changing/discarding the 20 \u00b5L tip between transfers.\n\n4. Discard used pipette tips into the plastic waste beaker.\n\n5. Close the caps on all filled microcentrifuge tubes and leave the tubes seated in the rack."
+}

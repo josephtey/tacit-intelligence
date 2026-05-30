@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_058",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "801644951d1c",
+  "scores": {
+    "step_coverage": {
+      "score": 5,
+      "reasoning": "All three gold steps (loading samples, placing lid, setting power to 110V) are present in the prediction."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many extra steps about pipette tips, aspiration, and cable connections are added that are not in the gold protocol."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured gold steps appear in the correct relative sequence."
+    },
+    "parameter_accuracy": {
+      "score": 5,
+      "reasoning": "The 110V parameter matches the gold and no contradicting values are introduced."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction has 13 steps versus the gold's 3, representing substantial over-decomposition."
+    }
+  },
+  "composite": 3.8,
+  "summary": "The prediction covers all gold steps with accurate parameters and correct ordering, but it is heavily over-decomposed with numerous added pipetting sub-steps that constitute hallucination relative to the concise gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 5, \"reasoning\": \"All three gold steps (loading samples, placing lid, setting power to 110V) are present in the prediction.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many extra steps about pipette tips, aspiration, and cable connections are added that are not in the gold protocol.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured gold steps appear in the correct relative sequence.\"},\n  \"parameter_accuracy\": {\"score\": 5, \"reasoning\": \"The 110V parameter matches the gold and no contradicting values are introduced.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction has 13 steps versus the gold's 3, representing substantial over-decomposition.\"},\n  \"summary\": \"The prediction covers all gold steps with accurate parameters and correct ordering, but it is heavily over-decomposed with numerous added pipetting sub-steps that constitute hallucination relative to the concise gold protocol.\"\n}"
+}

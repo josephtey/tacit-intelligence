@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-037",
+  "generator": "gpt-5.5-agent",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "1579aae7e304",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "The prediction captures adding three reagents and a mixing step, but misses the incubation, dropwise addition to cells, and rocking steps."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several predicted steps (arranging tubes, fitting pipette tip, returning tubes to rack, placing dish) are setup/observational rather than corresponding to gold steps."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The captured reagent additions and mixing follow the correct relative sequence."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Gold parameters like 1.5 mL EP tube, 20 min RT incubation, 10 cm dish, 293T cells at 70-80% confluency are mostly omitted, and the 20 \u00b5L tip is not specified in the gold."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "The prediction has a similar number of steps but focuses on micro-actions like tip changes rather than the procedural steps in gold."
+    }
+  },
+  "composite": 2.4,
+  "summary": "The prediction captures the early reagent-addition phase but misses the critical incubation, transfection onto 293T cells, and rocking steps, while adding observational setup steps. Parameter fidelity is poor as key biological context (cell line, dish, incubation time) is absent.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"The prediction captures adding three reagents and a mixing step, but misses the incubation, dropwise addition to cells, and rocking steps.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several predicted steps (arranging tubes, fitting pipette tip, returning tubes to rack, placing dish) are setup/observational rather than corresponding to gold steps.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The captured reagent additions and mixing follow the correct relative sequence.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Gold parameters like 1.5 mL EP tube, 20 min RT incubation, 10 cm dish, 293T cells at 70-80% confluency are mostly omitted, and the 20 \u00b5L tip is not specified in the gold.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"The prediction has a similar number of steps but focuses on micro-actions like tip changes rather than the procedural steps in gold.\"},\n  \"summary\": \"The prediction captures the early reagent-addition phase but misses the critical incubation, transfection onto 293T cells, and rocking steps, while adding observational setup steps. Parameter fidelity is poor as key biological context (cell line, dish, incubation time) is absent.\"\n}"
+}

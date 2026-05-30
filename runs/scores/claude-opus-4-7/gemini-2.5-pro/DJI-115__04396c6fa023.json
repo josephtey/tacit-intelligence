@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-115",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "04396c6fa023",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Prediction captures loading samples, inserting cassette, and running electrophoresis but misses thawing, mixing with loading buffer, and DNA ladder loading."
+    },
+    "step_hallucination": {
+      "score": 4,
+      "reasoning": "Closing the lid is an extra step not in gold, but otherwise predicted steps align with the procedure."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "Prediction loads samples before inserting the cassette into the power base, which is reversed compared to the gold order."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "Prediction omits key gold parameters (10 \u00b5L DNA, 2 \u00b5L loading buffer, 5 \u00b5L ladder, 10\u201320 \u00b5L load volume) though it correctly names the E-Gel device."
+    },
+    "granularity_match": {
+      "score": 4,
+      "reasoning": "Both protocols have similar step counts (6-7) and comparable decomposition levels."
+    }
+  },
+  "composite": 3.2,
+  "summary": "The prediction captures the general E-gel loading and running workflow but misses the sample preparation and ladder loading steps and lacks specific volume parameters. Ordering is partially incorrect since loading occurs before cassette insertion in the prediction.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Prediction captures loading samples, inserting cassette, and running electrophoresis but misses thawing, mixing with loading buffer, and DNA ladder loading.\"},\n  \"step_hallucination\": {\"score\": 4, \"reasoning\": \"Closing the lid is an extra step not in gold, but otherwise predicted steps align with the procedure.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"Prediction loads samples before inserting the cassette into the power base, which is reversed compared to the gold order.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"Prediction omits key gold parameters (10 \u00b5L DNA, 2 \u00b5L loading buffer, 5 \u00b5L ladder, 10\u201320 \u00b5L load volume) though it correctly names the E-Gel device.\"},\n  \"granularity_match\": {\"score\": 4, \"reasoning\": \"Both protocols have similar step counts (6-7) and comparable decomposition levels.\"},\n  \"summary\": \"The prediction captures the general E-gel loading and running workflow but misses the sample preparation and ladder loading steps and lacks specific volume parameters. Ordering is partially incorrect since loading occurs before cassette insertion in the prediction.\"\n}"
+}

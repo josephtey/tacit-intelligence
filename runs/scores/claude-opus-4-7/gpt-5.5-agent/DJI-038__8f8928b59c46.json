@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-038",
+  "generator": "gpt-5.5-agent",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "8f8928b59c46",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Only the reagent-adding steps into tubes are loosely captured; mixing, incubation, dropwise addition to 293T cells, and rocking are all missing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several steps about loading tips, refilling, and opening a petri dish are spurious additions not in the gold."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The captured reagent-addition steps appear in roughly correct sequence relative to the gold."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Gold parameters (20 min incubation, room temperature, 10 cm dish, 70-80% confluency, 293T cells) are all omitted, and reagents are vaguely described."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "The prediction has a similar step count but over-decomposes pipetting actions while omitting key procedural steps."
+    }
+  },
+  "composite": 2.4,
+  "summary": "The prediction partially captures the initial reagent-aliquoting phase but misses the core transfection steps (mixing, incubation, addition to cells, rocking) and omits all key parameters. It also introduces fabricated micro-steps about pipette tip handling, reducing overall fidelity.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Only the reagent-adding steps into tubes are loosely captured; mixing, incubation, dropwise addition to 293T cells, and rocking are all missing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several steps about loading tips, refilling, and opening a petri dish are spurious additions not in the gold.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The captured reagent-addition steps appear in roughly correct sequence relative to the gold.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Gold parameters (20 min incubation, room temperature, 10 cm dish, 70-80% confluency, 293T cells) are all omitted, and reagents are vaguely described.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"The prediction has a similar step count but over-decomposes pipetting actions while omitting key procedural steps.\"},\n  \"summary\": \"The prediction partially captures the initial reagent-aliquoting phase but misses the core transfection steps (mixing, incubation, addition to cells, rocking) and omits all key parameters. It also introduces fabricated micro-steps about pipette tip handling, reducing overall fidelity.\"\n}"
+}

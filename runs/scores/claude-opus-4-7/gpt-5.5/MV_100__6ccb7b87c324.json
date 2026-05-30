@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_100",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "6ccb7b87c324",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Bench organization is captured and tube retrieval is loosely implied, but the discard/labeling step is missing."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most predicted steps (centrifuge loading, operation, lid handling, reagent retrieval) are fabricated and not in the gold."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The captured steps roughly follow the gold sequence (organize bench, then handle tubes from centrifuge area)."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "Some equipment names match (rack, centrifuge) but the spin column and collection tube terminology and labeling action are absent."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "Prediction has 12 steps versus gold's 3, substantially over-decomposed."
+    }
+  },
+  "composite": 2.2,
+  "summary": "The prediction over-decomposes the procedure and introduces many fabricated centrifugation steps while missing the key discard and labeling step. Overall fidelity to the gold protocol is low.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Bench organization is captured and tube retrieval is loosely implied, but the discard/labeling step is missing.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most predicted steps (centrifuge loading, operation, lid handling, reagent retrieval) are fabricated and not in the gold.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The captured steps roughly follow the gold sequence (organize bench, then handle tubes from centrifuge area).\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"Some equipment names match (rack, centrifuge) but the spin column and collection tube terminology and labeling action are absent.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"Prediction has 12 steps versus gold's 3, substantially over-decomposed.\"},\n  \"summary\": \"The prediction over-decomposes the procedure and introduces many fabricated centrifugation steps while missing the key discard and labeling step. Overall fidelity to the gold protocol is low.\"\n}"
+}

@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_099",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "46b41793a5cd",
+  "scores": {
+    "step_coverage": {
+      "score": 0,
+      "reasoning": "None of the gold steps (spin column setup, Buffer EB application, centrifuge loading, centrifugation) appear in the prediction."
+    },
+    "step_hallucination": {
+      "score": 0,
+      "reasoning": "All predicted steps (vortexing, tip box placement, tube rack) are fabricated relative to the gold."
+    },
+    "ordering": {
+      "score": 0,
+      "reasoning": "No gold steps are captured, so ordering cannot be preserved."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "None of the gold parameters (Buffer EB, 0.050 mL, \u226510,000 rpm, 1 min, spin column) are mentioned."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "Step count is similar but the decomposition describes an entirely different and unrelated procedure."
+    }
+  },
+  "composite": 0.4,
+  "summary": "The prediction does not correspond to the gold elution protocol at all, describing unrelated vortexing and bench-organization actions. It fails on coverage, hallucination, ordering, and parameter accuracy.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 0, \"reasoning\": \"None of the gold steps (spin column setup, Buffer EB application, centrifuge loading, centrifugation) appear in the prediction.\"},\n  \"step_hallucination\": {\"score\": 0, \"reasoning\": \"All predicted steps (vortexing, tip box placement, tube rack) are fabricated relative to the gold.\"},\n  \"ordering\": {\"score\": 0, \"reasoning\": \"No gold steps are captured, so ordering cannot be preserved.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"None of the gold parameters (Buffer EB, 0.050 mL, \u226510,000 rpm, 1 min, spin column) are mentioned.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"Step count is similar but the decomposition describes an entirely different and unrelated procedure.\"},\n  \"summary\": \"The prediction does not correspond to the gold elution protocol at all, describing unrelated vortexing and bench-organization actions. It fails on coverage, hallucination, ordering, and parameter accuracy.\"\n}"
+}

@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-039",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "4da813e872de",
+  "scores": {
+    "step_coverage": {
+      "score": 1,
+      "reasoning": "Only the reagent-addition steps are loosely captured; mixing, incubation, addition to 293T cells, and rocking are all missing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many predicted steps describe tip changes and tube adjustments that are not in the gold, and the use of an 8-tube strip contradicts the 1.5 mL EP tube setup."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The sequence of adding reagents one after another is preserved, but later gold steps are absent so ordering can only be partially assessed."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction uses wrong vessel (8-tube strip vs 1.5 mL EP tube), wrong volume (20 \u00b5L not specified in gold), and omits the 20 min RT incubation, 10 cm dish, and 70-80% confluency."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction over-decomposes pipetting actions (tip changes, ejections) while omitting key procedural steps, yielding a mismatched granularity."
+    }
+  },
+  "composite": 1.8,
+  "summary": "The prediction captures only the reagent-addition portion of the transfection setup and misrepresents the vessel, while missing mixing, incubation, cell addition, and rocking steps. Overall fidelity to the gold protocol is low.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 1, \"reasoning\": \"Only the reagent-addition steps are loosely captured; mixing, incubation, addition to 293T cells, and rocking are all missing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many predicted steps describe tip changes and tube adjustments that are not in the gold, and the use of an 8-tube strip contradicts the 1.5 mL EP tube setup.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The sequence of adding reagents one after another is preserved, but later gold steps are absent so ordering can only be partially assessed.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction uses wrong vessel (8-tube strip vs 1.5 mL EP tube), wrong volume (20 \u00b5L not specified in gold), and omits the 20 min RT incubation, 10 cm dish, and 70-80% confluency.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction over-decomposes pipetting actions (tip changes, ejections) while omitting key procedural steps, yielding a mismatched granularity.\"},\n  \"summary\": \"The prediction captures only the reagent-addition portion of the transfection setup and misrepresents the vessel, while missing mixing, incubation, cell addition, and rocking steps. Overall fidelity to the gold protocol is low.\"\n}"
+}

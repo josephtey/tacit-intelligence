@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-093",
+  "generator": "gpt-5.5-agent",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "18193c1b1bfe",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures adding DNA, ice incubation, heat (via thermal cycler), and plating, but misses the flicking-mix step and inverting the plates, and conflates heat shock with a thermal cycler program."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Using a thermal cycler instead of a 42\u00b0C water bath is a notable fabrication, and the final spreading-with-pipette-tip detail diverges from gold."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the same sequence as the gold protocol."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "No specific volumes (5 \u03bcL, 50 \u03bcL), temperatures (42\u00b0C), durations (5 seconds), or reagent names (LB agar, antibiotic, competent cells) are included."
+    },
+    "granularity_match": {
+      "score": 4,
+      "reasoning": "Eight steps versus seven gold steps is a similar level of decomposition, though phrased generically."
+    }
+  },
+  "composite": 3.2,
+  "summary": "The prediction roughly follows the transformation workflow in correct order but is overly generic, omits all key parameters, and hallucinates a thermal cycler in place of the 42\u00b0C heat shock.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures adding DNA, ice incubation, heat (via thermal cycler), and plating, but misses the flicking-mix step and inverting the plates, and conflates heat shock with a thermal cycler program.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Using a thermal cycler instead of a 42\u00b0C water bath is a notable fabrication, and the final spreading-with-pipette-tip detail diverges from gold.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the same sequence as the gold protocol.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"No specific volumes (5 \u03bcL, 50 \u03bcL), temperatures (42\u00b0C), durations (5 seconds), or reagent names (LB agar, antibiotic, competent cells) are included.\"},\n  \"granularity_match\": {\"score\": 4, \"reasoning\": \"Eight steps versus seven gold steps is a similar level of decomposition, though phrased generically.\"},\n  \"summary\": \"The prediction roughly follows the transformation workflow in correct order but is overly generic, omits all key parameters, and hallucinates a thermal cycler in place of the 42\u00b0C heat shock.\"\n}"
+}

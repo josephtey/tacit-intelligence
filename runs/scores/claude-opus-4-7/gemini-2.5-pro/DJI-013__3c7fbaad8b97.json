@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-013",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "3c7fbaad8b97",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Roughly half the gold steps are vaguely captured (tube prep, adding liquids, transferring to dish, swirling), but key steps like incubation, PEI addition, and returning to incubator are missing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several steps are spurious or off-topic (walking to retrieve a dish, returning to bench, opening caps as a distinct step) and the protocol is described generically without identifying reagents."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The general sequence of mixing reagents in tubes then transferring to the dish and swirling roughly matches the gold order."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No specific parameters (volumes, reagent names like Opti-MEM/Cas9/PEI, incubation time, temperature, confluency) are mentioned in the prediction."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "The prediction has a similar number of steps but decomposes physical actions (walking, opening caps) rather than the chemical/biological actions described in the gold."
+    }
+  },
+  "composite": 2.2,
+  "summary": "The prediction describes generic physical motions of pipetting between tubes and a dish without identifying reagents, parameters, or the biological purpose, resulting in low fidelity to the gold transfection protocol despite a roughly correct overall sequence.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Roughly half the gold steps are vaguely captured (tube prep, adding liquids, transferring to dish, swirling), but key steps like incubation, PEI addition, and returning to incubator are missing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several steps are spurious or off-topic (walking to retrieve a dish, returning to bench, opening caps as a distinct step) and the protocol is described generically without identifying reagents.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The general sequence of mixing reagents in tubes then transferring to the dish and swirling roughly matches the gold order.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No specific parameters (volumes, reagent names like Opti-MEM/Cas9/PEI, incubation time, temperature, confluency) are mentioned in the prediction.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"The prediction has a similar number of steps but decomposes physical actions (walking, opening caps) rather than the chemical/biological actions described in the gold.\"},\n  \"summary\": \"The prediction describes generic physical motions of pipetting between tubes and a dish without identifying reagents, parameters, or the biological purpose, resulting in low fidelity to the gold transfection protocol despite a roughly correct overall sequence.\"\n}"
+}

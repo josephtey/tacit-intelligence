@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_063",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "2230ffb6c8fa",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Captures cassette insertion and run start, but misses loading buffer mixing, loading DNA into wells, and ladder loading."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many steps about bench prep, tip fitting, and generic tube handling are spurious relative to the gold."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The few captured steps (cassette insertion, then run) are in correct relative order."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Omits all gold parameters (10 \u00b5L DNA, 2 \u00b5L loading buffer, 10\u201320 \u00b5L load volume, 5 \u00b5L ladder)."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "Over-decomposed with excessive trivial handling steps while skipping the substantive loading steps."
+    }
+  },
+  "composite": 2.2,
+  "summary": "The prediction focuses on peripheral handling and equipment setup while omitting the core sample preparation and well-loading steps with their volumes. Overall fidelity to the gold protocol is low.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Captures cassette insertion and run start, but misses loading buffer mixing, loading DNA into wells, and ladder loading.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many steps about bench prep, tip fitting, and generic tube handling are spurious relative to the gold.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The few captured steps (cassette insertion, then run) are in correct relative order.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Omits all gold parameters (10 \u00b5L DNA, 2 \u00b5L loading buffer, 10\u201320 \u00b5L load volume, 5 \u00b5L ladder).\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"Over-decomposed with excessive trivial handling steps while skipping the substantive loading steps.\"},\n  \"summary\": \"The prediction focuses on peripheral handling and equipment setup while omitting the core sample preparation and well-loading steps with their volumes. Overall fidelity to the gold protocol is low.\"\n}"
+}

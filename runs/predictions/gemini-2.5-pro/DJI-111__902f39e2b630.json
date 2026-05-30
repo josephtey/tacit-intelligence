@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-111",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A liquid sample is aspirated from a microcentrifuge tube using a micropipette.\n2. The sample is dispensed into a well of an E-Gel EX agarose gel cassette.\n3. A second liquid sample is aspirated with the micropipette from a microcentrifuge tube stored in a green ice bucket.\n4. The second sample is dispensed into an adjacent well of the E-Gel EX cassette.\n5. The loaded E-Gel EX cassette is placed into the E-Gel Power Snap Electrophoresis Device.\n6. The lid of the device is closed, and an electrophoresis program is initiated on the touchscreen for a run time of 10 minutes."
+}

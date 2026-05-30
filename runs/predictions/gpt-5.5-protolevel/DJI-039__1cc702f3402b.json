@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-039",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Open and position four handwritten-labeled 0.2 mL PCR tubes in a white tube rack on the benchtop; visible labels include \u201c1\u201d and \u201c2\u201d.\n\n2. Open a Petri dish containing pink liquid medium and keep it accessible as the receiving vessel.\n\n3. Using an adjustable single-channel micropipette fitted with a disposable 20 \u00b5L tip, transfer an aliquot from the first open PCR tube to the Petri dish.\n\n4. Using a fresh disposable 20 \u00b5L tip, transfer an aliquot from the second open PCR tube to the Petri dish.\n\n5. Using a fresh disposable 20 \u00b5L tip, transfer an aliquot from the third open PCR tube to the Petri dish.\n\n6. Using a fresh disposable 20 \u00b5L tip, transfer an aliquot from the fourth open PCR tube to the Petri dish.\n\n7. Close the caps of the PCR tubes and leave the labeled tubes in the white rack."
+}

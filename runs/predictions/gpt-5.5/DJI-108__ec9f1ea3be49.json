@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-108",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Prepare the bench with gloved hands, an ice bucket containing labeled microcentrifuge/PCR tubes, tube racks, a micropipette, and a box of sterile pipette tips.\n\n2. Keep the labeled reagent/sample tubes on ice in the green ice bucket while assembling the reactions.\n\n3. Pick up a small PCR tube from the rack or ice bucket and hold it open for liquid addition.\n\n4. Attach a sterile pipette tip to the adjustable micropipette from the blue tip rack.\n\n5. Dispense liquid with the micropipette into the open PCR tube held by hand.\n\n6. Place the filled PCR tube into the yellow tube rack.\n\n7. Repeat the liquid addition for additional labeled PCR tubes, using the micropipette and sterile tips while keeping source tubes on ice.\n\n8. Return each processed tube to the yellow rack or the ice bucket after pipetting.\n\n9. Cap the prepared PCR tube by pressing the lid closed with both gloved hands.\n\n10. Transfer the capped PCR tube to a benchtop mini-centrifuge rotor fitted with a blue/yellow tube adapter.\n\n11. Briefly spin the capped PCR tube in the mini-centrifuge to collect the reaction mixture at the bottom of the tube.\n\n12. Remove the spun PCR tube from the mini-centrifuge.\n\n13. Carry the prepared PCR tube to a Bio-Rad T100 thermal cycler.\n\n14. Open the thermal cycler lid and place the PCR tube into the heating block.\n\n15. Close the heated lid of the Bio-Rad T100 thermal cycler over the PCR tube.\n\n16. Select the saved thermal-cycler protocol named \u201cPHANTA\u201d on the touchscreen.\n\n17. Confirm the run setup on the Bio-Rad T100 thermal cycler with a displayed reaction volume of 20 \u00b5L.\n\n18. Start the PHANTA thermal-cycling run on the Bio-Rad T100 thermal cycler; the screen displays the run in progress with cycling steps and a 12\u00b0C hold."
+}

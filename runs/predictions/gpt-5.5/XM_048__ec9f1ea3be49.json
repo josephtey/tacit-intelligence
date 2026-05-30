@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_048",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Prepare the bench setup with labeled PCR tubes in a green tube rack, an open pipette-tip box, adjustable micropipettes, and waste containers.\n\n2. Fit a sterile pipette tip onto an adjustable micropipette from the open tip box.\n\n3. Open a labeled PCR tube and dispense liquid into the tube using the micropipette.\n\n4. Remove the used pipette tip and continue working with the labeled PCR tubes in the green rack.\n\n5. Fit a fresh sterile pipette tip onto the micropipette.\n\n6. Open the next labeled PCR tube and dispense liquid into the tube.\n\n7. Change the pipette tip and repeat liquid transfer into another labeled PCR tube.\n\n8. Place the handled PCR tubes back into the green tube rack after dispensing.\n\n9. Fit another sterile pipette tip onto the micropipette.\n\n10. Open an additional labeled PCR tube and dispense liquid into the tube.\n\n11. Hold the PCR tube by hand and pipette liquid along the inside of the tube opening.\n\n12. Return the PCR tube to the green rack after adding the liquid.\n\n13. Fit a fresh sterile pipette tip and dispense liquid into a final labeled PCR tube.\n\n14. Close and handle the prepared PCR tubes, keeping them grouped in the green rack.\n\n15. Move the prepared PCR tube to a small benchtop mixing device with a purple rubber cup.\n\n16. Mix the PCR tube briefly on the benchtop vortex mixer by pressing the tube against the rubber cup.\n\n17. Move the prepared tube away from the mixer after mixing.\n\n18. Carry the prepared PCR tube from the bench area toward the amplification instruments.\n\n19. Open the heated lid of a thermal cycler instrument.\n\n20. Load the prepared PCR tube into the thermal cycler block.\n\n21. Position the tube securely in the block for the run."
+}

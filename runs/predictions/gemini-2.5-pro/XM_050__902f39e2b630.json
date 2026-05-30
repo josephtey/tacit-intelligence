@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_050",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A reagent is transferred using a micropipette into a series of microcentrifuge tubes held in a green tube rack.\n2. A second reagent is added to the same microcentrifuge tubes using a larger volume micropipette.\n3. The cap of a microcentrifuge tube is closed.\n4. A strip of tubes is placed into a mini-centrifuge/vortexer and the lid is closed to spin the samples.\n5. The sample tubes are placed into the block of a thermal cycler.\n6. The lid of the thermal cycler is closed to initiate the run."
+}

@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-039",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A strip of eight clear tubes is positioned on the laboratory bench.\n2. A clear liquid is aspirated from a plastic beaker using a micropipette fitted with a yellow 20 \u00b5L tip.\n3. The liquid is dispensed into the first tube of the eight-tube strip.\n4. The used pipette tip is ejected from the micropipette.\n5. A new 20 \u00b5L tip is attached to the micropipette, and clear liquid is aspirated from the same beaker.\n6. The liquid is dispensed into the second tube of the eight-tube strip, and the used tip is ejected.\n7. A new 20 \u00b5L tip is attached to the micropipette, and clear liquid is aspirated from the beaker.\n8. The liquid is dispensed into the third tube of the eight-tube strip, and the used tip is ejected.\n9. The strip of tubes is adjusted on the bench."
+}

@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_097",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Put on blue nitrile gloves and a face shield, and work at the laboratory bench with a benchtop microcentrifuge, sample tubes, pipettes, tube racks, and lab notes.\n\n2. Open the benchtop microcentrifuge lid and access the rotor.\n\n3. Load small sample tube(s) into the microcentrifuge rotor and seat them in the rotor wells.\n\n4. Close the microcentrifuge lid and operate the instrument controls to run the spin.\n\n5. Open the microcentrifuge after the run and remove the sample tube(s) from the rotor.\n\n6. Place the sample tube(s) on the bench beside the microcentrifuge and handling area.\n\n7. Handle the sample tube(s) at the bench with gloved hands, keeping them near the pipettes and tube rack for the next manipulation.\n\n8. Manipulate the sample tube(s) manually at the bench, opening and closing the tube(s) while preparing them for downstream handling."
+}

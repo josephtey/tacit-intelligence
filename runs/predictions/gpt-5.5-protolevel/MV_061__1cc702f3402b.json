@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_061",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Don blue nitrile gloves before handling reagents and equipment.\n\n2. Place a square weighing boat on an Ohaus Scout digital balance and tare the balance.\n\n3. Transfer white powdered reagent from a blue-capped reagent container into the weighing boat with a metal spatula until the balance reads 0.395 g.\n\n4. Transfer the weighed white powder from the weighing boat into a clean glass vessel.\n\n5. Move the glass vessel containing the powder to the electrophoresis workstation with the horizontal gel electrophoresis chamber on a green bench mat.\n\n6. Measure clear liquid from a large bottle using a graduated cylinder.\n\n7. Add the measured clear liquid to the glass vessel containing the white powder to form a cloudy suspension.\n\n8. Cap the vessel and mix by swirling until the powder is suspended in the liquid."
+}

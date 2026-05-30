@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_049",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "d8c41623ad56",
+  "scores": {
+    "step_coverage": {
+      "score": 4,
+      "reasoning": "Most gold steps are covered including adding reagents, spinning, and placing in thermocycler, though the flick-mixing step is not explicitly mentioned."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Several steps about pipette tip fitting, moving tubes, and opening/closing thermocycler lid are extra granular additions not in the gold."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the same sequence as the gold protocol."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "The prediction omits the distinct reagents (Master Mix, Forward/Reverse Primer, template DNA) by treating them all as 'clear liquid reagent' and doesn't specify the 0.2 mL PCR tube."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "The prediction is noticeably more decomposed (11 steps vs 6) with micro-steps for pipetting actions and lid handling."
+    }
+  },
+  "composite": 3.4,
+  "summary": "The prediction captures the overall procedure and ordering well but over-decomposes the actions and fails to identify the specific reagents (M, F, R, T) by name, treating them generically.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 4, \"reasoning\": \"Most gold steps are covered including adding reagents, spinning, and placing in thermocycler, though the flick-mixing step is not explicitly mentioned.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Several steps about pipette tip fitting, moving tubes, and opening/closing thermocycler lid are extra granular additions not in the gold.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the same sequence as the gold protocol.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"The prediction omits the distinct reagents (Master Mix, Forward/Reverse Primer, template DNA) by treating them all as 'clear liquid reagent' and doesn't specify the 0.2 mL PCR tube.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"The prediction is noticeably more decomposed (11 steps vs 6) with micro-steps for pipetting actions and lid handling.\"},\n  \"summary\": \"The prediction captures the overall procedure and ordering well but over-decomposes the actions and fails to identify the specific reagents (M, F, R, T) by name, treating them generically.\"\n}"
+}

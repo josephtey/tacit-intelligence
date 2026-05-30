@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_057",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Fit an adjustable micropipette with a disposable pipette tip from the tip rack.\n\n2. Pick up a microcentrifuge tube containing purple sample solution from the tube rack.\n\n3. Aspirate the purple sample solution from the microcentrifuge tube using the micropipette.\n\n4. Load the purple sample solution into a well of an agarose gel inside a horizontal electrophoresis tank containing running buffer.\n\n5. Repeat the sample loading process with another microcentrifuge tube and dispense the purple sample solution into another gel well.\n\n6. Eject the used pipette tip into the red waste container.\n\n7. Place the transparent lid onto the horizontal electrophoresis tank and align the electrodes with the gel chamber.\n\n8. Connect the black and red electrode leads from the electrophoresis tank to the electrophoresis power supply.\n\n9. Press the control button on the electrophoresis power supply to start the run; the display changes from \u201cEnd\u201d to active running values."
+}

@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_059",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Remove the gel slab in its casting tray from the purple gel holder beside the GelDoc imaging system.\n\n2. Place the gel tray into the horizontal electrophoresis chamber containing clear running liquid, aligning the gel wells near the black electrode side.\n\n3. Fit a single-channel adjustable micropipette with a disposable pipette tip from the tip rack.\n\n4. Aspirate purple sample/loading mixture from a microcentrifuge tube held in a tube rack.\n\n5. Load the purple sample/loading mixture into a well of the submerged gel using the micropipette.\n\n6. Discard the used pipette tip into the red waste container.\n\n7. Fit the micropipette with a fresh disposable tip and aspirate another aliquot of purple sample/loading mixture from a microcentrifuge tube.\n\n8. Load the second purple sample/loading mixture into another well of the submerged gel.\n\n9. Discard the used pipette tip into the red waste container.\n\n10. Connect the electrophoresis chamber leads to the power supply using the red and black electrode cables; the power supply display reads \u201cEnd.\u201d"
+}

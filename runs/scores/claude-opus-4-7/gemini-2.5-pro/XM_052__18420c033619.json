@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_052",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "18420c033619",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Only the labeling and initial dispensing of liquid are loosely captured; the serial dilution transfers between tubes are missing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several steps (attaching tips, closing caps, placing in colored racks) are spurious or off-topic relative to the gold protocol."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The general sequence of labeling then dispensing is preserved, but the serial transfer ordering is absent."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No volumes (100 \u00b5L), tube types (0.2 mL PCR), or reagent identities (sterile water, sample) are specified correctly."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Step count is similar but the decomposition focuses on visual actions rather than procedural dilution steps."
+    }
+  },
+  "composite": 2.0,
+  "summary": "The prediction describes superficial visual actions rather than the serial dilution procedure, missing the key transfer steps and all quantitative parameters. Overall fidelity to the gold protocol is low.",
+  "raw": "```json\n{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Only the labeling and initial dispensing of liquid are loosely captured; the serial dilution transfers between tubes are missing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several steps (attaching tips, closing caps, placing in colored racks) are spurious or off-topic relative to the gold protocol.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The general sequence of labeling then dispensing is preserved, but the serial transfer ordering is absent.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No volumes (100 \u00b5L), tube types (0.2 mL PCR), or reagent identities (sterile water, sample) are specified correctly.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Step count is similar but the decomposition focuses on visual actions rather than procedural dilution steps.\"},\n  \"summary\": \"The prediction describes superficial visual actions rather than the serial dilution procedure, missing the key transfer steps and all quantitative parameters. Overall fidelity to the gold protocol is low.\"\n}\n```"
+}

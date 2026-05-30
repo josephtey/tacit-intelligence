@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_098",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "c0c84a3a91e9",
+  "scores": {
+    "step_coverage": {
+      "score": 1,
+      "reasoning": "The prediction barely touches on the spin column centrifugation workflow; only loosely references a microcentrifuge but misses the core steps of discarding flowthrough, centrifuging, and retrieving the column."
+    },
+    "step_hallucination": {
+      "score": 0,
+      "reasoning": "Nearly all predicted steps (setup, opening tubes, pipetting, recording on paper) are fabricated and unrelated to the gold's spin column steps."
+    },
+    "ordering": {
+      "score": 1,
+      "reasoning": "Since virtually no gold steps are captured, ordering cannot be meaningfully assessed and what little overlap exists is not in correct sequence."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "The prediction omits all key gold parameters (\u226510,000 rpm, 1 min, spin column, flowthrough disposal)."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The gold has 3 concise steps while the prediction has 10 micro-steps, substantially over-decomposed."
+    }
+  },
+  "composite": 0.8,
+  "summary": "The prediction is largely hallucinated, describing a generic pipetting/bench setup workflow rather than the spin column centrifugation steps in the gold. It fails on coverage, parameters, and fidelity.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 1, \"reasoning\": \"The prediction barely touches on the spin column centrifugation workflow; only loosely references a microcentrifuge but misses the core steps of discarding flowthrough, centrifuging, and retrieving the column.\"},\n  \"step_hallucination\": {\"score\": 0, \"reasoning\": \"Nearly all predicted steps (setup, opening tubes, pipetting, recording on paper) are fabricated and unrelated to the gold's spin column steps.\"},\n  \"ordering\": {\"score\": 1, \"reasoning\": \"Since virtually no gold steps are captured, ordering cannot be meaningfully assessed and what little overlap exists is not in correct sequence.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"The prediction omits all key gold parameters (\u226510,000 rpm, 1 min, spin column, flowthrough disposal).\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The gold has 3 concise steps while the prediction has 10 micro-steps, substantially over-decomposed.\"},\n  \"summary\": \"The prediction is largely hallucinated, describing a generic pipetting/bench setup workflow rather than the spin column centrifugation steps in the gold. It fails on coverage, parameters, and fidelity.\"\n}"
+}

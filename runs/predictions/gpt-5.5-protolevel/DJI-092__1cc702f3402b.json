@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-092",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Set up the work area with a green ice bucket filled with crushed ice, microcentrifuge tubes in orange/yellow/blue racks, pipette tips in rack boxes, adjustable micropipettes, a Bio-Rad T100 thermal cycler, and a Petri dish containing solid agar medium.\n\n2. Hold a labeled microcentrifuge tube in the orange rack and add a clear liquid aliquot to the tube using an adjustable micropipette fitted with a disposable tip.\n\n3. Mix the contents of the microcentrifuge tube by pipetting up and down with the same micropipette tip, then withdraw the tip from the tube.\n\n4. Return the microcentrifuge tube to the rack and close the tube cap.\n\n5. Transfer the closed microcentrifuge tube to the crushed ice in the green ice bucket for cold holding.\n\n6. Open the green heated-lid cover of the Bio-Rad T100 thermal cycler and access the sample block; the instrument display is active and shows a temperature readout including 4 \u00b0C.\n\n7. Close the thermal cycler lid after checking the block/display.\n\n8. Keep the prepared tube on ice while preparing the next liquid-handling step.\n\n9. Fit a fresh disposable tip onto an adjustable micropipette from the tip rack.\n\n10. Add a clear liquid aliquot to a second microcentrifuge tube held in the rack using the adjustable micropipette.\n\n11. Mix the second microcentrifuge tube contents by pipetting up and down, then remove the pipette tip.\n\n12. Place the processed tube back on ice in the green ice bucket.\n\n13. Hold a Petri dish containing solid agar medium and dispense a clear liquid aliquot onto the agar surface using an adjustable micropipette.\n\n14. Spread or distribute the dispensed liquid across the agar surface with the pipette tip while holding the Petri dish level.\n\n15. Set the Petri dish down and replace the lid."
+}

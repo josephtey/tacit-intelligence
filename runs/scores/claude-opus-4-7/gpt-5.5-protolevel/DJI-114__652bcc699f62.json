@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-114",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "652bcc699f62",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Loading samples, inserting cassette, and starting the run are covered, but thawing on ice, mixing with loading buffer, and adding DNA ladder are missing."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Several added steps (closing lid, selecting run program, timer) are reasonable but not in gold; setup with comb removed is somewhat spurious."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The steps that do correspond to gold appear in the correct relative sequence."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "Prediction omits key gold parameters (10 \u00b5L DNA, 2 \u00b5L loading buffer, 10-20 \u00b5L load, 5 \u00b5L ladder) and adds an unspecified 10 min run time."
+    },
+    "granularity_match": {
+      "score": 4,
+      "reasoning": "Similar number of steps but slightly over-decomposed on machine operation while under-decomposed on sample preparation."
+    }
+  },
+  "composite": 3.4,
+  "summary": "The prediction captures the general loading and running workflow with correct ordering, but omits critical sample preparation steps (mixing with loading buffer, DNA ladder) and most numerical parameters while adding extra device-operation detail.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Loading samples, inserting cassette, and starting the run are covered, but thawing on ice, mixing with loading buffer, and adding DNA ladder are missing.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Several added steps (closing lid, selecting run program, timer) are reasonable but not in gold; setup with comb removed is somewhat spurious.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The steps that do correspond to gold appear in the correct relative sequence.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"Prediction omits key gold parameters (10 \u00b5L DNA, 2 \u00b5L loading buffer, 10-20 \u00b5L load, 5 \u00b5L ladder) and adds an unspecified 10 min run time.\"},\n  \"granularity_match\": {\"score\": 4, \"reasoning\": \"Similar number of steps but slightly over-decomposed on machine operation while under-decomposed on sample preparation.\"},\n  \"summary\": \"The prediction captures the general loading and running workflow with correct ordering, but omits critical sample preparation steps (mixing with loading buffer, DNA ladder) and most numerical parameters while adding extra device-operation detail.\"\n}"
+}

@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-013",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Set up a bench workspace with labeled 1.5 mL microcentrifuge tubes in a green tube rack, adjustable single-channel micropipettes, disposable pipette tips in tip boxes, and nearby bench equipment including a Vortex Genie 2 mixer and benchtop centrifuges.\n\n2. Open a labeled 1.5 mL microcentrifuge tube and use an adjustable Transferpette S micropipette with a disposable tip to transfer an aliquot of clear liquid into the tube; no volume setting is visible.\n\n3. Place the filled microcentrifuge tube back into the green rack and repeat aliquoting of clear liquid into additional labeled 1.5 mL microcentrifuge tubes using the micropipette and fresh disposable tips; no volumes are visible.\n\n4. Mix a filled microcentrifuge tube manually by tapping or finger-flicking the closed tube.\n\n5. Retrieve a labeled tissue-culture dish containing pink liquid from an adjacent lab area and bring it back to the bench.\n\n6. Place the tissue-culture dish on the bench beside the labeled microcentrifuge tubes and open the dish lid.\n\n7. Use an adjustable Transferpette S micropipette with a clean disposable tip to aspirate clear liquid from a labeled 1.5 mL microcentrifuge tube; no volume setting is visible.\n\n8. Dispense the aspirated clear liquid into the open tissue-culture dish containing pink liquid.\n\n9. Replace the lid on the tissue-culture dish and gently rock the closed dish by hand to distribute the added liquid across the dish surface."
+}

@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-115",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "df59cdda86b1",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Prediction captures loading samples, placing cassette, and running, but misses thawing, mixing with loading buffer, and the DNA ladder step."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Several steps (setup arrangement, closing lid, touchscreen program selection) are added that aren't in the gold."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The prediction loads samples before placing cassette in the dock, which reverses the gold order."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "Omits key gold parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 loading buffer, 10\u201320 \u00b5L load, 5 \u00b5L ladder) while adding unsupported ones like 10 min run time."
+    },
+    "granularity_match": {
+      "score": 4,
+      "reasoning": "Both protocols have a similar number of steps, though the prediction over-decomposes setup and under-decomposes reagent mixing."
+    }
+  },
+  "composite": 3.0,
+  "summary": "The prediction roughly outlines an E-gel loading workflow but omits critical preparation steps (thawing, buffer mixing, ladder loading) and fabricates instrument-specific details, resulting in moderate fidelity to the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Prediction captures loading samples, placing cassette, and running, but misses thawing, mixing with loading buffer, and the DNA ladder step.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Several steps (setup arrangement, closing lid, touchscreen program selection) are added that aren't in the gold.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The prediction loads samples before placing cassette in the dock, which reverses the gold order.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"Omits key gold parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 loading buffer, 10\u201320 \u00b5L load, 5 \u00b5L ladder) while adding unsupported ones like 10 min run time.\"},\n  \"granularity_match\": {\"score\": 4, \"reasoning\": \"Both protocols have a similar number of steps, though the prediction over-decomposes setup and under-decomposes reagent mixing.\"},\n  \"summary\": \"The prediction roughly outlines an E-gel loading workflow but omits critical preparation steps (thawing, buffer mixing, ladder loading) and fabricates instrument-specific details, resulting in moderate fidelity to the gold.\"\n}"
+}

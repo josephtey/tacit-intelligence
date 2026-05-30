@@ -1,9 +1,32 @@
 import { useEffect, useMemo, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import explainerText from "./explainer.md?raw";
-import type { ConfigKey, Entry, Metadata } from "./types";
+import type { ConfigKey, Entry, Metadata, ModelPrediction } from "./types";
 
 const CONFIGS: ConfigKey[] = ["XMglass", "DJI", "Multiview"];
+
+const DIMENSIONS = [
+  "step_coverage",
+  "step_hallucination",
+  "ordering",
+  "parameter_accuracy",
+  "granularity_match",
+] as const;
+
+const MODEL_LABEL: Record<string, string> = {
+  "gpt-5.5": "GPT-5.5",
+  "gemini-2.5-pro": "Gemini 2.5 Pro",
+};
+
+function dimShort(d: string): string {
+  return ({
+    step_coverage: "cov",
+    step_hallucination: "halluc",
+    ordering: "order",
+    parameter_accuracy: "param",
+    granularity_match: "gran",
+  } as Record<string, string>)[d] ?? d;
+}
 
 function useMetadata() {
   const [data, setData] = useState<Metadata | null>(null);
@@ -29,7 +52,12 @@ interface Filters {
   scene: string;
   onlyProtocol: boolean;
   onlyIssue: boolean;
+  onlyPredictions: boolean;
   search: string;
+}
+
+function hasPredictions(e: Entry): boolean {
+  return !!e.predictions && Object.keys(e.predictions).length > 0;
 }
 
 function applyFilters(entries: Entry[], f: Filters): Entry[] {
@@ -39,6 +67,7 @@ function applyFilters(entries: Entry[], f: Filters): Entry[] {
     if (f.scene && e.scene !== f.scene) return false;
     if (f.onlyProtocol && !e.has_protocol) return false;
     if (f.onlyIssue && !e.issue) return false;
+    if (f.onlyPredictions && !hasPredictions(e)) return false;
     if (search) {
       const hay = `${e.slice_id} ${e.operation} ${e.scene} ${e.protocol_name} ${e.video_name}`.toLowerCase();
       if (!hay.includes(search)) return false;
@@ -120,6 +149,14 @@ function Sidebar({
             />
             has issue
           </label>
+          <label className="check">
+            <input
+              type="checkbox"
+              checked={filters.onlyPredictions}
+              onChange={(e) => setFilters({ ...filters, onlyPredictions: e.target.checked })}
+            />
+            has model predictions
+          </label>
         </div>
         <div className="count">{entries.length} entries</div>
       </div>
@@ -145,6 +182,7 @@ function Sidebar({
               {e.has_protocol && <span className="tag tag--proto">proto</span>}
               {e.issue && <span className="tag tag--issue">issue</span>}
               {e.gpt4o_output && <span className="tag tag--gpt">gpt4o</span>}
+              {hasPredictions(e) && <span className="tag tag--pred">preds</span>}
               {!e.video_exists && <span className="tag tag--missing">missing</span>}
             </div>
           </li>
@@ -190,6 +228,9 @@ function Detail({ entry, protocols }: { entry: Entry; protocols: Metadata["proto
     ? protocols[entry.config]?.[entry.protocol_name]
     : null;
 
+  const predictions = entry.predictions ?? {};
+  const predictionModels = Object.keys(predictions);
+
   return (
     <section className="detail">
       <div className="detail__header">
@@ -203,6 +244,15 @@ function Detail({ entry, protocols }: { entry: Entry; protocols: Metadata["proto
           {entry.operation || <span className="muted">(no operation label)</span>}
         </div>
       </div>
+
+      {entry.video_url && entry.media_kind === "video" ? (
+        <video
+          className="video-player"
+          src={entry.video_url}
+          controls
+          preload="metadata"
+        />
+      ) : null}
 
       <PathBlock path={entry.video_path} exists={entry.video_exists} />
 
@@ -229,6 +279,10 @@ function Detail({ entry, protocols }: { entry: Entry; protocols: Metadata["proto
           )}
         </div>
 
+        {predictionModels.map((m) => (
+          <PredictionPane key={m} modelName={m} prediction={predictions[m]} />
+        ))}
+
         {entry.gpt4o_output && (
           <div className="pane">
             <div className="pane__header">GPT-4o output (from CSV)</div>
@@ -237,6 +291,45 @@ function Detail({ entry, protocols }: { entry: Entry; protocols: Metadata["proto
         )}
       </div>
     </section>
+  );
+}
+
+function PredictionPane({ modelName, prediction }: { modelName: string; prediction: ModelPrediction }) {
+  const label = MODEL_LABEL[modelName] ?? modelName;
+  const composite = prediction.composite;
+  const scores = prediction.scores ?? {};
+
+  return (
+    <div className="pane">
+      <div className="pane__header pane__header--row">
+        <span>{label} prediction</span>
+        {typeof composite === "number" && (
+          <span className="composite-badge">composite {composite.toFixed(2)} / 5</span>
+        )}
+      </div>
+      {Object.keys(scores).length > 0 && (
+        <div className="scorebar">
+          {DIMENSIONS.map((d) => {
+            const sc = scores[d];
+            if (!sc) return null;
+            return (
+              <span key={d} className="scorebar__cell" title={sc.reasoning}>
+                <span className="scorebar__label">{dimShort(d)}</span>
+                <span className={classNames("scorebar__val", `scorebar__val--s${sc.score}`)}>
+                  {sc.score}
+                </span>
+              </span>
+            );
+          })}
+        </div>
+      )}
+      {prediction.summary && (
+        <div className="pane__summary">
+          <em>judge:</em> {prediction.summary}
+        </div>
+      )}
+      <pre className="pane__body">{prediction.protocol || "(empty output)"}</pre>
+    </div>
   );
 }
 
@@ -277,6 +370,7 @@ export default function App() {
     scene: "",
     onlyProtocol: false,
     onlyIssue: false,
+    onlyPredictions: false,
     search: "",
   });
   const [selectedId, setSelectedId] = useState<string | null>(null);

@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_051",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "8dc9f743b3f4",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Covers adding reagents to multiple tubes and moving to thermocycler, but misses the mixing/centrifuging step and doesn't clearly capture the template DNA addition or placing tube into thermocycler."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many spurious steps about bench preparation, attaching tips, opening lids, and adjusting the thermocycler that are not in the gold."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The general sequence of pipetting reagents then moving to the thermocycler is preserved correctly."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "Mentions tube labels M, F, R but omits T (template), the mixing/spin step parameters, and adds unspecified equipment details like 10 \u00b5L pipette."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "Substantially over-decomposed at 15 steps versus the gold's 6 steps, with excessive micro-detail about pipette handling."
+    }
+  },
+  "composite": 2.6,
+  "summary": "The prediction captures the general PCR setup workflow but is heavily over-decomposed with many fabricated bench-handling steps, omits the mix/spin step, and doesn't clearly identify the template DNA addition.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Covers adding reagents to multiple tubes and moving to thermocycler, but misses the mixing/centrifuging step and doesn't clearly capture the template DNA addition or placing tube into thermocycler.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many spurious steps about bench preparation, attaching tips, opening lids, and adjusting the thermocycler that are not in the gold.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The general sequence of pipetting reagents then moving to the thermocycler is preserved correctly.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"Mentions tube labels M, F, R but omits T (template), the mixing/spin step parameters, and adds unspecified equipment details like 10 \u00b5L pipette.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"Substantially over-decomposed at 15 steps versus the gold's 6 steps, with excessive micro-detail about pipette handling.\"},\n  \"summary\": \"The prediction captures the general PCR setup workflow but is heavily over-decomposed with many fabricated bench-handling steps, omits the mix/spin step, and doesn't clearly identify the template DNA addition.\"\n}"
+}

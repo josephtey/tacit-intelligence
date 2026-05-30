@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_091",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. An orange 96-well plate is placed into the block of a Bio-Rad T100 Thermal Cycler.\n2. Using a single-channel pipette, a liquid is dispensed into a row of PCR tubes held in a blue rack.\n3. A multi-channel pipette is used to transfer liquid into a row of tubes in a blue rack.\n4. The caps on a strip of PCR tubes are pressed down to seal the tubes.\n5. The sealed strip of PCR tubes is placed into a microcentrifuge and spun down.\n6. The lid of the Bio-Rad T100 Thermal Cycler is opened, and the samples are loaded into the machine.\n7. The lid of the thermal cycler is closed, and a program is initiated using the touchscreen."
+}

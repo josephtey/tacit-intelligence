@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_053",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Attach a disposable pipette tip to an adjustable single-channel micropipette using the tip box on the bench.\n\n2. Label small PCR tubes or tube caps with a black permanent marker while holding them in a turquoise tube rack.\n\n3. Place the labeled small tubes into the turquoise rack and press them into the rack wells to secure them.\n\n4. Open a microcentrifuge tube and hold it in one hand while positioning the micropipette with the attached tip over the tube opening.\n\n5. Aspirate clear liquid from the open microcentrifuge tube with the adjustable single-channel micropipette.\n\n6. Dispense clear liquid from the pipette into a labeled small tube positioned in the turquoise rack.\n\n7. Repeat liquid transfer between the open microcentrifuge tube and labeled small tubes in the turquoise rack using the same single-channel micropipette.\n\n8. Move the pipette away from the work area and discard or set aside the used tip.\n\n9. Attach a fresh disposable pipette tip to the adjustable single-channel micropipette from the purple tip box.\n\n10. Aspirate clear liquid from an open microcentrifuge tube using the freshly tipped micropipette.\n\n11. Dispense the clear liquid into another open microcentrifuge tube held in the opposite hand.\n\n12. Place prepared microcentrifuge tubes onto the green tube rack on the bench.\n\n13. Pick up a connected strip of open PCR tubes from the bench area.\n\n14. Insert the pipette tip into the first tube of the PCR strip and dispense clear liquid.\n\n15. Move the pipette tip sequentially across the PCR tube strip and dispense clear liquid into additional open tubes.\n\n16. Continue aliquoting clear liquid into each tube of the PCR strip while holding the strip steady by hand.\n\n17. Set the micropipette down on the bench after completing the aliquoting into the PCR strip.\n\n18. Place the filled PCR tube strip back into the turquoise rack and align the tubes in the rack wells."
+}

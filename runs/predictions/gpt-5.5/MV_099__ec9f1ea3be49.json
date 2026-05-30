@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_099",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Prepare the lab bench with blue disposable gloves, adjustable micropipettes, pipette-tip boxes, microcentrifuge tubes, tube racks, small reagent bottles, a benchtop device, and a printed protocol.\n\n2. Review the printed protocol on the bench while standing at the workstation.\n\n3. Arrange small tubes and reagent bottles near the benchtop device and pipetting area.\n\n4. Pick up a micropipette and handle disposable pipette tips at the bench.\n\n5. Open small tubes or reagent containers and position them for liquid handling.\n\n6. Transfer liquid with the micropipette between small tubes or reagent containers on the bench.\n\n7. Cap the handled tubes or containers after pipetting.\n\n8. Place handled tube(s) near or into the benchtop device and operate the device briefly.\n\n9. Remove the tube(s) from the benchtop device and return them to the bench.\n\n10. Check the sample setup against the printed protocol and handheld screen at the workstation.\n\n11. Retrieve additional consumables or reagent containers from the overhead shelf and bring them to the bench.\n\n12. Set a blue rack or box and small white-capped bottles on the bench, then organize them with the existing tubes and pipetting supplies."
+}

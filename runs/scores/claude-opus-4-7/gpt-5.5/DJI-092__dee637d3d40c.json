@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-092",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "dee637d3d40c",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Only adding DNA to cells, ice incubation, and plating on agar are loosely captured; flicking to mix, heat shock at 42\u00b0C, return to ice, and inverting plates are all missing."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most predicted steps (bench setup, thermal cycler lid opening, multiple generic pipetting steps) are spurious and not in the gold protocol."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The rough sequence of pipetting then plating is preserved, but the heat shock and ice steps are absent, breaking the proper order."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No specific parameters from the gold (5 \u03bcL DNA, 42\u00b0C, 5 seconds, 50 \u03bcL, LB agar, antibiotic) are present, and the thermal cycler is a contradictory equipment choice."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction has 15 micro-steps versus the gold's 7, over-decomposing trivial pipetting actions while omitting key procedural steps."
+    }
+  },
+  "composite": 1.6,
+  "summary": "The prediction describes generic pipetting actions without capturing the defining transformation steps (heat shock, ice incubations, plating with antibiotic). It is largely hallucinated and lacks all critical parameters from the gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Only adding DNA to cells, ice incubation, and plating on agar are loosely captured; flicking to mix, heat shock at 42\u00b0C, return to ice, and inverting plates are all missing.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most predicted steps (bench setup, thermal cycler lid opening, multiple generic pipetting steps) are spurious and not in the gold protocol.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The rough sequence of pipetting then plating is preserved, but the heat shock and ice steps are absent, breaking the proper order.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No specific parameters from the gold (5 \u03bcL DNA, 42\u00b0C, 5 seconds, 50 \u03bcL, LB agar, antibiotic) are present, and the thermal cycler is a contradictory equipment choice.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction has 15 micro-steps versus the gold's 7, over-decomposing trivial pipetting actions while omitting key procedural steps.\"},\n  \"summary\": \"The prediction describes generic pipetting actions without capturing the defining transformation steps (heat shock, ice incubations, plating with antibiotic). It is largely hallucinated and lacks all critical parameters from the gold protocol.\"\n}"
+}

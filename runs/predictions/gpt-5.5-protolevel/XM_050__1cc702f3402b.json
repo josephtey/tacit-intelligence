@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_050",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Arrange four labeled 0.2 mL PCR tubes marked M, K, R, and T in a green PCR tube rack, with an open turquoise PCR tube box/rack and disposable pipette tips available on the bench.\n\n2. Using a single-channel adjustable micropipette fitted with a disposable tip, transfer clear liquid from the source tube/well in the open turquoise PCR tube box/rack into each labeled PCR tube.\n\n3. Return each filled PCR tube to the green rack and close the tube caps securely.\n\n4. Spin the capped PCR tubes in a tabletop mini-centrifuge to collect liquid at the bottom of the tubes.\n\n5. Transfer the prepared PCR tubes to a thermal cycler with three heated-lid modules and load the tubes into the center block.\n\n6. Close the heated lid over the loaded block on the thermal cycler."
+}

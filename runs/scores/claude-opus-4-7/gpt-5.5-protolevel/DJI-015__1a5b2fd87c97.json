@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-015",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "1a5b2fd87c97",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "The prediction captures adding reagents to a tube and adding to a dish, but misses mixing, incubation, and proper rocking steps."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many predicted steps are spurious procedural details (arranging racks, fitting tips, retrieving dishes) and the agar plate misidentifies the 293T cell dish."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The overall sequence of adding reagents then transferring to dish is preserved."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "No reagent identities, volumes, incubation time, temperature, or cell confluency are mentioned, and the Petri dish is misidentified as agar."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is over-decomposed with bench-level micro-actions compared to the concise gold protocol."
+    }
+  },
+  "composite": 2.2,
+  "summary": "The prediction loosely mirrors the gold workflow of combining reagents and transferring to a dish, but it omits key steps (mixing, incubation), fabricates trivial actions, and misinterprets the cell culture dish as an agar plate while lacking all critical parameters.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"The prediction captures adding reagents to a tube and adding to a dish, but misses mixing, incubation, and proper rocking steps.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many predicted steps are spurious procedural details (arranging racks, fitting tips, retrieving dishes) and the agar plate misidentifies the 293T cell dish.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The overall sequence of adding reagents then transferring to dish is preserved.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"No reagent identities, volumes, incubation time, temperature, or cell confluency are mentioned, and the Petri dish is misidentified as agar.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is over-decomposed with bench-level micro-actions compared to the concise gold protocol.\"},\n  \"summary\": \"The prediction loosely mirrors the gold workflow of combining reagents and transferring to a dish, but it omits key steps (mixing, incubation), fabricates trivial actions, and misinterprets the cell culture dish as an agar plate while lacking all critical parameters.\"\n}"
+}

@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_066",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "552be7df249f",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures thawing/ice, pipetting reagents, capping, centrifuging, placing in thermocycler, and starting, but misses explicit thermocycling program parameters and individual reagent identities."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Several spurious bench-setup and tip-changing steps are added that are not in the gold protocol."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the gold sequence correctly."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Only the 25 \u00b5L final volume is mentioned; all reagent volumes, concentrations, temperatures, times, and cycle counts are omitted."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "The prediction over-decomposes pipetting mechanics while under-decomposing the thermocycler program into a single step."
+    }
+  },
+  "composite": 3.0,
+  "summary": "The prediction describes the general workflow in correct order but focuses on generic pipetting actions while omitting nearly all reagent identities, volumes, and thermocycling parameters that define the gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures thawing/ice, pipetting reagents, capping, centrifuging, placing in thermocycler, and starting, but misses explicit thermocycling program parameters and individual reagent identities.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Several spurious bench-setup and tip-changing steps are added that are not in the gold protocol.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the gold sequence correctly.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Only the 25 \u00b5L final volume is mentioned; all reagent volumes, concentrations, temperatures, times, and cycle counts are omitted.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"The prediction over-decomposes pipetting mechanics while under-decomposing the thermocycler program into a single step.\"},\n  \"summary\": \"The prediction describes the general workflow in correct order but focuses on generic pipetting actions while omitting nearly all reagent identities, volumes, and thermocycling parameters that define the gold protocol.\"\n}"
+}

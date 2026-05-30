@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_064",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "73429d9ea0cb",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures thawing/keeping on ice, loading samples, inserting cassette, and starting electrophoresis, but misses the loading buffer mixing step and the DNA ladder loading step."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Several spurious steps such as attaching pipette tips, repeated mixing, and closing the amber lid that are not in the gold protocol."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "Cassette is inserted after loading rather than before as in gold, but otherwise the sequence is preserved."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Omits all key gold parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 loading buffer, 10\u201320 \u00b5L load volume, 5 \u00b5L ladder)."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Prediction has 11 steps versus gold's 6 and is noticeably over-decomposed with redundant pipetting/mixing steps."
+    }
+  },
+  "composite": 2.8,
+  "summary": "The prediction captures the general workflow of loading and running an E-gel but omits critical reagent/volume parameters and the ladder step while adding several extraneous handling steps. Overall fidelity is moderate, with correct high-level structure but poor parameter accuracy and some hallucinated detail.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures thawing/keeping on ice, loading samples, inserting cassette, and starting electrophoresis, but misses the loading buffer mixing step and the DNA ladder loading step.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Several spurious steps such as attaching pipette tips, repeated mixing, and closing the amber lid that are not in the gold protocol.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"Cassette is inserted after loading rather than before as in gold, but otherwise the sequence is preserved.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Omits all key gold parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 loading buffer, 10\u201320 \u00b5L load volume, 5 \u00b5L ladder).\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Prediction has 11 steps versus gold's 6 and is noticeably over-decomposed with redundant pipetting/mixing steps.\"},\n  \"summary\": \"The prediction captures the general workflow of loading and running an E-gel but omits critical reagent/volume parameters and the ladder step while adding several extraneous handling steps. Overall fidelity is moderate, with correct high-level structure but poor parameter accuracy and some hallucinated detail.\"\n}"
+}

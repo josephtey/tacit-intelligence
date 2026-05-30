@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-106",
+  "generator": "gpt-5.5-agent",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "8a0d05a1263c",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures ice/thaw, adding reagents, centrifuge, loading thermocycler, and program, but misses individual reagent steps (Master Mix, primers, template, water amounts) and the mixing/flicking step."
+    },
+    "step_hallucination": {
+      "score": 4,
+      "reasoning": "Most steps map to gold, though the DMSO reagent and PHANTA-specific program details are not in the gold."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the same relative sequence as the gold protocol."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Volume (20 \u00b5L vs 25 \u00b5L), thermocycler program temperatures/times, and per-reagent volumes are wrong or omitted compared to gold."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Prediction collapses individual reagent additions into one step, making it noticeably coarser than the gold's per-reagent decomposition."
+    }
+  },
+  "composite": 3.2,
+  "summary": "The prediction follows the same overall workflow and ordering as the gold but is coarser and contains significantly different numerical parameters (volumes and thermocycler program), reducing its fidelity.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures ice/thaw, adding reagents, centrifuge, loading thermocycler, and program, but misses individual reagent steps (Master Mix, primers, template, water amounts) and the mixing/flicking step.\"},\n  \"step_hallucination\": {\"score\": 4, \"reasoning\": \"Most steps map to gold, though the DMSO reagent and PHANTA-specific program details are not in the gold.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the same relative sequence as the gold protocol.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Volume (20 \u00b5L vs 25 \u00b5L), thermocycler program temperatures/times, and per-reagent volumes are wrong or omitted compared to gold.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Prediction collapses individual reagent additions into one step, making it noticeably coarser than the gold's per-reagent decomposition.\"},\n  \"summary\": \"The prediction follows the same overall workflow and ordering as the gold but is coarser and contains significantly different numerical parameters (volumes and thermocycler program), reducing its fidelity.\"\n}"
+}

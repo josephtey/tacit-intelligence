@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_056",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Open the QSP plastic container holding the purple-stained electrophoresis gel and remove the clear gel slab/support from the container.\n\n2. Transfer the gel slab into the horizontal electrophoresis tank containing clear running buffer.\n\n3. Position the gel flat in the tank and align the wells within the buffer-filled chamber.\n\n4. Fit a disposable pipette tip from the turquoise tip box onto a LabServ 0.5\u201310 \u00b5L micropipette.\n\n5. Select a microcentrifuge tube containing purple sample/loading dye from the turquoise tube rack and open the tube.\n\n6. Aspirate the purple sample with the tipped micropipette.\n\n7. Dispense the purple sample into one well of the gel in the horizontal electrophoresis tank.\n\n8. Eject the used pipette tip into the red waste bucket.\n\n9. Fit a fresh disposable tip onto the micropipette and select another microcentrifuge tube containing purple sample/loading dye from the tube rack.\n\n10. Aspirate the second purple sample and dispense it into another well of the gel.\n\n11. Eject the used pipette tip into the red waste bucket after loading the second sample.\n\n12. Place and secure the electrophoresis tank lid, connect the red and black electrode leads to the power supply, and verify the leads are seated.\n\n13. Start the electrophoresis run by pressing the power supply control button; the display changes from \u201cEnd\u201d to an active numeric running readout."
+}

@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-106",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "17ebe10943f0",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures thawing/ice, pipetting reagents, mixing, spinning, loading thermocycler, and starting program, but does not enumerate individual reagent additions (Master Mix, primers, template, water)."
+    },
+    "step_hallucination": {
+      "score": 4,
+      "reasoning": "Most steps map to gold actions, though some are over-described observational steps (e.g., moving tubes, opening lid) that fragment the procedure."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the same sequence as the gold protocol."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Volumes and reagent identities are entirely missing, and the cycling parameters reported (98\u00b0C, 67\u00b0C, 20 \u00b5L, PHANTA, 12\u00b0C hold) contradict the gold (95/55/72\u00b0C, 25 \u00b5L)."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Prediction is somewhat over-decomposed with redundant handling steps while omitting the per-reagent pipetting detail present in the gold."
+    }
+  },
+  "composite": 3.2,
+  "summary": "The prediction broadly mirrors the workflow and ordering of the gold PCR setup but omits all reagent-specific volumes and reports contradictory thermocycler parameters. Granularity is skewed toward physical handling actions rather than reagent additions.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures thawing/ice, pipetting reagents, mixing, spinning, loading thermocycler, and starting program, but does not enumerate individual reagent additions (Master Mix, primers, template, water).\"},\n  \"step_hallucination\": {\"score\": 4, \"reasoning\": \"Most steps map to gold actions, though some are over-described observational steps (e.g., moving tubes, opening lid) that fragment the procedure.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the same sequence as the gold protocol.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Volumes and reagent identities are entirely missing, and the cycling parameters reported (98\u00b0C, 67\u00b0C, 20 \u00b5L, PHANTA, 12\u00b0C hold) contradict the gold (95/55/72\u00b0C, 25 \u00b5L).\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Prediction is somewhat over-decomposed with redundant handling steps while omitting the per-reagent pipetting detail present in the gold.\"},\n  \"summary\": \"The prediction broadly mirrors the workflow and ordering of the gold PCR setup but omits all reagent-specific volumes and reports contradictory thermocycler parameters. Granularity is skewed toward physical handling actions rather than reagent additions.\"\n}"
+}

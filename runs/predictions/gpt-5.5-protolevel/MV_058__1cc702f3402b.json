@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_058",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Place the agarose gel electrophoresis chamber on the bench with the gel submerged in clear running buffer, and arrange labeled microcentrifuge tubes in a tube rack beside a box of universal pipette tips and an adjustable micropipette.\n\n2. Fit a disposable yellow pipette tip onto the adjustable micropipette and aspirate blue sample solution from a labeled microcentrifuge tube.\n\n3. Load the aspirated blue sample into a well of the submerged agarose gel, inserting the pipette tip into the well and dispensing slowly.\n\n4. Discard the used pipette tip and fit a fresh disposable yellow tip onto the micropipette.\n\n5. Aspirate blue sample solution from the next labeled microcentrifuge tube in the rack.\n\n6. Load the second blue sample into the next available well of the submerged agarose gel.\n\n7. Repeat tip changes, sample aspiration from labeled microcentrifuge tubes, and loading into adjacent gel wells until multiple wells contain blue sample bands.\n\n8. Close the electrophoresis chamber with the clear lid, aligning the electrodes with the connected red and black power leads.\n\n9. Connect the electrophoresis chamber leads to the power supply and start electrophoresis at 110 V as displayed on the power supply."
+}

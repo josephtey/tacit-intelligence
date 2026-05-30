@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_089",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "7c251814ef65",
+  "scores": {
+    "step_coverage": {
+      "score": 1,
+      "reasoning": "The prediction vaguely captures pipetting reagents into tubes but misses primer mix prep, PCR mix prep, aliquoting, colony picking into LB, and thermocycler steps."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most steps are generic pipetting descriptions or fabricated actions like spreading samples on agar and loading multichannel tips, none clearly tied to colony PCR steps."
+    },
+    "ordering": {
+      "score": 2,
+      "reasoning": "Some early reagent mixing precedes plate work, but the overall sequence diverges significantly from the gold protocol."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No volumes, concentrations, reagent names, or equipment parameters from the gold are specified in the prediction."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction has 20 visually-described micro-steps versus the gold's ~8 procedural steps, making it substantially over-decomposed."
+    }
+  },
+  "composite": 1.2,
+  "summary": "The prediction reads like a vision-based description of generic pipetting and plating actions rather than the colony PCR protocol. It misses nearly all specific gold steps and parameters while introducing many spurious actions.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 1, \"reasoning\": \"The prediction vaguely captures pipetting reagents into tubes but misses primer mix prep, PCR mix prep, aliquoting, colony picking into LB, and thermocycler steps.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most steps are generic pipetting descriptions or fabricated actions like spreading samples on agar and loading multichannel tips, none clearly tied to colony PCR steps.\"},\n  \"ordering\": {\"score\": 2, \"reasoning\": \"Some early reagent mixing precedes plate work, but the overall sequence diverges significantly from the gold protocol.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No volumes, concentrations, reagent names, or equipment parameters from the gold are specified in the prediction.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction has 20 visually-described micro-steps versus the gold's ~8 procedural steps, making it substantially over-decomposed.\"},\n  \"summary\": \"The prediction reads like a vision-based description of generic pipetting and plating actions rather than the colony PCR protocol. It misses nearly all specific gold steps and parameters while introducing many spurious actions.\"\n}"
+}

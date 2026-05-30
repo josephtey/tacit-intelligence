@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_100",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. Pipette liquid into a rack of tubes using a multichannel pipette.\n2. Wipe the lab bench with a paper towel.\n3. Place the tube rack on a vortex mixer.\n4. Vortex the tubes.\n5. Transfer the tube rack into a benchtop centrifuge and close the lid.\n6. Centrifuge the tubes.\n7. Remove the tube rack from the centrifuge and place it on the lab bench."
+}

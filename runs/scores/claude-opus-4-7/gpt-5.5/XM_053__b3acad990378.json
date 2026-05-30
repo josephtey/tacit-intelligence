@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_053",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "b3acad990378",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Labeling tubes and serial liquid transfers are captured, but explicit steps for adding water to all tubes and the specific serial dilution chain (1\u21922\u21923\u21924) are not clearly delineated."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most predicted steps are spurious micro-actions (attaching tips, moving pipettes, switching racks, PCR strip aliquoting) that don't correspond to gold steps."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "Labeling comes first and transfers follow, preserving rough sequence, but intermediate hallucinated steps disrupt the clean serial dilution order."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No volumes (100 \u00b5L), no reagent identities (water, sample), and no tube numbering are specified in the prediction."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "Prediction has 18 micro-decomposed steps versus the gold's 6, substantially over-decomposed."
+    }
+  },
+  "composite": 1.8,
+  "summary": "The prediction describes generic pipetting actions without capturing the specific serial dilution parameters (volumes, water, sample, tube numbering) of the gold protocol. It is over-decomposed with many hallucinated handling steps and lacks the critical quantitative details.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Labeling tubes and serial liquid transfers are captured, but explicit steps for adding water to all tubes and the specific serial dilution chain (1\u21922\u21923\u21924) are not clearly delineated.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most predicted steps are spurious micro-actions (attaching tips, moving pipettes, switching racks, PCR strip aliquoting) that don't correspond to gold steps.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"Labeling comes first and transfers follow, preserving rough sequence, but intermediate hallucinated steps disrupt the clean serial dilution order.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No volumes (100 \u00b5L), no reagent identities (water, sample), and no tube numbering are specified in the prediction.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"Prediction has 18 micro-decomposed steps versus the gold's 6, substantially over-decomposed.\"},\n  \"summary\": \"The prediction describes generic pipetting actions without capturing the specific serial dilution parameters (volumes, water, sample, tube numbering) of the gold protocol. It is over-decomposed with many hallucinated handling steps and lacks the critical quantitative details.\"\n}"
+}

@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_051",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1.  A clear liquid is dispensed into a small plastic tube using a single-channel micropipette.\n2.  The tubes are placed into a green tube rack for organization.\n3.  The rack of tubes is carried over to a thermal cycler, and the tubes are transferred into the machine's sample block.\n4.  The heated lid of the thermal cycler is closed and secured over the tubes."
+}

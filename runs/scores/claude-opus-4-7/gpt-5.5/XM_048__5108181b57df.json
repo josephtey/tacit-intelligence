@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_048",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "5108181b57df",
+  "scores": {
+    "step_coverage": {
+      "score": 4,
+      "reasoning": "Most gold steps (adding the four reagents, mixing, loading thermocycler) are covered, though the quick centrifuge spin is missing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many predicted steps are spurious micro-actions (tip changes, bench setup, carrying tubes) not in the gold protocol."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the correct sequence: reagent additions, mixing, then loading the thermocycler."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits all named reagents (Master Mix, Forward/Reverse Primer, template DNA) and tube labels (M, F, R, T) specified in the gold."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is heavily over-decomposed with 21 micro-steps versus the gold's 6, focusing on pipetting mechanics rather than procedural content."
+    }
+  },
+  "composite": 2.8,
+  "summary": "The prediction captures the overall PCR setup workflow in correct order but is overly granular and fails to identify the specific reagents being added. This makes it descriptive of observable actions but poor as a usable PCR protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 4, \"reasoning\": \"Most gold steps (adding the four reagents, mixing, loading thermocycler) are covered, though the quick centrifuge spin is missing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many predicted steps are spurious micro-actions (tip changes, bench setup, carrying tubes) not in the gold protocol.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the correct sequence: reagent additions, mixing, then loading the thermocycler.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits all named reagents (Master Mix, Forward/Reverse Primer, template DNA) and tube labels (M, F, R, T) specified in the gold.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is heavily over-decomposed with 21 micro-steps versus the gold's 6, focusing on pipetting mechanics rather than procedural content.\"},\n  \"summary\": \"The prediction captures the overall PCR setup workflow in correct order but is overly granular and fails to identify the specific reagents being added. This makes it descriptive of observable actions but poor as a usable PCR protocol.\"\n}"
+}

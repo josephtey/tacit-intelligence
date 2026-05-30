@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-114",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "d285699dcc77",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "The prediction captures aspirating sample, loading well, placing cassette, and starting run, but misses thawing, mixing with loading buffer, and loading the DNA ladder."
+    },
+    "step_hallucination": {
+      "score": 5,
+      "reasoning": "All four predicted steps correspond to actions in the gold protocol with no fabricated steps."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The captured steps are in correct relative order, though placing the cassette ideally precedes loading."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "The prediction omits nearly all numerical parameters (volumes of DNA, loading buffer, ladder) though equipment names are reasonable."
+    },
+    "granularity_match": {
+      "score": 4,
+      "reasoning": "Four steps versus six is slightly less decomposed but at a similar level of detail."
+    }
+  },
+  "composite": 3.6,
+  "summary": "The prediction captures the core E-gel loading workflow with accurate equipment naming and no hallucinated steps, but omits the loading buffer mixing, ladder loading, and all volume parameters, reducing its fidelity to the gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"The prediction captures aspirating sample, loading well, placing cassette, and starting run, but misses thawing, mixing with loading buffer, and loading the DNA ladder.\"},\n  \"step_hallucination\": {\"score\": 5, \"reasoning\": \"All four predicted steps correspond to actions in the gold protocol with no fabricated steps.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The captured steps are in correct relative order, though placing the cassette ideally precedes loading.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"The prediction omits nearly all numerical parameters (volumes of DNA, loading buffer, ladder) though equipment names are reasonable.\"},\n  \"granularity_match\": {\"score\": 4, \"reasoning\": \"Four steps versus six is slightly less decomposed but at a similar level of detail.\"},\n  \"summary\": \"The prediction captures the core E-gel loading workflow with accurate equipment naming and no hallucinated steps, but omits the loading buffer mixing, ladder loading, and all volume parameters, reducing its fidelity to the gold protocol.\"\n}"
+}

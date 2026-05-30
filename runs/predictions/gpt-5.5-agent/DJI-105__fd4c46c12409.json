@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-105",
+  "model": "gpt-5.5-agent",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "fd4c46c12409",
+  "protocol": "1. Chill the labeled microcentrifuge tubes \u201cBP,\u201d \u201cDNA,\u201d and \u201cMM\u201d in an ice bucket, and set PCR tube(s) in a yellow tube rack with micropipettes and disposable tips ready.\n\n2. Add PCR master mix from the tube labeled \u201cMM\u201d to each PCR tube using a micropipette.\n\n3. Add DNA template from the tube labeled \u201cDNA\u201d to each PCR tube using a fresh pipette tip.\n\n4. Add reagent/primer from the tube labeled \u201cBP\u201d to each PCR tube using a fresh pipette tip, preparing 20 \u00b5L PCR reaction(s).\n\n5. Cap the PCR tube(s) securely after reagent addition.\n\n6. Briefly centrifuge the capped PCR tube(s) in the benchtop mini-centrifuge to collect liquid at the bottom.\n\n7. Load the capped PCR tube(s) into the Bio-Rad T100 Thermal Cycler and close the heated lid.\n\n8. Run the saved \u201cPHANTA\u201d PCR program on the Bio-Rad T100 with a 20 \u00b5L reaction volume; visible program parameters include 95\u00b0C initial denaturation, cycling through 95\u00b0C, 67\u00b0C, and 72\u00b0C steps with a 30\u00d7 loop, a 72\u00b0C final extension for 1 min, and a 12\u00b0C hold."
+}

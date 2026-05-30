@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-037",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Set up the bench with a white PCR tube rack containing labeled open PCR tubes, an adjustable micropipette, a pink box of disposable 20 \u00b5L tips, and small snap-cap microcentrifuge tubes containing clear liquid.\n\n2. Open a labeled snap-cap microcentrifuge tube by holding the tube in one gloved hand and flipping the cap fully open.\n\n3. Attach a disposable 20 \u00b5L pipette tip from the tip rack onto the adjustable micropipette.\n\n4. Insert the pipette tip into the open microcentrifuge tube and aspirate clear liquid.\n\n5. Dispense the aspirated clear liquid into an open labeled PCR tube positioned in the white PCR tube rack.\n\n6. Remove the pipette tip from the tube and prepare the micropipette for the next transfer.\n\n7. Attach a fresh disposable 20 \u00b5L pipette tip from the pink tip box onto the micropipette.\n\n8. Insert the fresh tip into the next open microcentrifuge tube and aspirate clear liquid.\n\n9. Dispense the clear liquid into another open labeled PCR tube in the white PCR tube rack.\n\n10. Repeat the fresh-tip liquid transfer for additional labeled tubes in the rack, including tubes labeled \u201c1,\u201d \u201c2,\u201d \u201c3,\u201d and \u201cMIX.\u201d\n\n11. Place the handled microcentrifuge tubes back into the white PCR tube rack after dispensing.\n\n12. Arrange the labeled PCR tubes upright in the white rack and clear the pipette away from the work area."
+}

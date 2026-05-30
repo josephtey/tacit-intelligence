@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-109",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "c44a38f73729",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures reagent transfers, spin-down, thermocycler loading, and program start, but misses thawing and lacks distinct steps for each reagent addition."
+    },
+    "step_hallucination": {
+      "score": 4,
+      "reasoning": "Most steps map to gold actions, though 'closing the cap' is a minor extra micro-step not in gold."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the correct sequence of the gold protocol."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "Temperatures are correct but volumes (20 \u00b5L vs 25 \u00b5L), durations, cycle counts, and individual reagent volumes are missing or incorrect."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Prediction collapses multiple reagent additions into generic transfers, making it noticeably coarser than the gold."
+    }
+  },
+  "composite": 3.4,
+  "summary": "The prediction roughly mirrors the gold PCR setup workflow in correct order but lacks reagent-specific detail and most numerical parameters, resulting in a coarser, less precise protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures reagent transfers, spin-down, thermocycler loading, and program start, but misses thawing and lacks distinct steps for each reagent addition.\"},\n  \"step_hallucination\": {\"score\": 4, \"reasoning\": \"Most steps map to gold actions, though 'closing the cap' is a minor extra micro-step not in gold.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the correct sequence of the gold protocol.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"Temperatures are correct but volumes (20 \u00b5L vs 25 \u00b5L), durations, cycle counts, and individual reagent volumes are missing or incorrect.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Prediction collapses multiple reagent additions into generic transfers, making it noticeably coarser than the gold.\"},\n  \"summary\": \"The prediction roughly mirrors the gold PCR setup workflow in correct order but lacks reagent-specific detail and most numerical parameters, resulting in a coarser, less precise protocol.\"\n}"
+}

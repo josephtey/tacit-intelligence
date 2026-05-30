@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_069",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A liquid is transferred using a micropipette into a 96-well plate held in a blue rack. Reagents are kept in microcentrifuge tubes on ice in a green bucket.\n2. The 96-well plate, held in a green rack, is carried from the preparation bench to a Bio-Rad T100 Thermal Cycler.\n3. The lid of the thermal cycler is opened and the 96-well plate is placed into the thermal block.\n4. The lid of the thermal cycler is closed.\n5. A thermal cycling program is selected and started using the touchscreen interface of the Bio-Rad T100 Thermal Cycler."
+}

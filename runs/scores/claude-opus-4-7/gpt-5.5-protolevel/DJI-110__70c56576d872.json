@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-110",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "70c56576d872",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Captures thawing/ice, pipetting into tube, placing in thermocycler, and starting program, but misses specific reagent additions (Master Mix, primers, template, water) and the flick/spin mixing step."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Several steps describe bench arrangement and generic 'dispense liquid' actions without specifying reagents, which are vague/spurious relative to gold."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The general sequence (setup, pipetting, place in cycler, program, start) follows the gold order."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Most gold parameters (volumes, primer concentrations, 55\u00b0C anneal, 25 \u00b5L final, 30 cycles, 3 min initial) are missing or contradicted (20 \u00b5L vs 25 \u00b5L, 63\u00b0C vs 55\u00b0C)."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Similar number of steps but decomposition focuses on bench/visual actions rather than reagent-by-reagent additions as in gold."
+    }
+  },
+  "composite": 2.6,
+  "summary": "The prediction roughly follows the workflow shape of PCR setup and thermocycling but omits the critical reagent-specific pipetting steps and contains numerous parameter mismatches, making it a low-fidelity reproduction of the gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Captures thawing/ice, pipetting into tube, placing in thermocycler, and starting program, but misses specific reagent additions (Master Mix, primers, template, water) and the flick/spin mixing step.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Several steps describe bench arrangement and generic 'dispense liquid' actions without specifying reagents, which are vague/spurious relative to gold.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The general sequence (setup, pipetting, place in cycler, program, start) follows the gold order.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Most gold parameters (volumes, primer concentrations, 55\u00b0C anneal, 25 \u00b5L final, 30 cycles, 3 min initial) are missing or contradicted (20 \u00b5L vs 25 \u00b5L, 63\u00b0C vs 55\u00b0C).\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Similar number of steps but decomposition focuses on bench/visual actions rather than reagent-by-reagent additions as in gold.\"},\n  \"summary\": \"The prediction roughly follows the workflow shape of PCR setup and thermocycling but omits the critical reagent-specific pipetting steps and contains numerous parameter mismatches, making it a low-fidelity reproduction of the gold protocol.\"\n}"
+}

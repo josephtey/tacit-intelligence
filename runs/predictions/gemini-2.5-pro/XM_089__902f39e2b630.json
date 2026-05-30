@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_089",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A liquid is transferred using a single-channel pipette into microcentrifuge tubes held in a pink 96-well rack.\n2. Using a single-channel pipette, liquid is transferred from the tubes in the pink rack to tubes in a purple 96-well rack.\n3. Liquid is transferred from a blue 96-well plate to the tubes in the pink 96-well rack using a single-channel pipette.\n4. A bacterial colony is picked from the surface of an agar plate using a sterile pipette tip.\n5. The picked colony is transferred into a microcentrifuge tube containing liquid in the pink 96-well rack.\n6. The colony is resuspended in the liquid by pipetting up and down with a single-channel pipette.\n7. Liquid is transferred from a tube in the purple rack to a well in a lime green 96-well plate using a single-channel pipette.\n8. A liquid is transferred into multiple wells of the lime green 96-well plate using a multi-channel pipette.\n9. The GoPro camera recording the experiment is turned off after 5 minutes and 50 seconds."
+}

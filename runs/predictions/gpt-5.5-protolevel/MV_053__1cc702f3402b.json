@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_053",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Put on blue nitrile gloves and use an orange insulated glove for handling temperature-sensitive containers and heated equipment.\n\n2. Open the bench-top microwave or heating unit and handle a clear bottle containing liquid with the insulated glove; no heating time, temperature, or volume is visible.\n\n3. Prepare a blue ice bucket filled with crushed ice and bring it to the bench for keeping microcentrifuge tubes cold.\n\n4. Select labeled microcentrifuge tubes from a grid tube rack and keep the tubes organized on the bench; tube labels are visible but reagent identities are not legible.\n\n5. Set up a clear gel electrophoresis chamber on a green bench mat with a cast gel and visible sample wells inside the chamber.\n\n6. Place a 250 mL glass beaker containing clear liquid next to the electrophoresis chamber for use during gel handling or loading.\n\n7. Position a smartphone on a red-and-black flexible tripod near the bench to document the gel-handling procedure.\n\n8. Open the smartphone quick-settings screen and adjust the phone settings before recording; no experimental parameters are shown on the phone.\n\n9. Load liquid from a microcentrifuge tube into the wells of the gel electrophoresis chamber using a pipette fitted with a green pipette tip; no pipette volume setting is visible.\n\n10. Continue dispensing the sample carefully into the gel wells while the gel remains submerged in clear liquid inside the electrophoresis chamber.\n\n11. Record the experimental notes in a bound laboratory notebook on the bench after loading the gel.\n\n12. Retrieve a white storage box with a yellow label from cold storage; the label text is not legible enough to identify the reagent or contents."
+}

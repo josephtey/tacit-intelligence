@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_060",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Set up an Invitrogen E-Gel EX agarose gel cassette, an E-Gel Power Snap instrument with the orange lid open, an adjustable micropipette, disposable tips, and labeled microcentrifuge tubes kept on ice.\n\n2. Load aliquots from the labeled microcentrifuge tubes into separate wells of the E-Gel EX cassette using an adjustable micropipette with disposable tips; no transfer volumes are visible.\n\n3. Place the loaded E-Gel EX cassette into the E-Gel Power Snap instrument, seating the cassette flat in the chamber.\n\n4. Close the orange lid of the E-Gel Power Snap instrument over the loaded cassette.\n\n5. Start the E-Gel run from the touchscreen; the displayed run time is 10:00 min and begins counting down."
+}

@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-106",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "9098a98b72cf",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "The prediction captures mixing, spinning, placing in thermocycler, and program start, but collapses all reagent additions into a single vague transfer and omits thaw/on-ice step details."
+    },
+    "step_hallucination": {
+      "score": 5,
+      "reasoning": "All predicted steps correspond to gold protocol activities, with no clearly fabricated/off-topic steps."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The sequence largely matches, though placing the tube on ice after the transfer is slightly out of order versus gold's thaw-on-ice-first instruction."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Most gold parameters (volumes of master mix, primers, template, water; 25 \u00b5L final; 30 cycles; durations) are missing, and the stated 20 \u00b5L reaction volume contradicts the gold's 25 \u00b5L."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is substantially under-decomposed, compressing six distinct reagent additions into one generic transfer step."
+    }
+  },
+  "composite": 2.8,
+  "summary": "The prediction captures the general workflow shape (transfer, mix, spin, thermocycle) without fabrications, but it omits nearly all reagent-specific steps and parameters and contradicts the final reaction volume, yielding low fidelity to the gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"The prediction captures mixing, spinning, placing in thermocycler, and program start, but collapses all reagent additions into a single vague transfer and omits thaw/on-ice step details.\"},\n  \"step_hallucination\": {\"score\": 5, \"reasoning\": \"All predicted steps correspond to gold protocol activities, with no clearly fabricated/off-topic steps.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The sequence largely matches, though placing the tube on ice after the transfer is slightly out of order versus gold's thaw-on-ice-first instruction.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Most gold parameters (volumes of master mix, primers, template, water; 25 \u00b5L final; 30 cycles; durations) are missing, and the stated 20 \u00b5L reaction volume contradicts the gold's 25 \u00b5L.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is substantially under-decomposed, compressing six distinct reagent additions into one generic transfer step.\"},\n  \"summary\": \"The prediction captures the general workflow shape (transfer, mix, spin, thermocycle) without fabrications, but it omits nearly all reagent-specific steps and parameters and contradicts the final reaction volume, yielding low fidelity to the gold protocol.\"\n}"
+}

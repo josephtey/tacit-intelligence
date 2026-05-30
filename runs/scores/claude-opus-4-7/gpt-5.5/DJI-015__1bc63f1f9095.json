@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-015",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "1bc63f1f9095",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Reagent additions, mixing, and dispensing onto dish are captured, but explicit incubation step and gentle rocking are missing or replaced with spreading."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several spurious steps (carrying dish through hallway, removing tip, repositioning pipette, spreading by tilting) do not correspond to gold steps."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The overall sequence of pipetting reagents then transferring to dish is preserved, with minor deviations."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits the 20 min incubation, room temperature, 10 cm dish, 293T cells, and 70-80% confluency parameters specified in gold."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction has 14 micro-steps versus the gold's 7, over-decomposing physical actions like cap opening and pipette handling."
+    }
+  },
+  "composite": 2.4,
+  "summary": "The prediction captures the broad shape of a transfection-mix-and-add procedure but over-decomposes physical actions, omits key parameters (incubation, cell type, confluency), and adds fabricated steps like carrying the dish through a hallway and spreading liquid.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Reagent additions, mixing, and dispensing onto dish are captured, but explicit incubation step and gentle rocking are missing or replaced with spreading.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several spurious steps (carrying dish through hallway, removing tip, repositioning pipette, spreading by tilting) do not correspond to gold steps.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The overall sequence of pipetting reagents then transferring to dish is preserved, with minor deviations.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits the 20 min incubation, room temperature, 10 cm dish, 293T cells, and 70-80% confluency parameters specified in gold.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction has 14 micro-steps versus the gold's 7, over-decomposing physical actions like cap opening and pipette handling.\"},\n  \"summary\": \"The prediction captures the broad shape of a transfection-mix-and-add procedure but over-decomposes physical actions, omits key parameters (incubation, cell type, confluency), and adds fabricated steps like carrying the dish through a hallway and spreading liquid.\"\n}"
+}

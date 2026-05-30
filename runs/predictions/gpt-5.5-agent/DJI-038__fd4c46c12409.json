@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-038",
+  "model": "gpt-5.5-agent",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "fd4c46c12409",
+  "protocol": "1. Load a disposable 20 \u00b5L pipette tip onto an adjustable single-channel micropipette.\n\n2. Aliquot clear liquid reagent into the first labeled 1.5 mL microcentrifuge tube using the micropipette, then keep the tube open in the tube rack.\n\n3. Aliquot the same clear liquid reagent into the second labeled 1.5 mL microcentrifuge tube using the micropipette, then keep the tube open in the tube rack.\n\n4. Aliquot the same clear liquid reagent into the third labeled 1.5 mL microcentrifuge tube using the micropipette, then keep the tube open in the tube rack.\n\n5. Refill the pipette tip from the clear liquid reagent reservoir in the plastic beaker.\n\n6. Aliquot clear liquid reagent into an additional open labeled 1.5 mL microcentrifuge tube positioned in the tube rack.\n\n7. Refill the pipette tip again from the clear liquid reagent reservoir in the plastic beaker.\n\n8. Open a petri dish containing pink liquid medium and place it on the bench next to the prepared microcentrifuge tubes."
+}

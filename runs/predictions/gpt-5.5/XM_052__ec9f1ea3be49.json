@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_052",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Set up the bench with a turquoise tube rack, a green foam tube rack, a purple tip box containing pipette tips, labeled microcentrifuge/PCR tubes, an adjustable micropipette, a marker, and a waste beaker.\n\n2. Label small clear reaction tubes with a black laboratory marker while wearing blue gloves.\n\n3. Place the labeled reaction tubes into the turquoise tube rack and arrange additional labeled tubes on the green foam rack.\n\n4. Fit a disposable pipette tip from the purple tip box onto the yellow-coded adjustable micropipette.\n\n5. Open a labeled microcentrifuge tube and aspirate clear liquid with the fitted micropipette tip.\n\n6. Dispense the clear liquid into labeled reaction tubes positioned in the turquoise tube rack.\n\n7. Repeat aspiration from an open labeled tube and dispensing into additional labeled reaction tubes in the turquoise rack.\n\n8. Change to a fresh disposable pipette tip using the purple tip box.\n\n9. Aspirate clear liquid from a labeled tube held in the gloved hand using the micropipette.\n\n10. Dispense the clear liquid into a connected strip of clear PCR tubes held over the green foam rack.\n\n11. Continue dispensing clear liquid sequentially into multiple tubes of the PCR strip, moving from one tube to the next.\n\n12. Place the filled PCR tube strip back into the turquoise tube rack and leave labeled tubes arranged on the green foam rack."
+}

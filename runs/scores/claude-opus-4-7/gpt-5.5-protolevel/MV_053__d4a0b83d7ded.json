@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_053",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "d4a0b83d7ded",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Only the microwave heating and ice bucket steps loosely correspond to gold; gel casting assembly and DNA dye/buffer acquisition are missing or unclear."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most predicted steps (gel loading, smartphone setup, notebook recording, storage box retrieval) are fabricated and not in the gold protocol."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The few captured steps (heating, ice) appear roughly in the right order but interleaved with many spurious ones."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Prediction omits nearly all gold parameters (boiling, ~55\u00b0C cooling, casting tray with end caps/tape) and adds vague non-specific descriptions."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "Prediction has 12 steps vs. 4 gold steps, substantially over-decomposed with many irrelevant observational details."
+    }
+  },
+  "composite": 1.8,
+  "summary": "The prediction captures only a couple of gold steps (microwave heating, ice preparation) while introducing many hallucinated steps about gel loading, phone setup, and notebook use. Overall fidelity to the gold protocol is poor in both coverage and precision.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Only the microwave heating and ice bucket steps loosely correspond to gold; gel casting assembly and DNA dye/buffer acquisition are missing or unclear.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most predicted steps (gel loading, smartphone setup, notebook recording, storage box retrieval) are fabricated and not in the gold protocol.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The few captured steps (heating, ice) appear roughly in the right order but interleaved with many spurious ones.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Prediction omits nearly all gold parameters (boiling, ~55\u00b0C cooling, casting tray with end caps/tape) and adds vague non-specific descriptions.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"Prediction has 12 steps vs. 4 gold steps, substantially over-decomposed with many irrelevant observational details.\"},\n  \"summary\": \"The prediction captures only a couple of gold steps (microwave heating, ice preparation) while introducing many hallucinated steps about gel loading, phone setup, and notebook use. Overall fidelity to the gold protocol is poor in both coverage and precision.\"\n}"
+}

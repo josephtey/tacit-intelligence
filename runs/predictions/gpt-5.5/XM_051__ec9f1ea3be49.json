@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_051",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Prepare the bench with a 10 \u00b5L micropipette, disposable pipette tips in an open tip box, labeled microcentrifuge/PCR tubes, and green tube racks.\n\n2. Attach a disposable pipette tip to the 10 \u00b5L micropipette from the open tip box.\n\n3. Open a labeled PCR tube and dispense liquid into the tube using the 10 \u00b5L micropipette.\n\n4. Place the pipetted tube into the green tube rack with the cap open or partially open.\n\n5. Pick up the next labeled PCR tube from the rack and hold it upright with the cap open.\n\n6. Dispense liquid into the second labeled PCR tube using the same 10 \u00b5L micropipette.\n\n7. Return the second tube to the green tube rack.\n\n8. Pick up another labeled PCR tube marked with a handwritten identifier and open the cap.\n\n9. Dispense liquid into the third labeled PCR tube using the 10 \u00b5L micropipette.\n\n10. Place the third tube back into the green tube rack beside the other labeled tubes.\n\n11. Repeat the pipetting step for additional labeled PCR tubes in the rack, opening each tube, dispensing liquid, and returning it to the rack.\n\n12. Organize the prepared tubes together in the green rack with visible handwritten labels including M, F, and R.\n\n13. Move from the bench to the thermal cycler/real-time PCR instrument area while carrying the pipette.\n\n14. Open the thermal cycler module by lifting the heated lid assembly to expose the sample block.\n\n15. Adjust the thermal cycler lid and block area by moving the gray heated lid/cover into position, leaving the instrument open and ready for loading."
+}

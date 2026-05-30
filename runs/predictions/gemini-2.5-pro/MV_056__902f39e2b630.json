@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_056",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1.  A liquid is transferred using a micropipette from an orange-capped microcentrifuge tube, stored in an ice bucket, to a new microcentrifuge tube in a benchtop rack.\n2.  A liquid is transferred from a green-capped microcentrifuge tube, stored in the ice bucket, into the same recipient microcentrifuge tube using the same micropipette.\n3.  Using a different micropipette set to 2.5 \u00b5L, a liquid is transferred from a labeled source tube, taken from a storage box, into the recipient microcentrifuge tube.\n4.  The recipient tube is closed and its contents are mixed by flicking the tube with a finger.\n5.  The experimenter consults a handwritten protocol in a lab notebook before re-opening the recipient tube.\n6.  A liquid is transferred from a clear, screw-cap bottle into the recipient microcentrifuge tube using a micropipette.\n7.  A final liquid is added to the recipient microcentrifuge tube using a micropipette with a yellow plunger."
+}

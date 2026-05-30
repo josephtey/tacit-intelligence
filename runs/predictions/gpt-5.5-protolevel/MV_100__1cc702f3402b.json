@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_100",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Put on blue nitrile gloves and clear a working area on the laboratory bench.\n\n2. Set a blue microcentrifuge tube rack with microcentrifuge tubes on the bench beside a benchtop centrifuge and a written worksheet/notebook.\n\n3. Organize and label the microcentrifuge tubes in the rack; no volumes or tube identifiers are visible.\n\n4. Open the benchtop centrifuge lid and access the rotor/sample chamber.\n\n5. Load or check microcentrifuge tubes in the benchtop centrifuge rotor, then close the centrifuge lid; no speed, time, or temperature settings are visible.\n\n6. Return the processed microcentrifuge tubes to the blue tube rack on the bench.\n\n7. Handle the microcentrifuge tubes in the rack for the next preparation step, using gloved hands; no reagent identity, volume, or concentration is visible.\n\n8. Move the tube rack and associated materials to the adjacent bench area for continued processing."
+}

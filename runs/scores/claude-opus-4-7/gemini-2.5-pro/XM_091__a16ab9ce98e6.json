@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_091",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "a16ab9ce98e6",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures pipetting, sealing, spinning, loading thermal cycler, and starting program, but misses thawing/vortexing reagents and the distinct addition of buffer, primers, template, and water."
+    },
+    "step_hallucination": {
+      "score": 4,
+      "reasoning": "Most steps map to gold actions, though step 1 (placing plate in cycler before reactions are prepared) is out of place/spurious."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "Pipetting, sealing, spinning, and loading are in correct order, but starting with placing the plate in the thermal cycler is misordered."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits nearly all gold parameters (volumes, primer concentrations, reagent names) and only mentions generic equipment."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Similar number of steps but combines reagent additions into vague 'liquid' transfers, making decomposition noticeably coarser in chemistry detail."
+    }
+  },
+  "composite": 2.8,
+  "summary": "The prediction captures the general physical workflow (pipetting, sealing, spinning, cycling) but lacks reagent-specific steps and parameters, reflecting a video-observation style rather than a chemistry protocol.",
+  "raw": "```json\n{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures pipetting, sealing, spinning, loading thermal cycler, and starting program, but misses thawing/vortexing reagents and the distinct addition of buffer, primers, template, and water.\"},\n  \"step_hallucination\": {\"score\": 4, \"reasoning\": \"Most steps map to gold actions, though step 1 (placing plate in cycler before reactions are prepared) is out of place/spurious.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"Pipetting, sealing, spinning, and loading are in correct order, but starting with placing the plate in the thermal cycler is misordered.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits nearly all gold parameters (volumes, primer concentrations, reagent names) and only mentions generic equipment.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Similar number of steps but combines reagent additions into vague 'liquid' transfers, making decomposition noticeably coarser in chemistry detail.\"},\n  \"summary\": \"The prediction captures the general physical workflow (pipetting, sealing, spinning, cycling) but lacks reagent-specific steps and parameters, reflecting a video-observation style rather than a chemistry protocol.\"\n}\n```"
+}

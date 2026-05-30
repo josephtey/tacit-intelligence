@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_089",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "6c9941e8da3b",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Captures colony picking and some liquid transfers but misses primer mix prep, PCR master mix prep, aliquoting into PCR strip tubes, and thermocycler step."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several steps are vague or fabricated (bench setup, multichannel fitting, 5-minute timer) and don't correspond to gold steps."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "Rough sequence of liquid prep then colony picking is preserved but specifics are jumbled."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No volumes, concentrations, reagent names, or equipment specifics from the gold are mentioned; everything is described as 'clear liquid'."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Similar number of steps but decomposition emphasizes visual/setup actions instead of the chemical/procedural substeps in the gold."
+    }
+  },
+  "composite": 2.0,
+  "summary": "The prediction reflects a vague visual description of the procedure rather than the actual colony PCR protocol, missing key reagents, volumes, and the thermocycler step while adding spurious setup and timer steps.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Captures colony picking and some liquid transfers but misses primer mix prep, PCR master mix prep, aliquoting into PCR strip tubes, and thermocycler step.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several steps are vague or fabricated (bench setup, multichannel fitting, 5-minute timer) and don't correspond to gold steps.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"Rough sequence of liquid prep then colony picking is preserved but specifics are jumbled.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No volumes, concentrations, reagent names, or equipment specifics from the gold are mentioned; everything is described as 'clear liquid'.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Similar number of steps but decomposition emphasizes visual/setup actions instead of the chemical/procedural substeps in the gold.\"},\n  \"summary\": \"The prediction reflects a vague visual description of the procedure rather than the actual colony PCR protocol, missing key reagents, volumes, and the thermocycler step while adding spurious setup and timer steps.\"\n}"
+}

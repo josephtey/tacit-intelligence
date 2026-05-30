@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_065",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Arrange labeled chilled PCR tubes in a green ice bucket on the bench and prepare an adjustable single-channel micropipette, disposable tips in a blue rack, and tube racks.\n\n2. Transfer an aliquot of clear liquid from a small tube/well in the blue rack into a labeled chilled PCR tube using the micropipette.\n\n3. Repeat the clear-liquid transfer into additional labeled chilled PCR tubes, returning the tubes to ice between additions.\n\n4. Cap the prepared PCR tubes securely by hand.\n\n5. Open the heated lid of a Bio-Rad T100 Thermal Cycler and place the capped PCR tubes into the block/green insert.\n\n6. Close the Bio-Rad T100 Thermal Cycler lid.\n\n7. Use the T100 touchscreen to select and start the saved thermal-cycling program with the reaction volume set to 25 \u00b5L; the run screen displays a temperature profile and approximately 58 min remaining."
+}

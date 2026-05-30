@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_069",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "1e1bc8a58d52",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Captures thawing/ice, pipetting into tube, centrifuging, and loading thermocycler, but misses specific reagent additions and program parameters."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Several spurious steps about bench setup, attaching tips, and clearing touchscreen prompts that aren't in the gold."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the correct relative sequence."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No volumes, concentrations, temperatures, times, or cycle parameters are specified in the prediction."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Similar number of steps but decomposed around physical actions rather than reagent additions, making it noticeably different in detail level."
+    }
+  },
+  "composite": 2.8,
+  "summary": "The prediction describes the general workflow of PCR setup but omits all reagent-specific and thermocycling parameters, instead focusing on generic pipetting actions. It captures the rough procedure and ordering but lacks the quantitative specificity of the gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Captures thawing/ice, pipetting into tube, centrifuging, and loading thermocycler, but misses specific reagent additions and program parameters.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Several spurious steps about bench setup, attaching tips, and clearing touchscreen prompts that aren't in the gold.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the correct relative sequence.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No volumes, concentrations, temperatures, times, or cycle parameters are specified in the prediction.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Similar number of steps but decomposed around physical actions rather than reagent additions, making it noticeably different in detail level.\"},\n  \"summary\": \"The prediction describes the general workflow of PCR setup but omits all reagent-specific and thermocycling parameters, instead focusing on generic pipetting actions. It captures the rough procedure and ordering but lacks the quantitative specificity of the gold protocol.\"\n}"
+}

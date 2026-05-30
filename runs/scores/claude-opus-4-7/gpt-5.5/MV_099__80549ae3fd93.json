@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_099",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "80549ae3fd93",
+  "scores": {
+    "step_coverage": {
+      "score": 1,
+      "reasoning": "Only the centrifuge operation is vaguely captured; spin column placement, buffer EB application, and explicit loading/centrifugation parameters are missing."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most predicted steps (bench prep, reviewing protocol, retrieving consumables, organizing racks) are spurious and do not correspond to any gold step."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The general flow of pipetting then using the benchtop device roughly matches, but specific gold steps aren't clearly ordered."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "No specific parameters (0.050 mL Buffer EB, \u226510,000 rpm, 1 min, spin column, collection tube) are mentioned."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction has 12 vague observational steps versus the gold's 4 concrete steps, making it substantially over-decomposed and too generic."
+    }
+  },
+  "composite": 1.4,
+  "summary": "The prediction reads as a generic description of bench activity rather than the specific spin-column elution protocol, missing nearly all key reagents, parameters, and steps. Overall fidelity to the gold is very low.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 1, \"reasoning\": \"Only the centrifuge operation is vaguely captured; spin column placement, buffer EB application, and explicit loading/centrifugation parameters are missing.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most predicted steps (bench prep, reviewing protocol, retrieving consumables, organizing racks) are spurious and do not correspond to any gold step.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The general flow of pipetting then using the benchtop device roughly matches, but specific gold steps aren't clearly ordered.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"No specific parameters (0.050 mL Buffer EB, \u226510,000 rpm, 1 min, spin column, collection tube) are mentioned.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction has 12 vague observational steps versus the gold's 4 concrete steps, making it substantially over-decomposed and too generic.\"},\n  \"summary\": \"The prediction reads as a generic description of bench activity rather than the specific spin-column elution protocol, missing nearly all key reagents, parameters, and steps. Overall fidelity to the gold is very low.\"\n}"
+}

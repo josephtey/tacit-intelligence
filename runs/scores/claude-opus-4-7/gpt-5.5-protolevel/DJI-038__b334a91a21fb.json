@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-038",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "b334a91a21fb",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Only the reagent additions and the dish presence are loosely captured; mixing, incubation, dropwise addition, and rocking are missing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several steps about tip changes, placing tips in beakers, and rack arrangement are spurious relative to the gold."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The captured additions precede the dish appearance, roughly matching gold order."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Gold parameters like 20 min RT incubation, 10 cm dish, 293T cells, and 70-80% confluency are absent, and the 20 \u00b5L tip is not specified in gold."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Prediction has a similar number of steps but decomposes pipetting actions rather than mixing/incubation/transfection actions."
+    }
+  },
+  "composite": 2.4,
+  "summary": "The prediction captures the reagent additions into tubes at a surface level but misses key transfection steps (mix, incubate, dropwise to cells, rock) and adds fabricated handling steps. Overall fidelity to the gold protocol is low.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Only the reagent additions and the dish presence are loosely captured; mixing, incubation, dropwise addition, and rocking are missing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several steps about tip changes, placing tips in beakers, and rack arrangement are spurious relative to the gold.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The captured additions precede the dish appearance, roughly matching gold order.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Gold parameters like 20 min RT incubation, 10 cm dish, 293T cells, and 70-80% confluency are absent, and the 20 \u00b5L tip is not specified in gold.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Prediction has a similar number of steps but decomposes pipetting actions rather than mixing/incubation/transfection actions.\"},\n  \"summary\": \"The prediction captures the reagent additions into tubes at a surface level but misses key transfection steps (mix, incubate, dropwise to cells, rock) and adds fabricated handling steps. Overall fidelity to the gold protocol is low.\"\n}"
+}

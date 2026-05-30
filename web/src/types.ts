@@ -1,10 +1,23 @@
 export type ConfigKey = "XMglass" | "DJI" | "Multiview";
 
+export interface DimensionScore {
+  score: number;
+  reasoning: string;
+}
+
+export interface ModelPrediction {
+  protocol: string;
+  composite?: number;
+  scores?: Record<string, DimensionScore>;
+  summary?: string;
+}
+
 export interface Entry {
   config: ConfigKey;
   slice_id: string;
   video_name: string;
   video_path: string;
+  video_url?: string;
   media_kind: "video" | "image" | "other";
   video_exists: boolean;
   scene: string;
@@ -17,6 +30,7 @@ export interface Entry {
   tools: string;
   gpt4o_output: string;
   date: string;
+  predictions?: Record<string, ModelPrediction>;
 }
 
 export interface Metadata {

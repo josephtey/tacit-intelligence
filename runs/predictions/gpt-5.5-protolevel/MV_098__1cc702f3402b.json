@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_098",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Prepare a benchtop workspace with disposable gloves, a micropipette with tips, microcentrifuge tubes, a tube rack, a small benchtop centrifuge, and a lab notebook; no visible volumes, temperatures, or reagent identities are shown.\n\n2. Transfer liquid using a micropipette into or from a microcentrifuge tube on the bench; the tube contents and pipette volume setting are not visible.\n\n3. Place the microcentrifuge tube into the benchtop centrifuge and close or secure the centrifuge lid; no spin speed, time, or temperature setting is visible.\n\n4. Retrieve or handle the microcentrifuge tube after centrifuge use at the bench; no visible pellet, phase separation, or volume is shown.\n\n5. Record the work in the lab notebook or on a paper worksheet at the bench."
+}

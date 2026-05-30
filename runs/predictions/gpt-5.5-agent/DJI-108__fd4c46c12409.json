@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-108",
+  "model": "gpt-5.5-agent",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "fd4c46c12409",
+  "protocol": "1. Keep labeled reagent/sample microcentrifuge tubes on ice in a green ice bucket, and prepare thin-walled PCR tubes in a tube rack at the bench.\n\n2. Assemble each PCR reaction in a thin-walled PCR tube using a single-channel micropipette with sterile tips, adding clear liquid components from the chilled tubes and bringing the reaction to a final volume of 20 \u00b5L.\n\n3. Close the PCR tubes securely by pressing the caps fully shut.\n\n4. Briefly centrifuge the capped PCR tubes in a benchtop mini-centrifuge with a blue rotor to collect liquid at the bottom of the tubes.\n\n5. Place the PCR tubes into the block of a Bio-Rad T100 Thermal Cycler and close the heated lid.\n\n6. Run the saved thermal-cycler program \u201cPHANTA\u201d with a 20 \u00b5L reaction volume: 23\u00b0C for 0:30, 98\u00b0C for 0:10, cycle through 63\u00b0C for 0:06 and 72\u00b0C for 0:04 with GOTO step 2 for 30 cycles, then 72\u00b0C for 1:00, followed by a 12\u00b0C hold."
+}

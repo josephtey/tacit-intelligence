@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_053",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A rack of tubes is retrieved from a cold storage unit using an orange cryogenic glove.\n2. A beaker with a frosted exterior is handled next to a blue ice bucket containing dry ice.\n3. Small, white-capped tubes are selected from a gridded freezer storage box.\n4. A vertical gel electrophoresis cassette is inserted into the green running module of the electrophoresis tank.\n5. A smartphone is attached to a flexible red-and-black tripod to film the procedure.\n6. A liquid sample is loaded into a well of the vertical gel using a micropipette.\n7. A handwritten laboratory notebook is consulted on the bench.\n8. A white cardboard box with a yellow label is retrieved from a laboratory freezer."
+}

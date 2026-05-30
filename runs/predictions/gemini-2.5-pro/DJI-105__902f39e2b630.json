@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-105",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1.  Reaction tubes are retrieved from a green ice bucket and from various tube racks on the lab bench.\n2.  A single PCR tube is carried to a Bio-Rad T100 Thermal Cycler.\n3.  The PCR tube is placed into the thermal cycler block, and the lid is closed.\n4.  The protocol \"PA0072A\" is selected from the saved programs on the instrument's touchscreen.\n5.  The thermal cycler program is started. The protocol consists of an initial denaturation at 95.0\u00b0C for 10 minutes, a cycling stage with steps at 95.0\u00b0C, 55.0\u00b0C, and 72.0\u00b0C, a final extension at 72.0\u00b0C for 10 minutes, and a final hold at 12.0\u00b0C."
+}

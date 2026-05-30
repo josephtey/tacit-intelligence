@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-092",
+  "generator": "gpt-5.5-agent",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "23bff65aeebe",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Adds DNA, thermal cycling (heat shock analog), and plating are loosely captured, but mixing by flicking, ice incubations, antibiotic selection, and plate inversion are missing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Several steps are generic bench-organization or transfer steps not in the gold (organizing bench, opening thermal cycler, transferring between racks, closing dish)."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "Rough sequence (add reagent, mix, thermal treatment, plate) is preserved but with extra interleaved steps."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Almost all gold parameters (5 \u03bcL DNA, 42\u00b0C, 5 seconds, 50 \u03bcL, LB agar with antibiotic) are omitted or replaced with vague descriptions."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Step count is similar but the decomposition focuses on visual/bench actions rather than experimental operations."
+    }
+  },
+  "composite": 2.2,
+  "summary": "The prediction loosely mirrors the transformation workflow but reads as a visual description lacking specific reagents, volumes, and temperatures, and introduces several spurious bench-handling steps while omitting key gold steps like heat shock parameters and antibiotic selection.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Adds DNA, thermal cycling (heat shock analog), and plating are loosely captured, but mixing by flicking, ice incubations, antibiotic selection, and plate inversion are missing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Several steps are generic bench-organization or transfer steps not in the gold (organizing bench, opening thermal cycler, transferring between racks, closing dish).\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"Rough sequence (add reagent, mix, thermal treatment, plate) is preserved but with extra interleaved steps.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Almost all gold parameters (5 \u03bcL DNA, 42\u00b0C, 5 seconds, 50 \u03bcL, LB agar with antibiotic) are omitted or replaced with vague descriptions.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Step count is similar but the decomposition focuses on visual/bench actions rather than experimental operations.\"},\n  \"summary\": \"The prediction loosely mirrors the transformation workflow but reads as a visual description lacking specific reagents, volumes, and temperatures, and introduces several spurious bench-handling steps while omitting key gold steps like heat shock parameters and antibiotic selection.\"\n}"
+}

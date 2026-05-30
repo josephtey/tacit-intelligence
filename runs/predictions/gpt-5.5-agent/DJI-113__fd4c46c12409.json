@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-113",
+  "model": "gpt-5.5-agent",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "fd4c46c12409",
+  "protocol": "1. Keep labeled microcentrifuge tubes containing samples on ice beside an Invitrogen E-Gel EX Agarose 1% gel cassette.\n\n2. Pipette-mix or transfer each sample aliquot in its microcentrifuge tube using a single-channel micropipette, keeping the tubes on ice between handling.\n\n3. Remove the comb from the E-Gel EX Agarose 1% cassette and position the gel with the wells accessible.\n\n4. Load the prepared sample aliquot into a well of the E-Gel EX Agarose 1% cassette using a single-channel micropipette.\n\n5. Insert the loaded E-Gel EX cassette into the Invitrogen E-Gel Power Snap electrophoresis/imaging unit and close the amber lid.\n\n6. On the E-Gel Power Snap touchscreen, select the E-Gel EX 1\u20132% gel program and set the run time to 10 min.\n\n7. Start the E-Gel Power Snap run and electrophorese the gel for 10 min."
+}

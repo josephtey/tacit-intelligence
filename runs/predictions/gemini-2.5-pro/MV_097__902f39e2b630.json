@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_097",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A sample is placed into the microcentrifuge.\n2. The lid of the microcentrifuge is closed.\n3. The microcentrifuge is started using the control panel.\n4. After the centrifugation is complete, the lid of the microcentrifuge is opened.\n5. The sample is removed from the microcentrifuge."
+}

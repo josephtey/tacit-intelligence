@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_049",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A clear liquid is transferred using a micropipette into a series of labeled microcentrifuge tubes held in a green rack. A new pipette tip is used for each transfer.\n2. The cap of each microcentrifuge tube is closed after the liquid is added.\n3. The experimenter moves to a benchtop centrifuge and opens its lid, exposing the rotor inside.\n4. A strip of PCR tubes is placed into the sample block of a thermal cycler.\n5. The heated lid of the thermal cycler is closed and secured over the tubes."
+}

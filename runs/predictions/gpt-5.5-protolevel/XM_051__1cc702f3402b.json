@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_051",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Set up cap-labeled clear microcentrifuge/PCR tubes in a green tube rack and prepare a 10-\u00b5L-range adjustable micropipette with a clear disposable tip from an open tip box.\n\n2. Dispense a clear liquid into the first labeled tube using the micropipette, then return the tube to the green rack.\n\n3. Dispense clear liquid into the tube labeled \u201cM\u201d using the same 10-\u00b5L-range micropipette, then place the tube back in the rack.\n\n4. Dispense clear liquid into the tube labeled \u201cF\u201d using the micropipette, then place the tube back in the rack.\n\n5. Dispense clear liquid into the tube labeled \u201cR\u201d using the micropipette, then place the tube back in the rack.\n\n6. Repeat the same pipetting transfer into the remaining cap-labeled tubes in the green rack, keeping each tube open only during liquid addition.\n\n7. Move to the PCR instrument area and access the thermal cycler/qPCR instrument with 96-well blocks and heated lids.\n\n8. Close the heated lid over the sample block on the thermal cycler/qPCR instrument."
+}

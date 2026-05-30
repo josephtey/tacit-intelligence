@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_091",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "6c952096dcb7",
+  "scores": {
+    "step_coverage": {
+      "score": 5,
+      "reasoning": "Both gold steps (centrifuging and retrieving tubes) are covered by the prediction."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Two spurious steps about pipetting liquid and placing the rack into the centrifuge are not in the gold."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps (centrifuge operation then retrieval) are in correct relative order."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits the speed (\u226510,000 rpm) and duration (10 min) parameters specified in the gold."
+    },
+    "granularity_match": {
+      "score": 4,
+      "reasoning": "The prediction is slightly more decomposed (4 steps vs. 2) but at a comparable level of detail."
+    }
+  },
+  "composite": 3.6,
+  "summary": "The prediction captures both gold steps in the correct order but adds extra preparatory actions and omits key parameters like spin speed and duration. Overall it conveys the general procedure but lacks the quantitative precision of the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 5, \"reasoning\": \"Both gold steps (centrifuging and retrieving tubes) are covered by the prediction.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Two spurious steps about pipetting liquid and placing the rack into the centrifuge are not in the gold.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps (centrifuge operation then retrieval) are in correct relative order.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits the speed (\u226510,000 rpm) and duration (10 min) parameters specified in the gold.\"},\n  \"granularity_match\": {\"score\": 4, \"reasoning\": \"The prediction is slightly more decomposed (4 steps vs. 2) but at a comparable level of detail.\"},\n  \"summary\": \"The prediction captures both gold steps in the correct order but adds extra preparatory actions and omits key parameters like spin speed and duration. Overall it conveys the general procedure but lacks the quantitative precision of the gold.\"\n}"
+}

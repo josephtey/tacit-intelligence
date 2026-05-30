@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_097",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "269196942a09",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "The single gold step of loading and centrifuging is only partially implied through generic centrifuge interaction without a clear run step."
+    },
+    "step_hallucination": {
+      "score": 1,
+      "reasoning": "Most predicted steps (tube removal, pipetting, bench manipulation) are not part of the gold protocol."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The centrifuge-related steps appear early, roughly matching the gold's single-step order."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "Speed (\u226510,000 rpm) and duration (1 min) from the gold are entirely omitted."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "Gold has 1 step; prediction has 6 over-decomposed observational steps."
+    }
+  },
+  "composite": 1.6,
+  "summary": "The prediction over-decomposes a simple one-step centrifugation into many vague observation steps while omitting the key parameters (speed and time). It captures the centrifuge context but introduces several spurious pipetting and tube-handling steps not in the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"The single gold step of loading and centrifuging is only partially implied through generic centrifuge interaction without a clear run step.\"},\n  \"step_hallucination\": {\"score\": 1, \"reasoning\": \"Most predicted steps (tube removal, pipetting, bench manipulation) are not part of the gold protocol.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The centrifuge-related steps appear early, roughly matching the gold's single-step order.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"Speed (\u226510,000 rpm) and duration (1 min) from the gold are entirely omitted.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"Gold has 1 step; prediction has 6 over-decomposed observational steps.\"},\n  \"summary\": \"The prediction over-decomposes a simple one-step centrifugation into many vague observation steps while omitting the key parameters (speed and time). It captures the centrifuge context but introduces several spurious pipetting and tube-handling steps not in the gold.\"\n}"
+}

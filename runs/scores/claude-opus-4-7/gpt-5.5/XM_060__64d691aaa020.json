@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_060",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "64d691aaa020",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Loading sample, ladder, cassette placement, and run start are present, but thawing on ice and mixing with 6\u00d7 loading buffer are missing."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Several setup/handling micro-steps (bench arrangement, tip changes, lid closing, hand placement) are extra and not in the gold."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The prediction loads samples before placing the cassette in the instrument, reversing the gold order, though other steps follow the right sequence."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits all key gold parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 loading buffer, 10\u201320 \u00b5L load, 5 \u00b5L ladder)."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is substantially over-decomposed (14 micro-steps vs. 6 gold steps), focusing on pipetting motions."
+    }
+  },
+  "composite": 2.4,
+  "summary": "The prediction captures the general E-gel loading workflow but is over-decomposed, omits critical reagent volumes and the loading buffer mixing step, and includes setup/handling steps not in the gold.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Loading sample, ladder, cassette placement, and run start are present, but thawing on ice and mixing with 6\u00d7 loading buffer are missing.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Several setup/handling micro-steps (bench arrangement, tip changes, lid closing, hand placement) are extra and not in the gold.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The prediction loads samples before placing the cassette in the instrument, reversing the gold order, though other steps follow the right sequence.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits all key gold parameters (10 \u00b5L DNA, 2 \u00b5L 6\u00d7 loading buffer, 10\u201320 \u00b5L load, 5 \u00b5L ladder).\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is substantially over-decomposed (14 micro-steps vs. 6 gold steps), focusing on pipetting motions.\"},\n  \"summary\": \"The prediction captures the general E-gel loading workflow but is over-decomposed, omits critical reagent volumes and the loading buffer mixing step, and includes setup/handling steps not in the gold.\"\n}"
+}

@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-110",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1.  A liquid is transferred using a micropipette into microcentrifuge tubes resting in a yellow rack and a green ice bucket.\n2.  The contents of a microcentrifuge tube are mixed by flicking the tube with a finger.\n3.  The reaction mixture is transferred via micropipette into a strip of PCR tubes.\n4.  The PCR tubes are carried to and placed into the thermal block of a Bio-Rad T100 Thermal Cycler.\n5.  The lid of the thermal cycler is closed and a saved protocol is selected using the touchscreen interface.\n6.  The thermal cycler program is run for a 25 \u00b5L reaction volume with the heated lid set to 105\u00b0C. The program consists of an initial denaturation at 95\u00b0C for 3 minutes, followed by amplification cycles of 95\u00b0C for 30 seconds, 55\u00b0C for 30 seconds, and 72\u00b0C for 1 minute. The protocol concludes with a final extension step at 72\u00b0C for 5 minutes and a final hold at 12\u00b0C."
+}

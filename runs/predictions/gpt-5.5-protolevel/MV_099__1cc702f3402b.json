@@ -1,0 +1,10 @@
+{
+  "slice_id": "MV_099",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Prepare an open-bench workstation with blue nitrile gloves, an open written protocol, micropipettes, disposable tip boxes, microcentrifuge tubes/racks, a pen/marker, wipes, and a small benchtop instrument with a hinged lid/display; no reagent labels or instrument parameters are readable.\n\n2. Review the written protocol at the bench before handling the sample materials.\n\n3. Fit a disposable tip onto a micropipette from the bench tip box.\n\n4. Transfer an unidentified liquid using the micropipette into or between small microcentrifuge tube(s) at the workstation; the pipette setting and delivered volume are not visible.\n\n5. Place the handled sample/tube at the small benchtop instrument and operate the instrument; no speed, time, temperature, or readout value is visible.\n\n6. Record information or label materials using a pen/marker on the bench next to the open protocol.\n\n7. Retrieve a blue-and-white supply box from the bench/shelf area and bring it to the workstation.\n\n8. Remove or select required small lab materials from the supply box, then return the box to the shelf.\n\n9. Place blue racks/containers holding white-capped tubes or bottles on the bench near the workstation.\n\n10. Continue preparing the small tube(s) at the right-hand workstation using the selected materials and micropipette; no reagent identity, volume, incubation time, or temperature is visible."
+}

@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_098",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "99a632d07706",
+  "scores": {
+    "step_coverage": {
+      "score": 1,
+      "reasoning": "Only the centrifugation step is loosely captured; discarding flowthrough and retrieving the spin column to rack are missing."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Vortexing and brief spin to collect liquid are fabricated steps not in the gold protocol."
+    },
+    "ordering": {
+      "score": 3,
+      "reasoning": "The general sequence of placing in centrifuge then removing is preserved, but missing steps make full ordering assessment limited."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Prediction omits all key parameters (\u226510,000 rpm, 1 min, spin column) and contradicts the gold by describing a brief spin instead of max-speed 1-min spin."
+    },
+    "granularity_match": {
+      "score": 4,
+      "reasoning": "Prediction has 4 steps vs gold's 3, a similar level of decomposition."
+    }
+  },
+  "composite": 2.2,
+  "summary": "The prediction captures the general centrifugation activity but misses the spin column context, discard-flowthrough step, and all critical parameters, while introducing fabricated steps like vortexing and a brief collection spin.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 1, \"reasoning\": \"Only the centrifugation step is loosely captured; discarding flowthrough and retrieving the spin column to rack are missing.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Vortexing and brief spin to collect liquid are fabricated steps not in the gold protocol.\"},\n  \"ordering\": {\"score\": 3, \"reasoning\": \"The general sequence of placing in centrifuge then removing is preserved, but missing steps make full ordering assessment limited.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Prediction omits all key parameters (\u226510,000 rpm, 1 min, spin column) and contradicts the gold by describing a brief spin instead of max-speed 1-min spin.\"},\n  \"granularity_match\": {\"score\": 4, \"reasoning\": \"Prediction has 4 steps vs gold's 3, a similar level of decomposition.\"},\n  \"summary\": \"The prediction captures the general centrifugation activity but misses the spin column context, discard-flowthrough step, and all critical parameters, while introducing fabricated steps like vortexing and a brief collection spin.\"\n}"
+}

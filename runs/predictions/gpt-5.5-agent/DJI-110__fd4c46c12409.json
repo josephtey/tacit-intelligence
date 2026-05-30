@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-110",
+  "model": "gpt-5.5-agent",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "fd4c46c12409",
+  "protocol": "1. Keep the labeled microcentrifuge tubes and PCR reaction tubes on ice in the green ice bucket; use a single-channel micropipette with disposable tips and tube racks for setup.\n\n2. Assemble each PCR reaction in a PCR tube on ice by adding the ice-cold labeled reagents, including the tube labeled \u201cMM,\u201d to a final reaction volume of 20 \u00b5L; change pipette tips between reagent additions.\n\n3. Close the PCR tube caps securely after reaction assembly.\n\n4. Load the capped PCR tubes into the Bio-Rad T100 thermal cycler block.\n\n5. Select the saved thermal cycler program \u201cPHANTA\u201d and set the reaction volume to 20 \u00b5L.\n\n6. Run the PCR program with lid temperature 70\u00b0C: 98\u00b0C for 30 s; 30 cycles of 98\u00b0C for 10 s, 63\u00b0C for 5 s, and 72\u00b0C for 6 s; then 72\u00b0C for 1 min; hold at 12\u00b0C indefinitely."
+}

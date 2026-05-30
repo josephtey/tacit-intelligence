@@ -1,0 +1,32 @@
+{
+  "slice_id": "DJI-130",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "c63c28deafec",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "The prediction captures colony picking and resuspension but misses primer mix preparation, PCR mix preparation, aliquoting, and thermocycler step."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Steps about ejecting tips into the yellow tip box are not in the gold, and the vague 'liquid added to tube' steps don't clearly map to specific gold steps."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The captured steps generally follow the gold sequence with colony picking after liquid preparation."
+    },
+    "parameter_accuracy": {
+      "score": 0,
+      "reasoning": "The prediction omits virtually all numerical parameters (volumes, concentrations, reagent names) specified in the gold."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "The prediction has a similar number of steps but is much more vague/observational rather than specifying reagents and quantities."
+    }
+  },
+  "composite": 2.4,
+  "summary": "The prediction reads as a generic visual description rather than a real protocol, capturing only the colony picking/resuspension portion while omitting reagent preparation details and all parameters. It maintains rough ordering but lacks the specificity needed to reproduce the gold protocol.",
+  "raw": "```json\n{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"The prediction captures colony picking and resuspension but misses primer mix preparation, PCR mix preparation, aliquoting, and thermocycler step.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Steps about ejecting tips into the yellow tip box are not in the gold, and the vague 'liquid added to tube' steps don't clearly map to specific gold steps.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The captured steps generally follow the gold sequence with colony picking after liquid preparation.\"},\n  \"parameter_accuracy\": {\"score\": 0, \"reasoning\": \"The prediction omits virtually all numerical parameters (volumes, concentrations, reagent names) specified in the gold.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"The prediction has a similar number of steps but is much more vague/observational rather than specifying reagents and quantities.\"},\n  \"summary\": \"The prediction reads as a generic visual description rather than a real protocol, capturing only the colony picking/resuspension portion while omitting reagent preparation details and all parameters. It maintains rough ordering but lacks the specificity needed to reproduce the gold protocol.\"\n}\n```"
+}

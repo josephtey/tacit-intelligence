@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_048",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "ad6fa8652091",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "The prediction captures adding reagents, spinning down, and approaching the thermocycler, but doesn't distinguish the four separate reagent additions (master mix, primers, template) and omits actually placing the tube in the thermocycler."
+    },
+    "step_hallucination": {
+      "score": 4,
+      "reasoning": "Most steps map to gold actions, though the closing-the-cap step and opening-the-thermocycler-lid step are minor extras not explicitly in the gold."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The sequence of reagent addition, mixing/spinning, and thermocycler follows the gold order."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits nearly all gold-specified parameters (reagent names M/F/R/T, 0.2 mL PCR tube) and uses generic terms like 'a liquid' and 'microcentrifuge tube'."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "The prediction has 5 steps vs. the gold's 6, but collapses the four reagent additions into two generic steps while adding micro-steps like closing caps and opening lids."
+    }
+  },
+  "composite": 3.2,
+  "summary": "The prediction roughly mirrors the PCR setup workflow in correct order but is overly generic, failing to identify specific reagents (master mix, primers, template) and the 0.2 mL PCR tube. It captures the general procedure but lacks the specificity needed to reproduce the gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"The prediction captures adding reagents, spinning down, and approaching the thermocycler, but doesn't distinguish the four separate reagent additions (master mix, primers, template) and omits actually placing the tube in the thermocycler.\"},\n  \"step_hallucination\": {\"score\": 4, \"reasoning\": \"Most steps map to gold actions, though the closing-the-cap step and opening-the-thermocycler-lid step are minor extras not explicitly in the gold.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The sequence of reagent addition, mixing/spinning, and thermocycler follows the gold order.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits nearly all gold-specified parameters (reagent names M/F/R/T, 0.2 mL PCR tube) and uses generic terms like 'a liquid' and 'microcentrifuge tube'.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"The prediction has 5 steps vs. the gold's 6, but collapses the four reagent additions into two generic steps while adding micro-steps like closing caps and opening lids.\"},\n  \"summary\": \"The prediction roughly mirrors the PCR setup workflow in correct order but is overly generic, failing to identify specific reagents (master mix, primers, template) and the 0.2 mL PCR tube. It captures the general procedure but lacks the specificity needed to reproduce the gold protocol.\"\n}"
+}

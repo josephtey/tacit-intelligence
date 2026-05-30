@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_064",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. Pipette liquid from a microcentrifuge tube into a well of a white tube rack using a micropipette.\n2. Transfer samples from tubes stored on ice into the white tube rack.\n3. Load samples from the white tube rack into the wells of an Invitrogen E-Gel EX agarose gel cassette using a micropipette.\n4. Insert the loaded E-Gel EX cassette into the Invitrogen E-Gel Power Snap Electrophoresis Device.\n5. Close the lid of the E-Gel Power Snap device and select a program on the touchscreen to begin the electrophoresis run."
+}

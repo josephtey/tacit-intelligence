@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_060",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1.  Aspirate a liquid sample from a microcentrifuge tube using a micropipette while keeping the tube over a green ice bucket.\n2.  Dispense the liquid sample from the micropipette into a well of an E-Gel EX pre-cast agarose gel cassette.\n3.  Repeat the loading process by pipetting additional samples into the subsequent wells of the E-Gel cassette.\n4.  Place the loaded E-Gel EX cassette into the E-Gel Power Snap Electrophoresis System.\n5.  Close the lid of the E-Gel Power Snap Electrophoresis System.\n6.  Select a program and initiate the electrophoresis run using the touchscreen on the E-Gel Power Snap device."
+}

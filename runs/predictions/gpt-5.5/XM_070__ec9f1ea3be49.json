@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_070",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Arrange an ice bucket with labeled PCR tubes, tube racks, micropipette, and pipette tip boxes on the laboratory bench.\n\n2. Fit a disposable pipette tip onto a handheld micropipette using the blue tip box.\n\n3. Remove a labeled PCR tube from the ice bucket and hold it open by hand.\n\n4. Dispense liquid from the micropipette into the open PCR tube.\n\n5. Return the processed PCR tube to the rack or ice area.\n\n6. Change to a fresh disposable pipette tip from the tip box.\n\n7. Remove another labeled PCR tube from the ice bucket.\n\n8. Dispense liquid into the second PCR tube using the micropipette.\n\n9. Repeat the tube handling and pipetting steps for additional labeled PCR tubes kept on ice.\n\n10. Close the caps of the prepared PCR tubes by pressing them shut with gloved hands.\n\n11. Place the capped PCR tubes into the rotor of a benchtop mini centrifuge.\n\n12. Close the mini centrifuge lid and briefly spin the tubes to collect the liquid at the bottom.\n\n13. Move to the Bio-Rad T100 Thermal Cycler with the prepared tubes and protocol sheet.\n\n14. Use the touchscreen on the Bio-Rad T100 Thermal Cycler to open the run/program menu.\n\n15. Select a thermal cycling program on the Bio-Rad T100 Thermal Cycler and review the temperature profile on the screen."
+}

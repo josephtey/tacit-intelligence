@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_051",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "d629c873a2be",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Only the dispensing of a reagent and placement into the thermocycler are captured; the separate primer/template additions and mix/spin step are missing."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Steps about the green tube rack and closing the heated lid are not in the gold protocol."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The few captured steps appear in the correct relative order."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits nearly all named reagents (Master Mix, primers, template DNA) and tube labels specified in the gold."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "Prediction has 4 steps vs. gold's 6, collapsing reagent additions into one generic step while adding minor observational steps."
+    }
+  },
+  "composite": 2.8,
+  "summary": "The prediction captures only the broad outline of loading a tube and placing it in a thermocycler, missing the specific reagent additions and mix/spin steps. It lacks named reagents and adds some spurious observational details, resulting in low fidelity to the gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Only the dispensing of a reagent and placement into the thermocycler are captured; the separate primer/template additions and mix/spin step are missing.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Steps about the green tube rack and closing the heated lid are not in the gold protocol.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The few captured steps appear in the correct relative order.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits nearly all named reagents (Master Mix, primers, template DNA) and tube labels specified in the gold.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"Prediction has 4 steps vs. gold's 6, collapsing reagent additions into one generic step while adding minor observational steps.\"},\n  \"summary\": \"The prediction captures only the broad outline of loading a tube and placing it in a thermocycler, missing the specific reagent additions and mix/spin steps. It lacks named reagents and adds some spurious observational details, resulting in low fidelity to the gold protocol.\"\n}"
+}

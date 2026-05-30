@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-092",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Prepare the bench with a green wet-ice bucket, colored tube racks, microcentrifuge/PCR tubes, disposable pipette tips, adjustable micropipettes, a Bio-Rad T100 Thermal Cycler, and a Petri dish containing solid medium.\n\n2. Hold a labeled microcentrifuge/PCR tube in one gloved hand and bring an adjustable micropipette with a disposable tip to the open tube.\n\n3. Pipette a clear liquid into the open microcentrifuge/PCR tube using the adjustable micropipette.\n\n4. Place the filled microcentrifuge/PCR tube into a tube rack beside the wet-ice bucket.\n\n5. Pick up another microcentrifuge/PCR tube from the rack and hold it upright near the wet-ice bucket.\n\n6. Pipette clear liquid into the second microcentrifuge/PCR tube using the adjustable micropipette and disposable tip.\n\n7. Close the microcentrifuge/PCR tube cap by pressing it shut with gloved fingers.\n\n8. Place the capped microcentrifuge/PCR tube into the wet ice to keep it chilled.\n\n9. Open the Bio-Rad T100 Thermal Cycler lid to access the heated lid and sample block.\n\n10. Retrieve a chilled microcentrifuge/PCR tube from the wet-ice bucket.\n\n11. Fit a disposable tip onto an adjustable micropipette and use it to handle clear liquid for the chilled tube.\n\n12. Close the tube after pipetting and return the tube to the wet-ice bucket.\n\n13. Pick up a Petri dish containing solid medium and hold it open enough to access the surface.\n\n14. Pipette a small aliquot of liquid onto the surface of the solid medium in the Petri dish using the adjustable micropipette.\n\n15. Set the pipette down on the bench after dispensing the liquid onto the Petri dish."
+}

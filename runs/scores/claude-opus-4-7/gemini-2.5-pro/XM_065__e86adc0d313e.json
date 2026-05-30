@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_065",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "e86adc0d313e",
+  "scores": {
+    "step_coverage": {
+      "score": 2,
+      "reasoning": "Only the thermocycler loading and program start are clearly captured; most reagent additions, mixing, and spinning are missing or vaguely represented."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "The 96-well plate transfer and closing the cap are off-topic/spurious relative to the gold's specific reagent additions."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The captured steps (reagent handling, then loading thermocycler, then starting program) follow the correct relative sequence."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Nearly all gold parameters (volumes, concentrations, temperatures, cycle counts, times, 25 \u00b5L final volume) are missing, and the prediction contradicts gold with a 20 \u00b5L volume."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is significantly under-decomposed (5 vague steps vs. 10 detailed gold steps) and collapses all reagent additions into one generic step."
+    }
+  },
+  "composite": 2.4,
+  "summary": "The prediction captures only a small fraction of the gold protocol, omitting nearly all reagent-specific steps and parameters while introducing some spurious details. Overall fidelity is low, with correct ordering of the few captured steps but poor coverage and parameter accuracy.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 2, \"reasoning\": \"Only the thermocycler loading and program start are clearly captured; most reagent additions, mixing, and spinning are missing or vaguely represented.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"The 96-well plate transfer and closing the cap are off-topic/spurious relative to the gold's specific reagent additions.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The captured steps (reagent handling, then loading thermocycler, then starting program) follow the correct relative sequence.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Nearly all gold parameters (volumes, concentrations, temperatures, cycle counts, times, 25 \u00b5L final volume) are missing, and the prediction contradicts gold with a 20 \u00b5L volume.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is significantly under-decomposed (5 vague steps vs. 10 detailed gold steps) and collapses all reagent additions into one generic step.\"},\n  \"summary\": \"The prediction captures only a small fraction of the gold protocol, omitting nearly all reagent-specific steps and parameters while introducing some spurious details. Overall fidelity is low, with correct ordering of the few captured steps but poor coverage and parameter accuracy.\"\n}"
+}

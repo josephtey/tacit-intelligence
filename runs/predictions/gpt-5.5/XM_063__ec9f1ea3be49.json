@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_063",
+  "model": "gpt-5.5",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "ec9f1ea3be49",
+  "protocol": "1. Prepare the bench with an Invitrogen E-Gel Power Snap system, an Invitrogen E-Gel EX cassette, an adjustable micropipette, disposable pipette tips, labeled microcentrifuge tubes on ice, and a white tube rack.\n\n2. Fit a disposable pipette tip onto the adjustable micropipette from the blue tip box.\n\n3. Retrieve a labeled microcentrifuge tube from the green ice bucket and hold it in a gloved hand.\n\n4. Open the tube and use the micropipette to aspirate and dispense the liquid in the tube, mixing the sample with the disposable tip.\n\n5. Return the handled tube to the ice bucket or place it into the white tube rack.\n\n6. Repeat the tube handling and pipetting process for additional labeled microcentrifuge tubes kept on ice.\n\n7. Place the prepared microcentrifuge tubes into the white tube rack beside the E-Gel cassette.\n\n8. Pick up the Invitrogen E-Gel EX cassette from the bench and orient it for insertion into the E-Gel Power Snap system.\n\n9. Insert the E-Gel EX cassette into the E-Gel Power Snap electrophoresis dock beneath the orange lid.\n\n10. Close the E-Gel Power Snap lid over the inserted cassette.\n\n11. Use the E-Gel Power Snap touchscreen to start the electrophoresis run."
+}

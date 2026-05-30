@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_063",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1.  A scientist wearing blue nitrile gloves retrieves a microcentrifuge tube from a green ice bucket.\n\n2.  Using a micropipette, a liquid sample is transferred from the microcentrifuge tube into a clear strip of tubes.\n\n3.  The scientist uses a micropipette to load a sample into a well of an E-Gel EX precast agarose gel cassette.\n\n4.  The loaded E-Gel EX cassette is inserted into the E-Gel Power Snap Electrophoresis Device.\n\n5.  The scientist closes the orange lid of the E-Gel Power Snap device and initiates the electrophoresis run by pressing the touchscreen."
+}

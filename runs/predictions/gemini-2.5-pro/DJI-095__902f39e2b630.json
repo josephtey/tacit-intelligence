@@ -1,0 +1,10 @@
+{
+  "slice_id": "DJI-095",
+  "model": "gemini-2.5-pro",
+  "model_id": "gemini-2.5-pro",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "902f39e2b630",
+  "protocol": "1. A microcentrifuge tube is transferred from an orange tube rack to a bright green ice bucket.\n2. A microcentrifuge tube is removed from the ice bucket and placed into the sample block of a Bio-Rad T100 Thermal Cycler.\n3. The lid of the thermal cycler is closed, and the run is started by pressing the touchscreen.\n4. A different microcentrifuge tube is removed from the ice bucket and its cap is opened.\n5. A liquid sample is aspirated from the open microcentrifuge tube using a micropipette.\n6. The liquid sample is dispensed from the micropipette onto the surface of a petri dish."
+}

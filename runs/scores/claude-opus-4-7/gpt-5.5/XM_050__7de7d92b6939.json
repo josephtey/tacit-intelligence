@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_050",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "7de7d92b6939",
+  "scores": {
+    "step_coverage": {
+      "score": 4,
+      "reasoning": "Most gold steps (adding reagents, capping/spinning, loading thermocycler) are covered, though the quick spin step is only weakly implied via the centrifuge handling."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many predicted steps are spurious micro-actions (gloves, tip box, rack handling, lid opening) not in the gold protocol."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the gold sequence: reagent additions, then centrifuge handling, then thermocycler loading."
+    },
+    "parameter_accuracy": {
+      "score": 2,
+      "reasoning": "Specific reagent identities (Master Mix, Forward/Reverse Primer, template DNA) are omitted, and the 10 \u00b5L volume is fabricated rather than specified in the gold."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is substantially over-decomposed with 17 micro-steps versus the gold's 6 concise steps."
+    }
+  },
+  "composite": 3.0,
+  "summary": "The prediction roughly captures the PCR setup workflow in correct order but is heavily over-decomposed with many fabricated micro-actions and omits the specific reagent identities critical to the gold protocol.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 4, \"reasoning\": \"Most gold steps (adding reagents, capping/spinning, loading thermocycler) are covered, though the quick spin step is only weakly implied via the centrifuge handling.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many predicted steps are spurious micro-actions (gloves, tip box, rack handling, lid opening) not in the gold protocol.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the gold sequence: reagent additions, then centrifuge handling, then thermocycler loading.\"},\n  \"parameter_accuracy\": {\"score\": 2, \"reasoning\": \"Specific reagent identities (Master Mix, Forward/Reverse Primer, template DNA) are omitted, and the 10 \u00b5L volume is fabricated rather than specified in the gold.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is substantially over-decomposed with 17 micro-steps versus the gold's 6 concise steps.\"},\n  \"summary\": \"The prediction roughly captures the PCR setup workflow in correct order but is heavily over-decomposed with many fabricated micro-actions and omits the specific reagent identities critical to the gold protocol.\"\n}"
+}

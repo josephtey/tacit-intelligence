@@ -1,0 +1,32 @@
+{
+  "slice_id": "XM_061",
+  "generator": "gpt-5.5-protolevel",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "ad6c25e4251d",
+  "scores": {
+    "step_coverage": {
+      "score": 3,
+      "reasoning": "Missing thawing step, loading buffer mixing, and DNA ladder loading, though cassette placement, sample loading, and run initiation are present."
+    },
+    "step_hallucination": {
+      "score": 3,
+      "reasoning": "Bench setup step and repeated aliquoting step are not in the gold protocol."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps appear in the correct relative sequence."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Nearly all numerical parameters (10 \u00b5L DNA, 2 \u00b5L buffer, 10-20 \u00b5L load, 5 \u00b5L ladder) are omitted from the prediction."
+    },
+    "granularity_match": {
+      "score": 4,
+      "reasoning": "Similar number of steps but slightly over-decomposed on setup/aliquoting while under-detailed on reagent mixing."
+    }
+  },
+  "composite": 3.2,
+  "summary": "The prediction captures the general workflow of loading and running an E-gel but omits critical reagent mixing, ladder loading, and all specific volumes, while adding generic bench-setup steps.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 3, \"reasoning\": \"Missing thawing step, loading buffer mixing, and DNA ladder loading, though cassette placement, sample loading, and run initiation are present.\"},\n  \"step_hallucination\": {\"score\": 3, \"reasoning\": \"Bench setup step and repeated aliquoting step are not in the gold protocol.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps appear in the correct relative sequence.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Nearly all numerical parameters (10 \u00b5L DNA, 2 \u00b5L buffer, 10-20 \u00b5L load, 5 \u00b5L ladder) are omitted from the prediction.\"},\n  \"granularity_match\": {\"score\": 4, \"reasoning\": \"Similar number of steps but slightly over-decomposed on setup/aliquoting while under-detailed on reagent mixing.\"},\n  \"summary\": \"The prediction captures the general workflow of loading and running an E-gel but omits critical reagent mixing, ladder loading, and all specific volumes, while adding generic bench-setup steps.\"\n}"
+}

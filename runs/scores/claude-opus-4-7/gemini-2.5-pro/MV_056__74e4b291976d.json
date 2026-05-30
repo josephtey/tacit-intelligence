@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_056",
+  "generator": "gemini-2.5-pro",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "74e4b291976d",
+  "scores": {
+    "step_coverage": {
+      "score": 5,
+      "reasoning": "All three gold transfer steps appear to be captured among the predicted transfer steps."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "The prediction includes about 4 extra steps (mixing, consulting notebook, and additional transfers) beyond the 3 gold steps."
+    },
+    "ordering": {
+      "score": 4,
+      "reasoning": "The transfer steps appear in a plausible order though the mapping to specific reagents is ambiguous."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "Only one volume (2.5 \u00b5L) is mentioned and reagent names (DNA, water, ladder) are not identified; most gold parameters are missing."
+    },
+    "granularity_match": {
+      "score": 3,
+      "reasoning": "The prediction has 7 steps versus 3 in the gold, over-decomposing with extra micro-actions."
+    }
+  },
+  "composite": 3.0,
+  "summary": "The prediction likely captures the gold transfers but buries them among hallucinated extra steps and lacks nearly all volume and reagent identifications. Overall fidelity is moderate-to-low due to fabrication and missing parameters.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 5, \"reasoning\": \"All three gold transfer steps appear to be captured among the predicted transfer steps.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"The prediction includes about 4 extra steps (mixing, consulting notebook, and additional transfers) beyond the 3 gold steps.\"},\n  \"ordering\": {\"score\": 4, \"reasoning\": \"The transfer steps appear in a plausible order though the mapping to specific reagents is ambiguous.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"Only one volume (2.5 \u00b5L) is mentioned and reagent names (DNA, water, ladder) are not identified; most gold parameters are missing.\"},\n  \"granularity_match\": {\"score\": 3, \"reasoning\": \"The prediction has 7 steps versus 3 in the gold, over-decomposing with extra micro-actions.\"},\n  \"summary\": \"The prediction likely captures the gold transfers but buries them among hallucinated extra steps and lacks nearly all volume and reagent identifications. Overall fidelity is moderate-to-low due to fabrication and missing parameters.\"\n}"
+}

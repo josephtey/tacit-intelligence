@@ -1,0 +1,10 @@
+{
+  "slice_id": "XM_063",
+  "model": "gpt-5.5-protolevel",
+  "model_id": "gpt-5.5",
+  "n_frames": 32,
+  "max_dim": 1024,
+  "max_tokens": 4096,
+  "prompt_hash": "1cc702f3402b",
+  "protocol": "1. Prepare the workstation with an E-Gel Power Snap unit open, an E-Gel EX cassette, an Invitrogen benchtop imaging device, a Benchmark MultiTherm heat block, ice buckets containing microcentrifuge tubes, pipette tips, and a white tube rack.\n\n2. Fit a manual micropipette with a disposable tip from the tip box.\n\n3. Remove a chilled microcentrifuge tube from the ice bucket and dispense liquid into the open tube with the micropipette.\n\n4. Mix the contents of the microcentrifuge tube by pipetting, then keep the tube on ice.\n\n5. Repeat the pipetting and mixing operation with additional chilled microcentrifuge tubes from the ice bucket.\n\n6. Place the prepared microcentrifuge tubes in the white tube rack next to the E-Gel EX cassette.\n\n7. Load the prepared samples into the E-Gel EX cassette using the micropipette.\n\n8. Insert the loaded E-Gel EX cassette into the open E-Gel Power Snap unit.\n\n9. Close the E-Gel Power Snap lid over the cassette.\n\n10. Start the E-Gel Power Snap run using the front touchscreen controls."
+}

@@ -1,0 +1,32 @@
+{
+  "slice_id": "MV_061",
+  "generator": "gpt-5.5",
+  "judge": "claude-opus-4-7",
+  "judge_model_id": "claude-opus-4-7",
+  "rubric_hash": "ba5c328c9c4a",
+  "scores": {
+    "step_coverage": {
+      "score": 5,
+      "reasoning": "All three gold steps (weighing agarose, adding to flask, adding buffer) are covered in the prediction."
+    },
+    "step_hallucination": {
+      "score": 2,
+      "reasoning": "Many extra steps are added (gloves, setup, cleaning, swirling) that are not in the gold protocol."
+    },
+    "ordering": {
+      "score": 5,
+      "reasoning": "The captured steps follow the same sequence as the gold protocol."
+    },
+    "parameter_accuracy": {
+      "score": 1,
+      "reasoning": "The prediction omits the specific 0.70g agarose mass, 100 mL volume, 1X TAE buffer identity, and uses a glass bottle instead of an Erlenmeyer flask."
+    },
+    "granularity_match": {
+      "score": 2,
+      "reasoning": "The prediction is substantially over-decomposed with 11 micro-steps versus the gold's 3 steps."
+    }
+  },
+  "composite": 3.0,
+  "summary": "The prediction covers all gold steps in correct order but is heavily over-decomposed with many auxiliary steps and lacks the key quantitative parameters (mass, volume, buffer identity) and correct vessel name.",
+  "raw": "{\n  \"step_coverage\": {\"score\": 5, \"reasoning\": \"All three gold steps (weighing agarose, adding to flask, adding buffer) are covered in the prediction.\"},\n  \"step_hallucination\": {\"score\": 2, \"reasoning\": \"Many extra steps are added (gloves, setup, cleaning, swirling) that are not in the gold protocol.\"},\n  \"ordering\": {\"score\": 5, \"reasoning\": \"The captured steps follow the same sequence as the gold protocol.\"},\n  \"parameter_accuracy\": {\"score\": 1, \"reasoning\": \"The prediction omits the specific 0.70g agarose mass, 100 mL volume, 1X TAE buffer identity, and uses a glass bottle instead of an Erlenmeyer flask.\"},\n  \"granularity_match\": {\"score\": 2, \"reasoning\": \"The prediction is substantially over-decomposed with 11 micro-steps versus the gold's 3 steps.\"},\n  \"summary\": \"The prediction covers all gold steps in correct order but is heavily over-decomposed with many auxiliary steps and lacks the key quantitative parameters (mass, volume, buffer identity) and correct vessel name.\"\n}"
+}
