@@ -1,0 +1,3529 @@
+{
+  "run_name": "full_vlm_mono",
+  "method": "vlm-mono",
+  "timestamp": "2026-06-01T13:12:21.689071",
+  "config": {
+    "n_frames": 16,
+    "workers": 8
+  },
+  "summary": {
+    "total_clips": 100,
+    "exact_match": 2,
+    "exact_pct": 2.0,
+    "row_ok": 34,
+    "row_ok_pct": 34.0,
+    "col_ok": 9,
+    "col_ok_pct": 9.0,
+    "within_1": 15,
+    "within_1_pct": 15.0,
+    "within_2": 30,
+    "within_2_pct": 30.0,
+    "plate_breakdown": {
+      "Plate_10": {
+        "correct": 1,
+        "total": 21,
+        "accuracy_pct": 4.8
+      },
+      "Plate_1": {
+        "correct": 0,
+        "total": 6,
+        "accuracy_pct": 0.0
+      },
+      "Plate_2": {
+        "correct": 0,
+        "total": 12,
+        "accuracy_pct": 0.0
+      },
+      "Plate_3": {
+        "correct": 1,
+        "total": 11,
+        "accuracy_pct": 9.1
+      },
+      "Plate_4": {
+        "correct": 0,
+        "total": 20,
+        "accuracy_pct": 0.0
+      },
+      "Plate_5": {
+        "correct": 0,
+        "total": 7,
+        "accuracy_pct": 0.0
+      },
+      "Plate_9": {
+        "correct": 0,
+        "total": 23,
+        "accuracy_pct": 0.0
+      }
+    },
+    "type_breakdown": {
+      "single": {
+        "correct": 2,
+        "total": 75,
+        "accuracy_pct": 2.7
+      },
+      "multi-col": {
+        "correct": 0,
+        "total": 13,
+        "accuracy_pct": 0.0
+      },
+      "multi-row": {
+        "correct": 0,
+        "total": 12,
+        "accuracy_pct": 0.0
+      }
+    },
+    "timing_mean_s": {
+      "call_read": 24.0,
+      "total": 20.88
+    },
+    "total_cost": {
+      "input_tokens": 965607,
+      "output_tokens": 11753,
+      "thinking_tokens": 113715,
+      "usd": 3.4368
+    },
+    "cost_per_clip_usd": 0.03437,
+    "wall_clock_s": 306.1
+  },
+  "clips": [
+    {
+      "clip_name": "Plate_10_clip_0001",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A10",
+      "gt_wells": [
+        "A6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 12.671,
+        "total": 16.021
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 205,
+        "thinking_tokens": 978,
+        "usd": 0.050634
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 9,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate has a distinct notched/beveled corner at the top-left in the video frame. This identifies the A1 well position. Therefore, columns (1-12) increase from left to right, and rows (A-H) increase from top to bottom.\n2. COMMIT MOMENT: The pipette tip is fully inserted into a well and dispensing around Frame 8.\n3. TIP LOCATION: In Frame 8, the tip is positioned in the very top row, which is Row A. Counting the wells in this row from the left side (starting at A1), the tip is located in the 10th well.\n4. PIPETTE TYPE: The pipette has only one tip, so it is a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0002",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A8",
+      "gt_wells": [
+        "B5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 27.577,
+        "total": 31.048
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 242,
+        "thinking_tokens": 2780,
+        "usd": 0.072702
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 7,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate is oriented with the beveled corner at the top left, which corresponds to well A1. Therefore, columns (1-12) increase from left to right, and rows (A-H) increase from top to bottom.\n2. COMMIT MOMENT: The pipette tip is fully lowered into a well and interacting with it in frames 5-8, with frame 6 being a clear representation of the commit moment.\n3. TIP LOCATION: Observing the tip's position in frame 6, it is located in the top-most row of the plate, which is Row A. Counting the wells from the left edge (column 1), the tip is inserted into the 8th well. There are 4 wells to the right of it, confirming it is column 8 (8+4=12).\n4. PIPETTE TYPE: The pipette has only one tip, so it is a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0003",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "B10",
+      "gt_wells": [
+        "B6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 28.068,
+        "total": 32.501
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 167,
+        "thinking_tokens": 2456,
+        "usd": 0.067914
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 1,
+          "pred_col": 9,
+          "pred_type": "single",
+          "reasoning": "Based on standard microplate orientation, rows A-H run from top to bottom and columns 1-12 run from left to right. The video shows a single-channel pipette approaching the plate and lowering its tip into a well. The commit moment, where the tip is fully lowered and dispensing, occurs around frame 6. Counting from the top, the tip is in the second row (Row B). Counting from the right edge, the tip is in the third well, which corresponds to the 10th column from the left (Column 10). Therefore, the dispensed well is B10."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0004",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "B10",
+      "gt_wells": [
+        "B7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 24.835,
+        "total": 28.221
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 227,
+        "thinking_tokens": 2551,
+        "usd": 0.069774
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 1,
+          "pred_col": 9,
+          "pred_type": "single",
+          "reasoning": "1. The plate is oriented with A1 in the top-left corner, as indicated by the printed letters A-H along the left edge (top to bottom) and numbers 1-12 along the top edge (left to right).\n2. The commit moment occurs around frame 4, where the pipette tip is fully lowered into a well on the plate to perform a liquid transfer.\n3. Counting from the top edge, the tip is inserted into the 2nd row (Row B). Counting from the right edge (Column 12), there are two empty columns to the right of the tip, placing it in the 3rd column from the right, which is Column 10.\n4. The pipette is a single-channel pipette, transferring liquid to/from one well at a time.\n5. Therefore, the pipetting action occurs at well B10."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0005",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "C11",
+      "gt_wells": [
+        "C4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 7,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 12.071,
+        "total": 16.43
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 226,
+        "thinking_tokens": 903,
+        "usd": 0.049986
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 2,
+          "pred_col": 10,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: In frames 1-9, the numbers 1-12 are visible along the top edge of the plate, increasing from left to right. The letters A-H are visible along the left edge, increasing from top to bottom. Thus, A1 is at the top-left corner.\n2. COMMIT MOMENT: The pipette tip is fully lowered into a well and dispensing in frames 5 through 7. Frame 6 is a clear example of the commit moment.\n3. TIP LOCATION: In frame 6, the pipette tip is located in the 3rd row from the top (Row C) and the 11th column from the left (Column 11, which is the 2nd column from the right edge).\n4. PIPETTE TYPE: The pipette has only one tip, so it is a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0006",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "C12",
+      "gt_wells": [
+        "C5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 7,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 11.514,
+        "total": 15.957
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 184,
+        "thinking_tokens": 649,
+        "usd": 0.046434
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 2,
+          "pred_col": 11,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate has letters A-H printed along the left edge (increasing from top to bottom) and numbers 1-12 along the top edge (increasing from left to right). \n2. COMMIT MOMENT: Frame 6 shows the pipette tip fully inserted into a well, marking the dispensing moment. \n3. TIP LOCATION: Counting from the left, the tip is in the rightmost column, which is column 12. Counting from the top, the tip is in the third row, which corresponds to row C. \n4. PIPETTE TYPE: Only one tip is visible on the pipette, indicating it is a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0007",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "B8",
+      "gt_wells": [
+        "C6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "call_read": 13.141,
+        "total": 17.296
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 162,
+        "thinking_tokens": 760,
+        "usd": 0.047502
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 1,
+          "pred_col": 7,
+          "pred_type": "single",
+          "reasoning": "The plate is oriented with the beveled corner at the top left, which is marked with an 'A' and '1'. Therefore, rows A-H increase downwards and columns 1-12 increase from left to right. A single pipette tip approaches the plate from the right. In frame 8, the tip is lowered into a well and dispensing liquid. At this commit moment, the tip is positioned in the second row from the top (row B) and the eighth column from the left (column 8). The pipette has only one tip, making it a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0008",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "B9",
+      "gt_wells": [
+        "C7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "call_read": 14.947,
+        "total": 19.001
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 216,
+        "thinking_tokens": 960,
+        "usd": 0.05055
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 1,
+          "pred_col": 8,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate has printed letters A-H on the left edge (row labels, increasing top to bottom) and numbers 1-12 on the top edge (column labels, increasing left to right). The beveled corner is at the top left, corresponding to A1. \n2. COMMIT MOMENT: In frame 6, the pipette tip is fully lowered into a well and dispensing liquid.\n3. TIP LOCATION: At frame 6, counting downwards from the top row (A), the tip is in the second row (B). Counting from the left column (1), the tip is in the 9th well, aligning with the printed '9' on the top edge.\n4. PIPETTE TYPE: Only one pipette tip is visible entering a single well, so it is a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0009",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "B11",
+      "gt_wells": [
+        "C8"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 12.914,
+        "total": 14.596
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 196,
+        "thinking_tokens": 951,
+        "usd": 0.050202
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 1,
+          "pred_col": 10,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate is held with the beveled corner at the top-left, indicating well A1. Printed labels A-H are visible on the left edge (rows increasing top to bottom) and numbers 1-12 are visible on the top edge (columns increasing left to right). \n2. COMMIT MOMENT: The pipette tip reaches its lowest point inside the well and dispenses around frame 10.\n3. TIP LOCATION: At frame 10, the single pipette tip is located in the second row from the top (Row B) and the second column from the right edge (Column 11).\n4. PIPETTE TYPE: Only one tip is visible, indicating a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0010",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "D10",
+      "gt_wells": [
+        "D3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 7,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 20.012,
+        "total": 21.971
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 162,
+        "thinking_tokens": 1862,
+        "usd": 0.060726
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 3,
+          "pred_col": 9,
+          "pred_type": "single",
+          "reasoning": "Based on the visible printed labels, the rows are marked A-H along the left edge, increasing from top to bottom. The columns are marked 1-12 along the top edge, increasing from left to right. The commit moment occurs in frame 4 when the single-channel pipette tip is fully lowered into a well to dispense liquid. At this moment, the tip is located in the 4th row from the top (Row D) and the 10th column from the left (Column 10, which is the 3rd column from the right edge)."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0011",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "C11",
+      "gt_wells": [
+        "D4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 7,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 17.479,
+        "total": 19.321
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 228,
+        "thinking_tokens": 1337,
+        "usd": 0.055218
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 2,
+          "pred_col": 10,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate is held such that the top edge has numeric labels (1-12, increasing left to right) and the left edge has alphabetic labels (A-H, increasing top to bottom). The beveled corner marking A1 is located at the top-left.\n2. COMMIT MOMENT: Frame 6 provides a clear view of the pipette tip fully lowered into a well and dispensing.\n3. TIP LOCATION: In Frame 6, counting down from the top edge (Row A), the tip is in the 3rd row, which corresponds to Row C. Counting from the right edge (Column 12), the tip is in the second column from the right, which corresponds to Column 11. Aligning with the printed labels confirms this location.\n4. PIPETTE TYPE: Only a single tip is visible, indicating a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0012",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "D10",
+      "gt_wells": [
+        "D5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 13.972,
+        "total": 15.402
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 239,
+        "thinking_tokens": 976,
+        "usd": 0.051018
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 3,
+          "pred_col": 9,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate has printed labels visible. Letters A-H are on the left edge, ordered top to bottom. Numbers 1-12 are on the top edge, ordered left to right. Therefore, row A is at the top, increasing downwards to H, and column 1 is on the left, increasing rightwards to 12.\n2. COMMIT MOMENT: The pipette tip is lowered into a well and appears to be dispensing liquid in frame 5.\n3. TIP LOCATION: In frame 5, the single pipette tip is aligned with the 4th row from the top (labeled 'D') and the 10th column from the left (labeled '10', which is the 3rd column from the right edge).\n4. PIPETTE TYPE: Only one tip is seen, making it a single-channel pipette.\n5. ANSWER: The well being dispensed into is D10."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0013",
+      "plate": "Plate_10",
+      "status": "vlm_fail",
+      "correct": true,
+      "pred_well": "D6",
+      "gt_wells": [
+        "D6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "total": 13.908
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0014",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "C10",
+      "gt_wells": [
+        "D7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 12.647,
+        "total": 13.952
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 240,
+        "thinking_tokens": 1050,
+        "usd": 0.051918
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 2,
+          "pred_col": 9,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The microplate has printed labels visible. Letters A-H are on the left edge, indicating rows increase from top to bottom. Numbers 1-12 are on the top edge, indicating columns increase from left to right. Well A1 is in the top-left corner.\n2. COMMIT MOMENT: The pipette tip is lowered into a well and dispensing liquid starting around frame 9, with frame 10 showing a clear view of the tip fully inserted.\n3. TIP LOCATION: In frame 10, the pipette tip is in the 3rd row from the top (Row C) and the 10th column from the left (Column 10, which aligns under the printed '10' and is the 3rd well from the right edge).\n4. PIPETTE TYPE: Only a single tip is present, dispensing into one individual well. Therefore, it is a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0015",
+      "plate": "Plate_10",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "D8"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": -2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "total": 14.85
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0016",
+      "plate": "Plate_10",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "D9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": -3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.671
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0017",
+      "plate": "Plate_10",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "E2"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.925
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0018",
+      "plate": "Plate_10",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "E3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 15.085
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0019",
+      "plate": "Plate_10",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "E4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "total": 14.703
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0020",
+      "plate": "Plate_10",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "E5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "total": 14.469
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0021",
+      "plate": "Plate_10",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "E6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "total": 14.191
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_1_clip_0001",
+      "plate": "Plate_1",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10",
+        "A11",
+        "A12"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-col",
+      "row_err": 3,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 13.509
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_1_clip_0004",
+      "plate": "Plate_1",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D12"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-col",
+      "row_err": 0,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.357
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_1_clip_0005",
+      "plate": "Plate_1",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8",
+        "E9",
+        "E10",
+        "E11",
+        "E12"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-col",
+      "row_err": -1,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.121
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_1_clip_0006",
+      "plate": "Plate_1",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "F9",
+        "F10",
+        "F11",
+        "F12"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-col",
+      "row_err": -2,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.765
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_1_clip_0007",
+      "plate": "Plate_1",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6",
+        "G7",
+        "G8",
+        "G9",
+        "G10",
+        "G11",
+        "G12"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-col",
+      "row_err": -3,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.711
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_1_clip_0008",
+      "plate": "Plate_1",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8",
+        "H9",
+        "H10",
+        "H11",
+        "H12"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-col",
+      "row_err": -4,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.672
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0001",
+      "plate": "Plate_2",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A1",
+        "B1",
+        "C1",
+        "D1",
+        "E1",
+        "F1",
+        "G1",
+        "H1"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 3,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.255
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0002",
+      "plate": "Plate_2",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A2",
+        "B2",
+        "C2",
+        "D2",
+        "E2",
+        "F2",
+        "G2",
+        "H2"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 3,
+      "col_err": 4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.202
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0003",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "A3",
+        "B3",
+        "C3",
+        "D3",
+        "E3",
+        "F3",
+        "G3",
+        "H3"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 9,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 24.442,
+        "total": 27.61
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 293,
+        "thinking_tokens": 2193,
+        "usd": 0.06627
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "multi-row",
+          "reasoning": "1. ORIENTATION: The clear 96-well plate is visible on the right side of the screen. The top-left corner of the plate has a visible 45-degree diagonal bevel, which indicates the A1 well. Therefore, rows A-H increase from top to bottom, and columns 1-12 increase from left to right. \n2. COMMIT MOMENT: In frames 1-8, the pipette is fully lowered into the rightmost column of the clear 96-well plate, dispensing liquid. (Following this, the pipette retracts and moves left to eject its used tips into the white container in frames 11-16). Frame 5 is a clear example of the commit moment.\n3. TIP LOCATION: The pipette is lowered into the 12th column from the left edge. Since it spans the entire column from top to bottom, it is inserted into rows A through H. \n4. PIPETTE TYPE: The pipette is an 8-channel pipette, as it simultaneously dispenses into all 8 wells of the column.\n5. ANSWER: The pipette is an 8-channel type dispensing into column 12."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0004",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "A4",
+        "B4",
+        "C4",
+        "D4",
+        "E4",
+        "F4",
+        "G4",
+        "H4"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 8,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 54.696,
+        "total": 55.857
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 219,
+        "thinking_tokens": 1774,
+        "usd": 0.060354
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "multi-row",
+          "reasoning": "1. ORIENTATION: Assuming standard microplate orientation, rows A-H run from top to bottom and columns 1-12 run from left to right. The plate is held by the user's left hand.\n2. COMMIT MOMENT: In frame 3, the pipette tips are fully lowered into the rightmost column of the plate, indicating the dispensing action.\n3. TIP LOCATION: The tips are inserted into the 12th column from the left and span all 8 rows from the top (Row A) to the bottom (Row H).\n4. PIPETTE TYPE: The pipette has 8 tips and dispenses into an entire column at once, making it an 8-channel pipette.\n5. ANSWER: The pipette dispenses into column 12, covering wells A12 through H12."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0005",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "A5",
+        "B5",
+        "C5",
+        "D5",
+        "E5",
+        "F5",
+        "G5",
+        "H5"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 7,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 25.632,
+        "total": 26.805
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 239,
+        "thinking_tokens": 2629,
+        "usd": 0.070854
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "multi-row",
+          "reasoning": "1. ORIENTATION: The microplate is positioned with its 12 columns increasing from left to right (1-12) and its 8 rows increasing from top to bottom (A-H), following the standard grid layout visible in the frame. 2. COMMIT MOMENT: The pipette tips are fully inserted into the wells in the earliest frames. Frame 5 serves as a clear representative frame of the dispensing action. 3. TIP LOCATION: The pipette tips are placed in the rightmost column of the plate, which corresponds to column 12. The uppermost tip is located in the top row, which is row A. 4. PIPETTE TYPE: The pipette has 8 tips aligned vertically, covering an entire column at once, making it an 8-channel pipette. 5. ANSWER: The pipette is an 8-channel type dispensing into column 12. We can report the top well, A12."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0006",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "A6",
+        "B6",
+        "C6",
+        "D6",
+        "E6",
+        "F6",
+        "G6",
+        "H6"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 6,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 15.423,
+        "total": 17.225
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 223,
+        "thinking_tokens": 998,
+        "usd": 0.05109
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "multi-row",
+          "reasoning": "1. ORIENTATION: The plate has a distinct beveled corner at the top-left, which identifies the location of well A1. Therefore, columns 1-12 increase from left to right, and rows A-H increase from top to bottom. \n2. COMMIT MOMENT: The pipette tips are fully inserted into the wells in Frame 10, indicating the dispensing moment.\n3. TIP LOCATION: In Frame 10, the pipette tips are lowered into the rightmost column of the plate. Counting columns from left to right (1 to 12), the rightmost column is 12. The tips cover all rows from top (A) to bottom (H).\n4. PIPETTE TYPE: The pipette has 8 tips aligned vertically, dispensing into a full column simultaneously, which means it is an 8-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0007",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "A7",
+        "B7",
+        "C7",
+        "D7",
+        "E7",
+        "F7",
+        "G7",
+        "H7"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 11.297,
+        "total": 13.377
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 229,
+        "thinking_tokens": 630,
+        "usd": 0.046746
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "multi-row",
+          "reasoning": "1. ORIENTATION: The plate has a beveled corner at the top-left, indicating that this is the A1 position. Therefore, columns increase from left to right (1-12) and rows increase from top to bottom (A-H).\n2. COMMIT MOMENT: In frame 10, the pipette tips are fully lowered into the wells on the far right edge of the plate, indicating the dispensing action.\n3. TIP LOCATION: The tips are centered over the 12th column from the left. They span all 8 rows from the top edge to the bottom edge.\n4. PIPETTE TYPE: The pipette has 8 tips arrayed vertically, making it an 8-channel pipette dispensing into a single column.\n5. ANSWER: The pipette is an 8-channel pipette dispensing into column 12. Representative well is A12."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0008",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "A8",
+        "B8",
+        "C8",
+        "D8",
+        "E8",
+        "F8",
+        "G8",
+        "H8"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 20.53,
+        "total": 22.496
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 254,
+        "thinking_tokens": 1680,
+        "usd": 0.059646
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "multi-row",
+          "reasoning": "1. ORIENTATION: The plate has a notched corner visible at the top-left, which identifies well A1. Therefore, rows A-H run from top to bottom, and columns 1-12 run from left to right.\n2. COMMIT MOMENT: The pipette tips are fully lowered into the wells and dispensing in frames 12-14. Frame 13 is a clear commit moment.\n3. TIP LOCATION: Counting from the left edge (column 1), there are 11 visible columns to the left of the pipette. The tips are inserted into the rightmost column, which is column 12. The tips span from the top row (A) to the bottom row (H).\n4. PIPETTE TYPE: The pipette has 8 tips arranged in a single column, making it an 8-channel pipette.\n5. ANSWER: The pipette is dispensing into all 8 wells of column 12. I will report the top well, A12."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0009",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A11",
+      "gt_wells": [
+        "A9",
+        "B9",
+        "C9",
+        "D9",
+        "E9",
+        "F9",
+        "G9",
+        "H9"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "call_read": 15.97,
+        "total": 17.743
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 244,
+        "thinking_tokens": 1129,
+        "usd": 0.052914
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 10,
+          "pred_type": "multi-row",
+          "reasoning": "1. ORIENTATION: The notched corner of the plate is visible in the top left, which corresponds to well A1. Therefore, columns (1-12) increase from left to right, and rows (A-H) increase from top to bottom.\n2. COMMIT MOMENT: In frame 14, the pipette tips are fully lowered into the wells, indicating the dispensing/commit moment.\n3. TIP LOCATION: The pipette has 8 tips aligned vertically. Counting from the left, the tips are in the 11th column, which is the second column from the right edge. The tips span all rows from top to bottom (A to H) in this column.\n4. PIPETTE TYPE: 8-channel, as it dispenses into an entire column of 8 wells simultaneously.\n5. ANSWER: The pipette is an 8-channel pipette dispensing into column 11 (e.g., well A11)."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0010",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "A10",
+        "B10",
+        "C10",
+        "D10",
+        "E10",
+        "F10",
+        "G10",
+        "H10"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "call_read": 12.403,
+        "total": 13.312
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 151,
+        "thinking_tokens": 1071,
+        "usd": 0.051102
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "multi-row",
+          "reasoning": "The plate is oriented with the notched corner at the top left, meaning row A is at the top and column 1 is at the left. The pipette is an 8-channel pipette, which dispenses into an entire column at once. In frames 11-16, the pipette tips are lowered into the rightmost column of the plate, which is column 12. The top tip is in row A. Therefore, it is dispensing into column 12, from A12 to H12."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0011",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "A11",
+        "B11",
+        "C11",
+        "D11",
+        "E11",
+        "F11",
+        "G11",
+        "H11"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "call_read": 14.37,
+        "total": 15.265
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 216,
+        "thinking_tokens": 1184,
+        "usd": 0.053238
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "multi-row",
+          "reasoning": "1. ORIENTATION: The top-left corner of the microplate has a distinct chamfer/notch, identifying it as A1. Therefore, rows A-H increase from top to bottom, and columns 1-12 increase from left to right. 2. COMMIT MOMENT: The pipette tips are fully lowered into the wells in Frame 10, marking the commit moment. 3. TIP LOCATION: The tips are inserted into the rightmost column of the plate, which is column 12. 4. PIPETTE TYPE: The pipette has 8 tips and dispenses into an entire column at once, spanning rows A through H. Thus, it is an 8-channel pipette. 5. ANSWER: The pipette dispenses into column 12, covering wells A12 through H12."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0012",
+      "plate": "Plate_2",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A12",
+        "B12",
+        "C12",
+        "D12",
+        "E12",
+        "F12",
+        "G12",
+        "H12"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 3,
+      "col_err": -6,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.526
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0001",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "A1",
+      "gt_wells": [
+        "A1"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "call_read": 39.845,
+        "total": 41.237
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 232,
+        "thinking_tokens": 4066,
+        "usd": 0.088014
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 0,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION - The 96-well microplate is located on the bottom right. The beveled/notched corner is at the top-left of the plate, marking well A1. Therefore, columns increase from left to right (1 to 12) and rows increase from top to bottom (A to H).\n2. COMMIT MOMENT - The frames show the pipette moving away from the microplate and dispensing liquid into the reagent reservoir (frames 10-16). However, in Frame 1, the pipette tip is positioned directly over the microplate before moving away.\n3. TIP LOCATION - In Frame 1, the single pipette tip is located over the top-leftmost well of the microplate, which corresponds to the first row (A) and first column (1).\n4. PIPETTE TYPE - The pipette has a single tip, making it a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0002",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A4",
+      "gt_wells": [
+        "B2"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "call_read": 19.219,
+        "total": 20.344
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 205,
+        "thinking_tokens": 1609,
+        "usd": 0.058206
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 3,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The microplate is positioned with the notched A1 corner at the top-left. Therefore, rows increase from top to bottom (A to H) and columns increase from left to right (1 to 12).\n2. COMMIT MOMENT: The pipette tip is lowered into a well and dispensing begins around frame 9, with the plunger being depressed.\n3. TIP LOCATION: At frame 9, the tip is located in the very first row from the top (Row A). Counting from the left edge of the plate, the tip is in the fourth well (Column 4), as there are three empty wells visible to its left in that row.\n4. PIPETTE TYPE: Only one tip is attached and dispensing, indicating a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0003",
+      "plate": "Plate_3",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "C3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 1,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 13.778
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0004",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "C8",
+      "gt_wells": [
+        "D4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 34.472,
+        "total": 37.63
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 208,
+        "thinking_tokens": 3668,
+        "usd": 0.08295
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 2,
+          "pred_col": 7,
+          "pred_type": "single",
+          "reasoning": "First, we orient the plate. The beveled notch is located at the bottom-left corner. In standard 96-well plates, this typically marks the H1 corner, making the top-left well A1. Therefore, rows increase from A to H going top-to-bottom, and columns increase from 1 to 12 going left-to-right. The pipette only has a single tip attached, identifying it as a single-channel pipette. The tip approaches the plate and is lowered into a well by Frame 8, which is the commit moment for dispensing. At this moment, counting from the top reference edge, the tip is in the 3rd row (Row C). Counting from the left reference edge, the tip is centered in the 8th column (Column 8)."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0005",
+      "plate": "Plate_3",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "D5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "total": 13.727
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0006",
+      "plate": "Plate_3",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "C6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 1,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "total": 13.618
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0007",
+      "plate": "Plate_3",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "B7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 2,
+      "col_err": -1,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "total": 13.909
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0008",
+      "plate": "Plate_3",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A8"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": -2,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 13.77
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0009",
+      "plate": "Plate_3",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": -3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.006
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0010",
+      "plate": "Plate_3",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A10"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": -4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.233
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0011",
+      "plate": "Plate_3",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A11"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": -5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 13.801
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0001",
+      "plate": "Plate_4",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A1"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.067
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0002",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "B4",
+      "gt_wells": [
+        "B2"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "call_read": 22.541,
+        "total": 30.349
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 189,
+        "thinking_tokens": 1650,
+        "usd": 0.058506
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 1,
+          "pred_col": 3,
+          "pred_type": "single",
+          "reasoning": "First, the plate is oriented with A1 at the top-left, indicated by the standard rectangular layout and visible faint markings on the top and left edges. Thus, rows increase from A to H top-to-bottom, and columns increase from 1 to 12 left-to-right. The pipette being used has a single tip, meaning it is a single-channel pipette. The commit moment, where the tip is fully lowered into a well and dispensing liquid, occurs at frame 13. At this moment, counting from the top edge, the tip is in the 2nd row (Row B). Counting from the left edge, the tip is in the 4th column (Column 4)."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0003",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "C6",
+      "gt_wells": [
+        "C3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 32.926,
+        "total": 40.987
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 266,
+        "thinking_tokens": 3211,
+        "usd": 0.078162
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 2,
+          "pred_col": 5,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: Based on the prompt's instruction, the notched/beveled corner marks A1. In the video, the clearly beveled corner is at the top right of the plate. Therefore, A1 is at the top right. Rows (A-H) increase from top to bottom, and columns (1-12) increase from right to left. \n2. COMMIT MOMENT: The pipette tip is fully lowered into the well and the user begins depressing the plunger in frame 10, making it the commit moment.\n3. TIP LOCATION: In frame 10, counting from the top edge (Row A), the tip is in the 3rd row down. Counting from the right edge (Column 1), the tip is in the 6th column from the right. \n4. PIPETTE TYPE: The tool has a single tip, making it a single-channel pipette.\n5. ANSWER: The tip is in the 3rd row (C) and the 6th column (6), which corresponds to well C6."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0006",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G7",
+      "gt_wells": [
+        "D5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 23.692,
+        "total": 26.949
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 239,
+        "thinking_tokens": 2142,
+        "usd": 0.06501
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 6,
+          "pred_col": 6,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The top-left corner of the plate in the video has a beveled/notched edge, which conventionally marks the A1 position. Therefore, columns increase from left to right (1-12) and rows increase from top to bottom (A-H). \n2. COMMIT MOMENT: In frame 10, the pipette tip is fully lowered into a well and the user's thumb is pressing down on the plunger, indicating the moment of dispensing.\n3. TIP LOCATION: At frame 10, counting from the left edge of the plate, the tip is in the 7th column. Counting from the top edge down, the tip is in the 7th row (with one final row, H, visible below it). The 7th row corresponds to letter G.\n4. PIPETTE TYPE: The tool has a single tip dispensing liquid into one well, making it a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0007",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "B10",
+      "gt_wells": [
+        "C6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 37.276,
+        "total": 40.964
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 252,
+        "thinking_tokens": 3861,
+        "usd": 0.085794
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 1,
+          "pred_col": 9,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate is positioned horizontally with the standard orientation. Assuming the top-left corner is A1 (supported by the notch visible on the diagonally opposite bottom-right corner, typically H12), the rows increase from A to H top-to-bottom, and the columns increase from 1 to 12 left-to-right.\n2. COMMIT MOMENT: Frame 2 clearly shows the pipette tip lowered into a well with a drop of liquid actively dispensing.\n3. TIP LOCATION: In Frame 2, the tip is centered over the second well from the top edge (Row B) and the third well from the right edge. Since there are 12 columns, the third from the right is Column 10 (12, 11, 10).\n4. PIPETTE TYPE: The pipette is dispensing through a single tip, identifying it as a single-channel pipette.\n5. ANSWER: The well is Row B, Column 10."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0008",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "B2",
+      "gt_wells": [
+        "B7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": -5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 36.932,
+        "total": 38.361
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 151,
+        "thinking_tokens": 3843,
+        "usd": 0.084366
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 1,
+          "pred_col": 1,
+          "pred_type": "single",
+          "reasoning": "The plate is oriented with the beveled corner on the top right, which marks well A1. Therefore, the rows (A-H) increase from top to bottom, and the columns (1-12) increase from right to left. The commit moment occurs in frame 6 when the tip is fully lowered into the well. At this moment, the tip is located in the second row from the top (Row B) and the second column from the right (Column 2). The video shows a single-channel pipette being used."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0009",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A1",
+      "gt_wells": [
+        "A8"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": -7,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 43.338,
+        "total": 45.644
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 301,
+        "thinking_tokens": 4073,
+        "usd": 0.088926
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 0,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The 96-well plate is oriented with its long edge horizontal (12 wells) and short edge vertical (8 wells). The top-right corner of the plate has a visible notch/bevel. By standard convention, this notch marks well A1. Therefore, the rows (A-H) increase from top to bottom, and the columns (1-12) increase from right to left across the screen.\n2. COMMIT MOMENT: The pipette tip is lowered into a well and remains stationary, dispensing liquid, from frames 1 through 8. Frame 4 clearly shows the tip committed and dispensing.\n3. TIP LOCATION: In frame 4, the single pipette tip is located in the top-right-most well of the plate. Counting from the top edge, this is the 1st row. Counting from the left edge, this is the 12th well across, which corresponds to the rightmost column.\n4. PIPETTE TYPE: Only a single shaft and tip are visible, indicating it is a single-channel pipette.\n5. ANSWER: Since the tip is in the top-right well, and the top-right corner is A1, the pipette is dispens"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0010",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "A9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 15.03,
+        "total": 17.432
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 143,
+        "thinking_tokens": 844,
+        "usd": 0.048282
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "single",
+          "reasoning": "First, the plate is oriented with its beveled corner at the top-left, which identifies well A1. Therefore, rows A-H run from top to bottom, and columns 1-12 run from left to right. In frame 8, the single-tip pipette is fully inserted into a well and dispensing liquid. The tip is positioned in the top-most row (Row A) and the right-most column (Column 12), centered on well A12."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0011",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "A10"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "call_read": 28.659,
+        "total": 30.31
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 225,
+        "thinking_tokens": 2717,
+        "usd": 0.071742
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The 96-well plate is positioned with its beveled corner at the top-left, which identifies the location of well A1. Therefore, rows A-H increase from top to bottom, and columns 1-12 increase from left to right. \n2. COMMIT MOMENT: The pipette approaches the plate in the early frames, and by frame 7, the tip is fully lowered into a well, marking the commit moment. \n3. TIP LOCATION: At frame 7, the single pipette tip is located in the well at the very top row and the furthest to the right. Counting from the top-left reference (A1), the top row is A, and the rightmost column is 12. \n4. PIPETTE TYPE: The pipette has only a single tip attached, making it a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0012",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "A11"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "call_read": 10.708,
+        "total": 11.817
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 161,
+        "thinking_tokens": 473,
+        "usd": 0.044046
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "single",
+          "reasoning": "First, the plate is oriented with the notched corner at the top left, which corresponds to well A1. Therefore, columns 1-12 increase from left to right, and rows A-H increase from top to bottom. The commit moment occurs around frame 9, where the pipette tip is fully inserted into a well and liquid is being dispensed. At this moment, the single pipette tip is located in the top-most row (Row A) and the right-most column (Column 12). Since it has only one tip, it is a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0015",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G10",
+      "gt_wells": [
+        "H2"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 8,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 28.99,
+        "total": 30.24
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 281,
+        "thinking_tokens": 3076,
+        "usd": 0.076722
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 6,
+          "pred_col": 9,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate is positioned in a standard landscape orientation. The longer edges are at the top and bottom (12 columns), and the shorter edges are on the left and right (8 rows). By standard convention, columns 1-12 increase from left to right, and rows A-H increase from top to bottom.\n2. COMMIT MOMENT: In Frame 13 and Frame 14, the pipette tip is lowered fully into a well and the user's thumb depresses the plunger to dispense liquid.\n3. TIP LOCATION: Looking at the tip in Frame 14, it is positioned in the second row from the bottom edge (Row 7 from the top) and the third column from the right edge (Column 10 from the left). This leaves 1 well below it and 2 wells to its right.\n4. PIPETTE TYPE: The tool has a single tip and dispenses into one well at a time, making it a single-channel pipette.\n5. ANSWER: The 7th row corresponds to 'G', and the 10th column corresponds to '10'."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0016",
+      "plate": "Plate_4",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "H3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -4,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.342
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0017",
+      "plate": "Plate_4",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "H4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -4,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 13.642
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0018",
+      "plate": "Plate_4",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "H5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -4,
+      "col_err": 1,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.093
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0019",
+      "plate": "Plate_4",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "H6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -4,
+      "col_err": 0,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 13.664
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0020",
+      "plate": "Plate_4",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "H7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -4,
+      "col_err": -1,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.317
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0021",
+      "plate": "Plate_4",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "H8"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -4,
+      "col_err": -2,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.819
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0022",
+      "plate": "Plate_4",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "H9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -4,
+      "col_err": -3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 15.187
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0023",
+      "plate": "Plate_4",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "H10"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -4,
+      "col_err": -4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.3
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0024",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G12",
+      "gt_wells": [
+        "H11"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "call_read": 17.19,
+        "total": 20.64
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 179,
+        "thinking_tokens": 1672,
+        "usd": 0.05865
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 6,
+          "pred_col": 11,
+          "pred_type": "single",
+          "reasoning": "The A1 corner is located at the top-left of the plate, identified by the chamfered/notched corner visible in the early frames. Based on this orientation, columns 1-12 run from left to right, and rows A-H run from top to bottom. The dispensing action (commit moment) occurs in frames 2-4 where the pipette tip is fully lowered into a well. Observing the tip's location in these frames, it is positioned in the rightmost column (column 12) and the second well from the bottom in that column (row G). The pipette has a single tip, making it a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0001",
+      "plate": "Plate_5",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10",
+        "A11",
+        "A12"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-col",
+      "row_err": 3,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 13.835
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0002",
+      "plate": "Plate_5",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-col",
+      "row_err": 2,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 13.863
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0004",
+      "plate": "Plate_5",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D12"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-col",
+      "row_err": -3,
+      "col_err": 11,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 19.903,
+        "total": 27.833
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 282,
+        "thinking_tokens": 1811,
+        "usd": 0.061554
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "multi-row",
+          "reasoning": "1. ORIENTATION: The plate has a beveled/notched corner at the top-left, which designates the A1 position. Furthermore, faint row labels (A-H) can be seen going top-to-bottom along the left edge, and column numbers (1-12) go left-to-right along the top edge. 2. COMMIT MOMENT: The pipette tips are already fully inserted into the plate at the beginning of the clip, and remain there dispensing until frame 9. Frame 4 is a clear representative frame of the dispensing action. 3. TIP LOCATION: The pipette is positioned in the very last column on the right side of the plate. Counting from left (1) to right, this is column 12. The 8 tips span from the top row (A) to the bottom row (H). 4. PIPETTE TYPE: The pipette has 8 tips aligned vertically, making it an 8-channel pipette dispensing into a full column. 5. ANSWER: The pipette is an 8-channel type dispensing into column 12 (wells A12 through H12)."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0005",
+      "plate": "Plate_5",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8",
+        "E9",
+        "E10",
+        "E11",
+        "E12"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-col",
+      "row_err": -4,
+      "col_err": 11,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 13.264,
+        "total": 21.833
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 205,
+        "thinking_tokens": 1069,
+        "usd": 0.051726
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "multi-row",
+          "reasoning": "1. The notched corner of the plate is situated at the top-left from the camera's perspective, which identifies well A1. Therefore, columns increase from left to right (1-12) and rows increase from top to bottom (A-H).\n2. The commit moment, when the pipette tips are fully lowered into the wells and dispensing, occurs around frame 9.\n3. At this moment, the pipette tips are inserted into the rightmost column of the plate, which is column 12. The tips span all rows from top to bottom.\n4. Since the pipette dispenses into an entire column (8 wells) simultaneously, it is an 8-channel pipette.\n5. Reporting the top well of the target column gives A12."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0006",
+      "plate": "Plate_5",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "F9",
+        "F10",
+        "F11",
+        "F12"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-col",
+      "row_err": -5,
+      "col_err": 11,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 39.569,
+        "total": 48.09
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 295,
+        "thinking_tokens": 3610,
+        "usd": 0.083298
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "multi-row",
+          "reasoning": "1. ORIENTATION: The plate is held by the left hand. The top-left corner of the plate features a distinct notch/bevel, which typically marks position A1. Therefore, rows A-H run from top to bottom along the short edge, and columns 1-12 run from left to right along the long edge.\n2. COMMIT MOMENT: In frame 1, the pipette tips are fully lowered into the rightmost column of the plate, completing a dispensing action. Subsequent frames (2-8) show the retraction of the pipette, and the remaining frames (9-16) show the pipette moving to a reservoir to discard excess liquid. Frame 1 represents the dispensing moment into the plate.\n3. TIP LOCATION: The pipette is positioned in the 12th column from the left (the rightmost column of the plate). The tips span from the top row to the bottom row of this column.\n4. PIPETTE TYPE: The pipette spans the plate's short edge (8 wells), making it an 8-channel pipette.\n5. ANSWER: The pipette is an 8-channel pipette dispensing into column 12. A representative "
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0007",
+      "plate": "Plate_5",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6",
+        "G7",
+        "G8",
+        "G9",
+        "G10",
+        "G11",
+        "G12"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-col",
+      "row_err": -6,
+      "col_err": 11,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 38.837,
+        "total": 41.036
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 248,
+        "thinking_tokens": 3818,
+        "usd": 0.08523
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "pred_type": "multi-row",
+          "reasoning": "1. ORIENTATION: The plate is held with the notched corner clearly visible at the top-left (best seen in Frame 7), which marks well A1. Therefore, the rows (A-H) run from top to bottom, and the columns (1-12) increase from left to right.\n2. COMMIT MOMENT: The pipette tips are lowered into the wells and dispensing the dark liquid by Frame 4.\n3. TIP LOCATION: At the commit moment, the pipette is positioned over the rightmost column of the plate. Counting from the left (Column 1), this is the 12th column.\n4. PIPETTE TYPE: The pipette has 8 tips, making it an 8-channel pipette that dispenses into an entire column at once.\n5. ANSWER: The pipette dispenses into all 8 wells of Column 12 (A12 through H12). Well A12 is reported as a representative well."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0008",
+      "plate": "Plate_5",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A1",
+      "gt_wells": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8",
+        "H9",
+        "H10",
+        "H11",
+        "H12"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-col",
+      "row_err": -7,
+      "col_err": 0,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 45.579,
+        "total": 47.009
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 267,
+        "thinking_tokens": 4524,
+        "usd": 0.09393
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 0,
+          "pred_col": 0,
+          "pred_type": "multi-row",
+          "reasoning": "1. ORIENTATION: The plate has a distinctive beveled notch visible at its bottom-right corner. Reference diagrams on the table show standard orientation with the notch at the top-left (A1). This means the plate is currently rotated 180 degrees, placing A1 at the bottom-right. Consequently, the rightmost column is column 1, and the leftmost column is column 12. The bottom row is A, and the top row is H.\n2. COMMIT MOMENT: The pipette tips are fully lowered into the rightmost column starting from Frame 1, and the operator's thumb is engaging the plunger. Frame 2 represents a clear commit moment.\n3. TIP LOCATION: The pipette is centered over the rightmost column of the plate, which is column 1.\n4. PIPETTE TYPE: The pipette has 8 tips and covers the entire column vertically, identifying it as an 8-channel pipette.\n5. ANSWER: The pipette dispenses into column 1, covering rows A through H. A representative well is A1."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0001",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G10",
+      "gt_wells": [
+        "H1"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 9,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 15.04,
+        "total": 15.859
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 199,
+        "thinking_tokens": 1272,
+        "usd": 0.05409
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 6,
+          "pred_col": 9,
+          "pred_type": "single",
+          "reasoning": "1. Orientation: The printed labels are visible on the plate with numbers 1-12 along the top edge and letters A-H along the left edge. Therefore, A1 is the top-left corner, columns increase from left to right, and rows increase from top to bottom.\n2. Commit Moment: The pipette tip is fully lowered into a well and dispensing liquid around frame 8.\n3. Tip Location: At this moment, counting from the top row (A), the tip is in the 7th row, which is Row G. Counting from the left column (1), the tip is in the 10th column.\n4. Pipette Type: Only one pipette tip is present, indicating it is a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0002",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "F5",
+      "gt_wells": [
+        "G1"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 17.251,
+        "total": 18.341
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 190,
+        "thinking_tokens": 1802,
+        "usd": 0.060342
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 5,
+          "pred_col": 4,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate has a beveled corner visible at the top-left, identifying it as A1. Therefore, rows A-H increase from top to bottom, and columns 1-12 increase from left to right. \n2. COMMIT MOMENT: The pipette tip is fully lowered into a well and dispensing in Frame 6.\n3. TIP LOCATION: Counting from the top-left A1 corner in Frame 6, the tip is in the 6th row from the top (Row F) and the 5th column from the left (Column 5).\n4. PIPETTE TYPE: Only a single tip is visible and in use, indicating a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0003",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "E8",
+      "gt_wells": [
+        "F2"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 6,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 43.686,
+        "total": 44.487
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 276,
+        "thinking_tokens": 5003,
+        "usd": 0.099786
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 4,
+          "pred_col": 7,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION - The plate has a distinct beveled/notched corner at the bottom-left. Following the instructions, this notch marks well A1. Therefore, the columns (1-12) increase from left to right, and the rows (A-H) increase from bottom to top. \n2. COMMIT MOMENT - The pipette tip is fully lowered into the well and remains steady, dispensing liquid, from frame 4 to frame 11. Frame 7 is a clear representative of the commit moment.\n3. TIP LOCATION - At this moment, observing the tip's position: there are 7 empty columns to its left, placing it in column 8 (left-to-right). There are 4 empty rows below it, placing it in the 5th row from the bottom. Since row A is at the bottom, the 5th row is E (A, B, C, D, E).\n4. PIPETTE TYPE - The tool has only one tip, so it is a single-channel pipette.\n5. ANSWER - The single pipette is centered over well E8."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0004",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G4",
+      "gt_wells": [
+        "E2"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 2,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "call_read": 26.068,
+        "total": 26.989
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 270,
+        "thinking_tokens": 2554,
+        "usd": 0.070326
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 6,
+          "pred_col": 3,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate is oriented horizontally. The beveled/notched corner is visible at the bottom right. Based on standard plate orientation where the notch marks A1, the bottom-right well is A1. Therefore, rows increase from A to H going from bottom to top, and columns increase from 1 to 12 going from right to left. \n2. COMMIT MOMENT: In Frame 4, the pipette tip is lowered into a well and the user's thumb depresses the plunger, indicating the start of the dispensing action. This continues through Frame 7.\n3. TIP LOCATION: In Frame 4, the tip is located in the 2nd row from the top edge. Since the top row is H, this corresponds to Row G. The tip is in the 4th column from the right edge. Since the rightmost column is 1, this corresponds to Column 4.\n4. PIPETTE TYPE: A single tip is visible, so it is a single-channel pipette.\n5. ANSWER: The pipette dispenses into well G4."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0005",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "C10",
+      "gt_wells": [
+        "D3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 7,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 16.36,
+        "total": 17.302
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 172,
+        "thinking_tokens": 1116,
+        "usd": 0.051894
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 2,
+          "pred_col": 9,
+          "pred_type": "single",
+          "reasoning": "The 96-well plate is oriented with the beveled corner at the top-left, indicating that well A1 is located there. Therefore, rows A-H increase from top to bottom, and columns 1-12 increase from left to right. The dispensing action (commit moment) occurs clearly around frame 5 when the tip is fully lowered into a well. Counting from the top, the tip is in the 3rd row, which corresponds to row C. Counting from the left, the tip is in the 10th column. The pipette has only a single tip, making it a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0006",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "E9",
+      "gt_wells": [
+        "E4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 17.015,
+        "total": 17.804
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 200,
+        "thinking_tokens": 1586,
+        "usd": 0.05787
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 4,
+          "pred_col": 8,
+          "pred_type": "single",
+          "reasoning": "1. The plate is oriented with the notched/beveled corner at the top-left, indicating that well A1 is at the top-left. Rows (A-H) increase from top to bottom, and columns (1-12) increase from left to right.\n2. The pipette is a single-channel type, as it has only one tip dispensing into a single well.\n3. The commit moment, where the pipette tip is fully lowered into the well, is clearest in Frame 8.\n4. Counting the wells at this moment: the tip is located in the 5th row from the top (Row E) and the 9th column from the left (Column 9), which is the 4th column from the right edge."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0007",
+      "plate": "Plate_9",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "F4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -2,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "total": 13.511
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0008",
+      "plate": "Plate_9",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "G5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -3,
+      "col_err": 1,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.193
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0009",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H11",
+      "gt_wells": [
+        "H5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 6,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 19.975,
+        "total": 21.561
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 162,
+        "thinking_tokens": 1632,
+        "usd": 0.057966
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 7,
+          "pred_col": 10,
+          "pred_type": "single",
+          "reasoning": "The plate's notched corner is at the top-left, which designates it as well A1. Therefore, the rows run from A (top) to H (bottom) and the columns run from 1 (left) to 12 (right). The commit moment where the pipette is fully lowered into the well occurs around frame 6. The pipette has a single tip, identifying it as a single-channel pipette. At this moment, the tip is positioned in the bottom-most row (Row H) and the second well from the right edge (Column 11)."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0010",
+      "plate": "Plate_9",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "F3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -2,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 13.873
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0011",
+      "plate": "Plate_9",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "H6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -4,
+      "col_err": 0,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 13.994
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0012",
+      "plate": "Plate_9",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "G6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -3,
+      "col_err": 0,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 14.146
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0013",
+      "plate": "Plate_9",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "F6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -2,
+      "col_err": 0,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "total": 14.399
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0014",
+      "plate": "Plate_9",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "E7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": -1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "total": 14.244
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0015",
+      "plate": "Plate_9",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "D7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": -1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "total": 13.658
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0016",
+      "plate": "Plate_9",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "E8"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": -2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "total": 13.652
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0017",
+      "plate": "Plate_9",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "F8"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -2,
+      "col_err": -2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "total": 13.454
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0018",
+      "plate": "Plate_9",
+      "status": "vlm_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "E9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": -3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "total": 13.508
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "vlm": {
+          "error": "Gemini call failed after 3 tries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, he"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0019",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "D10",
+      "gt_wells": [
+        "D9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "call_read": 13.176,
+        "total": 21.061
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 186,
+        "thinking_tokens": 955,
+        "usd": 0.05013
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 3,
+          "pred_col": 9,
+          "pred_type": "single",
+          "reasoning": "1. The plate is oriented with the beveled/notched corner at the top left, which identifies well A1. Therefore, columns increase from left to right (1 to 12) and rows increase from top to bottom (A to H).\n2. The commit moment, where the pipette tip is fully lowered into a well for dispensing, occurs around frame 8.\n3. Counting from the left (column 1), the tip is located in the 10th column. Counting from the top (row A), the tip is in the 4th row, which corresponds to row D.\n4. The pipette has a single tip, making it a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0020",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "E11",
+      "gt_wells": [
+        "E10"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "call_read": 25.317,
+        "total": 29.344
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 225,
+        "thinking_tokens": 2498,
+        "usd": 0.069114
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 4,
+          "pred_col": 10,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate has a notched corner at the top-left, which indicates well A1. Therefore, columns (1-12) increase from left to right, and rows (A-H) increase from top to bottom.\n2. COMMIT MOMENT: The pipette tip is fully lowered into a well and dispensing in Frame 9.\n3. TIP LOCATION: In Frame 9, observing the pipette tip's position, there are 4 visible wells above it in that column (rows A, B, C, D), placing the tip in the 5th row (Row E). There is 1 completely visible well to the right of the tip, meaning it is in the 11th column from the left (Column 11).\n4. PIPETTE TYPE: The pipette has a single tip, making it a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0021",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "E2",
+      "gt_wells": [
+        "F10"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": -8,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "call_read": 65.003,
+        "total": 68.936
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 306,
+        "thinking_tokens": 7461,
+        "usd": 0.129642
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 4,
+          "pred_col": 1,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The printed labels on the plate are not legible. However, the plate has a distinct, diagonally beveled corner visible at the bottom-right of the screen (best seen in frames 1 and 2). Following the instructions, this notched corner marks well A1. Therefore, A1 is at the bottom-right. Rows increase from A to H going from bottom to top, and columns increase from 1 to 12 going from right to left.\n2. COMMIT MOMENT: The pipette tip approaches the plate and is fully lowered into a well by frame 6, where the dispensing action occurs.\n3. TIP LOCATION: In frame 6, counting from the bottom reference edge (Row A), the tip is centered in the 5th row up. Counting from the right reference edge (Column 1), the tip is centered in the 2nd column.\n4. PIPETTE TYPE: The pipette has a single tip, dispensing into one well at a time, so it is a single-channel pipette.\n5. ANSWER: The 5th row from the bottom is Row E (A, B, C, D, E), and the 2nd column from the right is Column 2. Thus, the well "
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0022",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "F12",
+      "gt_wells": [
+        "G11"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "call_read": 34.553,
+        "total": 35.506
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 249,
+        "thinking_tokens": 3449,
+        "usd": 0.080814
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 5,
+          "pred_col": 11,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The 96-well plate is oriented horizontally. The top-left corner has a distinct bevel, identifying it as position A1. Therefore, columns (1-12) increase from left to right, and rows (A-H) increase from top to bottom. \n2. COMMIT MOMENT: The pipette tip is fully inserted into a well on the plate in the early frames (e.g., Frame 4). (The later action in the video shows the user blowing out excess liquid into a waste reservoir, consistent with a reverse pipetting technique where the initial dispense happens into the plate).\n3. TIP LOCATION: Counting from the top reference edge, the tip is located in the 6th row (Row F). Counting from the left reference edge, the tip is in the 12th and rightmost column (Column 12).\n4. PIPETTE TYPE: The pipette clearly has only one tip, so it is a single-channel pipette."
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0023",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G12",
+      "gt_wells": [
+        "H11"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "call_read": 13.921,
+        "total": 14.755
+      },
+      "cost": {
+        "input_tokens": 18219,
+        "output_tokens": 227,
+        "thinking_tokens": 1149,
+        "usd": 0.05295
+      },
+      "stages": {
+        "vlm": {
+          "pred_row": 6,
+          "pred_col": 11,
+          "pred_type": "single",
+          "reasoning": "1. ORIENTATION: The plate is oriented with the beveled corner at the top-left, which indicates well A1. Therefore, columns 1-12 increase from left to right, and rows A-H increase from top to bottom.\n2. COMMIT MOMENT: The pipette tip is fully lowered into a well and dispensing around frames 5-9. Frame 6 provides a clear view of the tip's position.\n3. TIP LOCATION: In frame 6, counting from the top-left (A1), the tip is located in the 12th column from the left (the right-most column) and the 7th row from the top (one row above the bottom edge). This corresponds to row G and column 12.\n4. PIPETTE TYPE: Only one tip is attached and dispensing, so it is a single-channel pipette."
+        }
+      }
+    }
+  ]
+}

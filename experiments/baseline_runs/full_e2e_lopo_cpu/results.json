@@ -1,0 +1,6611 @@
+{
+  "run_name": "full_e2e_lopo_cpu",
+  "method": "e2e",
+  "timestamp": "2026-06-01T15:27:08.651444",
+  "config": {
+    "n_frames": null,
+    "workers": null
+  },
+  "summary": {
+    "total_clips": 100,
+    "exact_match": 27,
+    "exact_pct": 27.0,
+    "row_ok": 47,
+    "row_ok_pct": 47.0,
+    "col_ok": 36,
+    "col_ok_pct": 36.0,
+    "within_1": 50,
+    "within_1_pct": 50.0,
+    "within_2": 58,
+    "within_2_pct": 58.0,
+    "plate_breakdown": {
+      "Plate_1": {
+        "correct": 3,
+        "total": 6,
+        "accuracy_pct": 50.0
+      },
+      "Plate_10": {
+        "correct": 3,
+        "total": 21,
+        "accuracy_pct": 14.3
+      },
+      "Plate_2": {
+        "correct": 0,
+        "total": 12,
+        "accuracy_pct": 0.0
+      },
+      "Plate_3": {
+        "correct": 1,
+        "total": 11,
+        "accuracy_pct": 9.1
+      },
+      "Plate_4": {
+        "correct": 4,
+        "total": 20,
+        "accuracy_pct": 20.0
+      },
+      "Plate_5": {
+        "correct": 0,
+        "total": 7,
+        "accuracy_pct": 0.0
+      },
+      "Plate_9": {
+        "correct": 16,
+        "total": 23,
+        "accuracy_pct": 69.6
+      }
+    },
+    "type_breakdown": {
+      "multi-col": {
+        "correct": 3,
+        "total": 13,
+        "accuracy_pct": 23.1
+      },
+      "single": {
+        "correct": 24,
+        "total": 75,
+        "accuracy_pct": 32.0
+      },
+      "multi-row": {
+        "correct": 0,
+        "total": 12,
+        "accuracy_pct": 0.0
+      }
+    },
+    "timing_mean_s": {
+      "stage1_commit": 3.01,
+      "stage2_corners": 0.16,
+      "stage3_tip": 0.05,
+      "total": 3.45
+    },
+    "total_cost": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "thinking_tokens": 0,
+      "usd": 0.0
+    },
+    "cost_per_clip_usd": 0.0,
+    "wall_clock_s": 347.9
+  },
+  "clips": [
+    {
+      "clip_name": "Plate_1_clip_0001",
+      "plate": "Plate_1",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H1",
+      "gt_wells": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10",
+        "A11",
+        "A12"
+      ],
+      "pipette_type": "multi-col",
+      "gt_pipette_type": "multi-col",
+      "row_err": 7,
+      "col_err": 0,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.655,
+        "stage2_corners": 0.296,
+        "stage3_tip": 0.036,
+        "total": 4.314
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 50,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1372.00341796875,
+              837.6831665039062
+            ],
+            "A12": [
+              1535.77587890625,
+              475.96270751953125
+            ],
+            "H12": [
+              1628.765380859375,
+              625.3687133789062
+            ],
+            "H1": [
+              1435.1787109375,
+              789.4992065429688
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 7,
+          "tip_x": 392.0,
+          "tip_y": 432.0,
+          "pred_type": "multi-col",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_1_clip_0004",
+      "plate": "Plate_1",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H1",
+      "gt_wells": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D12"
+      ],
+      "pipette_type": "multi-col",
+      "gt_pipette_type": "multi-col",
+      "row_err": 4,
+      "col_err": 0,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 4.497,
+        "stage2_corners": 0.126,
+        "stage3_tip": 0.034,
+        "total": 4.801
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 59,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1319.130615234375,
+              758.3319091796875
+            ],
+            "A12": [
+              1485.22900390625,
+              384.5468444824219
+            ],
+            "H12": [
+              1646.668212890625,
+              569.5724487304688
+            ],
+            "H1": [
+              1412.21435546875,
+              788.0982666015625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 1,
+          "tip_x": 152.0,
+          "tip_y": 384.0,
+          "pred_type": "multi-col",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_1_clip_0005",
+      "plate": "Plate_1",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "E1",
+      "gt_wells": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8",
+        "E9",
+        "E10",
+        "E11",
+        "E12"
+      ],
+      "pipette_type": "multi-col",
+      "gt_pipette_type": "multi-col",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.838,
+        "stage2_corners": 0.268,
+        "stage3_tip": 0.04,
+        "total": 3.557
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 69,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1262.4765625,
+              757.5674438476562
+            ],
+            "A12": [
+              1437.9072265625,
+              380.76995849609375
+            ],
+            "H12": [
+              1646.9224853515625,
+              550.1654663085938
+            ],
+            "H1": [
+              1379.248046875,
+              791.7828979492188
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 10,
+          "tip_x": 520.0,
+          "tip_y": 240.0,
+          "pred_type": "multi-col",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_1_clip_0006",
+      "plate": "Plate_1",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "F1",
+      "gt_wells": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "F9",
+        "F10",
+        "F11",
+        "F12"
+      ],
+      "pipette_type": "multi-col",
+      "gt_pipette_type": "multi-col",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 4.518,
+        "stage2_corners": 0.127,
+        "stage3_tip": 0.033,
+        "total": 4.945
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 30,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1206.10791015625,
+              726.699462890625
+            ],
+            "A12": [
+              1377.9884033203125,
+              351.5017395019531
+            ],
+            "H12": [
+              1583.7752685546875,
+              507.4278259277344
+            ],
+            "H1": [
+              1327.87890625,
+              754.2313842773438
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 11,
+          "tip_x": 536.0,
+          "tip_y": 288.0,
+          "pred_type": "multi-col",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_1_clip_0007",
+      "plate": "Plate_1",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "F1",
+      "gt_wells": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6",
+        "G7",
+        "G8",
+        "G9",
+        "G10",
+        "G11",
+        "G12"
+      ],
+      "pipette_type": "multi-col",
+      "gt_pipette_type": "multi-col",
+      "row_err": -1,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.762,
+        "stage2_corners": 0.126,
+        "stage3_tip": 0.033,
+        "total": 3.151
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 32,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1221.7587890625,
+              750.4757690429688
+            ],
+            "A12": [
+              1386.072509765625,
+              381.4984130859375
+            ],
+            "H12": [
+              1607.3673095703125,
+              559.2376708984375
+            ],
+            "H1": [
+              1326.634521484375,
+              796.7984619140625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 11,
+          "tip_x": 528.0,
+          "tip_y": 296.0,
+          "pred_type": "multi-col",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_1_clip_0008",
+      "plate": "Plate_1",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "H1",
+      "gt_wells": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8",
+        "H9",
+        "H10",
+        "H11",
+        "H12"
+      ],
+      "pipette_type": "multi-col",
+      "gt_pipette_type": "multi-col",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 4.321,
+        "stage2_corners": 0.151,
+        "stage3_tip": 0.03,
+        "total": 4.686
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 37,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1206.5870361328125,
+              743.92626953125
+            ],
+            "A12": [
+              1378.3856201171875,
+              373.5875244140625
+            ],
+            "H12": [
+              1513.722412109375,
+              556.8516845703125
+            ],
+            "H1": [
+              1293.10009765625,
+              744.7261962890625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 1,
+          "tip_x": 144.0,
+          "tip_y": 424.0,
+          "pred_type": "multi-col",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0001",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A5",
+      "gt_wells": [
+        "A6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": -1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.798,
+        "stage2_corners": 0.37,
+        "stage3_tip": 0.055,
+        "total": 3.59
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 41,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1271.9163818359375,
+              586.2724609375
+            ],
+            "A12": [
+              1678.3707275390625,
+              535.9703369140625
+            ],
+            "H12": [
+              1765.9586181640625,
+              794.1954956054688
+            ],
+            "H1": [
+              1328.0965576171875,
+              854.2879028320312
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 4,
+          "tip_x": 280.0,
+          "tip_y": 104.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0002",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "B5",
+      "gt_wells": [
+        "B5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 4.233,
+        "stage2_corners": 0.118,
+        "stage3_tip": 0.041,
+        "total": 4.522
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 30,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1284.7510986328125,
+              656.4529418945312
+            ],
+            "A12": [
+              1686.1693115234375,
+              575.371826171875
+            ],
+            "H12": [
+              1781.4951171875,
+              831.1403198242188
+            ],
+            "H1": [
+              1351.13037109375,
+              912.2127685546875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 1,
+          "pred_col": 4,
+          "tip_x": 240.0,
+          "tip_y": 144.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0003",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "B6",
+      "gt_wells": [
+        "B6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.626,
+        "stage2_corners": 0.122,
+        "stage3_tip": 0.038,
+        "total": 3.055
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 31,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1286.373779296875,
+              683.1200561523438
+            ],
+            "A12": [
+              1675.14111328125,
+              609.2769775390625
+            ],
+            "H12": [
+              1766.45703125,
+              865.1134643554688
+            ],
+            "H1": [
+              1344.5474853515625,
+              938.044189453125
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 1,
+          "pred_col": 5,
+          "tip_x": 304.0,
+          "tip_y": 128.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0004",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "B7",
+      "gt_wells": [
+        "B7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 4.076,
+        "stage2_corners": 0.176,
+        "stage3_tip": 0.059,
+        "total": 4.515
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 19,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1277.0159912109375,
+              707.2635498046875
+            ],
+            "A12": [
+              1675.854248046875,
+              627.4545288085938
+            ],
+            "H12": [
+              1769.427978515625,
+              887.1775512695312
+            ],
+            "H1": [
+              1339.419921875,
+              965.8317260742188
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 1,
+          "pred_col": 6,
+          "tip_x": 344.0,
+          "tip_y": 136.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0005",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "E8",
+      "gt_wells": [
+        "C4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 2,
+      "col_err": 4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.817,
+        "stage2_corners": 0.131,
+        "stage3_tip": 0.037,
+        "total": 3.317
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 19,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1324.3253173828125,
+              627.4149169921875
+            ],
+            "A12": [
+              1822.1114501953125,
+              574.7931518554688
+            ],
+            "H12": [
+              1909.392822265625,
+              914.4965209960938
+            ],
+            "H1": [
+              1370.1363525390625,
+              957.15625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 7,
+          "tip_x": 392.0,
+          "tip_y": 240.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0006",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A8",
+      "gt_wells": [
+        "C5"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "single",
+      "row_err": -2,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 4.198,
+        "stage2_corners": 0.12,
+        "stage3_tip": 0.044,
+        "total": 4.586
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 32,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1298.7293701171875,
+              643.9972534179688
+            ],
+            "A12": [
+              1784.887939453125,
+              576.405517578125
+            ],
+            "H12": [
+              1872.351318359375,
+              902.5910034179688
+            ],
+            "H1": [
+              1353.770263671875,
+              961.3825073242188
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 7,
+          "tip_x": 376.0,
+          "tip_y": 288.0,
+          "pred_type": "multi-row",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0007",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A5",
+      "gt_wells": [
+        "C6"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "single",
+      "row_err": -2,
+      "col_err": -1,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.475,
+        "stage2_corners": 0.118,
+        "stage3_tip": 0.037,
+        "total": 2.78
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 40,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1264.699951171875,
+              646.5908203125
+            ],
+            "A12": [
+              1810.1015625,
+              571.5860595703125
+            ],
+            "H12": [
+              1905.6834716796875,
+              932.8240356445312
+            ],
+            "H1": [
+              1321.904052734375,
+              1001.9496459960938
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 4,
+          "tip_x": 264.0,
+          "tip_y": 248.0,
+          "pred_type": "multi-row",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0008",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "E8",
+      "gt_wells": [
+        "C7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 2,
+      "col_err": 1,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 3.436,
+        "stage2_corners": 0.27,
+        "stage3_tip": 0.066,
+        "total": 4.073
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 40,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1165.7628173828125,
+              659.7905883789062
+            ],
+            "A12": [
+              1715.74658203125,
+              567.993408203125
+            ],
+            "H12": [
+              1822.3165283203125,
+              943.691162109375
+            ],
+            "H1": [
+              1245.73388671875,
+              1027.700927734375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 7,
+          "tip_x": 384.0,
+          "tip_y": 240.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0009",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A11",
+      "gt_wells": [
+        "C8"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "single",
+      "row_err": -2,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.104,
+        "stage2_corners": 0.122,
+        "stage3_tip": 0.046,
+        "total": 3.53
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 46,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1178.9814453125,
+              640.36328125
+            ],
+            "A12": [
+              1718.039794921875,
+              540.7337646484375
+            ],
+            "H12": [
+              1820.750244140625,
+              887.5671997070312
+            ],
+            "H1": [
+              1262.3433837890625,
+              996.0941162109375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 10,
+          "tip_x": 488.0,
+          "tip_y": 312.0,
+          "pred_type": "multi-row",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0010",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A9",
+      "gt_wells": [
+        "D3"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "single",
+      "row_err": -3,
+      "col_err": 6,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.441,
+        "stage2_corners": 0.338,
+        "stage3_tip": 0.069,
+        "total": 4.248
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 22,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1309.0487060546875,
+              624.3678588867188
+            ],
+            "A12": [
+              1815.5006103515625,
+              548.5199584960938
+            ],
+            "H12": [
+              1907.183349609375,
+              900.6640014648438
+            ],
+            "H1": [
+              1374.79638671875,
+              961.7048950195312
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 8,
+          "tip_x": 424.0,
+          "tip_y": 304.0,
+          "pred_type": "multi-row",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0011",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G8",
+      "gt_wells": [
+        "D4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": 4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.735,
+        "stage2_corners": 0.144,
+        "stage3_tip": 0.044,
+        "total": 3.06
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 34,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1268.675048828125,
+              617.5814819335938
+            ],
+            "A12": [
+              1804.0828857421875,
+              537.2890014648438
+            ],
+            "H12": [
+              1904.2283935546875,
+              907.1722412109375
+            ],
+            "H1": [
+              1330.9522705078125,
+              975.0927124023438
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 7,
+          "tip_x": 392.0,
+          "tip_y": 336.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0012",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G9",
+      "gt_wells": [
+        "D5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": 4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.722,
+        "stage2_corners": 0.27,
+        "stage3_tip": 0.051,
+        "total": 4.421
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 32,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1240.108642578125,
+              608.6015625
+            ],
+            "A12": [
+              1798.1429443359375,
+              545.0451049804688
+            ],
+            "H12": [
+              1875.7188720703125,
+              917.8810424804688
+            ],
+            "H1": [
+              1292.42578125,
+              973.316162109375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 8,
+          "tip_x": 416.0,
+          "tip_y": 344.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0013",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "F9",
+      "gt_wells": [
+        "D6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 2,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.95,
+        "stage2_corners": 0.123,
+        "stage3_tip": 0.04,
+        "total": 3.327
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 41,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1185.930908203125,
+              572.8081665039062
+            ],
+            "A12": [
+              1735.23193359375,
+              497.95953369140625
+            ],
+            "H12": [
+              1831.2781982421875,
+              864.638671875
+            ],
+            "H1": [
+              1260.48779296875,
+              938.7156372070312
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 8,
+          "tip_x": 432.0,
+          "tip_y": 296.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0014",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G10",
+      "gt_wells": [
+        "D7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.022,
+        "stage2_corners": 0.457,
+        "stage3_tip": 0.103,
+        "total": 4.039
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 54,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1165.51904296875,
+              566.173828125
+            ],
+            "A12": [
+              1735.8934326171875,
+              489.5434875488281
+            ],
+            "H12": [
+              1822.53369140625,
+              865.2449340820312
+            ],
+            "H1": [
+              1234.8760986328125,
+              940.4366455078125
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 9,
+          "tip_x": 472.0,
+          "tip_y": 320.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0015",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "E9",
+      "gt_wells": [
+        "D8"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 1,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 3.371,
+        "stage2_corners": 0.169,
+        "stage3_tip": 0.04,
+        "total": 3.878
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 9,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1003.01171875,
+              642.0131225585938
+            ],
+            "A12": [
+              1525.657470703125,
+              524.7564697265625
+            ],
+            "H12": [
+              1637.5609130859375,
+              882.5300903320312
+            ],
+            "H1": [
+              1091.3609619140625,
+              987.810302734375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 8,
+          "tip_x": 432.0,
+          "tip_y": 256.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0016",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "D10",
+      "gt_wells": [
+        "D9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 3.362,
+        "stage2_corners": 0.218,
+        "stage3_tip": 0.058,
+        "total": 3.932
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 12,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1006.3424072265625,
+              641.9278564453125
+            ],
+            "A12": [
+              1536.175048828125,
+              544.4341430664062
+            ],
+            "H12": [
+              1620.6094970703125,
+              907.8180541992188
+            ],
+            "H1": [
+              1077.193603515625,
+              988.6693725585938
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 3,
+          "pred_col": 9,
+          "tip_x": 464.0,
+          "tip_y": 208.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0017",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A11",
+      "gt_wells": [
+        "E2"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "single",
+      "row_err": -4,
+      "col_err": 9,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.787,
+        "stage2_corners": 0.12,
+        "stage3_tip": 0.038,
+        "total": 3.183
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 39,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1339.3206787109375,
+              591.5629272460938
+            ],
+            "A12": [
+              1873.6644287109375,
+              529.4686889648438
+            ],
+            "H12": [
+              1920.0,
+              897.8424682617188
+            ],
+            "H1": [
+              1381.9764404296875,
+              942.033935546875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 2,
+          "pred_col": 10,
+          "tip_x": 496.0,
+          "tip_y": 200.0,
+          "pred_type": "multi-row",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0018",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "C12",
+      "gt_wells": [
+        "E3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -2,
+      "col_err": 9,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.237,
+        "stage2_corners": 0.549,
+        "stage3_tip": 0.157,
+        "total": 4.556
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 40,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1272.7044677734375,
+              577.34765625
+            ],
+            "A12": [
+              1712.8319091796875,
+              507.638671875
+            ],
+            "H12": [
+              1796.7152099609375,
+              809.2798461914062
+            ],
+            "H1": [
+              1341.0078125,
+              882.0941772460938
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 2,
+          "pred_col": 11,
+          "tip_x": 584.0,
+          "tip_y": 192.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0019",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A12",
+      "gt_wells": [
+        "E4"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "single",
+      "row_err": -4,
+      "col_err": 8,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.962,
+        "stage2_corners": 0.139,
+        "stage3_tip": 0.038,
+        "total": 4.385
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 37,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1267.5693359375,
+              580.8595581054688
+            ],
+            "A12": [
+              1721.4759521484375,
+              504.4815979003906
+            ],
+            "H12": [
+              1815.8394775390625,
+              817.1334228515625
+            ],
+            "H1": [
+              1340.9788818359375,
+              894.9322509765625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 3,
+          "pred_col": 11,
+          "tip_x": 576.0,
+          "tip_y": 224.0,
+          "pred_type": "multi-row",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0020",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H4",
+      "gt_wells": [
+        "E5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": -1,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.562,
+        "stage2_corners": 0.129,
+        "stage3_tip": 0.041,
+        "total": 3.997
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 42,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1236.1871337890625,
+              573.1231689453125
+            ],
+            "A12": [
+              1776.677490234375,
+              501.9661865234375
+            ],
+            "H12": [
+              1865.81884765625,
+              858.3184814453125
+            ],
+            "H1": [
+              1294.7337646484375,
+              926.563720703125
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 3,
+          "tip_x": 216.0,
+          "tip_y": 368.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_10_clip_0021",
+      "plate": "Plate_10",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G11",
+      "gt_wells": [
+        "E6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 2,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.891,
+        "stage2_corners": 0.117,
+        "stage3_tip": 0.04,
+        "total": 3.224
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 43,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1209.744384765625,
+              557.6954956054688
+            ],
+            "A12": [
+              1735.2060546875,
+              474.8104248046875
+            ],
+            "H12": [
+              1835.5491943359375,
+              833.2978515625
+            ],
+            "H1": [
+              1290.8338623046875,
+              906.580078125
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 10,
+          "tip_x": 504.0,
+          "tip_y": 344.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0001",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A4",
+      "gt_wells": [
+        "A1",
+        "B1",
+        "C1",
+        "D1",
+        "E1",
+        "F1",
+        "G1",
+        "H1"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.292,
+        "stage2_corners": 0.627,
+        "stage3_tip": 0.083,
+        "total": 4.419
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 26,
+          "total_frames": 74,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1428.837890625,
+              681.60107421875
+            ],
+            "A12": [
+              1615.760498046875,
+              662.9844970703125
+            ],
+            "H12": [
+              1614.1981201171875,
+              764.953857421875
+            ],
+            "H1": [
+              1455.3189697265625,
+              785.212890625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 3,
+          "tip_x": 232.0,
+          "tip_y": 120.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0002",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A4",
+      "gt_wells": [
+        "A2",
+        "B2",
+        "C2",
+        "D2",
+        "E2",
+        "F2",
+        "G2",
+        "H2"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 4.154,
+        "stage2_corners": 0.209,
+        "stage3_tip": 0.041,
+        "total": 4.713
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 17,
+          "total_frames": 74,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1371.1492919921875,
+              642.7108154296875
+            ],
+            "A12": [
+              1633.25439453125,
+              610.0511474609375
+            ],
+            "H12": [
+              1607.66162109375,
+              794.0692749023438
+            ],
+            "H1": [
+              1393.3721923828125,
+              795.7752685546875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 3,
+          "tip_x": 224.0,
+          "tip_y": 56.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0003",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "E6",
+      "gt_wells": [
+        "A3",
+        "B3",
+        "C3",
+        "D3",
+        "E3",
+        "F3",
+        "G3",
+        "H3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 4,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.599,
+        "stage2_corners": 0.134,
+        "stage3_tip": 0.028,
+        "total": 4.065
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 13,
+          "total_frames": 74,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1417.6793212890625,
+              676.7999877929688
+            ],
+            "A12": [
+              1730.3570556640625,
+              658.86669921875
+            ],
+            "H12": [
+              1724.8668212890625,
+              892.087646484375
+            ],
+            "H1": [
+              1434.7847900390625,
+              881.2430419921875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 5,
+          "tip_x": 296.0,
+          "tip_y": 264.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0004",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "E7",
+      "gt_wells": [
+        "A4",
+        "B4",
+        "C4",
+        "D4",
+        "E4",
+        "F4",
+        "G4",
+        "H4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 4,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.609,
+        "stage2_corners": 0.101,
+        "stage3_tip": 0.026,
+        "total": 2.88
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 11,
+          "total_frames": 74,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1390.4554443359375,
+              686.6104125976562
+            ],
+            "A12": [
+              1715.0941162109375,
+              666.1396484375
+            ],
+            "H12": [
+              1716.792236328125,
+              900.3047485351562
+            ],
+            "H1": [
+              1408.8240966796875,
+              899.6087036132812
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 6,
+          "tip_x": 336.0,
+          "tip_y": 240.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0005",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A7",
+      "gt_wells": [
+        "A5",
+        "B5",
+        "C5",
+        "D5",
+        "E5",
+        "F5",
+        "G5",
+        "H5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 3.255,
+        "stage2_corners": 0.469,
+        "stage3_tip": 0.071,
+        "total": 4.393
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 18,
+          "total_frames": 74,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1346.0877685546875,
+              647.0512084960938
+            ],
+            "A12": [
+              1711.4664306640625,
+              621.5390014648438
+            ],
+            "H12": [
+              1725.94677734375,
+              873.8931884765625
+            ],
+            "H1": [
+              1372.29150390625,
+              882.1849365234375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 6,
+          "tip_x": 336.0,
+          "tip_y": 120.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0006",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A8",
+      "gt_wells": [
+        "A6",
+        "B6",
+        "C6",
+        "D6",
+        "E6",
+        "F6",
+        "G6",
+        "H6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 4.266,
+        "stage2_corners": 0.375,
+        "stage3_tip": 0.04,
+        "total": 5.062
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 42,
+          "total_frames": 74,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1306.0540771484375,
+              582.9056396484375
+            ],
+            "A12": [
+              1686.919189453125,
+              560.0382080078125
+            ],
+            "H12": [
+              1722.3284912109375,
+              821.4470825195312
+            ],
+            "H1": [
+              1328.245849609375,
+              841.4785766601562
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 7,
+          "tip_x": 368.0,
+          "tip_y": 112.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0007",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "D9",
+      "gt_wells": [
+        "A7",
+        "B7",
+        "C7",
+        "D7",
+        "E7",
+        "F7",
+        "G7",
+        "H7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 3,
+      "col_err": 2,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.373,
+        "stage2_corners": 0.113,
+        "stage3_tip": 0.027,
+        "total": 3.814
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 56,
+          "total_frames": 74,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1203.6807861328125,
+              528.6920166015625
+            ],
+            "A12": [
+              1619.905517578125,
+              505.8840026855469
+            ],
+            "H12": [
+              1663.812744140625,
+              791.4636840820312
+            ],
+            "H1": [
+              1219.3232421875,
+              817.08544921875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 3,
+          "pred_col": 8,
+          "tip_x": 400.0,
+          "tip_y": 216.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0008",
+      "plate": "Plate_2",
+      "status": "stage2_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A8",
+        "B8",
+        "C8",
+        "D8",
+        "E8",
+        "F8",
+        "G8",
+        "H8"
+      ],
+      "pipette_type": null,
+      "gt_pipette_type": "multi-row",
+      "row_err": 3,
+      "col_err": -2,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.848,
+        "stage2_corners": 0.127,
+        "total": 3.131
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 0,
+          "total_frames": 74,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {},
+          "n_corners": 0,
+          "status": "fail"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0009",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A9",
+      "gt_wells": [
+        "A9",
+        "B9",
+        "C9",
+        "D9",
+        "E9",
+        "F9",
+        "G9",
+        "H9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 3.617,
+        "stage2_corners": 0.349,
+        "stage3_tip": 0.069,
+        "total": 4.605
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 62,
+          "total_frames": 74,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1137.228271484375,
+              618.4439086914062
+            ],
+            "A12": [
+              1587.2418212890625,
+              581.4439697265625
+            ],
+            "H12": [
+              1660.5985107421875,
+              864.17578125
+            ],
+            "H1": [
+              1179.74267578125,
+              927.0418090820312
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 8,
+          "tip_x": 408.0,
+          "tip_y": 104.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0010",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A9",
+      "gt_wells": [
+        "A10",
+        "B10",
+        "C10",
+        "D10",
+        "E10",
+        "F10",
+        "G10",
+        "H10"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": -1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 4.149,
+        "stage2_corners": 0.135,
+        "stage3_tip": 0.029,
+        "total": 4.522
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 54,
+          "total_frames": 74,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1121.1138916015625,
+              667.1880493164062
+            ],
+            "A12": [
+              1583.213134765625,
+              628.1217651367188
+            ],
+            "H12": [
+              1659.9759521484375,
+              910.8232421875
+            ],
+            "H1": [
+              1168.136962890625,
+              982.0940551757812
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 8,
+          "tip_x": 440.0,
+          "tip_y": 104.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0011",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "C11",
+      "gt_wells": [
+        "A11",
+        "B11",
+        "C11",
+        "D11",
+        "E11",
+        "F11",
+        "G11",
+        "H11"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-row",
+      "row_err": 2,
+      "col_err": 0,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.742,
+        "stage2_corners": 0.145,
+        "stage3_tip": 0.029,
+        "total": 3.194
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 42,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1087.9013671875,
+              728.8192138671875
+            ],
+            "A12": [
+              1539.0047607421875,
+              673.7612915039062
+            ],
+            "H12": [
+              1630.0147705078125,
+              973.7939453125
+            ],
+            "H1": [
+              1137.9619140625,
+              1040.618408203125
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 2,
+          "pred_col": 10,
+          "tip_x": 496.0,
+          "tip_y": 192.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_2_clip_0012",
+      "plate": "Plate_2",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A1",
+      "gt_wells": [
+        "A12",
+        "B12",
+        "C12",
+        "D12",
+        "E12",
+        "F12",
+        "G12",
+        "H12"
+      ],
+      "pipette_type": "multi-col",
+      "gt_pipette_type": "multi-row",
+      "row_err": 0,
+      "col_err": -11,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.194,
+        "stage2_corners": 0.25,
+        "stage3_tip": 0.055,
+        "total": 3.863
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 44,
+          "total_frames": 74,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1132.3095703125,
+              774.54052734375
+            ],
+            "A12": [
+              1561.14892578125,
+              726.9093627929688
+            ],
+            "H12": [
+              1655.5645751953125,
+              1002.4923706054688
+            ],
+            "H1": [
+              1187.1947021484375,
+              1069.3980712890625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 11,
+          "tip_x": 536.0,
+          "tip_y": 112.0,
+          "pred_type": "multi-col",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0001",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "C9",
+      "gt_wells": [
+        "A1"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 2,
+      "col_err": 8,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.287,
+        "stage2_corners": 0.262,
+        "stage3_tip": 0.077,
+        "total": 4.014
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 3,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1437.593505859375,
+              792.3819580078125
+            ],
+            "A12": [
+              1798.07373046875,
+              745.7448120117188
+            ],
+            "H12": [
+              1875.078857421875,
+              974.9498291015625
+            ],
+            "H1": [
+              1444.8001708984375,
+              1032.0751953125
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 2,
+          "pred_col": 8,
+          "tip_x": 424.0,
+          "tip_y": 160.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0002",
+      "plate": "Plate_3",
+      "status": "stage2_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "B2"
+      ],
+      "pipette_type": null,
+      "gt_pipette_type": "single",
+      "row_err": 2,
+      "col_err": 4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.761,
+        "stage2_corners": 0.104,
+        "total": 4.135
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 21,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {},
+          "n_corners": 0,
+          "status": "fail"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0003",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "B3",
+      "gt_wells": [
+        "C3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.783,
+        "stage2_corners": 0.119,
+        "stage3_tip": 0.083,
+        "total": 3.249
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 24,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1411.6876220703125,
+              783.12890625
+            ],
+            "A12": [
+              1764.9833984375,
+              710.1692504882812
+            ],
+            "H12": [
+              1868.8935546875,
+              964.4893798828125
+            ],
+            "H1": [
+              1448.2886962890625,
+              1033.1746826171875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 1,
+          "pred_col": 2,
+          "tip_x": 176.0,
+          "tip_y": 136.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0004",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "C3",
+      "gt_wells": [
+        "D4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": -1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 3.185,
+        "stage2_corners": 0.113,
+        "stage3_tip": 0.074,
+        "total": 3.523
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 28,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1320.5858154296875,
+              718.569580078125
+            ],
+            "A12": [
+              1684.5213623046875,
+              663.856201171875
+            ],
+            "H12": [
+              1764.529296875,
+              887.7338256835938
+            ],
+            "H1": [
+              1351.2847900390625,
+              955.2333984375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 2,
+          "pred_col": 2,
+          "tip_x": 200.0,
+          "tip_y": 200.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0005",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "C5",
+      "gt_wells": [
+        "D5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -1,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 3.343,
+        "stage2_corners": 0.205,
+        "stage3_tip": 0.104,
+        "total": 4.01
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 39,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1304.2608642578125,
+              755.7623901367188
+            ],
+            "A12": [
+              1643.6942138671875,
+              709.1751708984375
+            ],
+            "H12": [
+              1708.9901123046875,
+              927.3544921875
+            ],
+            "H1": [
+              1307.7593994140625,
+              977.0659790039062
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 2,
+          "pred_col": 4,
+          "tip_x": 264.0,
+          "tip_y": 160.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0006",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "C6",
+      "gt_wells": [
+        "C6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 3.624,
+        "stage2_corners": 0.133,
+        "stage3_tip": 0.075,
+        "total": 3.979
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 32,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1330.4854736328125,
+              662.876220703125
+            ],
+            "A12": [
+              1696.3970947265625,
+              602.8285522460938
+            ],
+            "H12": [
+              1791.2215576171875,
+              853.8184204101562
+            ],
+            "H1": [
+              1365.332763671875,
+              917.7779541015625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 2,
+          "pred_col": 5,
+          "tip_x": 296.0,
+          "tip_y": 176.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0007",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H10",
+      "gt_wells": [
+        "B7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 6,
+      "col_err": 3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.933,
+        "stage2_corners": 0.125,
+        "stage3_tip": 0.076,
+        "total": 3.36
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 17,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1281.734619140625,
+              707.4366455078125
+            ],
+            "A12": [
+              1644.0267333984375,
+              644.9530029296875
+            ],
+            "H12": [
+              1740.57763671875,
+              898.1458740234375
+            ],
+            "H1": [
+              1316.2745361328125,
+              960.8317260742188
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 9,
+          "tip_x": 464.0,
+          "tip_y": 368.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0008",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "E2",
+      "gt_wells": [
+        "A8"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 4,
+      "col_err": -6,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.123,
+        "stage2_corners": 0.123,
+        "stage3_tip": 0.085,
+        "total": 3.478
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 32,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1188.933837890625,
+              804.6361694335938
+            ],
+            "A12": [
+              1550.401611328125,
+              755.453125
+            ],
+            "H12": [
+              1605.8438720703125,
+              968.8450927734375
+            ],
+            "H1": [
+              1189.1597900390625,
+              1024.734130859375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 1,
+          "tip_x": 128.0,
+          "tip_y": 256.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0009",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A8",
+      "gt_wells": [
+        "A9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": -1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 3.181,
+        "stage2_corners": 0.159,
+        "stage3_tip": 0.078,
+        "total": 3.6
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 15,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1383.2020263671875,
+              795.5403442382812
+            ],
+            "A12": [
+              1749.062255859375,
+              760.055419921875
+            ],
+            "H12": [
+              1801.7486572265625,
+              970.9371337890625
+            ],
+            "H1": [
+              1375.4771728515625,
+              1023.3504638671875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 7,
+          "tip_x": 376.0,
+          "tip_y": 88.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0010",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "B7",
+      "gt_wells": [
+        "A10"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 1,
+      "col_err": -3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 3.111,
+        "stage2_corners": 0.139,
+        "stage3_tip": 0.082,
+        "total": 3.607
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 4,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1376.2445068359375,
+              800.7288818359375
+            ],
+            "A12": [
+              1730.130615234375,
+              759.693115234375
+            ],
+            "H12": [
+              1787.7576904296875,
+              970.8663940429688
+            ],
+            "H1": [
+              1369.26123046875,
+              1021.5452880859375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 1,
+          "pred_col": 6,
+          "tip_x": 352.0,
+          "tip_y": 152.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_3_clip_0011",
+      "plate": "Plate_3",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H8",
+      "gt_wells": [
+        "A11"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 7,
+      "col_err": -3,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.739,
+        "stage2_corners": 0.113,
+        "stage3_tip": 0.085,
+        "total": 3.08
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 33,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1513.91748046875,
+              857.9826049804688
+            ],
+            "A12": [
+              1752.68310546875,
+              814.5825805664062
+            ],
+            "H12": [
+              1782.3328857421875,
+              961.1537475585938
+            ],
+            "H1": [
+              1521.5244140625,
+              994.4219970703125
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 7,
+          "tip_x": 376.0,
+          "tip_y": 400.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0001",
+      "plate": "Plate_4",
+      "status": "stage2_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A1"
+      ],
+      "pipette_type": null,
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.659,
+        "stage2_corners": 0.138,
+        "total": 2.979
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 32,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {},
+          "n_corners": 0,
+          "status": "fail"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0002",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G1",
+      "gt_wells": [
+        "B2"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 5,
+      "col_err": -1,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.719,
+        "stage2_corners": 0.129,
+        "stage3_tip": 0.028,
+        "total": 3.016
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 42,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1140.9456787109375,
+              826.0175170898438
+            ],
+            "A12": [
+              1454.5528564453125,
+              789.2625732421875
+            ],
+            "H12": [
+              1505.882080078125,
+              987.0789184570312
+            ],
+            "H1": [
+              1181.5235595703125,
+              1025.088134765625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 0,
+          "tip_x": 80.0,
+          "tip_y": 352.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0003",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "D3",
+      "gt_wells": [
+        "C3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 1,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.776,
+        "stage2_corners": 0.121,
+        "stage3_tip": 0.027,
+        "total": 3.091
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 32,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              986.047119140625,
+              900.1182861328125
+            ],
+            "A12": [
+              1283.647705078125,
+              838.73388671875
+            ],
+            "H12": [
+              1360.0396728515625,
+              1026.1614990234375
+            ],
+            "H1": [
+              1040.2838134765625,
+              1080.0
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 3,
+          "pred_col": 2,
+          "tip_x": 200.0,
+          "tip_y": 208.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0006",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "E6",
+      "gt_wells": [
+        "D5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 1,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.84,
+        "stage2_corners": 0.127,
+        "stage3_tip": 0.033,
+        "total": 3.247
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 48,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1180.7530517578125,
+              914.1467895507812
+            ],
+            "A12": [
+              1499.5089111328125,
+              877.4818725585938
+            ],
+            "H12": [
+              1551.0740966796875,
+              1076.958984375
+            ],
+            "H1": [
+              1198.9449462890625,
+              1080.0
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 5,
+          "tip_x": 312.0,
+          "tip_y": 280.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0007",
+      "plate": "Plate_4",
+      "status": "stage2_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "C6"
+      ],
+      "pipette_type": null,
+      "gt_pipette_type": "single",
+      "row_err": 1,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.776,
+        "stage2_corners": 0.112,
+        "total": 3.043
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 54,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {},
+          "n_corners": 0,
+          "status": "fail"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0008",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "B7",
+      "gt_wells": [
+        "B7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.843,
+        "stage2_corners": 0.115,
+        "stage3_tip": 0.028,
+        "total": 3.136
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 33,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1239.99609375,
+              818.5314331054688
+            ],
+            "A12": [
+              1584.52490234375,
+              763.1644287109375
+            ],
+            "H12": [
+              1662.6749267578125,
+              979.2136840820312
+            ],
+            "H1": [
+              1286.3861083984375,
+              1044.5115966796875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 1,
+          "pred_col": 6,
+          "tip_x": 352.0,
+          "tip_y": 144.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0009",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "A8",
+      "gt_wells": [
+        "A8"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.913,
+        "stage2_corners": 0.123,
+        "stage3_tip": 0.028,
+        "total": 3.347
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 17,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1248.247314453125,
+              856.1978759765625
+            ],
+            "A12": [
+              1617.2447509765625,
+              823.3869018554688
+            ],
+            "H12": [
+              1660.0528564453125,
+              1059.548095703125
+            ],
+            "H1": [
+              1272.4771728515625,
+              1080.0
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 7,
+          "tip_x": 384.0,
+          "tip_y": 88.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0010",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "A9",
+      "gt_wells": [
+        "A9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.837,
+        "stage2_corners": 0.115,
+        "stage3_tip": 0.028,
+        "total": 3.123
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 50,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1304.7308349609375,
+              865.1046752929688
+            ],
+            "A12": [
+              1655.1756591796875,
+              838.2469482421875
+            ],
+            "H12": [
+              1682.06396484375,
+              1056.6551513671875
+            ],
+            "H1": [
+              1340.004638671875,
+              1079.1824951171875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 8,
+          "tip_x": 408.0,
+          "tip_y": 72.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0011",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "A10",
+      "gt_wells": [
+        "A10"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.855,
+        "stage2_corners": 0.119,
+        "stage3_tip": 0.027,
+        "total": 3.144
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 32,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1291.0213623046875,
+              876.9166870117188
+            ],
+            "A12": [
+              1628.7930908203125,
+              838.5114135742188
+            ],
+            "H12": [
+              1684.9354248046875,
+              1048.419677734375
+            ],
+            "H1": [
+              1312.3641357421875,
+              1080.0
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 9,
+          "tip_x": 464.0,
+          "tip_y": 88.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0012",
+      "plate": "Plate_4",
+      "status": "stage2_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A11"
+      ],
+      "pipette_type": null,
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": -5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.766,
+        "stage2_corners": 0.111,
+        "total": 3.028
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 33,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {},
+          "n_corners": 0,
+          "status": "fail"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0015",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H3",
+      "gt_wells": [
+        "H2"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.799,
+        "stage2_corners": 0.116,
+        "stage3_tip": 0.028,
+        "total": 3.208
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 73,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1287.602783203125,
+              697.0148315429688
+            ],
+            "A12": [
+              1613.1640625,
+              638.49658203125
+            ],
+            "H12": [
+              1686.8031005859375,
+              844.002685546875
+            ],
+            "H1": [
+              1330.798583984375,
+              906.36328125
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 2,
+          "tip_x": 184.0,
+          "tip_y": 376.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0016",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H4",
+      "gt_wells": [
+        "H3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.84,
+        "stage2_corners": 0.123,
+        "stage3_tip": 0.028,
+        "total": 3.254
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 63,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1375.269775390625,
+              689.027099609375
+            ],
+            "A12": [
+              1711.537353515625,
+              646.7427368164062
+            ],
+            "H12": [
+              1770.2296142578125,
+              860.3411865234375
+            ],
+            "H1": [
+              1401.662841796875,
+              908.865478515625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 3,
+          "tip_x": 232.0,
+          "tip_y": 368.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0017",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H5",
+      "gt_wells": [
+        "H4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.693,
+        "stage2_corners": 0.117,
+        "stage3_tip": 0.028,
+        "total": 2.979
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 53,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1366.6124267578125,
+              633.8213500976562
+            ],
+            "A12": [
+              1711.7359619140625,
+              602.0518798828125
+            ],
+            "H12": [
+              1761.6038818359375,
+              822.6470947265625
+            ],
+            "H1": [
+              1381.326416015625,
+              862.661376953125
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 4,
+          "tip_x": 264.0,
+          "tip_y": 368.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0018",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H6",
+      "gt_wells": [
+        "H5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.506,
+        "stage2_corners": 0.117,
+        "stage3_tip": 0.028,
+        "total": 2.793
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 45,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1323.880126953125,
+              614.75244140625
+            ],
+            "A12": [
+              1662.31103515625,
+              575.0732421875
+            ],
+            "H12": [
+              1720.1763916015625,
+              794.7859497070312
+            ],
+            "H1": [
+              1352.6431884765625,
+              838.8343505859375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 5,
+          "tip_x": 304.0,
+          "tip_y": 376.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0019",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H7",
+      "gt_wells": [
+        "H6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.643,
+        "stage2_corners": 0.111,
+        "stage3_tip": 0.027,
+        "total": 3.013
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 38,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1314.0057373046875,
+              655.8514404296875
+            ],
+            "A12": [
+              1648.543212890625,
+              610.7417602539062
+            ],
+            "H12": [
+              1711.3111572265625,
+              828.6187744140625
+            ],
+            "H1": [
+              1347.1380615234375,
+              876.0671997070312
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 6,
+          "tip_x": 344.0,
+          "tip_y": 376.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0020",
+      "plate": "Plate_4",
+      "status": "stage2_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "H7"
+      ],
+      "pipette_type": null,
+      "gt_pipette_type": "single",
+      "row_err": -4,
+      "col_err": -1,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.71,
+        "stage2_corners": 0.121,
+        "total": 2.982
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 26,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {},
+          "n_corners": 0,
+          "status": "fail"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0021",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "B1",
+      "gt_wells": [
+        "H8"
+      ],
+      "pipette_type": "multi-col",
+      "gt_pipette_type": "single",
+      "row_err": -6,
+      "col_err": -7,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.512,
+        "stage2_corners": 0.128,
+        "stage3_tip": 0.027,
+        "total": 2.825
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 23,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              552.2022094726562,
+              935.5634765625
+            ],
+            "A12": [
+              825.8701171875,
+              907.4134521484375
+            ],
+            "H12": [
+              860.0858154296875,
+              1062.697509765625
+            ],
+            "H1": [
+              571.5560302734375,
+              1080.0
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 1,
+          "pred_col": 1,
+          "tip_x": 144.0,
+          "tip_y": 128.0,
+          "pred_type": "multi-col",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0022",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H10",
+      "gt_wells": [
+        "H9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.614,
+        "stage2_corners": 0.117,
+        "stage3_tip": 0.026,
+        "total": 2.907
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 26,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1206.0421142578125,
+              700.8605346679688
+            ],
+            "A12": [
+              1533.614501953125,
+              640.0576171875
+            ],
+            "H12": [
+              1611.2003173828125,
+              847.0228271484375
+            ],
+            "H1": [
+              1249.163330078125,
+              912.9606323242188
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 9,
+          "tip_x": 456.0,
+          "tip_y": 392.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0023",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H11",
+      "gt_wells": [
+        "H10"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.766,
+        "stage2_corners": 0.116,
+        "stage3_tip": 0.03,
+        "total": 3.078
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 15,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1201.8553466796875,
+              741.2550659179688
+            ],
+            "A12": [
+              1518.0618896484375,
+              684.1365966796875
+            ],
+            "H12": [
+              1589.359619140625,
+              882.4547119140625
+            ],
+            "H1": [
+              1241.820556640625,
+              943.03515625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 10,
+          "tip_x": 496.0,
+          "tip_y": 400.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_4_clip_0024",
+      "plate": "Plate_4",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "H12",
+      "gt_wells": [
+        "H11"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.703,
+        "stage2_corners": 0.128,
+        "stage3_tip": 0.027,
+        "total": 3.008
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 8,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1239.9083251953125,
+              747.3077392578125
+            ],
+            "A12": [
+              1560.405517578125,
+              702.0439453125
+            ],
+            "H12": [
+              1623.87646484375,
+              906.1181640625
+            ],
+            "H1": [
+              1270.7373046875,
+              956.7603149414062
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 11,
+          "tip_x": 528.0,
+          "tip_y": 400.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0001",
+      "plate": "Plate_5",
+      "status": "stage2_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10",
+        "A11",
+        "A12"
+      ],
+      "pipette_type": null,
+      "gt_pipette_type": "multi-col",
+      "row_err": 3,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.807,
+        "stage2_corners": 0.146,
+        "total": 3.105
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 25,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {},
+          "n_corners": 0,
+          "status": "fail"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0002",
+      "plate": "Plate_5",
+      "status": "stage2_fail",
+      "correct": false,
+      "pred_well": "D6",
+      "gt_wells": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "pipette_type": null,
+      "gt_pipette_type": "multi-col",
+      "row_err": 2,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.964,
+        "stage2_corners": 0.113,
+        "total": 3.331
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 22,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {},
+          "n_corners": 0,
+          "status": "fail"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0004",
+      "plate": "Plate_5",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A6",
+      "gt_wells": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D12"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-col",
+      "row_err": -3,
+      "col_err": 5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.867,
+        "stage2_corners": 0.112,
+        "stage3_tip": 0.083,
+        "total": 3.277
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 25,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1227.50244140625,
+              629.261962890625
+            ],
+            "A12": [
+              1543.0023193359375,
+              601.8596801757812
+            ],
+            "H12": [
+              1546.88134765625,
+              831.2752685546875
+            ],
+            "H1": [
+              1257.7652587890625,
+              828.9057006835938
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 3,
+          "pred_col": 5,
+          "tip_x": 312.0,
+          "tip_y": 232.0,
+          "pred_type": "multi-row",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0005",
+      "plate": "Plate_5",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A9",
+      "gt_wells": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8",
+        "E9",
+        "E10",
+        "E11",
+        "E12"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-col",
+      "row_err": -4,
+      "col_err": 8,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.962,
+        "stage2_corners": 0.123,
+        "stage3_tip": 0.089,
+        "total": 3.489
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 33,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1298.822265625,
+              609.7125244140625
+            ],
+            "A12": [
+              1621.7462158203125,
+              598.1561889648438
+            ],
+            "H12": [
+              1621.3184814453125,
+              827.1544189453125
+            ],
+            "H1": [
+              1320.1922607421875,
+              819.7245483398438
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 8,
+          "tip_x": 416.0,
+          "tip_y": 112.0,
+          "pred_type": "multi-row",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0006",
+      "plate": "Plate_5",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A8",
+      "gt_wells": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "F9",
+        "F10",
+        "F11",
+        "F12"
+      ],
+      "pipette_type": "multi-row",
+      "gt_pipette_type": "multi-col",
+      "row_err": -5,
+      "col_err": 7,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.904,
+        "stage2_corners": 0.113,
+        "stage3_tip": 0.086,
+        "total": 3.384
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 12,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1218.1439208984375,
+              563.7647094726562
+            ],
+            "A12": [
+              1555.143310546875,
+              566.2767944335938
+            ],
+            "H12": [
+              1542.8016357421875,
+              806.4473876953125
+            ],
+            "H1": [
+              1221.17578125,
+              782.6792602539062
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 7,
+          "tip_x": 368.0,
+          "tip_y": 296.0,
+          "pred_type": "multi-row",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0007",
+      "plate": "Plate_5",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "B11",
+      "gt_wells": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6",
+        "G7",
+        "G8",
+        "G9",
+        "G10",
+        "G11",
+        "G12"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-col",
+      "row_err": -5,
+      "col_err": 10,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.91,
+        "stage2_corners": 0.127,
+        "stage3_tip": 0.091,
+        "total": 3.405
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 12,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1306.5904541015625,
+              612.09814453125
+            ],
+            "A12": [
+              1645.15576171875,
+              611.5149536132812
+            ],
+            "H12": [
+              1630.3172607421875,
+              853.33447265625
+            ],
+            "H1": [
+              1313.8641357421875,
+              828.7981567382812
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 1,
+          "pred_col": 10,
+          "tip_x": 504.0,
+          "tip_y": 136.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_5_clip_0008",
+      "plate": "Plate_5",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "A11",
+      "gt_wells": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8",
+        "H9",
+        "H10",
+        "H11",
+        "H12"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "multi-col",
+      "row_err": -7,
+      "col_err": 10,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.836,
+        "stage2_corners": 0.106,
+        "stage3_tip": 0.086,
+        "total": 3.217
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 25,
+          "total_frames": 77,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1249.9327392578125,
+              583.8484497070312
+            ],
+            "A12": [
+              1582.4366455078125,
+              574.8285522460938
+            ],
+            "H12": [
+              1569.9149169921875,
+              812.8870849609375
+            ],
+            "H1": [
+              1259.04248046875,
+              797.21044921875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 0,
+          "pred_col": 10,
+          "tip_x": 512.0,
+          "tip_y": 120.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0001",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "H1",
+      "gt_wells": [
+        "H1"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.353,
+        "stage2_corners": 0.138,
+        "stage3_tip": 0.033,
+        "total": 2.702
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 43,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1419.8082275390625,
+              609.7841186523438
+            ],
+            "A12": [
+              1742.818115234375,
+              584.5113525390625
+            ],
+            "H12": [
+              1797.48046875,
+              781.46923828125
+            ],
+            "H1": [
+              1457.7418212890625,
+              820.833984375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 0,
+          "tip_x": 104.0,
+          "tip_y": 392.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0002",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "G1",
+      "gt_wells": [
+        "G1"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.485,
+        "stage2_corners": 0.127,
+        "stage3_tip": 0.036,
+        "total": 2.81
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 44,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1469.870361328125,
+              692.2225341796875
+            ],
+            "A12": [
+              1790.3470458984375,
+              670.0357055664062
+            ],
+            "H12": [
+              1841.3302001953125,
+              866.529052734375
+            ],
+            "H1": [
+              1504.08349609375,
+              903.1331787109375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 0,
+          "tip_x": 104.0,
+          "tip_y": 328.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0003",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "F2",
+      "gt_wells": [
+        "F2"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.59,
+        "stage2_corners": 0.122,
+        "stage3_tip": 0.034,
+        "total": 2.903
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 46,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1378.9453125,
+              679.8287353515625
+            ],
+            "A12": [
+              1698.569580078125,
+              647.9407958984375
+            ],
+            "H12": [
+              1763.71337890625,
+              841.8704833984375
+            ],
+            "H1": [
+              1426.7674560546875,
+              888.4808959960938
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 1,
+          "tip_x": 152.0,
+          "tip_y": 304.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0004",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "E2",
+      "gt_wells": [
+        "E2"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.648,
+        "stage2_corners": 0.124,
+        "stage3_tip": 0.036,
+        "total": 3.053
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 19,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1348.1658935546875,
+              698.3578491210938
+            ],
+            "A12": [
+              1670.572021484375,
+              661.9342651367188
+            ],
+            "H12": [
+              1736.6551513671875,
+              867.2625732421875
+            ],
+            "H1": [
+              1395.5550537109375,
+              915.8411865234375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 1,
+          "tip_x": 136.0,
+          "tip_y": 264.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0005",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "D3",
+      "gt_wells": [
+        "D3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.637,
+        "stage2_corners": 0.134,
+        "stage3_tip": 0.034,
+        "total": 2.965
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 34,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1354.4205322265625,
+              684.8223266601562
+            ],
+            "A12": [
+              1675.3575439453125,
+              644.39111328125
+            ],
+            "H12": [
+              1751.844482421875,
+              849.4752197265625
+            ],
+            "H1": [
+              1401.624755859375,
+              902.0238647460938
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 3,
+          "pred_col": 2,
+          "tip_x": 192.0,
+          "tip_y": 224.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0006",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "E4",
+      "gt_wells": [
+        "E4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.69,
+        "stage2_corners": 0.118,
+        "stage3_tip": 0.035,
+        "total": 3.013
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 30,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1346.4024658203125,
+              675.9444580078125
+            ],
+            "A12": [
+              1674.3575439453125,
+              633.6570434570312
+            ],
+            "H12": [
+              1748.248291015625,
+              837.926513671875
+            ],
+            "H1": [
+              1396.1473388671875,
+              891.27197265625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 3,
+          "tip_x": 208.0,
+          "tip_y": 264.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0007",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "F4",
+      "gt_wells": [
+        "F4"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.675,
+        "stage2_corners": 0.137,
+        "stage3_tip": 0.039,
+        "total": 3.087
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 23,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1335.026123046875,
+              656.2841186523438
+            ],
+            "A12": [
+              1653.9013671875,
+              621.8740234375
+            ],
+            "H12": [
+              1719.0806884765625,
+              819.2831420898438
+            ],
+            "H1": [
+              1385.8817138671875,
+              868.6846313476562
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 3,
+          "tip_x": 216.0,
+          "tip_y": 312.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0008",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "G5",
+      "gt_wells": [
+        "G5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.589,
+        "stage2_corners": 0.123,
+        "stage3_tip": 0.037,
+        "total": 2.894
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 39,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1300.0894775390625,
+              658.417236328125
+            ],
+            "A12": [
+              1617.493408203125,
+              620.6189575195312
+            ],
+            "H12": [
+              1684.8804931640625,
+              820.6259765625
+            ],
+            "H1": [
+              1348.776123046875,
+              870.6416625976562
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 4,
+          "tip_x": 264.0,
+          "tip_y": 344.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0009",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "H5",
+      "gt_wells": [
+        "H5"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.697,
+        "stage2_corners": 0.13,
+        "stage3_tip": 0.036,
+        "total": 3.025
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 35,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1360.3736572265625,
+              626.7648315429688
+            ],
+            "A12": [
+              1682.397216796875,
+              590.6127319335938
+            ],
+            "H12": [
+              1749.69189453125,
+              785.1784057617188
+            ],
+            "H1": [
+              1412.5924072265625,
+              835.9178466796875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 4,
+          "tip_x": 264.0,
+          "tip_y": 392.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0010",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "F3",
+      "gt_wells": [
+        "F3"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.51,
+        "stage2_corners": 0.116,
+        "stage3_tip": 0.04,
+        "total": 2.795
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 34,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1309.5733642578125,
+              614.1959228515625
+            ],
+            "A12": [
+              1631.186279296875,
+              570.9082641601562
+            ],
+            "H12": [
+              1703.56640625,
+              773.792236328125
+            ],
+            "H1": [
+              1358.6671142578125,
+              826.582275390625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 2,
+          "tip_x": 184.0,
+          "tip_y": 304.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0011",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "H6",
+      "gt_wells": [
+        "H6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.654,
+        "stage2_corners": 0.128,
+        "stage3_tip": 0.038,
+        "total": 2.978
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 37,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1243.8922119140625,
+              602.1148681640625
+            ],
+            "A12": [
+              1564.0833740234375,
+              563.7180786132812
+            ],
+            "H12": [
+              1634.607421875,
+              766.3665771484375
+            ],
+            "H1": [
+              1295.7950439453125,
+              818.2432861328125
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 7,
+          "pred_col": 5,
+          "tip_x": 296.0,
+          "tip_y": 392.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0012",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G5",
+      "gt_wells": [
+        "G6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": -1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.534,
+        "stage2_corners": 0.13,
+        "stage3_tip": 0.036,
+        "total": 2.856
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 38,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1279.5908203125,
+              618.9519653320312
+            ],
+            "A12": [
+              1599.9716796875,
+              587.9524536132812
+            ],
+            "H12": [
+              1659.19970703125,
+              784.5335693359375
+            ],
+            "H1": [
+              1323.2542724609375,
+              828.038818359375
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 4,
+          "tip_x": 272.0,
+          "tip_y": 352.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0013",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G5",
+      "gt_wells": [
+        "F6"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 1,
+      "col_err": -1,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.53,
+        "stage2_corners": 0.114,
+        "stage3_tip": 0.034,
+        "total": 2.815
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 7,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1256.5174560546875,
+              613.42431640625
+            ],
+            "A12": [
+              1579.8043212890625,
+              579.2190551757812
+            ],
+            "H12": [
+              1643.789794921875,
+              782.4944458007812
+            ],
+            "H1": [
+              1300.0145263671875,
+              828.7939453125
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 4,
+          "tip_x": 272.0,
+          "tip_y": 336.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0014",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G6",
+      "gt_wells": [
+        "E7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 2,
+      "col_err": -1,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.391,
+        "stage2_corners": 0.116,
+        "stage3_tip": 0.034,
+        "total": 2.686
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 11,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1221.3240966796875,
+              632.9674682617188
+            ],
+            "A12": [
+              1543.3485107421875,
+              593.6787109375
+            ],
+            "H12": [
+              1617.8782958984375,
+              803.013671875
+            ],
+            "H1": [
+              1261.688232421875,
+              852.8761596679688
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 5,
+          "tip_x": 288.0,
+          "tip_y": 328.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0015",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "D7",
+      "gt_wells": [
+        "D7"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.452,
+        "stage2_corners": 0.144,
+        "stage3_tip": 0.032,
+        "total": 2.767
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 41,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1215.3580322265625,
+              653.4407958984375
+            ],
+            "A12": [
+              1529.472900390625,
+              612.672119140625
+            ],
+            "H12": [
+              1601.794921875,
+              813.052734375
+            ],
+            "H1": [
+              1261.272216796875,
+              864.9091796875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 3,
+          "pred_col": 6,
+          "tip_x": 336.0,
+          "tip_y": 224.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0016",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "E8",
+      "gt_wells": [
+        "E8"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.377,
+        "stage2_corners": 0.111,
+        "stage3_tip": 0.034,
+        "total": 2.646
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 23,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1206.4329833984375,
+              608.6422729492188
+            ],
+            "A12": [
+              1536.6427001953125,
+              566.3746948242188
+            ],
+            "H12": [
+              1609.7037353515625,
+              775.40478515625
+            ],
+            "H1": [
+              1256.5499267578125,
+              828.558837890625
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 7,
+          "tip_x": 384.0,
+          "tip_y": 264.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0017",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "F8",
+      "gt_wells": [
+        "F8"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.531,
+        "stage2_corners": 0.123,
+        "stage3_tip": 0.036,
+        "total": 2.824
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 23,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1200.085693359375,
+              621.1028442382812
+            ],
+            "A12": [
+              1518.464111328125,
+              580.1566772460938
+            ],
+            "H12": [
+              1587.7490234375,
+              780.8154296875
+            ],
+            "H1": [
+              1251.4454345703125,
+              832.6015014648438
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 7,
+          "tip_x": 376.0,
+          "tip_y": 304.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0018",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "E9",
+      "gt_wells": [
+        "E9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.51,
+        "stage2_corners": 0.121,
+        "stage3_tip": 0.035,
+        "total": 2.82
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 33,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1190.1964111328125,
+              657.5330200195312
+            ],
+            "A12": [
+              1506.4178466796875,
+              626.4775390625
+            ],
+            "H12": [
+              1563.094482421875,
+              823.977783203125
+            ],
+            "H1": [
+              1234.994140625,
+              867.3074951171875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 4,
+          "pred_col": 8,
+          "tip_x": 416.0,
+          "tip_y": 264.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0019",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G5",
+      "gt_wells": [
+        "D9"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 3,
+      "col_err": -4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.586,
+        "stage2_corners": 0.115,
+        "stage3_tip": 0.035,
+        "total": 2.917
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 41,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1190.3780517578125,
+              655.9447631835938
+            ],
+            "A12": [
+              1507.5526123046875,
+              622.63623046875
+            ],
+            "H12": [
+              1568.6964111328125,
+              821.0623779296875
+            ],
+            "H1": [
+              1238.54931640625,
+              867.4161987304688
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 4,
+          "tip_x": 272.0,
+          "tip_y": 344.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0020",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G6",
+      "gt_wells": [
+        "E10"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 2,
+      "col_err": -4,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.501,
+        "stage2_corners": 0.126,
+        "stage3_tip": 0.036,
+        "total": 2.809
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 50,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1183.258056640625,
+              667.5397338867188
+            ],
+            "A12": [
+              1496.3392333984375,
+              636.6992797851562
+            ],
+            "H12": [
+              1551.07666015625,
+              830.3849487304688
+            ],
+            "H1": [
+              1226.495849609375,
+              871.8651123046875
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 5,
+          "tip_x": 288.0,
+          "tip_y": 344.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0021",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": true,
+      "pred_well": "F10",
+      "gt_wells": [
+        "F10"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": 0,
+      "within_1": true,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.487,
+        "stage2_corners": 0.113,
+        "stage3_tip": 0.033,
+        "total": 2.789
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 22,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1191.791748046875,
+              653.8255004882812
+            ],
+            "A12": [
+              1502.5894775390625,
+              618.368896484375
+            ],
+            "H12": [
+              1567.152587890625,
+              813.08154296875
+            ],
+            "H1": [
+              1241.0980224609375,
+              861.78955078125
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 9,
+          "tip_x": 448.0,
+          "tip_y": 304.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0022",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "G6",
+      "gt_wells": [
+        "G11"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": 0,
+      "col_err": -5,
+      "within_1": false,
+      "within_2": false,
+      "timing": {
+        "stage1_commit": 2.509,
+        "stage2_corners": 0.116,
+        "stage3_tip": 0.037,
+        "total": 2.814
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 22,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1174.8062744140625,
+              665.9539184570312
+            ],
+            "A12": [
+              1487.6431884765625,
+              621.6253662109375
+            ],
+            "H12": [
+              1561.6151123046875,
+              820.5520629882812
+            ],
+            "H1": [
+              1219.502685546875,
+              873.6299438476562
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 6,
+          "pred_col": 5,
+          "tip_x": 288.0,
+          "tip_y": 336.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    },
+    {
+      "clip_name": "Plate_9_clip_0023",
+      "plate": "Plate_9",
+      "status": "ok",
+      "correct": false,
+      "pred_well": "F10",
+      "gt_wells": [
+        "H11"
+      ],
+      "pipette_type": "single",
+      "gt_pipette_type": "single",
+      "row_err": -2,
+      "col_err": -1,
+      "within_1": false,
+      "within_2": true,
+      "timing": {
+        "stage1_commit": 2.493,
+        "stage2_corners": 0.109,
+        "stage3_tip": 0.033,
+        "total": 2.796
+      },
+      "cost": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usd": 0.0
+      },
+      "stages": {
+        "commit_frame": {
+          "frame_idx": 35,
+          "total_frames": 71,
+          "status": "ok"
+        },
+        "plate_detection": {
+          "corners": {
+            "A1": [
+              1178.86669921875,
+              705.9755249023438
+            ],
+            "A12": [
+              1482.3089599609375,
+              653.0090942382812
+            ],
+            "H12": [
+              1566.0648193359375,
+              848.8204345703125
+            ],
+            "H1": [
+              1226.6434326171875,
+              907.9740600585938
+            ]
+          },
+          "n_corners": 4,
+          "status": "ok"
+        },
+        "tip_detection": {
+          "pred_row": 5,
+          "pred_col": 9,
+          "tip_x": 448.0,
+          "tip_y": 304.0,
+          "pred_type": "single",
+          "status": "ok"
+        }
+      }
+    }
+  ]
+}

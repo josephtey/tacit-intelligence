@@ -1,0 +1,46 @@
+{
+  "architecture": "HeatNetV2",
+  "input_size": [
+    3,
+    240,
+    320
+  ],
+  "heatmap_output_size": [
+    1,
+    60,
+    80
+  ],
+  "type_classes": [
+    "single",
+    "multi-col",
+    "multi-row"
+  ],
+  "heatmap_sigma": 5,
+  "type_loss_weight": 0.1,
+  "training_clips": 86,
+  "pipette_types": [
+    "single",
+    "multi-col",
+    "multi-row"
+  ],
+  "plates": [
+    "Plate_1",
+    "Plate_10",
+    "Plate_2",
+    "Plate_3",
+    "Plate_4",
+    "Plate_5",
+    "Plate_9"
+  ],
+  "warp_config": {
+    "width": 640,
+    "height": 480,
+    "padding": 100
+  },
+  "training_params": {
+    "batch_size": 32,
+    "epochs": 150,
+    "lr": 0.001,
+    "augmentation": "8x (flip, brightness, contrast, noise, shift, blur, channel_shuffle)"
+  }
+}

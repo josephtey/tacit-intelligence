@@ -1,53 +1,35 @@
-# Dataset and model artifacts (kept on /large_storage via symlinks)
-data/
-*.npy
-*.pt
-*.bin
-*.safetensors
-
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
 *.so
-*.egg
 *.egg-info/
-build/
 dist/
-.venv/
+build/
+
+# Virtual environment
 venv/
-env/
-.ipynb_checkpoints/
 
-# Test / type-check / lint caches
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-.coverage.*
-htmlcov/
+# Secrets
+.env
 
-# Logs and caches
-*.log
-.cache/
+# Large model weights (keep training/inference code)
+*.joblib
+*.pt
+*.pth
+*.onnx
 
-# OS
+# Dataset videos (keep label JSONs)
+pipette_well_dataset/*.mp4
+
+# Eval artifacts: keep results.json, drop frame images + logs
+experiments/e2e_runs/**/*.jpg
+experiments/baseline_runs/_log_*.txt
+experiments/frames/
+experiments/inference_sessions/
+experiments/runs/
+
+# OS / IDE
 .DS_Store
-Thumbs.db
-
-# Editors / IDEs
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
-
-# Secrets — keys never enter version control
-.env
-.env.local
-
-# Eval run outputs — keep small result artifacts in git, ignore heavy/derived ones.
-# (runs/predictions, runs/scores, runs/manifests, runs/agent_traces, runs/report.md ARE tracked.)
-# Extracted JPEG frames (~170 MB, regenerable from videos):
-runs/frames/
-runs/slurm_logs/
-runs/lsv_download.log

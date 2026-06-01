@@ -1,0 +1,242 @@
+{
+  "E2E (3-stage)": {
+    "total_clips": 100,
+    "exact_match": 27,
+    "exact_pct": 27.0,
+    "row_ok": 47,
+    "row_ok_pct": 47.0,
+    "col_ok": 36,
+    "col_ok_pct": 36.0,
+    "within_1": 50,
+    "within_1_pct": 50.0,
+    "within_2": 58,
+    "within_2_pct": 58.0,
+    "plate_breakdown": {
+      "Plate_1": {
+        "correct": 3,
+        "total": 6,
+        "accuracy_pct": 50.0
+      },
+      "Plate_10": {
+        "correct": 3,
+        "total": 21,
+        "accuracy_pct": 14.3
+      },
+      "Plate_2": {
+        "correct": 0,
+        "total": 12,
+        "accuracy_pct": 0.0
+      },
+      "Plate_3": {
+        "correct": 1,
+        "total": 11,
+        "accuracy_pct": 9.1
+      },
+      "Plate_4": {
+        "correct": 4,
+        "total": 20,
+        "accuracy_pct": 20.0
+      },
+      "Plate_5": {
+        "correct": 0,
+        "total": 7,
+        "accuracy_pct": 0.0
+      },
+      "Plate_9": {
+        "correct": 16,
+        "total": 23,
+        "accuracy_pct": 69.6
+      }
+    },
+    "type_breakdown": {
+      "multi-col": {
+        "correct": 3,
+        "total": 13,
+        "accuracy_pct": 23.1
+      },
+      "single": {
+        "correct": 24,
+        "total": 75,
+        "accuracy_pct": 32.0
+      },
+      "multi-row": {
+        "correct": 0,
+        "total": 12,
+        "accuracy_pct": 0.0
+      }
+    },
+    "timing_mean_s": {
+      "stage1_commit": 3.01,
+      "stage2_corners": 0.16,
+      "stage3_tip": 0.05,
+      "total": 3.45
+    },
+    "total_cost": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "thinking_tokens": 0,
+      "usd": 0.0
+    },
+    "cost_per_clip_usd": 0.0,
+    "wall_clock_s": 347.9
+  },
+  "VLM monolithic (1-call)": {
+    "total_clips": 100,
+    "exact_match": 2,
+    "exact_pct": 2.0,
+    "row_ok": 34,
+    "row_ok_pct": 34.0,
+    "col_ok": 9,
+    "col_ok_pct": 9.0,
+    "within_1": 15,
+    "within_1_pct": 15.0,
+    "within_2": 30,
+    "within_2_pct": 30.0,
+    "plate_breakdown": {
+      "Plate_10": {
+        "correct": 1,
+        "total": 21,
+        "accuracy_pct": 4.8
+      },
+      "Plate_1": {
+        "correct": 0,
+        "total": 6,
+        "accuracy_pct": 0.0
+      },
+      "Plate_2": {
+        "correct": 0,
+        "total": 12,
+        "accuracy_pct": 0.0
+      },
+      "Plate_3": {
+        "correct": 1,
+        "total": 11,
+        "accuracy_pct": 9.1
+      },
+      "Plate_4": {
+        "correct": 0,
+        "total": 20,
+        "accuracy_pct": 0.0
+      },
+      "Plate_5": {
+        "correct": 0,
+        "total": 7,
+        "accuracy_pct": 0.0
+      },
+      "Plate_9": {
+        "correct": 0,
+        "total": 23,
+        "accuracy_pct": 0.0
+      }
+    },
+    "type_breakdown": {
+      "single": {
+        "correct": 2,
+        "total": 75,
+        "accuracy_pct": 2.7
+      },
+      "multi-col": {
+        "correct": 0,
+        "total": 13,
+        "accuracy_pct": 0.0
+      },
+      "multi-row": {
+        "correct": 0,
+        "total": 12,
+        "accuracy_pct": 0.0
+      }
+    },
+    "timing_mean_s": {
+      "call_read": 24.0,
+      "total": 20.88
+    },
+    "total_cost": {
+      "input_tokens": 965607,
+      "output_tokens": 11753,
+      "thinking_tokens": 113715,
+      "usd": 3.4368
+    },
+    "cost_per_clip_usd": 0.03437,
+    "wall_clock_s": 306.1
+  },
+  "VLM decomposed (2-call)": {
+    "total_clips": 100,
+    "exact_match": 4,
+    "exact_pct": 4.0,
+    "row_ok": 33,
+    "row_ok_pct": 33.0,
+    "col_ok": 14,
+    "col_ok_pct": 14.0,
+    "within_1": 23,
+    "within_1_pct": 23.0,
+    "within_2": 39,
+    "within_2_pct": 39.0,
+    "plate_breakdown": {
+      "Plate_10": {
+        "correct": 2,
+        "total": 21,
+        "accuracy_pct": 9.5
+      },
+      "Plate_1": {
+        "correct": 0,
+        "total": 6,
+        "accuracy_pct": 0.0
+      },
+      "Plate_2": {
+        "correct": 0,
+        "total": 12,
+        "accuracy_pct": 0.0
+      },
+      "Plate_3": {
+        "correct": 1,
+        "total": 11,
+        "accuracy_pct": 9.1
+      },
+      "Plate_4": {
+        "correct": 0,
+        "total": 20,
+        "accuracy_pct": 0.0
+      },
+      "Plate_5": {
+        "correct": 0,
+        "total": 7,
+        "accuracy_pct": 0.0
+      },
+      "Plate_9": {
+        "correct": 1,
+        "total": 23,
+        "accuracy_pct": 4.3
+      }
+    },
+    "type_breakdown": {
+      "single": {
+        "correct": 4,
+        "total": 75,
+        "accuracy_pct": 5.3
+      },
+      "multi-col": {
+        "correct": 0,
+        "total": 13,
+        "accuracy_pct": 0.0
+      },
+      "multi-row": {
+        "correct": 0,
+        "total": 12,
+        "accuracy_pct": 0.0
+      }
+    },
+    "timing_mean_s": {
+      "call_select": 11.28,
+      "call_read": 20.67,
+      "total": 25.71
+    },
+    "total_cost": {
+      "input_tokens": 1115858,
+      "output_tokens": 12639,
+      "thinking_tokens": 139557,
+      "usd": 4.0581
+    },
+    "cost_per_clip_usd": 0.04058,
+    "wall_clock_s": 335.0
+  }
+}

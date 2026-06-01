@@ -1,8 +1,0 @@
-node_modules/
-dist/
-.vite/
-
-# Local video symlink (points at the ~300 GB LSV dataset — never commit)
-public/lsv
-
-# metadata.json IS committed (small, has predictions baked in) — not ignored.
