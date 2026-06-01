@@ -1,12 +1,12 @@
-# Pipette Well Prediction
+# Scientific Knowledge Capture with Vision Models
 
-**CS348K project.** Predicts which well(s) of a 96-well plate a pipette dispenses into, from a paired FPV + top-view video clip.
-
-Walkthrough: https://www.loom.com/share/f40ffc051fd640c6bedf4ec473567fd1
+Predicts which well(s) of a 96-well plate a pipette dispenses into, from a paired FPV + top-view video clip.
 
 ## Background
 
-Most lab work is unobserved: protocols record what was *intended*, but the actual execution — which wells were touched, in what order — survives only as tacit know-how in a researcher's hands, a root cause of the reproducibility crisis. Software made opaque execution legible through observability (logs and traces); the wet lab has no equivalent. We treat **"which well did the pipette dispense into"** as the atomic event of that missing trace — a semantic, machine-readable record recovered passively from ordinary video. Stacking these events yields an execution log of a physical experiment: the substrate for verification, reproducibility, and demonstration data for future lab automation.
+Scientific progress depends on knowing what was actually done — yet most lab work is unobserved. Protocols record what was *intended*, but the real execution (which wells were touched, in what order) survives only as tacit know-how in a researcher's hands, a root cause of the reproducibility crisis. Software made opaque execution legible through observability: logs and traces turned invisible work into a queryable record. The physical sciences have no equivalent — we see a protocol and a result, but never the trace in between.
+
+This project asks whether vision models can recover that missing trace from ordinary video. We treat **"which well did the pipette dispense into"** as the atomic, machine-readable event of a wet-lab experiment. Stacking these events yields an execution log of physical work — the substrate for verification, reproducibility, and the demonstration data that future scientific automation will learn from.
 
 ## Problem
 
