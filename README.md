@@ -1,5 +1,7 @@
 # Scientific Knowledge Capture with Vision Models
 
+[![Download the Project Writeup (PDF)](https://img.shields.io/badge/Download-Project_Writeup_(PDF)-1f6feb?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](writeup.pdf)
+
 Predicts which well(s) of a 96-well plate a pipette dispenses into, from a paired FPV + top-view video clip.
 
 ## Background
